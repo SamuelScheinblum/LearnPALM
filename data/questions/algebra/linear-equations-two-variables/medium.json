@@ -1,0 +1,396 @@
+{
+  "section": "Math",
+  "type": "algebra",
+  "questions": [
+    {
+      "id": "math_sec_lin_eq_two_var_medium_001",
+      "difficulty": "medium",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "Line r is defined by y = -17x + 4. Line s is perpendicular to line r in the xy-plane. What is the slope of line s?",
+        "es": "La línea r se define por y = -17x + 4. La línea s es perpendicular a la línea r en el plano xy. ¿Cuál es la pendiente de la línea s?",
+        "fr": "La droite r est définie par y = -17x + 4. La droite s est perpendiculaire à la droite r dans le plan xy. Quelle est la pente de la droite s ?",
+        "pt": "A reta r é definida por y = -17x + 4. A reta s é perpendicular à reta r no plano xy. Qual é a inclinação da reta s?",
+        "ht": "Liy r defini pa y = -17x + 4. Liy s pèpandikilè ak liy r nan plan xy la. Ki pant liy s la?"
+      },
+      "choices": [
+        {"key": "A", "en": "-17", "es": "-17", "fr": "-17", "pt": "-17", "ht": "-17"},
+        {"key": "B", "en": "17", "es": "17", "fr": "17", "pt": "17", "ht": "17"},
+        {"key": "C", "en": "-3/17", "es": "-3/17", "fr": "-3/17", "pt": "-3/17", "ht": "-3/17"},
+        {"key": "D", "en": "1/17", "es": "1/17", "fr": "1/17", "pt": "1/17", "ht": "1/17"}
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This question tests perpendicular slopes; if a line has slope m, a perpendicular has slope -1/m. Here m = -17, so the perpendicular slope is -1/(-17) = 1/17.",
+        "es": "Esta pregunta evalúa las pendientes perpendiculares; si una línea tiene pendiente m, una perpendicular tiene pendiente -1/m. Aquí m = -17, por lo que la pendiente perpendicular es -1/(-17) = 1/17.",
+        "fr": "Cette question teste les pentes perpendiculaires ; si une droite a une pente m, une perpendiculaire a une pente -1/m. Ici m = -17, donc la pente perpendiculaire est -1/(-17) = 1/17.",
+        "pt": "Esta questão testa inclinações perpendiculares; se uma reta tem inclinação m, uma perpendicular tem inclinação -1/m. Aqui m = -17, então a inclinação perpendicular é -1/(-17) = 1/17.",
+        "ht": "Kesyon sa a teste pant pèpandikilè; si yon liy gen pant m, yon pèpandikilè gen pant -1/m. Isit la m = -17, donk pant pèpandikilè a se -1/(-17) = 1/17."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_medium_002",
+      "difficulty": "medium",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "Line p is defined by 6x + 2y = 9. Line q is perpendicular to line p in the xy-plane. What is the slope of line q?",
+        "es": "La línea p se define por 6x + 2y = 9. La línea q es perpendicular a la línea p en el plano xy. ¿Cuál es la pendiente de la línea q?",
+        "fr": "La droite p est définie par 6x + 2y = 9. La droite q est perpendiculaire à la droite p dans le plan xy. Quelle est la pente de la droite q ?",
+        "pt": "A reta p é definida por 6x + 2y = 9. A reta q é perpendicular à reta p no plano xy. Qual é a inclinação da reta q?",
+        "ht": "Liy p defini pa 6x + 2y = 9. Liy q pèpandikilè ak liy p nan plan xy la. Ki pant liy q la?"
+      },
+      "choices": [
+        {"key": "A", "en": "-3", "es": "-3", "fr": "-3", "pt": "-3", "ht": "-3"},
+        {"key": "B", "en": "-1/3", "es": "-1/3", "fr": "-1/3", "pt": "-1/3", "ht": "-1/3"},
+        {"key": "C", "en": "1/3", "es": "1/3", "fr": "1/3", "pt": "1/3", "ht": "1/3"},
+        {"key": "D", "en": "3", "es": "3", "fr": "3", "pt": "3", "ht": "3"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This question tests slope from standard form and perpendicularity; 6x + 2y = 9 -> 2y = -6x + 9 -> y = -3x + 9/2, slope -3. Perpendicular slope is the opposite reciprocal: -1/(-3) = 1/3.",
+        "es": "Esta pregunta evalúa la pendiente de la forma estándar y la perpendicularidad; 6x + 2y = 9 -> 2y = -6x + 9 -> y = -3x + 9/2, pendiente -3. La pendiente perpendicular es la opuesta recíproca: -1/(-3) = 1/3.",
+        "fr": "Cette question teste la pente à partir de la forme standard et la perpendicularité ; 6x + 2y = 9 -> 2y = -6x + 9 -> y = -3x + 9/2, pente -3. La pente perpendiculaire est l'opposé de l'inverse : -1/(-3) = 1/3.",
+        "pt": "Esta questão testa a inclinação da forma padrão e a perpendicularidade; 6x + 2y = 9 -> 2y = -6x + 9 -> y = -3x + 9/2, inclinação -3. A inclinação perpendicular é a oposta recíproca: -1/(-3) = 1/3.",
+        "ht": "Kesyon sa a teste pant soti nan fòm estanda ak pèpandikilarite; 6x + 2y = 9 -> 2y = -6x + 9 -> y = -3x + 9/2, pant -3. Pant pèpandikilè a se opoze resipwòk la: -1/(-3) = 1/3."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_medium_003",
+      "difficulty": "medium",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "A graph models all length L (m) and width W (m) pairs for rectangles with perimeter 40 m. Which statement best interprets the point (12, 8)?",
+        "es": "Un gráfico modela todos los pares de longitud L (m) y anchura W (m) para rectángulos con perímetro 40 m. ¿Qué afirmación interpreta mejor el punto (12, 8)?",
+        "fr": "Un graphique modélise toutes les paires de longueur L (m) et de largeur W (m) pour des rectangles de périmètre 40 m. Quelle affirmation interprète le mieux le point (12, 8) ?",
+        "pt": "Um gráfico modela todos os pares de comprimento L (m) e largura W (m) para retângulos com perímetro 40 m. Qual afirmação interpreta melhor o ponto (12, 8)?",
+        "ht": "Yon graf modle tout pè longè L (m) ak lajè W (m) pou rektang ki gen perimèt 40 m. Ki deklarasyon ki pi byen entèprete pwen (12, 8) la?"
+      },
+      "choices": [
+        {"key": "A", "en": "The length is 8 m, and the width is 12 m", "es": "La longitud es 8 m, y la anchura es 12 m", "fr": "La longueur est de 8 m, et la largeur est de 12 m", "pt": "O comprimento é 8 m, e a largura é 12 m", "ht": "Longè a se 8 m, epi lajè a se 12 m"},
+        {"key": "B", "en": "The length is less than 40, and the width is less than 40", "es": "La longitud es menor que 40, y la anchura es menor que 40", "fr": "La longueur est inférieure à 40, et la largeur est inférieure à 40", "pt": "O comprimento é menor que 40, e a largura é menor que 40", "ht": "Longè a pi piti pase 40, epi lajè a pi piti pase 40"},
+        {"key": "C", "en": "The length is 12 m, and the width is 8 m", "es": "La longitud es 12 m, y la anchura es 8 m", "fr": "La longueur est de 12 m, et la largeur est de 8 m", "pt": "O comprimento é 12 m, e a largura é 8 m", "ht": "Longè a se 12 m, epi lajè a se 8 m"},
+        {"key": "D", "en": "The length is 20 m, and the width is 20 m", "es": "La longitud es 20 m, y la anchura es 20 m", "fr": "La longueur est de 20 m, et la largeur est de 20 m", "pt": "O comprimento é 20 m, e a largura é 20 m", "ht": "Longè a se 20 m, epi lajè a se 20 m"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This question tests reading coordinates; by convention (x, y) = (L, W), so (12, 8) means L = 12, W = 8.",
+        "es": "Esta pregunta evalúa la lectura de coordenadas; por convención (x, y) = (L, W), entonces (12, 8) significa L = 12, W = 8.",
+        "fr": "Cette question teste la lecture des coordonnées ; par convention (x, y) = (L, W), donc (12, 8) signifie L = 12, W = 8.",
+        "pt": "Esta questão testa a leitura de coordenadas; por convenção (x, y) = (L, W), então (12, 8) significa L = 12, W = 8.",
+        "ht": "Kesyon sa a teste lekti kowòdone; pa konvansyon (x, y) = (L, W), donk (12, 8) vle di L = 12, W = 8."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_medium_004",
+      "difficulty": "medium",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "Line t is defined by y = (5/2)x - 7. Line u is parallel to line t in the xy-plane. What is the slope of line u?",
+        "es": "La línea t se define por y = (5/2)x - 7. La línea u es paralela a la línea t en el plano xy. ¿Cuál es la pendiente de la línea u?",
+        "fr": "La droite t est définie par y = (5/2)x - 7. La droite u est parallèle à la droite t dans le plan xy. Quelle est la pente de la droite u ?",
+        "pt": "A reta t é definida por y = (5/2)x - 7. A reta u é paralela à reta t no plano xy. Qual é a inclinação da reta u?",
+        "ht": "Liy t defini pa y = (5/2)x - 7. Liy u paralèl ak liy t nan plan xy la. Ki pant liy u la?"
+      },
+      "choices": [
+        {"key": "A", "en": "-7", "es": "-7", "fr": "-7", "pt": "-7", "ht": "-7"},
+        {"key": "B", "en": "5/2", "es": "5/2", "fr": "5/2", "pt": "5/2", "ht": "5/2"},
+        {"key": "C", "en": "2/5", "es": "2/5", "fr": "2/5", "pt": "2/5", "ht": "2/5"},
+        {"key": "D", "en": "-5/2", "es": "-5/2", "fr": "-5/2", "pt": "-5/2", "ht": "-5/2"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This question tests parallel lines; parallel lines have equal slopes, so slope is 5/2.",
+        "es": "Esta pregunta evalúa las líneas paralelas; las líneas paralelas tienen pendientes iguales, por lo que la pendiente es 5/2.",
+        "fr": "Cette question teste les droites parallèles ; les droites parallèles ont des pentes égales, donc la pente est 5/2.",
+        "pt": "Esta questão testa retas paralelas; retas paralelas têm inclinações iguais, então a inclinação é 5/2.",
+        "ht": "Kesyon sa a teste liy paralèl; liy paralèl gen pant egal, donk pant lan se 5/2."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_medium_005",
+      "difficulty": "medium",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "A landscaper bought topsoil and gravel for a total of 128. The relationship between cubic yards of topsoil x and tons of gravel y is 6x + 6.25y = 128. How much more did one ton of gravel cost than one cubic yard of topsoil?",
+        "es": "Un paisajista compró tierra vegetal y grava por un total de 128. La relación entre las yardas cúbicas de tierra vegetal x y las toneladas de grava y es 6x + 6.25y = 128. ¿Cuánto más costó una tonelada de grava que una yarda cúbica de tierra vegetal?",
+        "fr": "Un paysagiste a acheté de la terre végétale et du gravier pour un total de 128. La relation entre les yards cubes de terre végétale x et les tonnes de gravier y est 6x + 6.25y = 128. Combien une tonne de gravier coûte-t-elle de plus qu'un yard cube de terre végétale ?",
+        "pt": "Um paisagista comprou terra vegetal e cascalho por um total de 128. A relação entre jardas cúbicas de terra vegetal x e toneladas de cascalho y é 6x + 6.25y = 128. Quanto a mais custou uma tonelada de cascalho do que uma jarda cúbica de terra vegetal?",
+        "ht": "Yon jadenis te achte tè nwa ak gravye pou yon total 128. Relasyon ant yad kib tè nwa x ak tòn gravye y se 6x + 6.25y = 128. Konbyen plis yon tòn gravye te koute pase yon yad kib tè nwa?"
+      },
+      "choices": [
+        {"key": "A", "en": "0.15", "es": "0.15", "fr": "0.15", "pt": "0.15", "ht": "0.15"},
+        {"key": "B", "en": "0.20", "es": "0.20", "fr": "0.20", "pt": "0.20", "ht": "0.20"},
+        {"key": "C", "en": "0.25", "es": "0.25", "fr": "0.25", "pt": "0.25", "ht": "0.25"},
+        {"key": "D", "en": "0.50", "es": "0.50", "fr": "0.50", "pt": "0.50", "ht": "0.50"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This question tests interpreting coefficients in a linear cost equation; the coefficient 6 is the price per cubic yard of topsoil, and 6.25 is the price per ton of gravel. The difference is 6.25 - 6 = 0.25.",
+        "es": "Esta pregunta evalúa la interpretación de coeficientes en una ecuación de costo lineal; el coeficiente 6 es el precio por yarda cúbica de tierra vegetal, y 6.25 es el precio por tonelada de grava. La diferencia es 6.25 - 6 = 0.25.",
+        "fr": "Cette question teste l'interprétation des coefficients dans une équation de coût linéaire ; le coefficient 6 est le prix par yard cube de terre végétale, et 6.25 est le prix par tonne de gravier. La différence est 6.25 - 6 = 0.25.",
+        "pt": "Esta questão testa a interpretação de coeficientes em uma equação de custo linear; o coeficiente 6 é o preço por jarda cúbica de terra vegetal, e 6.25 é o preço por tonelada de cascalho. A diferença é 6.25 - 6 = 0.25.",
+        "ht": "Kesyon sa a teste entèpretasyon koyefisyan nan yon ekwasyon pri lineyè; koyefisyan 6 la se pri pou chak yad kib tè nwa, epi 6.25 se pri pou chak tòn gravye. Diferans lan se 6.25 - 6 = 0.25."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_medium_006",
+      "difficulty": "medium",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "A region has a 12-hectare reserve and a 35-hectare park. The total number of trees is T. The equation 12a + 35b = T represents this situation. What is the best interpretation of a?",
+        "es": "Una región tiene una reserva de 12 hectáreas y un parque de 35 hectáreas. El número total de árboles es T. La ecuación 12a + 35b = T representa esta situación. ¿Cuál es la mejor interpretación de a?",
+        "fr": "Une région possède une réserve de 12 hectares et un parc de 35 hectares. Le nombre total d'arbres est T. L'équation 12a + 35b = T représente cette situation. Quelle est la meilleure interprétation de a ?",
+        "pt": "Uma região tem uma reserva de 12 hectares e um parque de 35 hectares. O número total de árvores é T. A equação 12a + 35b = T representa esta situação. Qual é a melhor interpretação de a?",
+        "ht": "Yon rejyon gen yon rezèv 12 ekta ak yon pak 35 ekta. Kantite total pyebwa se T. Ekwasyon 12a + 35b = T reprezante sitiyasyon sa a. Ki pi bon entèpretasyon a?"
+      },
+      "choices": [
+        {"key": "A", "en": "Average trees per hectare in the reserve", "es": "Promedio de árboles por hectárea en la reserva", "fr": "Moyenne d'arbres par hectare dans la réserve", "pt": "Média de árvores por hectare na reserva", "ht": "Mwayèn pyebwa pou chak ekta nan rezèv la"},
+        {"key": "B", "en": "Average trees per hectare in the park", "es": "Promedio de árboles por hectárea en el parque", "fr": "Moyenne d'arbres par hectare dans le parc", "pt": "Média de árvores por hectare no parque", "ht": "Mwayèn pyebwa pou chak ekta nan pak la"},
+        {"key": "C", "en": "Total trees in the reserve", "es": "Total de árboles en la reserva", "fr": "Nombre total d'arbres dans la réserve", "pt": "Total de árvores na reserva", "ht": "Total pyebwa nan rezèv la"},
+        {"key": "D", "en": "Total trees in the park", "es": "Total de árboles en el parque", "fr": "Nombre total d'arbres dans le parc", "pt": "Total de árvores no parque", "ht": "Total pyebwa nan pak la"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This question tests interpreting factors in a total = area * density model; the term 12a represents the total trees in the reserve. Since 12 is the area in hectares, 'a' must be the density (average trees per hectare) in the reserve.",
+        "es": "Esta pregunta evalúa la interpretación de factores en un modelo total = área * densidad; el término 12a representa el total de árboles en la reserva. Dado que 12 es el área en hectáreas, 'a' debe ser la densidad (promedio de árboles por hectárea) en la reserva.",
+        "fr": "Cette question teste l'interprétation des facteurs dans un modèle total = surface * densité ; le terme 12a représente le nombre total d'arbres dans la réserve. Puisque 12 est la surface en hectares, 'a' doit être la densité (moyenne d'arbres par hectare) dans la réserve.",
+        "pt": "Esta questão testa a interpretação de fatores em um modelo total = área * densidade; o termo 12a representa o total de árvores na reserva. Como 12 é a área em hectares, 'a' deve ser a densidade (média de árvores por hectare) na reserva.",
+        "ht": "Kesyon sa a teste entèpretasyon faktè nan yon modèl total = sipèfisi * dansite; tèm 12a a reprezante total pyebwa nan rezèv la. Piske 12 se sipèfisi a an ekta, 'a' dwe dansite a (mwayèn pyebwa pou chak ekta) nan rezèv la."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_medium_007",
+      "difficulty": "medium",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "An artist needs blue tiles B and green tiles G to cover a square of area N square inches. The relation is 2B + 3G = N. If B = 26 and N = 199, how many green tiles are needed?",
+        "es": "Un artista necesita azulejos azules B y azulejos verdes G para cubrir un cuadrado de área N pulgadas cuadradas. La relación es 2B + 3G = N. Si B = 26 y N = 199, ¿cuántos azulejos verdes se necesitan?",
+        "fr": "Un artiste a besoin de carreaux bleus B et de carreaux verts G pour couvrir un carré de surface N pouces carrés. La relation est 2B + 3G = N. Si B = 26 et N = 199, combien de carreaux verts sont nécessaires ?",
+        "pt": "Um artista precisa de azulejos azuis B e azulejos verdes G para cobrir um quadrado de área N polegadas quadradas. A relação é 2B + 3G = N. Se B = 26 e N = 199, quantos azulejos verdes são necessários?",
+        "ht": "Yon atis bezwen mozayik ble B ak mozayik vèt G pou kouvri yon kare ki gen sipèfisi N pous kare. Relasyon an se 2B + 3G = N. Si B = 26 ak N = 199, konbyen mozayik vèt ki nesesè?"
+      },
+      "choices": [
+        {"key": "A", "en": "13", "es": "13", "fr": "13", "pt": "13", "ht": "13"},
+        {"key": "B", "en": "22", "es": "22", "fr": "22", "pt": "22", "ht": "22"},
+        {"key": "C", "en": "39", "es": "39", "fr": "39", "pt": "39", "ht": "39"},
+        {"key": "D", "en": "49", "es": "49", "fr": "49", "pt": "49", "ht": "49"}
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This question tests solving a linear relation for one variable; substitute B = 26 and N = 199: 2(26) + 3G = 199 -> 52 + 3G = 199 -> 3G = 147 -> G = 49.",
+        "es": "Esta pregunta evalúa la resolución de una relación lineal para una variable; sustituye B = 26 y N = 199: 2(26) + 3G = 199 -> 52 + 3G = 199 -> 3G = 147 -> G = 49.",
+        "fr": "Cette question teste la résolution d'une relation linéaire pour une variable ; substituez B = 26 et N = 199 : 2(26) + 3G = 199 -> 52 + 3G = 199 -> 3G = 147 -> G = 49.",
+        "pt": "Esta questão testa a resolução de uma relação linear para uma variável; substitua B = 26 e N = 199: 2(26) + 3G = 199 -> 52 + 3G = 199 -> 3G = 147 -> G = 49.",
+        "ht": "Kesyon sa a teste rezoud yon relasyon lineyè pou yon varyab; ranplase B = 26 ak N = 199: 2(26) + 3G = 199 -> 52 + 3G = 199 -> 3G = 147 -> G = 49."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_medium_008",
+      "difficulty": "medium",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "A chemist mixes water and ethanol to make 120 mL of solution. If ethanol volume is 74 mL, what is the water volume, in mL?",
+        "es": "Un químico mezcla agua y etanol para hacer 120 mL de solución. Si el volumen de etanol es 74 mL, ¿cuál es el volumen de agua, en mL?",
+        "fr": "Un chimiste mélange de l'eau et de l'éthanol pour obtenir 120 mL de solution. Si le volume d'éthanol est de 74 mL, quel est le volume d'eau, en mL ?",
+        "pt": "Um químico mistura água e etanol para fazer 120 mL de solução. Se o volume de etanol é 74 mL, qual é o volume de água, em mL?",
+        "ht": "Yon chimis melanje dlo ak etanòl pou fè 120 mL solisyon. Si volim etanòl la se 74 mL, ki volim dlo a, an mL?"
+      },
+      "choices": [
+        {"key": "A", "en": "36", "es": "36", "fr": "36", "pt": "36", "ht": "36"},
+        {"key": "B", "en": "42", "es": "42", "fr": "42", "pt": "42", "ht": "42"},
+        {"key": "C", "en": "46", "es": "46", "fr": "46", "pt": "46", "ht": "46"},
+        {"key": "D", "en": "74", "es": "74", "fr": "74", "pt": "74", "ht": "74"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This question tests complements to a fixed total; Total Volume = Water Volume + Ethanol Volume. 120 = Water Volume + 74. Water Volume = 120 - 74 = 46.",
+        "es": "Esta pregunta evalúa los complementos a un total fijo; Volumen Total = Volumen de Agua + Volumen de Etanol. 120 = Volumen de Agua + 74. Volumen de Agua = 120 - 74 = 46.",
+        "fr": "Cette question teste les compléments à un total fixe ; Volume Total = Volume d'Eau + Volume d'Éthanol. 120 = Volume d'Eau + 74. Volume d'Eau = 120 - 74 = 46.",
+        "pt": "Esta questão testa complementos para um total fixo; Volume Total = Volume de Água + Volume de Etanol. 120 = Volume de Água + 74. Volume de Água = 120 - 74 = 46.",
+        "ht": "Kesyon sa a teste konpleman nan yon total fiks; Volim Total = Volim Dlo + Volim Etanòl. 120 = Volim Dlo + 74. Volim Dlo = 120 - 74 = 46."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_medium_009",
+      "difficulty": "medium",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "Line k in the xy-plane has slope -4/3 and passes through (6, -5). Which equation defines line k?",
+        "es": "La línea k en el plano xy tiene pendiente -4/3 y pasa por (6, -5). ¿Qué ecuación define la línea k?",
+        "fr": "La droite k dans le plan xy a une pente de -4/3 et passe par (6, -5). Quelle équation définit la droite k ?",
+        "pt": "A reta k no plano xy tem inclinação -4/3 e passa por (6, -5). Qual equação define a reta k?",
+        "ht": "Liy k nan plan xy la gen pant -4/3 epi li pase nan (6, -5). Ki ekwasyon ki defini liy k?"
+      },
+      "choices": [
+        {"key": "A", "en": "y = -(4/3)x - 5", "es": "y = -(4/3)x - 5", "fr": "y = -(4/3)x - 5", "pt": "y = -(4/3)x - 5", "ht": "y = -(4/3)x - 5"},
+        {"key": "B", "en": "y = -(4/3)x + 3", "es": "y = -(4/3)x + 3", "fr": "y = -(4/3)x + 3", "pt": "y = -(4/3)x + 3", "ht": "y = -(4/3)x + 3"},
+        {"key": "C", "en": "y = -(4/3)x + 1", "es": "y = -(4/3)x + 1", "fr": "y = -(4/3)x + 1", "pt": "y = -(4/3)x + 1", "ht": "y = -(4/3)x + 1"},
+        {"key": "D", "en": "y = -(4/3)x - 3", "es": "y = -(4/3)x - 3", "fr": "y = -(4/3)x - 3", "pt": "y = -(4/3)x - 3", "ht": "y = -(4/3)x - 3"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This question tests finding the intercept; use y = mx + b with m = -4/3. Substitute (6, -5): -5 = -(4/3)(6) + b -> -5 = -8 + b -> b = 3. The equation is y = -(4/3)x + 3.",
+        "es": "Esta pregunta evalúa encontrar la intersección; usa y = mx + b con m = -4/3. Sustituye (6, -5): -5 = -(4/3)(6) + b -> -5 = -8 + b -> b = 3. La ecuación es y = -(4/3)x + 3.",
+        "fr": "Cette question teste la recherche de l'ordonnée à l'origine ; utilisez y = mx + b avec m = -4/3. Remplacez par (6, -5) : -5 = -(4/3)(6) + b -> -5 = -8 + b -> b = 3. L'équation est y = -(4/3)x + 3.",
+        "pt": "Esta questão testa encontrar o intercepto; use y = mx + b com m = -4/3. Substitua (6, -5): -5 = -(4/3)(6) + b -> -5 = -8 + b -> b = 3. A equação é y = -(4/3)x + 3.",
+        "ht": "Kesyon sa a teste jwenn entèsepsyon an; sèvi ak y = mx + b ak m = -4/3. Ranplase (6, -5): -5 = -(4/3)(6) + b -> -5 = -8 + b -> b = 3. Ekwasyon an se y = -(4/3)x + 3."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_medium_010",
+      "difficulty": "medium",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "In the xy-plane, line n passes through (-4, 11) and (8, -1). Which equation defines line n?",
+        "es": "En el plano xy, la línea n pasa por (-4, 11) y (8, -1). ¿Qué ecuación define la línea n?",
+        "fr": "Dans le plan xy, la droite n passe par (-4, 11) et (8, -1). Quelle équation définit la droite n ?",
+        "pt": "No plano xy, a reta n passa por (-4, 11) e (8, -1). Qual equação define a reta n?",
+        "ht": "Nan plan xy la, liy n pase nan (-4, 11) ak (8, -1). Ki ekwasyon ki defini liy n?"
+      },
+      "choices": [
+        {"key": "A", "en": "y = x + 11", "es": "y = x + 11", "fr": "y = x + 11", "pt": "y = x + 11", "ht": "y = x + 11"},
+        {"key": "B", "en": "y = -x + 11", "es": "y = -x + 11", "fr": "y = -x + 11", "pt": "y = -x + 11", "ht": "y = -x + 11"},
+        {"key": "C", "en": "y = -x + 7", "es": "y = -x + 7", "fr": "y = -x + 7", "pt": "y = -x + 7", "ht": "y = -x + 7"},
+        {"key": "D", "en": "y = -x + 3", "es": "y = -x + 3", "fr": "y = -x + 3", "pt": "y = -x + 3", "ht": "y = -x + 3"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This question tests slope and intercept; slope m = (-1 - 11) / (8 - (-4)) = -12 / 12 = -1. Use y = -x + b with (-4, 11): 11 = -(-4) + b -> 11 = 4 + b -> b = 7. So y = -x + 7.",
+        "es": "Esta pregunta evalúa la pendiente y la intersección; pendiente m = (-1 - 11) / (8 - (-4)) = -12 / 12 = -1. Usa y = -x + b con (-4, 11): 11 = -(-4) + b -> 11 = 4 + b -> b = 7. Entonces y = -x + 7.",
+        "fr": "Cette question teste la pente et l'ordonnée à l'origine ; pente m = (-1 - 11) / (8 - (-4)) = -12 / 12 = -1. Utilisez y = -x + b avec (-4, 11) : 11 = -(-4) + b -> 11 = 4 + b -> b = 7. Donc y = -x + 7.",
+        "pt": "Esta questão testa inclinação e intercepto; inclinação m = (-1 - 11) / (8 - (-4)) = -12 / 12 = -1. Use y = -x + b com (-4, 11): 11 = -(-4) + b -> 11 = 4 + b -> b = 7. Então y = -x + 7.",
+        "ht": "Kesyon sa a teste pant ak entèsepsyon; pant m = (-1 - 11) / (8 - (-4)) = -12 / 12 = -1. Sèvi ak y = -x + b ak (-4, 11): 11 = -(-4) + b -> 11 = 4 + b -> b = 7. Donk y = -x + 7."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_medium_011",
+      "difficulty": "medium",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "The graph of y = 2x + b is shifted down k units to y = 2x + (b - k). What is the y-intercept after the shift?",
+        "es": "El gráfico de y = 2x + b se desplaza hacia abajo k unidades a y = 2x + (b - k). ¿Cuál es la intersección con el eje y después del desplazamiento?",
+        "fr": "Le graphe de y = 2x + b est décalé vers le bas de k unités pour y = 2x + (b - k). Quelle est l'ordonnée à l'origine après le décalage ?",
+        "pt": "O gráfico de y = 2x + b é deslocado para baixo k unidades para y = 2x + (b - k). Qual é a intersecção com o eixo y após o deslocamento?",
+        "ht": "Graf y = 2x + b la deplase anba pa k inite pou y = 2x + (b - k). Ki entèsepsyon y la apre deplasman an?"
+      },
+      "choices": [
+        {"key": "A", "en": "b - k", "es": "b - k", "fr": "b - k", "pt": "b - k", "ht": "b - k"},
+        {"key": "B", "en": "b + k", "es": "b + k", "fr": "b + k", "pt": "b + k", "ht": "b + k"},
+        {"key": "C", "en": "2k - b", "es": "2k - b", "fr": "2k - b", "pt": "2k - b", "ht": "2k - b"},
+        {"key": "D", "en": "2b - k", "es": "2b - k", "fr": "2b - k", "pt": "2b - k", "ht": "2b - k"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This question tests vertical translations; the y-intercept of y = mx + c is the constant term 'c'. After the shift, the new equation is y = 2x + (b - k). The constant term is (b - k), which is the new y-intercept.",
+        "es": "Esta pregunta evalúa las traslaciones verticales; la intersección con el eje y de y = mx + c es el término constante 'c'. Después del desplazamiento, la nueva ecuación es y = 2x + (b - k). El término constante es (b - k), que es la nueva intersección con el eje y.",
+        "fr": "Cette question teste les translations verticales ; l'ordonnée à l'origine de y = mx + c est le terme constant 'c'. Après le décalage, la nouvelle équation est y = 2x + (b - k). Le terme constant est (b - k), qui est la nouvelle ordonnée à l'origine.",
+        "pt": "Esta questão testa translações verticais; a intersecção com o eixo y de y = mx + c é o termo constante 'c'. Após o deslocamento, a nova equação é y = 2x + (b - k). O termo constante é (b - k), que é a nova intersecção com o eixo y.",
+        "ht": "Kesyon sa a teste translasyon vètikal; entèsepsyon y yon liy y = mx + c se tèm konstan 'c' la. Apre deplasman an, nouvo ekwasyon an se y = 2x + (b - k). Tèm konstan an se (b - k), ki se nouvo entèsepsyon y la."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_medium_012",
+      "difficulty": "medium",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "What is the slope of the graph of 7x - 4y = 28 in the xy-plane?",
+        "es": "¿Cuál es la pendiente del gráfico de 7x - 4y = 28 en el plano xy?",
+        "fr": "Quelle est la pente du graphe de 7x - 4y = 28 dans le plan xy ?",
+        "pt": "Qual é a inclinação do gráfico de 7x - 4y = 28 no plano xy?",
+        "ht": "Ki pant graf 7x - 4y = 28 la nan plan xy la?"
+      },
+      "choices": [
+        {"key": "A", "en": "-7", "es": "-7", "fr": "-7", "pt": "-7", "ht": "-7"},
+        {"key": "B", "en": "-4", "es": "-4", "fr": "-4", "pt": "-4", "ht": "-4"},
+        {"key": "C", "en": "4/7", "es": "4/7", "fr": "4/7", "pt": "4/7", "ht": "4/7"},
+        {"key": "D", "en": "7/4", "es": "7/4", "fr": "7/4", "pt": "7/4", "ht": "7/4"}
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This question tests conversion to slope-intercept; solve for y: -4y = -7x + 28 -> y = (7/4)x - 7. The slope is 7/4.",
+        "es": "Esta pregunta evalúa la conversión a forma pendiente-intersección; despeja y: -4y = -7x + 28 -> y = (7/4)x - 7. La pendiente es 7/4.",
+        "fr": "Cette question teste la conversion en forme pente-intercept ; isolez y : -4y = -7x + 28 -> y = (7/4)x - 7. La pente est 7/4.",
+        "pt": "Esta questão testa a conversão para a forma inclinação-intercepto; isole y: -4y = -7x + 28 -> y = (7/4)x - 7. A inclinação é 7/4.",
+        "ht": "Kesyon sa a teste konvèsyon an fòm pant-entèsepsyon; izole y: -4y = -7x + 28 -> y = (7/4)x - 7. Pant lan se 7/4."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_medium_013",
+      "difficulty": "medium",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "A 270-mile trip is driven at 60 mph for x hours, then 50 mph for y hours. If x = 2, what is y?",
+        "es": "Un viaje de 270 millas se conduce a 60 mph durante x horas, luego a 50 mph durante y horas. Si x = 2, ¿cuál es y?",
+        "fr": "Un voyage de 270 miles est effectué à 60 mph pendant x heures, puis à 50 mph pendant y heures. Si x = 2, quelle est la valeur de y ?",
+        "pt": "Uma viagem de 270 milhas é dirigida a 60 mph por x horas, depois a 50 mph por y horas. Se x = 2, qual é y?",
+        "ht": "Yon vwayaj 270 mil kondwi a 60 mph pandan x èdtan, apre sa a 50 mph pandan y èdtan. Si x = 2, ki valè y?"
+      },
+      "choices": [
+        {"key": "A", "en": "2", "es": "2", "fr": "2", "pt": "2", "ht": "2"},
+        {"key": "B", "en": "3", "es": "3", "fr": "3", "pt": "3", "ht": "3"},
+        {"key": "C", "en": "3.5", "es": "3.5", "fr": "3.5", "pt": "3.5", "ht": "3.5"},
+        {"key": "D", "en": "4", "es": "4", "fr": "4", "pt": "4", "ht": "4"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This question tests distance = rate*time; 60x + 50y = 270. Substitute x = 2: 60(2) + 50y = 270 -> 120 + 50y = 270 -> 50y = 150 -> y = 3.",
+        "es": "Esta pregunta evalúa distancia = tasa*tiempo; 60x + 50y = 270. Sustituye x = 2: 60(2) + 50y = 270 -> 120 + 50y = 270 -> 50y = 150 -> y = 3.",
+        "fr": "Cette question teste distance = vitesse*temps ; 60x + 50y = 270. Remplacez x = 2 : 60(2) + 50y = 270 -> 120 + 50y = 270 -> 50y = 150 -> y = 3.",
+        "pt": "Esta questão testa distância = taxa*tempo; 60x + 50y = 270. Substitua x = 2: 60(2) + 50y = 270 -> 120 + 50y = 270 -> 50y = 150 -> y = 3.",
+        "ht": "Kesyon sa a teste distans = to*tan; 60x + 50y = 270. Ranplase x = 2: 60(2) + 50y = 270 -> 120 + 50y = 270 -> 50y = 150 -> y = 3."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_medium_014",
+      "difficulty": "medium",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "The table shows pairs (x, y): (2, 7), (5, 1), (8, -5). Which equation represents the linear relationship between x and y?",
+        "es": "La tabla muestra pares (x, y): (2, 7), (5, 1), (8, -5). ¿Qué ecuación representa la relación lineal entre x e y?",
+        "fr": "Le tableau montre des paires (x, y) : (2, 7), (5, 1), (8, -5). Quelle équation représente la relation linéaire entre x et y ?",
+        "pt": "A tabela mostra pares (x, y): (2, 7), (5, 1), (8, -5). Qual equação representa a relação linear entre x e y?",
+        "ht": "Tablo a montre pè (x, y): (2, 7), (5, 1), (8, -5). Ki ekwasyon ki reprezante relasyon lineyè ant x ak y?"
+      },
+      "choices": [
+        {"key": "A", "en": "y = -2x + 11", "es": "y = -2x + 11", "fr": "y = -2x + 11", "pt": "y = -2x + 11", "ht": "y = -2x + 11"},
+        {"key": "B", "en": "y = 2x + 3", "es": "y = 2x + 3", "fr": "y = 2x + 3", "pt": "y = 2x + 3", "ht": "y = 2x + 3"},
+        {"key": "C", "en": "y = -x + 9", "es": "y = -x + 9", "fr": "y = -x + 9", "pt": "y = -x + 9", "ht": "y = -x + 9"},
+        {"key": "D", "en": "y = -3x + 13", "es": "y = -3x + 13", "fr": "y = -3x + 13", "pt": "y = -3x + 13", "ht": "y = -3x + 13"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This question tests finding slope and intercept from data; slope m = (1 - 7) / (5 - 2) = -6 / 3 = -2. Use y = -2x + b with (2, 7): 7 = -2(2) + b -> 7 = -4 + b -> b = 11. So y = -2x + 11.",
+        "es": "Esta pregunta evalúa encontrar la pendiente y la intersección a partir de datos; pendiente m = (1 - 7) / (5 - 2) = -6 / 3 = -2. Usa y = -2x + b con (2, 7): 7 = -2(2) + b -> 7 = -4 + b -> b = 11. Entonces y = -2x + 11.",
+        "fr": "Cette question teste la recherche de la pente et de l'ordonnée à l'origine à partir de données ; pente m = (1 - 7) / (5 - 2) = -6 / 3 = -2. Utilisez y = -2x + b avec (2, 7) : 7 = -2(2) + b -> 7 = -4 + b -> b = 11. Donc y = -2x + 11.",
+        "pt": "Esta questão testa encontrar a inclinação e o intercepto a partir de dados; inclinação m = (1 - 7) / (5 - 2) = -6 / 3 = -2. Use y = -2x + b com (2, 7): 7 = -2(2) + b -> 7 = -4 + b -> b = 11. Portanto y = -2x + 11.",
+        "ht": "Kesyon sa a teste jwenn pant ak entèsepsyon apati done; pant m = (1 - 7) / (5 - 2) = -6 / 3 = -2. Sèvi ak y = -2x + b ak (2, 7): 7 = -2(2) + b -> 7 = -4 + b -> b = 11. Donk y = -2x + 11."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_medium_015",
+      "difficulty": "medium",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "The line shown passes through (-3, -2) and (1, 6). What is an equation of the line?",
+        "es": "La línea mostrada pasa por (-3, -2) y (1, 6). ¿Cuál es una ecuación de la línea?",
+        "fr": "La droite montrée passe par (-3, -2) et (1, 6). Quelle est une équation de la droite ?",
+        "pt": "A reta mostrada passa por (-3, -2) e (1, 6). Qual é a equação da reta?",
+        "ht": "Liy yo montre a pase nan (-3, -2) ak (1, 6). Ki yon ekwasyon liy lan?"
+      },
+      "choices": [
+        {"key": "A", "en": "y = 2x - 2", "es": "y = 2x - 2", "fr": "y = 2x - 2", "pt": "y = 2x - 2", "ht": "y = 2x - 2"},
+        {"key": "B", "en": "y = 2x + 4", "es": "y = 2x + 4", "fr": "y = 2x + 4", "pt": "y = 2x + 4", "ht": "y = 2x + 4"},
+        {"key": "C", "en": "y = -2x + 4", "es": "y = -2x + 4", "fr": "y = -2x + 4", "pt": "y = -2x + 4", "ht": "y = -2x + 4"},
+        {"key": "D", "en": "y = -2x - 4", "es": "y = -2x - 4", "fr": "y = -2x - 4", "pt": "y = -2x - 4", "ht": "y = -2x - 4"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This question tests computing slope and intercept; slope m = (6 - (-2)) / (1 - (-3)) = 8 / 4 = 2. Use y = 2x + b with (1, 6): 6 = 2(1) + b -> 6 = 2 + b -> b = 4. So y = 2x + 4.",
+        "es": "Esta pregunta evalúa el cálculo de la pendiente y la intersección; pendiente m = (6 - (-2)) / (1 - (-3)) = 8 / 4 = 2. Usa y = 2x + b con (1, 6): 6 = 2(1) + b -> 6 = 2 + b -> b = 4. Entonces y = 2x + 4.",
+        "fr": "Cette question teste le calcul de la pente et de l'ordonnée à l'origine ; pente m = (6 - (-2)) / (1 - (-3)) = 8 / 4 = 2. Utilisez y = 2x + b avec (1, 6) : 6 = 2(1) + b -> 6 = 2 + b -> b = 4. Donc y = 2x + 4.",
+        "pt": "Esta questão testa o cálculo da inclinação e do intercepto; inclinação m = (6 - (-2)) / (1 - (-3)) = 8 / 4 = 2. Use y = 2x + b com (1, 6): 6 = 2(1) + b -> 6 = 2 + b -> b = 4. Portanto y = 2x + 4.",
+        "ht": "Kesyon sa a teste kalkil pant ak entèsepsyon; pant m = (6 - (-2)) / (1 - (-3)) = 8 / 4 = 2. Sèvi ak y = 2x + b ak (1, 6): 6 = 2(1) + b -> 6 = 2 + b -> b = 4. Donk y = 2x + 4."
+      }
+    }
+  ]
+}

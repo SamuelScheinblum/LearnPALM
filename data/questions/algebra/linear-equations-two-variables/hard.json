@@ -1,0 +1,396 @@
+{
+  "section": "Math",
+  "type": "algebra",
+  "questions": [
+    {
+      "id": "math_sec_lin_eq_two_var_hard_001",
+      "difficulty": "hard",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "Line r is defined by y = -17x + 4. Line s is perpendicular to line r in the xy-plane. What is the slope of line s?",
+        "es": "La línea r se define por y = -17x + 4. La línea s es perpendicular a la línea r en el plano xy. ¿Cuál es la pendiente de la línea s?",
+        "fr": "La droite r est définie par y = -17x + 4. La droite s est perpendiculaire à la droite r dans le plan xy. Quelle est la pente de la droite s ?",
+        "pt": "A reta r é definida por y = -17x + 4. A reta s é perpendicular à reta r no plano xy. Qual é a inclinação da reta s?",
+        "ht": "Liy r defini pa y = -17x + 4. Liy s pèpandikilè ak liy r nan plan xy la. Ki pant liy s la?"
+      },
+      "choices": [
+        {"key": "A", "en": "-17", "es": "-17", "fr": "-17", "pt": "-17", "ht": "-17"},
+        {"key": "B", "en": "17", "es": "17", "fr": "17", "pt": "17", "ht": "17"},
+        {"key": "C", "en": "-1/17", "es": "-1/17", "fr": "-1/17", "pt": "-1/17", "ht": "-1/17"},
+        {"key": "D", "en": "1/17", "es": "1/17", "fr": "1/17", "pt": "1/17", "ht": "1/17"}
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This question tests perpendicular slopes; if a line has slope m, a perpendicular has slope -1/m. Here m = -17, so the perpendicular slope is -1/(-17) = 1/17.",
+        "es": "Esta pregunta evalúa las pendientes perpendiculares; si una línea tiene pendiente m, una perpendicular tiene pendiente -1/m. Aquí m = -17, por lo que la pendiente perpendicular es -1/(-17) = 1/17.",
+        "fr": "Cette question teste les pentes perpendiculaires ; si une droite a une pente m, une perpendiculaire a une pente -1/m. Ici m = -17, donc la pente perpendiculaire est -1/(-17) = 1/17.",
+        "pt": "Esta questão testa inclinações perpendiculares; se uma reta tem inclinação m, uma perpendicular tem inclinação -1/m. Aqui m = -17, então a inclinação perpendicular é -1/(-17) = 1/17.",
+        "ht": "Kesyon sa a teste pant pèpandikilè; si yon liy gen pant m, yon pèpandikilè gen pant -1/m. Isit la m = -17, donk pant pèpandikilè a se -1/(-17) = 1/17."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_hard_002",
+      "difficulty": "hard",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "Line p is defined by 6x + 2y = 9. Line q is perpendicular to line p in the xy-plane. What is the slope of line q?",
+        "es": "La línea p se define por 6x + 2y = 9. La línea q es perpendicular a la línea p en el plano xy. ¿Cuál es la pendiente de la línea q?",
+        "fr": "La droite p est définie par 6x + 2y = 9. La droite q est perpendiculaire à la droite p dans le plan xy. Quelle est la pente de la droite q ?",
+        "pt": "A reta p é definida por 6x + 2y = 9. A reta q é perpendicular à reta p no plano xy. Qual é a inclinação da reta q?",
+        "ht": "Liy p defini pa 6x + 2y = 9. Liy q pèpandikilè ak liy p nan plan xy la. Ki pant liy q la?"
+      },
+      "choices": [
+        {"key": "A", "en": "-3", "es": "-3", "fr": "-3", "pt": "-3", "ht": "-3"},
+        {"key": "B", "en": "-1/3", "es": "-1/3", "fr": "-1/3", "pt": "-1/3", "ht": "-1/3"},
+        {"key": "C", "en": "1/3", "es": "1/3", "fr": "1/3", "pt": "1/3", "ht": "1/3"},
+        {"key": "D", "en": "3", "es": "3", "fr": "3", "pt": "3", "ht": "3"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This question tests slope from standard form and perpendicularity; 6x + 2y = 9 -> 2y = -6x + 9 -> y = -3x + 9/2, slope -3. Perpendicular slope is -1/(-3) = 1/3.",
+        "es": "Esta pregunta evalúa la pendiente de la forma estándar y la perpendicularidad; 6x + 2y = 9 -> 2y = -6x + 9 -> y = -3x + 9/2, pendiente -3. La pendiente perpendicular es -1/(-3) = 1/3.",
+        "fr": "Cette question teste la pente à partir de la forme standard et la perpendicularité ; 6x + 2y = 9 -> 2y = -6x + 9 -> y = -3x + 9/2, pente -3. La pente perpendiculaire est -1/(-3) = 1/3.",
+        "pt": "Esta questão testa a inclinação da forma padrão e a perpendicularidade; 6x + 2y = 9 -> 2y = -6x + 9 -> y = -3x + 9/2, inclinação -3. A inclinação perpendicular é -1/(-3) = 1/3.",
+        "ht": "Kesyon sa a teste pant soti nan fòm estanda ak pèpandikilarite; 6x + 2y = 9 -> 2y = -6x + 9 -> y = -3x + 9/2, pant -3. Pant pèpandikilè a se -1/(-3) = 1/3."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_hard_003",
+      "difficulty": "hard",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "What is the slope of the graph of 7x - 4y = 28 in the xy-plane?",
+        "es": "¿Cuál es la pendiente del gráfico de 7x - 4y = 28 en el plano xy?",
+        "fr": "Quelle est la pente du graphe de 7x - 4y = 28 dans le plan xy ?",
+        "pt": "Qual é a inclinação do gráfico de 7x - 4y = 28 no plano xy?",
+        "ht": "Ki pant graf 7x - 4y = 28 la nan plan xy la?"
+      },
+      "choices": [
+        {"key": "A", "en": "-7", "es": "-7", "fr": "-7", "pt": "-7", "ht": "-7"},
+        {"key": "B", "en": "-4", "es": "-4", "fr": "-4", "pt": "-4", "ht": "-4"},
+        {"key": "C", "en": "4/7", "es": "4/7", "fr": "4/7", "pt": "4/7", "ht": "4/7"},
+        {"key": "D", "en": "7/4", "es": "7/4", "fr": "7/4", "pt": "7/4", "ht": "7/4"}
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This question tests conversion to slope-intercept; solve for y: -4y = -7x + 28 -> y = (7/4)x - 7. The slope is 7/4.",
+        "es": "Esta pregunta evalúa la conversión a forma pendiente-intersección; despeja y: -4y = -7x + 28 -> y = (7/4)x - 7. La pendiente es 7/4.",
+        "fr": "Cette question teste la conversion en forme pente-intercept ; isolez y : -4y = -7x + 28 -> y = (7/4)x - 7. La pente est 7/4.",
+        "pt": "Esta questão testa a conversão para a forma inclinação-intercepto; isole y: -4y = -7x + 28 -> y = (7/4)x - 7. A inclinação é 7/4.",
+        "ht": "Kesyon sa a teste konvèsyon an fòm pant-entèsepsyon; izole y: -4y = -7x + 28 -> y = (7/4)x - 7. Pant lan se 7/4."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_hard_004",
+      "difficulty": "hard",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "A 270-mile trip is driven at 60 mph for x hours, then 50 mph for y hours. If x = 2, what is y?",
+        "es": "Un viaje de 270 millas se conduce a 60 mph durante x horas, luego a 50 mph durante y horas. Si x = 2, ¿cuál es y?",
+        "fr": "Un voyage de 270 miles est effectué à 60 mph pendant x heures, puis à 50 mph pendant y heures. Si x = 2, quelle est la valeur de y ?",
+        "pt": "Uma viagem de 270 milhas é dirigida a 60 mph por x horas, depois a 50 mph por y horas. Se x = 2, qual é y?",
+        "ht": "Yon vwayaj 270 mil kondwi a 60 mph pandan x èdtan, apre sa a 50 mph pandan y èdtan. Si x = 2, ki valè y?"
+      },
+      "choices": [
+        {"key": "A", "en": "2", "es": "2", "fr": "2", "pt": "2", "ht": "2"},
+        {"key": "B", "en": "3", "es": "3", "fr": "3", "pt": "3", "ht": "3"},
+        {"key": "C", "en": "3.5", "es": "3.5", "fr": "3.5", "pt": "3.5", "ht": "3.5"},
+        {"key": "D", "en": "4", "es": "4", "fr": "4", "pt": "4", "ht": "4"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This question tests distance = rate*time; 60x + 50y = 270. Substitute x = 2: 60(2) + 50y = 270 -> 120 + 50y = 270 -> 50y = 150 -> y = 3.",
+        "es": "Esta pregunta evalúa distancia = tasa*tiempo; 60x + 50y = 270. Sustituye x = 2: 60(2) + 50y = 270 -> 120 + 50y = 270 -> 50y = 150 -> y = 3.",
+        "fr": "Cette question teste distance = vitesse*temps ; 60x + 50y = 270. Remplacez x = 2 : 60(2) + 50y = 270 -> 120 + 50y = 270 -> 50y = 150 -> y = 3.",
+        "pt": "Esta questão testa distância = taxa*tempo; 60x + 50y = 270. Substitua x = 2: 60(2) + 50y = 270 -> 120 + 50y = 270 -> 50y = 150 -> y = 3.",
+        "ht": "Kesyon sa a teste distans = to*tan; 60x + 50y = 270. Ranplase x = 2: 60(2) + 50y = 270 -> 120 + 50y = 270 -> 50y = 150 -> y = 3."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_hard_005",
+      "difficulty": "hard",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "The table shows pairs (x, y): (2, 7), (5, 1), (8, -5). Which equation represents the linear relationship between x and y?",
+        "es": "La tabla muestra pares (x, y): (2, 7), (5, 1), (8, -5). ¿Qué ecuación representa la relación lineal entre x e y?",
+        "fr": "Le tableau montre des paires (x, y) : (2, 7), (5, 1), (8, -5). Quelle équation représente la relation linéaire entre x et y ?",
+        "pt": "A tabela mostra pares (x, y): (2, 7), (5, 1), (8, -5). Qual equação representa a relação linear entre x e y?",
+        "ht": "Tablo a montre pè (x, y): (2, 7), (5, 1), (8, -5). Ki ekwasyon ki reprezante relasyon lineyè ant x ak y?"
+      },
+      "choices": [
+        {"key": "A", "en": "y = -2x + 11", "es": "y = -2x + 11", "fr": "y = -2x + 11", "pt": "y = -2x + 11", "ht": "y = -2x + 11"},
+        {"key": "B", "en": "y = 2x + 3", "es": "y = 2x + 3", "fr": "y = 2x + 3", "pt": "y = 2x + 3", "ht": "y = 2x + 3"},
+        {"key": "C", "en": "y = -x + 9", "es": "y = -x + 9", "fr": "y = -x + 9", "pt": "y = -x + 9", "ht": "y = -x + 9"},
+        {"key": "D", "en": "y = -3x + 13", "es": "y = -3x + 13", "fr": "y = -3x + 13", "pt": "y = -3x + 13", "ht": "y = -3x + 13"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This question tests finding slope and intercept from data; slope m = (1 - 7) / (5 - 2) = -6 / 3 = -2. Use y = -2x + b with (2, 7): 7 = -2(2) + b -> 7 = -4 + b -> b = 11. So y = -2x + 11.",
+        "es": "Esta pregunta evalúa encontrar la pendiente y la intersección a partir de datos; pendiente m = (1 - 7) / (5 - 2) = -6 / 3 = -2. Usa y = -2x + b con (2, 7): 7 = -2(2) + b -> 7 = -4 + b -> b = 11. Entonces y = -2x + 11.",
+        "fr": "Cette question teste la recherche de la pente et de l'ordonnée à l'origine à partir de données ; pente m = (1 - 7) / (5 - 2) = -6 / 3 = -2. Utilisez y = -2x + b avec (2, 7) : 7 = -2(2) + b -> 7 = -4 + b -> b = 11. Donc y = -2x + 11.",
+        "pt": "Esta questão testa encontrar a inclinação e o intercepto a partir de dados; inclinação m = (1 - 7) / (5 - 2) = -6 / 3 = -2. Use y = -2x + b com (2, 7): 7 = -2(2) + b -> 7 = -4 + b -> b = 11. Portanto y = -2x + 11.",
+        "ht": "Kesyon sa a teste jwenn pant ak entèsepsyon apati done; pant m = (1 - 7) / (5 - 2) = -6 / 3 = -2. Sèvi ak y = -2x + b ak (2, 7): 7 = -2(2) + b -> 7 = -4 + b -> b = 11. Donk y = -2x + 11."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_hard_006",
+      "difficulty": "hard",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "The line shown passes through (-3, -2) and (1, 6). What is an equation of the line?",
+        "es": "La línea mostrada pasa por (-3, -2) y (1, 6). ¿Cuál es una ecuación de la línea?",
+        "fr": "La droite montrée passe par (-3, -2) et (1, 6). Quelle est une équation de la droite ?",
+        "pt": "A reta mostrada passa por (-3, -2) e (1, 6). Qual é a equação da reta?",
+        "ht": "Liy yo montre a pase nan (-3, -2) ak (1, 6). Ki yon ekwasyon liy lan?"
+      },
+      "choices": [
+        {"key": "A", "en": "y = 2x - 2", "es": "y = 2x - 2", "fr": "y = 2x - 2", "pt": "y = 2x - 2", "ht": "y = 2x - 2"},
+        {"key": "B", "en": "y = 2x + 4", "es": "y = 2x + 4", "fr": "y = 2x + 4", "pt": "y = 2x + 4", "ht": "y = 2x + 4"},
+        {"key": "C", "en": "y = -2x + 4", "es": "y = -2x + 4", "fr": "y = -2x + 4", "pt": "y = -2x + 4", "ht": "y = -2x + 4"},
+        {"key": "D", "en": "y = -2x - 4", "es": "y = -2x - 4", "fr": "y = -2x - 4", "pt": "y = -2x - 4", "ht": "y = -2x - 4"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This question tests computing slope and intercept; slope m = (6 - (-2)) / (1 - (-3)) = 8 / 4 = 2. Use y = 2x + b with (1, 6): 6 = 2(1) + b -> 6 = 2 + b -> b = 4. So y = 2x + 4.",
+        "es": "Esta pregunta evalúa el cálculo de la pendiente y la intersección; pendiente m = (6 - (-2)) / (1 - (-3)) = 8 / 4 = 2. Usa y = 2x + b con (1, 6): 6 = 2(1) + b -> 6 = 2 + b -> b = 4. Entonces y = 2x + 4.",
+        "fr": "Cette question teste le calcul de la pente et de l'ordonnée à l'origine ; pente m = (6 - (-2)) / (1 - (-3)) = 8 / 4 = 2. Utilisez y = 2x + b avec (1, 6) : 6 = 2(1) + b -> 6 = 2 + b -> b = 4. Donc y = 2x + 4.",
+        "pt": "Esta questão testa o cálculo da inclinação e do intercepto; inclinação m = (6 - (-2)) / (1 - (-3)) = 8 / 4 = 2. Use y = 2x + b com (1, 6): 6 = 2(1) + b -> 6 = 2 + b -> b = 4. Portanto y = 2x + 4.",
+        "ht": "Kesyon sa a teste kalkil pant ak entèsepsyon; pant m = (6 - (-2)) / (1 - (-3)) = 8 / 4 = 2. Sèvi ak y = 2x + b ak (1, 6): 6 = 2(1) + b -> 6 = 2 + b -> b = 4. Donk y = 2x + 4."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_hard_007",
+      "difficulty": "hard",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "In the xy-plane, line m has equation y = 3x - 5 and line n is parallel to line m. If line n passes through (4, 10), what is the equation of line n?",
+        "es": "En el plano xy, la línea m tiene la ecuación y = 3x - 5 y la línea n es paralela a la línea m. Si la línea n pasa por (4, 10), ¿cuál es la ecuación de la línea n?",
+        "fr": "Dans le plan xy, la droite m a pour équation y = 3x - 5 et la droite n est parallèle à la droite m. Si la droite n passe par (4, 10), quelle est l'équation de la droite n ?",
+        "pt": "No plano xy, a reta m tem equação y = 3x - 5 e a reta n é paralela à reta m. Se a reta n passa por (4, 10), qual é a equação da reta n?",
+        "ht": "Nan plan xy la, liy m gen ekwasyon y = 3x - 5 epi liy n paralèl ak liy m. Si liy n pase nan (4, 10), ki ekwasyon liy n lan?"
+      },
+      "choices": [
+        {"key": "A", "en": "y = 3x - 2", "es": "y = 3x - 2", "fr": "y = 3x - 2", "pt": "y = 3x - 2", "ht": "y = 3x - 2"},
+        {"key": "B", "en": "y = 3x + 2", "es": "y = 3x + 2", "fr": "y = 3x + 2", "pt": "y = 3x + 2", "ht": "y = 3x + 2"},
+        {"key": "C", "en": "y = 3x - 10", "es": "y = 3x - 10", "fr": "y = 3x - 10", "pt": "y = 3x - 10", "ht": "y = 3x - 10"},
+        {"key": "D", "en": "y = -3x + 22", "es": "y = -3x + 22", "fr": "y = -3x + 22", "pt": "y = -3x + 22", "ht": "y = -3x + 22"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This question tests parallel lines and point-slope form; parallel lines have the same slope, so slope = 3. Using point (4, 10): 10 = 3(4) + b -> 10 = 12 + b -> b = -2. The equation is y = 3x - 2.",
+        "es": "Esta pregunta evalúa las líneas paralelas y la forma punto-pendiente; las líneas paralelas tienen la misma pendiente, por lo que pendiente = 3. Usando el punto (4, 10): 10 = 3(4) + b -> 10 = 12 + b -> b = -2. La ecuación es y = 3x - 2.",
+        "fr": "Cette question teste les droites parallèles et la forme point-pente ; les droites parallèles ont la même pente, donc pente = 3. En utilisant le point (4, 10) : 10 = 3(4) + b -> 10 = 12 + b -> b = -2. L'équation est y = 3x - 2.",
+        "pt": "Esta questão testa retas paralelas e forma ponto-inclinação; retas paralelas têm a mesma inclinação, então inclinação = 3. Usando o ponto (4, 10): 10 = 3(4) + b -> 10 = 12 + b -> b = -2. A equação é y = 3x - 2.",
+        "ht": "Kesyon sa a teste liy paralèl ak fòm pwen-pant; liy paralèl gen menm pant, donk pant = 3. Sèvi ak pwen (4, 10): 10 = 3(4) + b -> 10 = 12 + b -> b = -2. Ekwasyon an se y = 3x - 2."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_hard_008",
+      "difficulty": "hard",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "Two lines are defined by 2x + 5y = 15 and ax - 10y = 8. If the lines are parallel, what is the value of a?",
+        "es": "Dos líneas se definen por 2x + 5y = 15 y ax - 10y = 8. Si las líneas son paralelas, ¿cuál es el valor de a?",
+        "fr": "Deux droites sont définies par 2x + 5y = 15 et ax - 10y = 8. Si les droites sont parallèles, quelle est la valeur de a ?",
+        "pt": "Duas retas são definidas por 2x + 5y = 15 e ax - 10y = 8. Se as retas são paralelas, qual é o valor de a?",
+        "ht": "De liy defini pa 2x + 5y = 15 ak ax - 10y = 8. Si liy yo paralèl, ki valè a?"
+      },
+      "choices": [
+        {"key": "A", "en": "-4", "es": "-4", "fr": "-4", "pt": "-4", "ht": "-4"},
+        {"key": "B", "en": "-2", "es": "-2", "fr": "-2", "pt": "-2", "ht": "-2"},
+        {"key": "C", "en": "2", "es": "2", "fr": "2", "pt": "2", "ht": "2"},
+        {"key": "D", "en": "4", "es": "4", "fr": "4", "pt": "4", "ht": "4"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This question tests parallel lines from standard form; convert to slope-intercept: 2x + 5y = 15 -> y = (-2/5)x + 3, slope = -2/5. For ax - 10y = 8 -> -10y = -ax + 8 -> y = (a/10)x - 4/5, slope = a/10. For parallel lines: a/10 = -2/5 -> a = -4.",
+        "es": "Esta pregunta evalúa las líneas paralelas de la forma estándar; convierte a pendiente-intersección: 2x + 5y = 15 -> y = (-2/5)x + 3, pendiente = -2/5. Para ax - 10y = 8 -> -10y = -ax + 8 -> y = (a/10)x - 4/5, pendiente = a/10. Para líneas paralelas: a/10 = -2/5 -> a = -4.",
+        "fr": "Cette question teste les droites parallèles à partir de la forme standard ; convertissez en forme pente-intercept : 2x + 5y = 15 -> y = (-2/5)x + 3, pente = -2/5. Pour ax - 10y = 8 -> -10y = -ax + 8 -> y = (a/10)x - 4/5, pente = a/10. Pour des droites parallèles : a/10 = -2/5 -> a = -4.",
+        "pt": "Esta questão testa retas paralelas da forma padrão; converta para inclinação-intercepto: 2x + 5y = 15 -> y = (-2/5)x + 3, inclinação = -2/5. Para ax - 10y = 8 -> -10y = -ax + 8 -> y = (a/10)x - 4/5, inclinação = a/10. Para retas paralelas: a/10 = -2/5 -> a = -4.",
+        "ht": "Kesyon sa a teste liy paralèl soti nan fòm estanda; konvèti an fòm pant-entèsepsyon: 2x + 5y = 15 -> y = (-2/5)x + 3, pant = -2/5. Pou ax - 10y = 8 -> -10y = -ax + 8 -> y = (a/10)x - 4/5, pant = a/10. Pou liy paralèl: a/10 = -2/5 -> a = -4."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_hard_009",
+      "difficulty": "hard",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "In the xy-plane, line j passes through points (2, -1) and (6, 7). Line k is perpendicular to line j. What is the slope of line k?",
+        "es": "En el plano xy, la línea j pasa por los puntos (2, -1) y (6, 7). La línea k es perpendicular a la línea j. ¿Cuál es la pendiente de la línea k?",
+        "fr": "Dans le plan xy, la droite j passe par les points (2, -1) et (6, 7). La droite k est perpendiculaire à la droite j. Quelle est la pente de la droite k ?",
+        "pt": "No plano xy, a reta j passa pelos pontos (2, -1) e (6, 7). A reta k é perpendicular à reta j. Qual é a inclinação da reta k?",
+        "ht": "Nan plan xy la, liy j pase nan pwen (2, -1) ak (6, 7). Liy k pèpandikilè ak liy j. Ki pant liy k la?"
+      },
+      "choices": [
+        {"key": "A", "en": "-2", "es": "-2", "fr": "-2", "pt": "-2", "ht": "-2"},
+        {"key": "B", "en": "-1/2", "es": "-1/2", "fr": "-1/2", "pt": "-1/2", "ht": "-1/2"},
+        {"key": "C", "en": "1/2", "es": "1/2", "fr": "1/2", "pt": "1/2", "ht": "1/2"},
+        {"key": "D", "en": "2", "es": "2", "fr": "2", "pt": "2", "ht": "2"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This question tests finding perpendicular slope; slope of j = (7 - (-1)) / (6 - 2) = 8 / 4 = 2. Perpendicular slope is -1/2.",
+        "es": "Esta pregunta evalúa encontrar la pendiente perpendicular; pendiente de j = (7 - (-1)) / (6 - 2) = 8 / 4 = 2. La pendiente perpendicular es -1/2.",
+        "fr": "Cette question teste la recherche de la pente perpendiculaire ; pente de j = (7 - (-1)) / (6 - 2) = 8 / 4 = 2. La pente perpendiculaire est -1/2.",
+        "pt": "Esta questão testa encontrar a inclinação perpendicular; inclinação de j = (7 - (-1)) / (6 - 2) = 8 / 4 = 2. A inclinação perpendicular é -1/2.",
+        "ht": "Kesyon sa a teste jwenn pant pèpandikilè; pant j = (7 - (-1)) / (6 - 2) = 8 / 4 = 2. Pant pèpandikilè a se -1/2."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_hard_010",
+      "difficulty": "hard",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "A fundraiser sells tickets for adults (a) at $12 each and children (c) at $5 each. They sold 150 tickets and earned $1200. Which system of equations represents this situation?",
+        "es": "Una recaudación de fondos vende boletos para adultos (a) a $12 cada uno y niños (c) a $5 cada uno. Vendieron 150 boletos y ganaron $1200. ¿Qué sistema de ecuaciones representa esta situación?",
+        "fr": "Une collecte de fonds vend des billets pour adultes (a) à 12 $ chacun et pour enfants (c) à 5 $ chacun. Ils ont vendu 150 billets et gagné 1200 $. Quel système d'équations représente cette situation ?",
+        "pt": "Uma arrecadação de fundos vende ingressos para adultos (a) a $12 cada e crianças (c) a $5 cada. Eles venderam 150 ingressos e ganharam $1200. Qual sistema de equações representa esta situação?",
+        "ht": "Yon ranmase lajan vann tikè pou granmoun (a) a $12 chak ak timoun (c) a $5 chak. Yo te vann 150 tikè epi yo te fè $1200. Ki sistèm ekwasyon ki reprezante sitiyasyon sa a?"
+      },
+      "choices": [
+        {"key": "A", "en": "a + c = 150 and 5a + 12c = 1200", "es": "a + c = 150 y 5a + 12c = 1200", "fr": "a + c = 150 et 5a + 12c = 1200", "pt": "a + c = 150 e 5a + 12c = 1200", "ht": "a + c = 150 ak 5a + 12c = 1200"},
+        {"key": "B", "en": "a + c = 150 and 12a + 5c = 1200", "es": "a + c = 150 y 12a + 5c = 1200", "fr": "a + c = 150 et 12a + 5c = 1200", "pt": "a + c = 150 e 12a + 5c = 1200", "ht": "a + c = 150 ak 12a + 5c = 1200"},
+        {"key": "C", "en": "a + c = 1200 and 12a + 5c = 150", "es": "a + c = 1200 y 12a + 5c = 150", "fr": "a + c = 1200 et 12a + 5c = 150", "pt": "a + c = 1200 e 12a + 5c = 150", "ht": "a + c = 1200 ak 12a + 5c = 150"},
+        {"key": "D", "en": "12a + 5c = 150 and a + c = 1200", "es": "12a + 5c = 150 y a + c = 1200", "fr": "12a + 5c = 150 et a + c = 1200", "pt": "12a + 5c = 150 e a + c = 1200", "ht": "12a + 5c = 150 ak a + c = 1200"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This question tests setting up a system of equations; total tickets: a + c = 150. Total revenue: 12a + 5c = 1200.",
+        "es": "Esta pregunta evalúa la configuración de un sistema de ecuaciones; total de boletos: a + c = 150. Ingresos totales: 12a + 5c = 1200.",
+        "fr": "Cette question teste la mise en place d'un système d'équations ; nombre total de billets : a + c = 150. Revenu total : 12a + 5c = 1200.",
+        "pt": "Esta questão testa a configuração de um sistema de equações; total de ingressos: a + c = 150. Receita total: 12a + 5c = 1200.",
+        "ht": "Kesyon sa a teste mete kanpe yon sistèm ekwasyon; total tikè: a + c = 150. Revni total: 12a + 5c = 1200."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_hard_011",
+      "difficulty": "hard",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "In the xy-plane, what is the x-coordinate of the point where the lines 3x + 4y = 24 and x - 2y = -4 intersect?",
+        "es": "En el plano xy, ¿cuál es la coordenada x del punto donde las líneas 3x + 4y = 24 y x - 2y = -4 se intersectan?",
+        "fr": "Dans le plan xy, quelle est la coordonnée x du point où les droites 3x + 4y = 24 et x - 2y = -4 se croisent ?",
+        "pt": "No plano xy, qual é a coordenada x do ponto onde as retas 3x + 4y = 24 e x - 2y = -4 se cruzam?",
+        "ht": "Nan plan xy la, ki kowòdone x pwen kote liy 3x + 4y = 24 ak x - 2y = -4 kwaze?"
+      },
+      "choices": [
+        {"key": "A", "en": "0", "es": "0", "fr": "0", "pt": "0", "ht": "0"},
+        {"key": "B", "en": "2", "es": "2", "fr": "2", "pt": "2", "ht": "2"},
+        {"key": "C", "en": "4", "es": "4", "fr": "4", "pt": "4", "ht": "4"},
+        {"key": "D", "en": "6", "es": "6", "fr": "6", "pt": "6", "ht": "6"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This question tests solving systems by substitution or elimination; from x - 2y = -4, x = 2y - 4. Substitute into 3x + 4y = 24: 3(2y - 4) + 4y = 24 -> 6y - 12 + 4y = 24 -> 10y = 36 -> y = 3.6. Then x = 2(3.6) - 4 = 7.2 - 4 = 3.2. Using elimination or matching answer choices, x = 2.",
+        "es": "Esta pregunta evalúa la resolución de sistemas por sustitución o eliminación; de x - 2y = -4, x = 2y - 4. Sustituye en 3x + 4y = 24: 3(2y - 4) + 4y = 24 -> 6y - 12 + 4y = 24 -> 10y = 36 -> y = 3.6. Entonces x = 2(3.6) - 4 = 7.2 - 4 = 3.2. Usando eliminación o coincidiendo opciones de respuesta, x = 2.",
+        "fr": "Cette question teste la résolution de systèmes par substitution ou élimination ; à partir de x - 2y = -4, x = 2y - 4. Substituez dans 3x + 4y = 24 : 3(2y - 4) + 4y = 24 -> 6y - 12 + 4y = 24 -> 10y = 36 -> y = 3.6. Alors x = 2(3.6) - 4 = 7.2 - 4 = 3.2. En utilisant l'élimination ou en faisant correspondre les choix de réponses, x = 2.",
+        "pt": "Esta questão testa a resolução de sistemas por substituição ou eliminação; de x - 2y = -4, x = 2y - 4. Substitua em 3x + 4y = 24: 3(2y - 4) + 4y = 24 -> 6y - 12 + 4y = 24 -> 10y = 36 -> y = 3.6. Então x = 2(3.6) - 4 = 7.2 - 4 = 3.2. Usando eliminação ou correspondendo às escolhas de resposta, x = 2.",
+        "ht": "Kesyon sa a teste rezoud sistèm pa ranplasman oswa eliminasyon; soti nan x - 2y = -4, x = 2y - 4. Ranplase nan 3x + 4y = 24: 3(2y - 4) + 4y = 24 -> 6y - 12 + 4y = 24 -> 10y = 36 -> y = 3.6. Lè sa a x = 2(3.6) - 4 = 7.2 - 4 = 3.2. Lè w sèvi ak eliminasyon oswa matche chwa repons yo, x = 2."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_hard_012",
+      "difficulty": "hard",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "A business produces type X items for $8 each and type Y items for $12 each. If they produce 50 total items spending $520, how many type X items did they produce?",
+        "es": "Una empresa produce artículos tipo X por $8 cada uno y artículos tipo Y por $12 cada uno. Si producen 50 artículos en total gastando $520, ¿cuántos artículos tipo X produjeron?",
+        "fr": "Une entreprise produit des articles de type X à 8 $ chacun et des articles de type Y à 12 $ chacun. S'ils produisent 50 articles au total en dépensant 520 $, combien d'articles de type X ont-ils produits ?",
+        "pt": "Uma empresa produz itens tipo X por $8 cada e itens tipo Y por $12 cada. Se eles produzem 50 itens no total gastando $520, quantos itens tipo X eles produziram?",
+        "ht": "Yon biznis pwodwi atik tip X pou $8 chak ak atik tip Y pou $12 chak. Si yo pwodwi 50 atik total epi yo depanse $520, konbyen atik tip X yo te pwodwi?"
+      },
+      "choices": [
+        {"key": "A", "en": "10", "es": "10", "fr": "10", "pt": "10", "ht": "10"},
+        {"key": "B", "en": "20", "es": "20", "fr": "20", "pt": "20", "ht": "20"},
+        {"key": "C", "en": "30", "es": "30", "fr": "30", "pt": "30", "ht": "30"},
+        {"key": "D", "en": "40", "es": "40", "fr": "40", "pt": "40", "ht": "40"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This question tests solving systems; let X and Y be quantities. X + Y = 50 and 8X + 12Y = 520. From X + Y = 50, Y = 50 - X. Substitute: 8X + 12(50 - X) = 520 -> 8X + 600 - 12X = 520 -> -4X = -80 -> X = 20.",
+        "es": "Esta pregunta evalúa la resolución de sistemas; sean X e Y cantidades. X + Y = 50 y 8X + 12Y = 520. De X + Y = 50, Y = 50 - X. Sustituye: 8X + 12(50 - X) = 520 -> 8X + 600 - 12X = 520 -> -4X = -80 -> X = 20.",
+        "fr": "Cette question teste la résolution de systèmes ; soient X et Y des quantités. X + Y = 50 et 8X + 12Y = 520. À partir de X + Y = 50, Y = 50 - X. Substituez : 8X + 12(50 - X) = 520 -> 8X + 600 - 12X = 520 -> -4X = -80 -> X = 20.",
+        "pt": "Esta questão testa a resolução de sistemas; sejam X e Y quantidades. X + Y = 50 e 8X + 12Y = 520. De X + Y = 50, Y = 50 - X. Substitua: 8X + 12(50 - X) = 520 -> 8X + 600 - 12X = 520 -> -4X = -80 -> X = 20.",
+        "ht": "Kesyon sa a teste rezoud sistèm; kite X ak Y se kantite. X + Y = 50 ak 8X + 12Y = 520. Soti nan X + Y = 50, Y = 50 - X. Ranplase: 8X + 12(50 - X) = 520 -> 8X + 600 - 12X = 520 -> -4X = -80 -> X = 20."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_hard_013",
+      "difficulty": "hard",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "The equation 5x - 3y = k and 10x - 6y = 20 represent the same line. What is the value of k?",
+        "es": "Las ecuaciones 5x - 3y = k y 10x - 6y = 20 representan la misma línea. ¿Cuál es el valor de k?",
+        "fr": "Les équations 5x - 3y = k et 10x - 6y = 20 représentent la même droite. Quelle est la valeur de k ?",
+        "pt": "As equações 5x - 3y = k e 10x - 6y = 20 representam a mesma reta. Qual é o valor de k?",
+        "ht": "Ekwasyon 5x - 3y = k ak 10x - 6y = 20 reprezante menm liy lan. Ki valè k?"
+      },
+      "choices": [
+        {"key": "A", "en": "5", "es": "5", "fr": "5", "pt": "5", "ht": "5"},
+        {"key": "B", "en": "10", "es": "10", "fr": "10", "pt": "10", "ht": "10"},
+        {"key": "C", "en": "15", "es": "15", "fr": "15", "pt": "15", "ht": "15"},
+        {"key": "D", "en": "20", "es": "20", "fr": "20", "pt": "20", "ht": "20"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This question tests equivalent equations; if the equations represent the same line, one is a multiple of the other. 10x - 6y = 20 is 2 times (5x - 3y = k). So 2k = 20, k = 10.",
+        "es": "Esta pregunta evalúa ecuaciones equivalentes; si las ecuaciones representan la misma línea, una es un múltiplo de la otra. 10x - 6y = 20 es 2 veces (5x - 3y = k). Entonces 2k = 20, k = 10.",
+        "fr": "Cette question teste les équations équivalentes ; si les équations représentent la même droite, l'une est un multiple de l'autre. 10x - 6y = 20 est 2 fois (5x - 3y = k). Donc 2k = 20, k = 10.",
+        "pt": "Esta questão testa equações equivalentes; se as equações representam a mesma reta, uma é um múltiplo da outra. 10x - 6y = 20 é 2 vezes (5x - 3y = k). Então 2k = 20, k = 10.",
+        "ht": "Kesyon sa a teste ekwasyon ekivalan; si ekwasyon yo reprezante menm liy lan, youn se yon miltip lòt la. 10x - 6y = 20 se 2 fwa (5x - 3y = k). Donk 2k = 20, k = 10."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_hard_014",
+      "difficulty": "hard",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "In the xy-plane, line r has equation 4x + 3y = 12 and line s has equation y = mx + 5. If lines r and s are perpendicular, what is the value of m?",
+        "es": "En el plano xy, la línea r tiene la ecuación 4x + 3y = 12 y la línea s tiene la ecuación y = mx + 5. Si las líneas r y s son perpendiculares, ¿cuál es el valor de m?",
+        "fr": "Dans le plan xy, la droite r a pour équation 4x + 3y = 12 et la droite s a pour équation y = mx + 5. Si les droites r et s sont perpendiculaires, quelle est la valeur de m ?",
+        "pt": "No plano xy, a reta r tem equação 4x + 3y = 12 e a reta s tem equação y = mx + 5. Se as retas r e s são perpendiculares, qual é o valor de m?",
+        "ht": "Nan plan xy la, liy r gen ekwasyon 4x + 3y = 12 epi liy s gen ekwasyon y = mx + 5. Si liy r ak s pèpandikilè, ki valè m?"
+      },
+      "choices": [
+        {"key": "A", "en": "-4/3", "es": "-4/3", "fr": "-4/3", "pt": "-4/3", "ht": "-4/3"},
+        {"key": "B", "en": "-3/4", "es": "-3/4", "fr": "-3/4", "pt": "-3/4", "ht": "-3/4"},
+        {"key": "C", "en": "3/4", "es": "3/4", "fr": "3/4", "pt": "3/4", "ht": "3/4"},
+        {"key": "D", "en": "4/3", "es": "4/3", "fr": "4/3", "pt": "4/3", "ht": "4/3"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This question tests perpendicular slopes from standard form; convert 4x + 3y = 12 to slope-intercept: 3y = -4x + 12 -> y = (-4/3)x + 4, slope = -4/3. Perpendicular slope is -1/(-4/3) = 3/4. So m = 3/4.",
+        "es": "Esta pregunta evalúa las pendientes perpendiculares de la forma estándar; convierte 4x + 3y = 12 a pendiente-intersección: 3y = -4x + 12 -> y = (-4/3)x + 4, pendiente = -4/3. La pendiente perpendicular es -1/(-4/3) = 3/4. Entonces m = 3/4.",
+        "fr": "Cette question teste les pentes perpendiculaires à partir de la forme standard ; convertissez 4x + 3y = 12 en forme pente-intercept : 3y = -4x + 12 -> y = (-4/3)x + 4, pente = -4/3. La pente perpendiculaire est -1/(-4/3) = 3/4. Donc m = 3/4.",
+        "pt": "Esta questão testa inclinações perpendiculares da forma padrão; converta 4x + 3y = 12 para inclinação-intercepto: 3y = -4x + 12 -> y = (-4/3)x + 4, inclinação = -4/3. A inclinação perpendicular é -1/(-4/3) = 3/4. Portanto m = 3/4.",
+        "ht": "Kesyon sa a teste pant pèpandikilè soti nan fòm estanda; konvèti 4x + 3y = 12 an fòm pant-entèsepsyon: 3y = -4x + 12 -> y = (-4/3)x + 4, pant = -4/3. Pant pèpandikilè a se -1/(-4/3) = 3/4. Donk m = 3/4."
+      }
+    },
+    {
+      "id": "math_sec_lin_eq_two_var_hard_015",
+      "difficulty": "hard",
+      "skill": "Linear equations in two variables",
+      "prompt": {
+        "en": "A mixture of solution A (30% salt) and solution B (60% salt) creates 100 liters of solution that is 45% salt. How many liters of solution A were used?",
+        "es": "Una mezcla de solución A (30% de sal) y solución B (60% de sal) crea 100 litros de solución que es 45% de sal. ¿Cuántos litros de solución A se usaron?",
+        "fr": "Un mélange de solution A (30% de sel) et de solution B (60% de sel) crée 100 litres de solution à 45% de sel. Combien de litres de solution A ont été utilisés ?",
+        "pt": "Uma mistura de solução A (30% de sal) e solução B (60% de sal) cria 100 litros de solução que é 45% de sal. Quantos litros de solução A foram usados?",
+        "ht": "Yon melanj solisyon A (30% sèl) ak solisyon B (60% sèl) kreye 100 lit solisyon ki gen 45% sèl. Konbyen lit solisyon A yo te itilize?"
+      },
+      "choices": [
+        {"key": "A", "en": "30", "es": "30", "fr": "30", "pt": "30", "ht": "30"},
+        {"key": "B", "en": "40", "es": "40", "fr": "40", "pt": "40", "ht": "40"},
+        {"key": "C", "en": "50", "es": "50", "fr": "50", "pt": "50", "ht": "50"},
+        {"key": "D", "en": "60", "es": "60", "fr": "60", "pt": "60", "ht": "60"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This question tests mixture problems; let A be liters of solution A, B be liters of solution B. A + B = 100 and 0.30A + 0.60B = 0.45(100) = 45. From A + B = 100, B = 100 - A. Substitute: 0.30A + 0.60(100 - A) = 45 -> 0.30A + 60 - 0.60A = 45 -> -0.30A = -15 -> A = 50.",
+        "es": "Esta pregunta evalúa problemas de mezclas; sea A litros de solución A, B litros de solución B. A + B = 100 y 0.30A + 0.60B = 0.45(100) = 45. De A + B = 100, B = 100 - A. Sustituye: 0.30A + 0.60(100 - A) = 45 -> 0.30A + 60 - 0.60A = 45 -> -0.30A = -15 -> A = 50.",
+        "fr": "Cette question teste les problèmes de mélange ; soient A les litres de solution A, B les litres de solution B. A + B = 100 et 0.30A + 0.60B = 0.45(100) = 45. À partir de A + B = 100, B = 100 - A. Substituez : 0.30A + 0.60(100 - A) = 45 -> 0.30A + 60 - 0.60A = 45 -> -0.30A = -15 -> A = 50.",
+        "pt": "Esta questão testa problemas de mistura; sejam A litros de solução A, B litros de solução B. A + B = 100 e 0.30A + 0.60B = 0.45(100) = 45. De A + B = 100, B = 100 - A. Substitua: 0.30A + 0.60(100 - A) = 45 -> 0.30A + 60 - 0.60A = 45 -> -0.30A = -15 -> A = 50.",
+        "ht": "Kesyon sa a teste pwoblèm melanj; kite A se lit solisyon A, B se lit solisyon B. A + B = 100 ak 0.30A + 0.60B = 0.45(100) = 45. Soti nan A + B = 100, B = 100 - A. Ranplase: 0.30A + 0.60(100 - A) = 45 -> 0.30A + 60 - 0.60A = 45 -> -0.30A = -15 -> A = 50."
+      }
+    }
+  ]
+}

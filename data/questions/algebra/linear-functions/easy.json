@@ -1,0 +1,396 @@
+{
+  "section": "Math",
+  "type": "algebra",
+  "questions": [
+    {
+      "id": "math_sec_lin_func_easy_001",
+      "difficulty": "easy",
+      "skill": "Linear functions",
+      "prompt": {
+        "en": "The function f is defined by f(x) = 4x - 7. What is the value of f(-2)?",
+        "es": "La función f se define por f(x) = 4x - 7. ¿Cuál es el valor de f(-2)?",
+        "fr": "La fonction f est définie par f(x) = 4x - 7. Quelle est la valeur de f(-2) ?",
+        "pt": "A função f é definida por f(x) = 4x - 7. Qual é o valor de f(-2)?",
+        "ht": "Fonksyon f la defini pa f(x) = 4x - 7. Ki valè f(-2)?"
+      },
+      "choices": [
+        {"key": "A", "en": "-1", "es": "-1", "fr": "-1", "pt": "-1", "ht": "-1"},
+        {"key": "B", "en": "1", "es": "1", "fr": "1", "pt": "1", "ht": "1"},
+        {"key": "C", "en": "-15", "es": "-15", "fr": "-15", "pt": "-15", "ht": "-15"},
+        {"key": "D", "en": "15", "es": "15", "fr": "15", "pt": "15", "ht": "15"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This question tests evaluating a linear function; substitute x = -2 to get f(-2) = 4(-2) - 7 = -8 - 7 = -15.",
+        "es": "Esta pregunta evalúa una función lineal; sustituye x = -2 para obtener f(-2) = 4(-2) - 7 = -8 - 7 = -15.",
+        "fr": "Cette question teste l'évaluation d'une fonction linéaire ; substituez x = -2 pour obtenir f(-2) = 4(-2) - 7 = -8 - 7 = -15.",
+        "pt": "Esta questão testa a avaliação de uma função linear; substitua x = -2 para obter f(-2) = 4(-2) - 7 = -8 - 7 = -15.",
+        "ht": "Kesyon sa a teste evalyasyon yon fonksyon lineyè; ranplase x = -2 pou jwenn f(-2) = 4(-2) - 7 = -8 - 7 = -15."
+      }
+    },
+    {
+      "id": "math_sec_lin_func_easy_002",
+      "difficulty": "easy",
+      "skill": "Linear functions",
+      "prompt": {
+        "en": "The function g is defined by g(x) = 3x + 9. For what value of x does g(x) = 27?",
+        "es": "La función g se define por g(x) = 3x + 9. ¿Para qué valor de x se cumple g(x) = 27?",
+        "fr": "La fonction g est définie par g(x) = 3x + 9. Pour quelle valeur de x g(x) = 27 ?",
+        "pt": "A função g é definida por g(x) = 3x + 9. Para qual valor de x g(x) = 27?",
+        "ht": "Fonksyon g la defini pa g(x) = 3x + 9. Pou ki valè x g(x) = 27?"
+      },
+      "choices": [
+        {"key": "A", "en": "5", "es": "5", "fr": "5", "pt": "5", "ht": "5"},
+        {"key": "B", "en": "6", "es": "6", "fr": "6", "pt": "6", "ht": "6"},
+        {"key": "C", "en": "9", "es": "9", "fr": "9", "pt": "9", "ht": "9"},
+        {"key": "D", "en": "12", "es": "12", "fr": "12", "pt": "12", "ht": "12"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This question tests solving a one-step linear equation; set the function equal to the value: 3x + 9 = 27. Subtract 9: 3x = 18. Divide by 3: x = 6.",
+        "es": "Esta pregunta evalúa la resolución de una ecuación lineal de un paso; iguala la función al valor: 3x + 9 = 27. Resta 9: 3x = 18. Divide por 3: x = 6.",
+        "fr": "Cette question teste la résolution d'une équation linéaire en une étape ; posez la fonction égale à la valeur : 3x + 9 = 27. Soustrayez 9 : 3x = 18. Divisez par 3 : x = 6.",
+        "pt": "Esta questão testa a resolução de uma equação linear de um passo; iguale a função ao valor: 3x + 9 = 27. Subtraia 9: 3x = 18. Divida por 3: x = 6.",
+        "ht": "Kesyon sa a teste rezoud yon ekwasyon lineyè yon sèl etap; mete fonksyon an egal ak valè a: 3x + 9 = 27. Retire 9: 3x = 18. Divize pa 3: x = 6."
+      }
+    },
+    {
+      "id": "math_sec_lin_func_easy_003",
+      "difficulty": "easy",
+      "skill": "Linear functions",
+      "prompt": {
+        "en": "For the linear function h(x) = mx + 4, m is a constant and h(9) = 31. What is the value of m?",
+        "es": "Para la función lineal h(x) = mx + 4, m es una constante y h(9) = 31. ¿Cuál es el valor de m?",
+        "fr": "Pour la fonction linéaire h(x) = mx + 4, m est une constante et h(9) = 31. Quelle est la valeur de m ?",
+        "pt": "Para a função linear h(x) = mx + 4, m é uma constante e h(9) = 31. Qual é o valor de m?",
+        "ht": "Pou fonksyon lineyè h(x) = mx + 4, m se yon konstan epi h(9) = 31. Ki valè m?"
+      },
+      "choices": [
+        {"key": "A", "en": "3", "es": "3", "fr": "3", "pt": "3", "ht": "3"},
+        {"key": "B", "en": "4", "es": "4", "fr": "4", "pt": "4", "ht": "4"},
+        {"key": "C", "en": "5", "es": "5", "fr": "5", "pt": "5", "ht": "5"},
+        {"key": "D", "en": "6", "es": "6", "fr": "6", "pt": "6", "ht": "6"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This question tests solving for slope from a function value; substitute the given values into the function: h(9) = m(9) + 4. We are given h(9) = 31, so 31 = 9m + 4. Subtract 4: 27 = 9m. Divide by 9: m = 3.",
+        "es": "Esta pregunta evalúa la resolución de la pendiente a partir del valor de una función; sustituye los valores dados en la función: h(9) = m(9) + 4. Se nos da h(9) = 31, así que 31 = 9m + 4. Resta 4: 27 = 9m. Divide por 9: m = 3.",
+        "fr": "Cette question teste la résolution de la pente à partir d'une valeur de fonction ; substituez les valeurs données dans la fonction : h(9) = m(9) + 4. On nous donne h(9) = 31, donc 31 = 9m + 4. Soustrayez 4 : 27 = 9m. Divisez par 9 : m = 3.",
+        "pt": "Esta questão testa a resolução da inclinação a partir de um valor da função; substitua os valores dados na função: h(9) = m(9) + 4. É dado h(9) = 31, então 31 = 9m + 4. Subtraia 4: 27 = 9m. Divida por 9: m = 3.",
+        "ht": "Kesyon sa a teste rezoud pou pant lan apati yon valè fonksyon; ranplase valè yo bay yo nan fonksyon an: h(9) = m(9) + 4. Yo ba nou h(9) = 31, donk 31 = 9m + 4. Retire 4: 27 = 9m. Divize pa 9: m = 3."
+      }
+    },
+    {
+      "id": "math_sec_lin_func_easy_004",
+      "difficulty": "easy",
+      "skill": "Linear functions",
+      "prompt": {
+        "en": "Marisol deposits 25 dollars in a savings account at the end of each week. At the beginning of week 8 of a year, the account balance was 640 dollars. How much money, in dollars, will be in the account at the end of week 12 of that year?",
+        "es": "Marisol deposita 25 dólares en una cuenta de ahorros al final de cada semana. Al comienzo de la semana 8 de un año, el saldo de la cuenta era de 640 dólares. ¿Cuánto dinero, en dólares, habrá en la cuenta al final de la semana 12 de ese año?",
+        "fr": "Marisol dépose 25 dollars sur un compte d'épargne à la fin de chaque semaine. Au début de la semaine 8 d'une année, le solde du compte était de 640 dollars. Combien d'argent, en dollars, y aura-t-il sur le compte à la fin de la semaine 12 de cette année-là ?",
+        "pt": "Marisol deposita 25 dólares numa conta poupança no final de cada semana. No início da semana 8 de um ano, o saldo da conta era de 640 dólares. Quanto dinheiro, em dólares, haverá na conta no final da semana 12 desse ano?",
+        "ht": "Marisol depoze 25 dola sou yon kont epay nan fen chak semèn. Nan kòmansman semèn 8 nan yon ane, balans kont lan te 640 dola. Konbyen lajan, an dola, ki pral genyen sou kont lan nan fen semèn 12 nan ane sa a?"
+      },
+      "choices": [
+        {"key": "A", "en": "540", "es": "540", "fr": "540", "pt": "540", "ht": "540"},
+        {"key": "B", "en": "615", "es": "615", "fr": "615", "pt": "615", "ht": "615"},
+        {"key": "C", "en": "640", "es": "640", "fr": "640", "pt": "640", "ht": "640"},
+        {"key": "D", "en": "740", "es": "740", "fr": "740", "pt": "740", "ht": "740"}
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This question tests linear accumulation; the time passing is from the end of week 8 (or beginning of week 9) to the end of week 12. This is 4 full weeks (weeks 9, 10, 11, 12). In 4 weeks, she deposits 4 * 25 = 100 dollars. The new balance will be the old balance plus the new deposits: 640 + 100 = 740.",
+        "es": "Esta pregunta evalúa la acumulación lineal; el tiempo que pasa es desde el final de la semana 8 (o comienzo de la semana 9) hasta el final de la semana 12. Esto es 4 semanas completas (semanas 9, 10, 11, 12). En 4 semanas, ella deposita 4 * 25 = 100 dólares. El nuevo saldo será el saldo anterior más los nuevos depósitos: 640 + 100 = 740.",
+        "fr": "Cette question teste l'accumulation linéaire ; le temps qui s'écoule va de la fin de la semaine 8 (ou début de la semaine 9) à la fin de la semaine 12. Cela fait 4 semaines complètes (semaines 9, 10, 11, 12). En 4 semaines, elle dépose 4 * 25 = 100 dollars. Le nouveau solde sera l'ancien solde plus les nouveaux dépôts : 640 + 100 = 740.",
+        "pt": "Esta questão testa a acumulação linear; o tempo que passa é do final da semana 8 (ou início da semana 9) até o final da semana 12. Isso são 4 semanas completas (semanas 9, 10, 11, 12). Em 4 semanas, ela deposita 4 * 25 = 100 dólares. O novo saldo será o saldo antigo mais os novos depósitos: 640 + 100 = 740.",
+        "ht": "Kesyon sa a teste akimilasyon lineyè; tan k ap pase a se soti nan fen semèn 8 (oswa kòmansman semèn 9) rive nan fen semèn 12. Sa se 4 semèn konplè (semèn 9, 10, 11, 12). Nan 4 semèn, li depoze 4 * 25 = 100 dola. Nouvo balans lan pral ansyen balans lan plis nouvo depo yo: 640 + 100 = 740."
+      }
+    },
+    {
+      "id": "math_sec_lin_func_easy_005",
+      "difficulty": "easy",
+      "skill": "Linear functions",
+      "prompt": {
+        "en": "A veterinarian recommends that a certain cat should eat 12 calories per pound of body weight each day, plus an additional 80 calories. Which equation represents this situation where C is the total daily calories and w is the weight in pounds?",
+        "es": "Un veterinario recomienda que cierto gato coma 12 calorías por libra de peso corporal cada día, más 80 calorías adicionales. ¿Qué ecuación representa esta situación donde C es el total de calorías diarias y w es el peso en libras?",
+        "fr": "Un vétérinaire recommande qu'un certain chat mange 12 calories par livre de poids corporel chaque jour, plus 80 calories supplémentaires. Quelle équation représente cette situation où C est le total des calories quotidiennes et w est le poids en livres ?",
+        "pt": "Um veterinário recomenda que um certo gato coma 12 calorias por libra de peso corporal por dia, mais 80 calorias adicionais. Qual equação representa esta situação onde C é o total de calorias diárias e w é o peso em libras?",
+        "ht": "Yon veterinè rekòmande pou yon sèten chat manje 12 kalori pou chak liv pwa kò chak jou, plis 80 kalori anplis. Ki ekwasyon ki reprezante sitiyasyon sa a kote C se total kalori chak jou epi w se pwa an liv?"
+      },
+      "choices": [
+        {"key": "A", "en": "C = 12w", "es": "C = 12w", "fr": "C = 12w", "pt": "C = 12w", "ht": "C = 12w"},
+        {"key": "B", "en": "C = 80w", "es": "C = 80w", "fr": "C = 80w", "pt": "C = 80w", "ht": "C = 80w"},
+        {"key": "C", "en": "C = 12 + 80w", "es": "C = 12 + 80w", "fr": "C = 12 + 80w", "pt": "C = 12 + 80w", "ht": "C = 12 + 80w"},
+        {"key": "D", "en": "C = 12w + 80", "es": "C = 12w + 80", "fr": "C = 12w + 80", "pt": "C = 12w + 80", "ht": "C = 12w + 80"}
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This question tests building a linear model; the total calories C is the sum of two parts: the variable calories (12 calories per pound * w pounds) and the fixed additional calories (80). This gives Total = (rate per pound * weight) + fixed, or C = 12w + 80.",
+        "es": "Esta pregunta evalúa la construcción de un modelo lineal; el total de calorías C es la suma de dos partes: las calorías variables (12 calorías por libra * w libras) y las calorías fijas adicionales (80). Esto da Total = (tasa por libra * peso) + fijo, o C = 12w + 80.",
+        "fr": "Cette question teste la construction d'un modèle linéaire ; le total des calories C est la somme de deux parties : les calories variables (12 calories par livre * w livres) et les calories fixes supplémentaires (80). Cela donne Total = (taux par livre * poids) + fixe, ou C = 12w + 80.",
+        "pt": "Esta questão testa a construção de um modelo linear; o total de calorias C é a soma de duas partes: as calorias variáveis (12 calorias por libra * w libras) e as calorias fixas adicionais (80). Isso resulta em Total = (taxa por libra * peso) + fixo, ou C = 12w + 80.",
+        "ht": "Kesyon sa a teste bati yon modèl lineyè; total kalori C se sòm de pati: kalori varyab yo (12 kalori pou chak liv * w liv) ak kalori fiks anplis yo (80). Sa bay Total = (to pou chak liv * pwa) + fiks, oswa C = 12w + 80."
+      }
+    },
+    {
+      "id": "math_sec_lin_func_easy_006",
+      "difficulty": "easy",
+      "skill": "Linear functions",
+      "prompt": {
+        "en": "The total lease cost L, in dollars, for n months at a dealership is L = 275n + 600, where 275 is the monthly payment. What is the total cost when the monthly payment is 275 dollars for 18 months?",
+        "es": "El costo total de arrendamiento L, en dólares, por n meses en un concesionario es L = 275n + 600, donde 275 es el pago mensual. ¿Cuál es el costo total cuando el pago mensual es 275 dólares por 18 meses?",
+        "fr": "Le coût total de location L, en dollars, pour n mois chez un concessionnaire est L = 275n + 600, où 275 est le paiement mensuel. Quel est le coût total lorsque le paiement mensuel est de 275 dollars pour 18 mois ?",
+        "pt": "O custo total do aluguel L, em dólares, por n meses em uma concessionária é L = 275n + 600, onde 275 é o pagamento mensal. Qual é o custo total quando o pagamento mensal é 275 dólares por 18 meses?",
+        "ht": "Pri lwaye total L, an dola, pou n mwa nan yon konsesyonè se L = 275n + 600, kote 275 se peman chak mwa a. Ki pri total la lè peman chak mwa a se 275 dola pou 18 mwa?"
+      },
+      "choices": [
+        {"key": "A", "en": "4,650", "es": "4,650", "fr": "4 650", "pt": "4.650", "ht": "4,650"},
+        {"key": "B", "en": "4,950", "es": "4,950", "fr": "4 950", "pt": "4.950", "ht": "4,950"},
+        {"key": "C", "en": "5,550", "es": "5,550", "fr": "5 550", "pt": "5.550", "ht": "5,550"},
+        {"key": "D", "en": "6,550", "es": "6,550", "fr": "6 550", "pt": "6.550", "ht": "6,550"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This question tests evaluating a linear expression; substitute n = 18 into the formula L = 275n + 600. L = 275(18) + 600 = 4,950 + 600 = 5,550.",
+        "es": "Esta pregunta evalúa una expresión lineal; sustituye n = 18 en la fórmula L = 275n + 600. L = 275(18) + 600 = 4,950 + 600 = 5,550.",
+        "fr": "Cette question teste l'évaluation d'une expression linéaire ; substituez n = 18 dans la formule L = 275n + 600. L = 275(18) + 600 = 4 950 + 600 = 5 550.",
+        "pt": "Esta questão testa a avaliação de uma expressão linear; substitua n = 18 na fórmula L = 275n + 600. L = 275(18) + 600 = 4.950 + 600 = 5.550.",
+        "ht": "Kesyon sa a teste evalyasyon yon ekspresyon lineyè; ranplase n = 18 nan fòmil L = 275n + 600. L = 275(18) + 600 = 4,950 + 600 = 5,550."
+      }
+    },
+    {
+      "id": "math_sec_lin_func_easy_007",
+      "difficulty": "easy",
+      "skill": "Linear functions",
+      "prompt": {
+        "en": "A truck's fuel in the tank after driving x miles is modeled by F(x) = 38 - 0.2x, where F is in gallons. What is F(60)?",
+        "es": "El combustible de un camión en el tanque después de conducir x millas se modela por F(x) = 38 - 0.2x, donde F está en galones. ¿Qué es F(60)?",
+        "fr": "Le carburant d'un camion dans le réservoir après avoir parcouru x miles est modélisé par F(x) = 38 - 0.2x, où F est en gallons. Qu'est-ce que F(60) ?",
+        "pt": "O combustível de um caminhão no tanque após dirigir x milhas é modelado por F(x) = 38 - 0.2x, onde F está em galões. O que é F(60)?",
+        "ht": "Gaz yon kamyon nan tank la apre li fin kondwi x mil modle pa F(x) = 38 - 0.2x, kote F an galon. Ki sa F(60) ye?"
+      },
+      "choices": [
+        {"key": "A", "en": "12", "es": "12", "fr": "12", "pt": "12", "ht": "12"},
+        {"key": "B", "en": "18", "es": "18", "fr": "18", "pt": "18", "ht": "18"},
+        {"key": "C", "en": "22", "es": "22", "fr": "22", "pt": "22", "ht": "22"},
+        {"key": "D", "en": "26", "es": "26", "fr": "26", "pt": "26", "ht": "26"}
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This question tests evaluating a linear model; substitute x = 60 into the function: F(60) = 38 - 0.2(60) = 38 - 12 = 26.",
+        "es": "Esta pregunta evalúa un modelo lineal; sustituye x = 60 en la función: F(60) = 38 - 0.2(60) = 38 - 12 = 26.",
+        "fr": "Cette question teste l'évaluation d'un modèle linéaire ; substituez x = 60 dans la fonction : F(60) = 38 - 0.2(60) = 38 - 12 = 26.",
+        "pt": "Esta questão testa a avaliação de um modelo linear; substitua x = 60 na função: F(60) = 38 - 0.2(60) = 38 - 12 = 26.",
+        "ht": "Kesyon sa a teste evalyasyon yon modèl lineyè; ranplase x = 60 nan fonksyon an: F(60) = 38 - 0.2(60) = 38 - 12 = 26."
+      }
+    },
+    {
+      "id": "math_sec_lin_func_easy_008",
+      "difficulty": "easy",
+      "skill": "Linear functions",
+      "prompt": {
+        "en": "The front of a roller-coaster car is 12 feet above the ground at time s = 0 and rises at a constant rate of 9 feet per second. Which equation gives the height h, in feet, after s seconds?",
+        "es": "La parte delantera de un vagón de montaña rusa está a 12 pies sobre el suelo en el tiempo s = 0 y se eleva a una tasa constante de 9 pies por segundo. ¿Qué ecuación da la altura h, en pies, después de s segundos?",
+        "fr": "L'avant d'un wagon de montagnes russes est à 12 pieds au-dessus du sol au temps s = 0 et monte à une vitesse constante de 9 pieds par seconde. Quelle équation donne la hauteur h, en pieds, après s secondes ?",
+        "pt": "A frente de um carrinho de montanha-russa está 12 pés acima do solo no tempo s = 0 e sobe a uma taxa constante de 9 pés por segundo. Qual equação fornece a altura h, em pés, após s segundos?",
+        "ht": "Devan yon charyo montay ris se 12 pye anlè tè a nan tan s = 0 epi li monte nan yon to konstan 9 pye pa segonn. Ki ekwasyon ki bay wotè h, an pye, apre s segonn?"
+      },
+      "choices": [
+        {"key": "A", "en": "h = 12 + 9s", "es": "h = 12 + 9s", "fr": "h = 12 + 9s", "pt": "h = 12 + 9s", "ht": "h = 12 + 9s"},
+        {"key": "B", "en": "h = 9 + 12s", "es": "h = 9 + 12s", "fr": "h = 9 + 12s", "pt": "h = 9 + 12s", "ht": "h = 9 + 12s"},
+        {"key": "C", "en": "h = 12 - 9s", "es": "h = 12 - 9s", "fr": "h = 12 - 9s", "pt": "h = 12 - 9s", "ht": "h = 12 - 9s"},
+        {"key": "D", "en": "h = 9 - 12s", "es": "h = 9 - 12s", "fr": "h = 9 - 12s", "pt": "h = 9 - 12s", "ht": "h = 9 - 12s"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This question tests writing a linear function from rate and initial value; the height h starts at an initial value (y-intercept) of 12 feet. It then increases at a rate (slope) of 9 feet per second. The total height is the initial height plus the change (rate * time). This gives h = 12 + 9s.",
+        "es": "Esta pregunta evalúa la escritura de una función lineal a partir de una tasa y un valor inicial; la altura h comienza en un valor inicial (intercepto y) de 12 pies. Luego aumenta a una tasa (pendiente) de 9 pies por segundo. La altura total es la altura inicial más el cambio (tasa * tiempo). Esto da h = 12 + 9s.",
+        "fr": "Cette question teste l'écriture d'une fonction linéaire à partir d'un taux et d'une valeur initiale ; la hauteur h commence à une valeur initiale (ordonnée à l'origine) de 12 pieds. Elle augmente ensuite à un taux (pente) de 9 pieds par seconde. La hauteur totale est la hauteur initiale plus le changement (taux * temps). Cela donne h = 12 + 9s.",
+        "pt": "Esta questão testa a escrita de uma função linear a partir de uma taxa e valor inicial; a altura h começa em um valor inicial (interceptação y) de 12 pés. Em seguida, aumenta a uma taxa (inclinação) de 9 pés por segundo. A altura total é a altura inicial mais a mudança (taxa * tempo). Isso resulta em h = 12 + 9s.",
+        "ht": "Kesyon sa a teste ekri yon fonksyon lineyè apati yon to ak valè inisyal; wotè h la kòmanse nan yon valè inisyal (y-entèsèp) 12 pye. Apre sa, li ogmante nan yon to (pant) 9 pye pa segonn. Wotè total la se wotè inisyal la plis chanjman an (to * tan). Sa bay h = 12 + 9s."
+      }
+    },
+    {
+      "id": "math_sec_lin_func_easy_009",
+      "difficulty": "easy",
+      "skill": "Linear functions",
+      "prompt": {
+        "en": "The function p is defined by p(t) = 6t + 3. What is the value of p(11)?",
+        "es": "La función p se define por p(t) = 6t + 3. ¿Cuál es el valor de p(11)?",
+        "fr": "La fonction p est définie par p(t) = 6t + 3. Quelle est la valeur de p(11) ?",
+        "pt": "A função p é definida por p(t) = 6t + 3. Qual é o valor de p(11)?",
+        "ht": "Fonksyon p la defini pa p(t) = 6t + 3. Ki valè p(11)?"
+      },
+      "choices": [
+        {"key": "A", "en": "57", "es": "57", "fr": "57", "pt": "57", "ht": "57"},
+        {"key": "B", "en": "63", "es": "63", "fr": "63", "pt": "63", "ht": "63"},
+        {"key": "C", "en": "66", "es": "66", "fr": "66", "pt": "66", "ht": "66"},
+        {"key": "D", "en": "69", "es": "69", "fr": "69", "pt": "69", "ht": "69"}
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This question tests evaluation of a linear function; substitute t = 11 into the function: p(11) = 6(11) + 3 = 66 + 3 = 69.",
+        "es": "Esta pregunta evalúa una función lineal; sustituye t = 11 en la función: p(11) = 6(11) + 3 = 66 + 3 = 69.",
+        "fr": "Cette question teste l'évaluation d'une fonction linéaire ; substituez t = 11 dans la fonction : p(11) = 6(11) + 3 = 66 + 3 = 69.",
+        "pt": "Esta questão testa a avaliação de uma função linear; substitua t = 11 na função: p(11) = 6(11) + 3 = 66 + 3 = 69.",
+        "ht": "Kesyon sa a teste evalyasyon yon fonksyon lineyè; ranplase t = 11 nan fonksyon an: p(11) = 6(11) + 3 = 66 + 3 = 69."
+      }
+    },
+    {
+      "id": "math_sec_lin_func_easy_010",
+      "difficulty": "easy",
+      "skill": "Linear functions",
+      "prompt": {
+        "en": "If f is defined by f(x) = (2x - 1)/3, what is f(5)?",
+        "es": "Si f se define por f(x) = (2x - 1)/3, ¿cuál es f(5)?",
+        "fr": "Si f est définie par f(x) = (2x - 1)/3, que vaut f(5) ?",
+        "pt": "Se f é definida por f(x) = (2x - 1)/3, quanto é f(5)?",
+        "ht": "Si f defini pa f(x) = (2x - 1)/3, ki sa f(5) ye?"
+      },
+      "choices": [
+        {"key": "A", "en": "2", "es": "2", "fr": "2", "pt": "2", "ht": "2"},
+        {"key": "B", "en": "8/3", "es": "8/3", "fr": "8/3", "pt": "8/3", "ht": "8/3"},
+        {"key": "C", "en": "3", "es": "3", "fr": "3", "pt": "3", "ht": "3"},
+        {"key": "D", "en": "9", "es": "9", "fr": "9", "pt": "9", "ht": "9"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This question tests substitution; substitute x = 5 into the function: f(5) = (2·5 - 1)/3. Calculate the numerator: 10 - 1 = 9. Then divide: f(5) = 9/3 = 3.",
+        "es": "Esta pregunta evalúa la sustitución; sustituye x = 5 en la función: f(5) = (2·5 - 1)/3. Calcula el numerador: 10 - 1 = 9. Luego divide: f(5) = 9/3 = 3.",
+        "fr": "Cette question teste la substitution ; substituez x = 5 dans la fonction : f(5) = (2·5 - 1)/3. Calculez le numérateur : 10 - 1 = 9. Puis divisez : f(5) = 9/3 = 3.",
+        "pt": "Esta questão testa a substituição; substitua x = 5 na função: f(5) = (2·5 - 1)/3. Calcule o numerador: 10 - 1 = 9. Em seguida, divida: f(5) = 9/3 = 3.",
+        "ht": "Kesyon sa a teste ranplasman; ranplase x = 5 nan fonksyon an: f(5) = (2·5 - 1)/3. Kalkile nimeratè a: 10 - 1 = 9. Apre sa, divize: f(5) = 9/3 = 3."
+      }
+    },
+    {
+      "id": "math_sec_lin_func_easy_011",
+      "difficulty": "easy",
+      "skill": "Linear functions",
+      "prompt": {
+        "en": "The equation d = 7t gives the distance d, in inches, an object travels after t seconds. Which is the best interpretation of 7 in this context?",
+        "es": "La ecuación d = 7t da la distancia d, en pulgadas, que un objeto recorre después de t segundos. ¿Cuál es la mejor interpretación de 7 en este contexto?",
+        "fr": "L'équation d = 7t donne la distance d, en pouces, qu'un objet parcourt après t secondes. Quelle est la meilleure interprétation de 7 dans ce contexte ?",
+        "pt": "A equação d = 7t fornece a distância d, em polegadas, que um objeto percorre após t segundos. Qual é a melhor interpretação de 7 neste contexto?",
+        "ht": "Ekwasyon d = 7t bay distans d, an pous, yon objè vwayaje apre t segonn. Ki pi bon entèpretasyon 7 nan kontèks sa a?"
+      },
+      "choices": [
+        {"key": "A", "en": "The object moves a total of 7 inches", "es": "El objeto se mueve un total de 7 pulgadas", "fr": "L'objet se déplace d'un total de 7 pouces", "pt": "O objeto se move um total de 7 polegadas", "ht": "Objè a deplase yon total 7 pous"},
+        {"key": "B", "en": "The object moves a total of 7t inches", "es": "El objeto se mueve un total de 7t pulgadas", "fr": "L'objet se déplace d'un total de 7t pouces", "pt": "O objeto se move um total de 7t polegadas", "ht": "Objè a deplase yon total 7t pous"},
+        {"key": "C", "en": "The object is moving at a rate of 7 inches per second", "es": "El objeto se mueve a una tasa de 7 pulgadas por segundo", "fr": "L'objet se déplace à une vitesse de 7 pouces par seconde", "pt": "O objeto está se movendo a uma taxa de 7 polegadas por segundo", "ht": "Objè a ap deplase nan yon to 7 pous pa segonn"},
+        {"key": "D", "en": "The object is moving at a rate of t inches per second", "es": "El objeto se mueve a una tasa de t pulgadas por segundo", "fr": "L'objet se déplace à une vitesse de t pouces par seconde", "pt": "O objeto está se movendo a uma taxa de t polegadas por segundo", "ht": "Objè a ap deplase nan yon to t pous pa segonn"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This question tests interpreting the coefficient as a rate; the equation d = 7t is in the form distance = rate * time. Since d is in inches and t is in seconds, the rate 7 must be in inches per second.",
+        "es": "Esta pregunta evalúa la interpretación del coeficiente como una tasa; la ecuación d = 7t está en la forma distancia = tasa * tiempo. Dado que d está en pulgadas y t está en segundos, la tasa 7 debe estar en pulgadas por segundo.",
+        "fr": "Cette question teste l'interprétation du coefficient comme un taux ; l'équation d = 7t est sous la forme distance = vitesse * temps. Puisque d est en pouces et t est en secondes, le taux 7 doit être en pouces par seconde.",
+        "pt": "Esta questão testa a interpretação do coeficiente como uma taxa; a equação d = 7t está na forma distância = taxa * tempo. Como d está em polegadas e t está em segundos, a taxa 7 deve estar em polegadas por segundo.",
+        "ht": "Kesyon sa a teste entèpretasyon koyefisyan an kòm yon to; ekwasyon d = 7t la sou fòm distans = to * tan. Piske d an pous epi t an segonn, to 7 la dwe an pous pa segonn."
+      }
+    },
+    {
+      "id": "math_sec_lin_func_easy_012",
+      "difficulty": "easy",
+      "skill": "Linear functions",
+      "prompt": {
+        "en": "The function r is defined by r(x) = 5x - 4. For what value of x is r(x) = 41?",
+        "es": "La función r se define por r(x) = 5x - 4. ¿Para qué valor de x es r(x) = 41?",
+        "fr": "La fonction r est définie par r(x) = 5x - 4. Pour quelle valeur de x r(x) = 41 ?",
+        "pt": "A função r é definida por r(x) = 5x - 4. Para qual valor de x r(x) = 41?",
+        "ht": "Fonksyon r la defini pa r(x) = 5x - 4. Pou ki valè x r(x) = 41?"
+      },
+      "choices": [
+        {"key": "A", "en": "7", "es": "7", "fr": "7", "pt": "7", "ht": "7"},
+        {"key": "B", "en": "8", "es": "8", "fr": "8", "pt": "8", "ht": "8"},
+        {"key": "C", "en": "9", "es": "9", "fr": "9", "pt": "9", "ht": "9"},
+        {"key": "D", "en": "10", "es": "10", "fr": "10", "pt": "10", "ht": "10"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This question tests solving for input from output; set the function equal to the given output: 5x - 4 = 41. Add 4 to both sides: 5x = 45. Divide by 5: x = 9.",
+        "es": "Esta pregunta evalúa la resolución de la entrada a partir de la salida; iguala la función a la salida dada: 5x - 4 = 41. Suma 4 a ambos lados: 5x = 45. Divide por 5: x = 9.",
+        "fr": "Cette question teste la résolution de l'entrée à partir de la sortie ; posez la fonction égale à la sortie donnée : 5x - 4 = 41. Ajoutez 4 des deux côtés : 5x = 45. Divisez par 5 : x = 9.",
+        "pt": "Esta questão testa a resolução da entrada a partir da saída; iguale a função à saída dada: 5x - 4 = 41. Adicione 4 a ambos os lados: 5x = 45. Divida por 5: x = 9.",
+        "ht": "Kesyon sa a teste rezoud pou antre a apati soti a; mete fonksyon an egal ak soti yo bay la: 5x - 4 = 41. Ajoute 4 sou toude bò yo: 5x = 45. Divize pa 5: x = 9."
+      }
+    },
+    {
+      "id": "math_sec_lin_func_easy_013",
+      "difficulty": "easy",
+      "skill": "Linear functions",
+      "prompt": {
+        "en": "What is the x-intercept of the graph of y = -2x + 10?",
+        "es": "¿Cuál es la intersección con el eje x del gráfico de y = -2x + 10?",
+        "fr": "Quelle est l'abscisse à l'origine du graphique de y = -2x + 10 ?",
+        "pt": "Qual é a intersecção com o eixo x do gráfico de y = -2x + 10?",
+        "ht": "Ki entèsepsyon x graf y = -2x + 10 la?"
+      },
+      "choices": [
+        {"key": "A", "en": "5", "es": "5", "fr": "5", "pt": "5", "ht": "5"},
+        {"key": "B", "en": "-5", "es": "-5", "fr": "-5", "pt": "-5", "ht": "-5"},
+        {"key": "C", "en": "10", "es": "10", "fr": "10", "pt": "10", "ht": "10"},
+        {"key": "D", "en": "-10", "es": "-10", "fr": "-10", "pt": "-10", "ht": "-10"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This question tests finding an intercept by setting the other variable to 0; the x-intercept is the point where the graph crosses the x-axis, which means y = 0. Set y = 0: 0 = -2x + 10. Add 2x to both sides: 2x = 10. Divide by 2: x = 5.",
+        "es": "Esta pregunta evalúa encontrar una intersección estableciendo la otra variable en 0; la intersección con el eje x es el punto donde el gráfico cruza el eje x, lo que significa que y = 0. Establece y = 0: 0 = -2x + 10. Suma 2x a ambos lados: 2x = 10. Divide por 2: x = 5.",
+        "fr": "Cette question teste la recherche d'une intersection en mettant l'autre variable à 0 ; l'abscisse à l'origine (intersection avec l'axe des x) est le point où le graphique coupe l'axe des x, ce qui signifie y = 0. Posez y = 0 : 0 = -2x + 10. Ajoutez 2x des deux côtés : 2x = 10. Divisez par 2 : x = 5.",
+        "pt": "Esta questão testa encontrar uma intersecção definindo a outra variável como 0; a intersecção com o eixo x é o ponto onde o gráfico cruza o eixo x, o que significa y = 0. Defina y = 0: 0 = -2x + 10. Adicione 2x a ambos os lados: 2x = 10. Divida por 2: x = 5.",
+        "ht": "Kesyon sa a teste jwenn yon entèsepsyon lè ou mete lòt varyab la a 0; entèsepsyon x la se pwen kote graf la kwaze aks x la, ki vle di y = 0. Mete y = 0: 0 = -2x + 10. Ajoute 2x sou toude bò yo: 2x = 10. Divize pa 2: x = 5."
+      }
+    },
+    {
+      "id": "math_sec_lin_func_easy_014",
+      "difficulty": "easy",
+      "skill": "Linear functions",
+      "prompt": {
+        "en": "What is the y-intercept of the graph of y = 3x - 7?",
+        "es": "¿Cuál es la intersección con el eje y del gráfico de y = 3x - 7?",
+        "fr": "Quelle est l'ordonnée à l'origine du graphique de y = 3x - 7 ?",
+        "pt": "Qual é a intersecção com o eixo y do gráfico de y = 3x - 7?",
+        "ht": "Ki entèsepsyon y graf y = 3x - 7 la?"
+      },
+      "choices": [
+        {"key": "A", "en": "-7", "es": "-7", "fr": "-7", "pt": "-7", "ht": "-7"},
+        {"key": "B", "en": "-3", "es": "-3", "fr": "-3", "pt": "-3", "ht": "-3"},
+        {"key": "C", "en": "3", "es": "3", "fr": "3", "pt": "3", "ht": "3"},
+        {"key": "D", "en": "7", "es": "7", "fr": "7", "pt": "7", "ht": "7"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This question tests recognizing the constant term as the y-intercept; the y-intercept is the point where the graph crosses the y-axis, which occurs at x = 0. Substitute x = 0: y = 3(0) - 7 = -7.",
+        "es": "Esta pregunta evalúa el reconocimiento del término constante como la intersección con el eje y; la intersección con el eje y es el punto donde el gráfico cruza el eje y, lo que ocurre en x = 0. Sustituye x = 0: y = 3(0) - 7 = -7.",
+        "fr": "Cette question teste la reconnaissance du terme constant comme l'ordonnée à l'origine (intersection avec l'axe des y) ; l'intersection avec l'axe des y est le point où le graphique coupe l'axe des y, ce qui se produit à x = 0. Substituez x = 0 : y = 3(0) - 7 = -7.",
+        "pt": "Esta questão testa o reconhecimento do termo constante como a intersecção com o eixo y; a intersecção com o eixo y é o ponto onde o gráfico cruza o eixo y, o que ocorre em x = 0. Substitua x = 0: y = 3(0) - 7 = -7.",
+        "ht": "Kesyon sa a teste rekonèt tèm konstan an kòm entèsepsyon y la; entèsepsyon y la se pwen kote graf la kwaze aks y la, ki rive lè x = 0. Ranplase x = 0: y = 3(0) - 7 = -7."
+      }
+    },
+    {
+      "id": "math_sec_lin_func_easy_015",
+      "difficulty": "easy",
+      "skill": "Linear functions",
+      "prompt": {
+        "en": "For the evaporation model H(d) = 12 - 0.5d, where H is height in centimeters d days after the start, which is the best interpretation of 12?",
+        "es": "Para el modelo de evaporación H(d) = 12 - 0.5d, donde H es la altura en centímetros d días después del inicio, ¿cuál es la mejor interpretación de 12?",
+        "fr": "Pour le modèle d'évaporation H(d) = 12 - 0.5d, où H est la hauteur en centimètres d jours après le début, quelle est la meilleure interprétation de 12 ?",
+        "pt": "Para o modelo de evaporação H(d) = 12 - 0.5d, onde H é a altura em centímetros d dias após o início, qual é a melhor interpretação de 12?",
+        "ht": "Pou modèl evaporasyon H(d) = 12 - 0.5d, kote H se wotè an santimèt d jou apre kòmansman, ki pi bon entèpretasyon 12 la?"
+      },
+      "choices": [
+        {"key": "A", "en": "The estimated height, in cm, at the start", "es": "La altura estimada, en cm, al inicio", "fr": "La hauteur estimée, en cm, au début", "pt": "A altura estimada, em cm, no início", "ht": "Wotè estime a, an cm, nan kòmansman"},
+        {"key": "B", "en": "The estimated daily decrease, in cm, in height", "es": "La disminución diaria estimada, en cm, en la altura", "fr": "La diminution quotidienne estimée, en cm, de la hauteur", "pt": "A diminuição diária estimada, em cm, na altura", "ht": "Diminisyon estime chak jou, an cm, nan wotè"},
+        {"key": "C", "en": "The estimated time, in days, until empty", "es": "El tiempo estimado, en días, hasta que esté vacío", "fr": "Le temps estimé, en jours, jusqu'à ce qu'il soit vide", "pt": "O tempo estimado, em dias, até esvaziar", "ht": "Tan estime a, an jou, jiskaske li vid"},
+        {"key": "D", "en": "The estimated height, in cm, at the end", "es": "La altura estimada, en cm, al final", "fr": "La hauteur estimée, en cm, à la fin", "pt": "A altura estimada, em cm, no final", "ht": "Wotè estime a, an cm, nan fen"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This question tests interpreting the intercept; in a linear model H(d) = b + md, the constant term 'b' is the initial value (the value when d = 0). Here, the model is H(d) = 12 - 0.5d. At the start (d = 0), H(0) = 12 - 0.5(0) = 12. Therefore, 12 is the starting height.",
+        "es": "Esta pregunta evalúa la interpretación del intercepto; en un modelo lineal H(d) = b + md, el término constante 'b' es el valor inicial (el valor cuando d = 0). Aquí, el modelo es H(d) = 12 - 0.5d. Al inicio (d = 0), H(0) = 12 - 0.5(0) = 12. Por lo tanto, 12 es la altura inicial.",
+        "fr": "Cette question teste l'interprétation de l'ordonnée à l'origine ; dans un modèle linéaire H(d) = b + md, le terme constant 'b' est la valeur initiale (la valeur lorsque d = 0). Ici, le modèle est H(d) = 12 - 0.5d. Au début (d = 0), H(0) = 12 - 0.5(0) = 12. Par conséquent, 12 est la hauteur de départ.",
+        "pt": "Esta questão testa a interpretação do intercepto; em um modelo linear H(d) = b + md, o termo constante 'b' é o valor inicial (o valor quando d = 0). Aqui, o modelo é H(d) = 12 - 0.5d. No início (d = 0), H(0) = 12 - 0.5(0) = 12. Portanto, 12 é a altura inicial.",
+        "ht": "Kesyon sa a teste entèpretasyon entèsepsyon an; nan yon modèl lineyè H(d) = b + md, tèm konstan 'b' la se valè inisyal la (valè a lè d = 0). Isit la, modèl la se H(d) = 12 - 0.5d. Nan kòmansman (d = 0), H(0) = 12 - 0.5(0) = 12. Se poutèt sa, 12 se wotè kòmansman an."
+      }
+    }
+  ]
+}

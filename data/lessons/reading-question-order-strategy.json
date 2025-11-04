@@ -1,0 +1,307 @@
+{
+  "id": "reading-question-order-strategy",
+  "category": "test-skills",
+  "skill": "Strategic Question Order",
+  "difficulty": "medium",
+  "title": {
+    "en": "Strategic Question Order: Maximize Your Reading & Writing Score",
+    "es": "Orden Estratégico de Preguntas: Maximiza tu Puntaje de Lectura y Escritura",
+    "fr": "Ordre stratégique des questions : Maximisez votre score en lecture et écriture",
+    "pt": "Ordem Estratégica de Perguntas: Maximize sua Pontuação em Leitura e Escrita",
+    "ht": "Lòd Estratejik Kesyon yo: Maksimize Pwen Lekti ak Ekriti ou"
+  },
+  "summary": {
+    "en": "Learn the optimal question-answering sequence to save time and boost confidence. Answer quick questions first, then tackle reading passages strategically.",
+    "es": "Aprende la secuencia óptima para responder preguntas y ahorrar tiempo y aumentar confianza. Responde preguntas rápidas primero, luego aborda pasajes estratégicamente.",
+    "fr": "Apprenez la séquence optimale pour répondre aux questions afin de gagner du temps et renforcer la confiance. Répondez d'abord aux questions rapides, puis abordez les passages stratégiquement.",
+    "pt": "Aprenda a sequência ideal para responder perguntas, economizar tempo e aumentar a confiança. Responda perguntas rápidas primeiro, depois aborde passagens estrategicamente.",
+    "ht": "Aprann sekans optimal pou reponn kesyon yo pou ou ekonomize tan epi ogmante konfyans. Reponn kesyon rapid yo anvan, epi apre sa abòde pasaj yo estratejikman."
+  },
+  "fullContent": {
+    "en": {
+      "introduction": "Most students answer SAT Reading & Writing questions in order from 1 to 27. This is a mistake. By answering questions strategically—starting with quick wins and saving passage-based questions for later—you build momentum, save time, and reduce anxiety.",
+      "sections": [
+        {
+          "heading": "The Strategic Order",
+          "content": "The SAT Reading & Writing section has a predictable structure. Questions 1-4 are typically vocabulary and grammar, questions 5-14 are passage-based comprehension, and questions 15-27 return to grammar, transitions, and rhetoric. Here's the winning strategy:"
+        },
+        {
+          "heading": "Step 1: Answer Questions 1-4 First (2-3 minutes)",
+          "points": [
+            "These are typically Words in Context, grammar, or short sentence questions",
+            "They require minimal reading and can be answered in 15-30 seconds each",
+            "Easy confidence boost to start your section",
+            "Mark your answers clearly on the digital interface"
+          ]
+        },
+        {
+          "heading": "Step 2: Jump to Questions 15-27 (8-10 minutes)",
+          "points": [
+            "These include transitions, rhetorical synthesis, punctuation, and form/structure questions",
+            "Most require only 1-2 sentences of reading",
+            "Faster to complete than full passage questions",
+            "Skip any that seem time-consuming and return later",
+            "By now you've answered ~16 questions in 10-13 minutes"
+          ]
+        },
+        {
+          "heading": "Step 3: Return to Questions 5-14 (Remaining 19-22 minutes)",
+          "points": [
+            "These are the passage-based questions (Central Ideas, Inferences, Command of Evidence)",
+            "Now you have ample time to read carefully and analyze",
+            "Less pressure because you've already banked many correct answers",
+            "Read the question first, then the passage with purpose",
+            "If a passage is particularly long or complex, skip it and return at the end"
+          ]
+        },
+        {
+          "heading": "Why This Works",
+          "content": "This strategy leverages the psychological principle of momentum. Starting with quick wins builds confidence and reduces test anxiety. You also protect yourself from running out of time on easy points—by the time you reach harder passages, you've already secured a strong baseline score."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Module 1, Question 3: 'Which word best completes the sentence?' (Vocab question)",
+          "explanation": "Answer immediately in 20 seconds. Don't waste time overthinking—your first instinct is usually correct for vocab."
+        },
+        {
+          "text": "Module 1, Question 18: 'Which choice completes the text with the most logical transition?'",
+          "explanation": "Read only the sentence before and after. This takes 45 seconds max. Much faster than a full passage."
+        },
+        {
+          "text": "Module 1, Question 7: 'The main idea of the passage is...'",
+          "explanation": "Save this for later. It requires reading the full passage, which takes 3-4 minutes. Do this after you've secured easier points."
+        }
+      ],
+      "practiceHint": "Practice this strategy on Khan Academy or official College Board practice tests. Time yourself on each 'phase' to build your internal clock. After a few practice tests, this order will feel natural, and you'll save 5-8 minutes per module."
+    },
+    "es": {
+      "introduction": "La mayoría de los estudiantes responden las preguntas de Lectura y Escritura del SAT en orden del 1 al 27. Esto es un error. Al responder preguntas estratégicamente—comenzando con victorias rápidas y guardando preguntas basadas en pasajes para después—construyes impulso, ahorras tiempo y reduces ansiedad.",
+      "sections": [
+        {
+          "heading": "El Orden Estratégico",
+          "content": "La sección de Lectura y Escritura del SAT tiene una estructura predecible. Las preguntas 1-4 son típicamente vocabulario y gramática, las preguntas 5-14 son comprensión basada en pasajes, y las preguntas 15-27 vuelven a gramática, transiciones y retórica. Esta es la estrategia ganadora:"
+        },
+        {
+          "heading": "Paso 1: Responde Preguntas 1-4 Primero (2-3 minutos)",
+          "points": [
+            "Estas son típicamente Palabras en Contexto, gramática o preguntas de oraciones cortas",
+            "Requieren lectura mínima y pueden responderse en 15-30 segundos cada una",
+            "Impulso fácil de confianza para comenzar tu sección",
+            "Marca tus respuestas claramente en la interfaz digital"
+          ]
+        },
+        {
+          "heading": "Paso 2: Salta a Preguntas 15-27 (8-10 minutos)",
+          "points": [
+            "Estas incluyen transiciones, síntesis retórica, puntuación y preguntas de forma/estructura",
+            "La mayoría requiere leer solo 1-2 oraciones",
+            "Más rápidas de completar que preguntas de pasajes completos",
+            "Omite cualquiera que parezca consumir mucho tiempo y regresa después",
+            "Para ahora has respondido ~16 preguntas en 10-13 minutos"
+          ]
+        },
+        {
+          "heading": "Paso 3: Regresa a Preguntas 5-14 (19-22 minutos restantes)",
+          "points": [
+            "Estas son las preguntas basadas en pasajes (Ideas Centrales, Inferencias, Comando de Evidencia)",
+            "Ahora tienes tiempo amplio para leer cuidadosamente y analizar",
+            "Menos presión porque ya has acumulado muchas respuestas correctas",
+            "Lee la pregunta primero, luego el pasaje con propósito",
+            "Si un pasaje es particularmente largo o complejo, omítelo y regresa al final"
+          ]
+        },
+        {
+          "heading": "Por Qué Funciona Esto",
+          "content": "Esta estrategia aprovecha el principio psicológico del impulso. Comenzar con victorias rápidas construye confianza y reduce ansiedad del examen. También te proteges de quedarte sin tiempo en puntos fáciles—para cuando llegas a pasajes más difíciles, ya has asegurado un puntaje base sólido."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Módulo 1, Pregunta 3: '¿Qué palabra completa mejor la oración?' (pregunta de vocabulario)",
+          "explanation": "Responde inmediatamente en 20 segundos. No pierdas tiempo pensando demasiado—tu primer instinto suele ser correcto para vocabulario."
+        },
+        {
+          "text": "Módulo 1, Pregunta 18: '¿Qué opción completa el texto con la transición más lógica?'",
+          "explanation": "Lee solo la oración anterior y posterior. Esto toma 45 segundos máximo. Mucho más rápido que un pasaje completo."
+        },
+        {
+          "text": "Módulo 1, Pregunta 7: 'La idea principal del pasaje es...'",
+          "explanation": "Guarda esto para después. Requiere leer el pasaje completo, lo cual toma 3-4 minutos. Haz esto después de haber asegurado puntos más fáciles."
+        }
+      ],
+      "practiceHint": "Practica esta estrategia en Khan Academy o pruebas de práctica oficiales de College Board. Mide tu tiempo en cada 'fase' para construir tu reloj interno. Después de algunas pruebas de práctica, este orden se sentirá natural y ahorrarás 5-8 minutos por módulo."
+    },
+    "fr": {
+      "introduction": "La plupart des étudiants répondent aux questions de lecture et d'écriture du SAT dans l'ordre de 1 à 27. C'est une erreur. En répondant aux questions de manière stratégique—en commençant par des victoires rapides et en gardant les questions basées sur les passages pour plus tard—vous gagnez de l'élan, économisez du temps et réduisez l'anxiété.",
+      "sections": [
+        {
+          "heading": "L'ordre stratégique",
+          "content": "La section Lecture et Écriture du SAT a une structure prévisible. Les questions 1 à 4 concernent généralement le vocabulaire et la grammaire, les questions 5 à 14 portent sur la compréhension de passages, et les questions 15 à 27 reviennent à la grammaire, aux transitions et à la rhétorique. Voici la stratégie gagnante :"
+        },
+        {
+          "heading": "Étape 1 : Répondez aux questions 1-4 d'abord (2-3 minutes)",
+          "points": [
+            "Ce sont généralement des mots en contexte, de la grammaire ou des questions de phrases courtes",
+            "Elles nécessitent une lecture minimale et peuvent être répondues en 15-30 secondes chacune",
+            "Coup de pouce facile pour commencer votre section avec confiance",
+            "Marquez vos réponses clairement sur l'interface numérique"
+          ]
+        },
+        {
+          "heading": "Étape 2 : Passez aux questions 15-27 (8-10 minutes)",
+          "points": [
+            "Celles-ci incluent des transitions, de la synthèse rhétorique, de la ponctuation et des questions de forme/structure",
+            "La plupart ne nécessitent que 1-2 phrases de lecture",
+            "Plus rapides à compléter que les questions de passages complets",
+            "Sautez celles qui semblent chronophages et revenez plus tard",
+            "À ce stade, vous avez répondu à ~16 questions en 10-13 minutes"
+          ]
+        },
+        {
+          "heading": "Étape 3 : Revenez aux questions 5-14 (19-22 minutes restantes)",
+          "points": [
+            "Ce sont les questions basées sur les passages (Idées centrales, Inférences, Maîtrise des preuves)",
+            "Vous avez maintenant amplement le temps de lire attentivement et d'analyser",
+            "Moins de pression car vous avez déjà accumulé de nombreuses bonnes réponses",
+            "Lisez d'abord la question, puis le passage avec un objectif",
+            "Si un passage est particulièrement long ou complexe, sautez-le et revenez à la fin"
+          ]
+        },
+        {
+          "heading": "Pourquoi cela fonctionne",
+          "content": "Cette stratégie exploite le principe psychologique de l'élan. Commencer par des victoires rapides renforce la confiance et réduit l'anxiété liée au test. Vous vous protégez également contre le manque de temps sur des points faciles—au moment où vous atteignez les passages plus difficiles, vous avez déjà sécurisé un score de base solide."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Module 1, Question 3 : 'Quel mot complète le mieux la phrase ?' (question de vocabulaire)",
+          "explanation": "Répondez immédiatement en 20 secondes. Ne perdez pas de temps à trop réfléchir—votre premier instinct est généralement correct pour le vocabulaire."
+        },
+        {
+          "text": "Module 1, Question 18 : 'Quel choix complète le texte avec la transition la plus logique ?'",
+          "explanation": "Lisez seulement la phrase précédente et suivante. Cela prend 45 secondes maximum. Beaucoup plus rapide qu'un passage complet."
+        },
+        {
+          "text": "Module 1, Question 7 : 'L'idée principale du passage est...'",
+          "explanation": "Gardez cela pour plus tard. Cela nécessite de lire le passage complet, ce qui prend 3-4 minutes. Faites cela après avoir sécurisé des points plus faciles."
+        }
+      ],
+      "practiceHint": "Pratiquez cette stratégie sur Khan Academy ou les tests de pratique officiels du College Board. Chronométrez-vous sur chaque 'phase' pour développer votre horloge interne. Après quelques tests de pratique, cet ordre semblera naturel et vous économiserez 5-8 minutes par module."
+    },
+    "pt": {
+      "introduction": "A maioria dos estudantes responde às perguntas de Leitura e Escrita do SAT em ordem de 1 a 27. Isso é um erro. Ao responder perguntas estrategicamente—começando com vitórias rápidas e deixando perguntas baseadas em passagens para depois—você constrói impulso, economiza tempo e reduz ansiedade.",
+      "sections": [
+        {
+          "heading": "A Ordem Estratégica",
+          "content": "A seção de Leitura e Escrita do SAT tem uma estrutura previsível. As perguntas 1-4 são tipicamente vocabulário e gramática, as perguntas 5-14 são compreensão baseada em passagens, e as perguntas 15-27 retornam a gramática, transições e retórica. Aqui está a estratégia vencedora:"
+        },
+        {
+          "heading": "Passo 1: Responda Perguntas 1-4 Primeiro (2-3 minutos)",
+          "points": [
+            "Essas são tipicamente Palavras em Contexto, gramática ou perguntas de frases curtas",
+            "Elas requerem leitura mínima e podem ser respondidas em 15-30 segundos cada",
+            "Impulso fácil de confiança para começar sua seção",
+            "Marque suas respostas claramente na interface digital"
+          ]
+        },
+        {
+          "heading": "Passo 2: Pule para Perguntas 15-27 (8-10 minutos)",
+          "points": [
+            "Essas incluem transições, síntese retórica, pontuação e perguntas de forma/estrutura",
+            "A maioria requer apenas 1-2 frases de leitura",
+            "Mais rápidas de completar do que perguntas de passagens completas",
+            "Pule qualquer uma que pareça consumir muito tempo e retorne depois",
+            "Até agora você respondeu ~16 perguntas em 10-13 minutos"
+          ]
+        },
+        {
+          "heading": "Passo 3: Retorne às Perguntas 5-14 (19-22 minutos restantes)",
+          "points": [
+            "Essas são as perguntas baseadas em passagens (Ideias Centrais, Inferências, Comando de Evidências)",
+            "Agora você tem tempo amplo para ler cuidadosamente e analisar",
+            "Menos pressão porque você já acumulou muitas respostas corretas",
+            "Leia a pergunta primeiro, depois a passagem com propósito",
+            "Se uma passagem for particularmente longa ou complexa, pule-a e retorne no final"
+          ]
+        },
+        {
+          "heading": "Por Que Isso Funciona",
+          "content": "Esta estratégia aproveita o princípio psicológico do impulso. Começar com vitórias rápidas constrói confiança e reduz ansiedade do teste. Você também se protege de ficar sem tempo em pontos fáceis—quando você chega a passagens mais difíceis, já garantiu uma pontuação base sólida."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Módulo 1, Pergunta 3: 'Qual palavra completa melhor a frase?' (pergunta de vocabulário)",
+          "explanation": "Responda imediatamente em 20 segundos. Não perca tempo pensando demais—seu primeiro instinto geralmente está correto para vocabulário."
+        },
+        {
+          "text": "Módulo 1, Pergunta 18: 'Qual escolha completa o texto com a transição mais lógica?'",
+          "explanation": "Leia apenas a frase anterior e posterior. Isso leva 45 segundos no máximo. Muito mais rápido do que uma passagem completa."
+        },
+        {
+          "text": "Módulo 1, Pergunta 7: 'A ideia principal da passagem é...'",
+          "explanation": "Guarde isso para depois. Requer ler a passagem completa, o que leva 3-4 minutos. Faça isso depois de ter garantido pontos mais fáceis."
+        }
+      ],
+      "practiceHint": "Pratique essa estratégia no Khan Academy ou testes de prática oficiais do College Board. Cronometre-se em cada 'fase' para construir seu relógio interno. Depois de alguns testes de prática, essa ordem parecerá natural e você economizará 5-8 minutos por módulo."
+    },
+    "ht": {
+      "introduction": "Pifò elèv yo reponn kesyon Lekti ak Ekriti SAT nan lòd soti nan 1 rive 27. Sa a se yon erè. Lè w reponn kesyon yo estratejikman—kòmanse ak viktwa rapid yo epi kenbe kesyon ki baze sou pasaj yo pou pita—w konstwi elan, ekonomize tan epi diminye enkyetid.",
+      "sections": [
+        {
+          "heading": "Lòd Estratejik la",
+          "content": "Seksyon Lekti ak Ekriti SAT la gen yon estrikti previzib. Kesyon 1-4 yo se tipikman vokabilè ak gramè, kesyon 5-14 se konpreyansyon baze sou pasaj, epi kesyon 15-27 yo retounen nan gramè, tranzisyon ak retorik. Men estrateji a ki genyen:"
+        },
+        {
+          "heading": "Etap 1: Reponn Kesyon 1-4 Anvan (2-3 minit)",
+          "points": [
+            "Sa yo se tipikman Mo nan Kontèks, gramè oswa kesyon fraz kout",
+            "Yo mande lekti minimòm epi yo ka reponn nan 15-30 segond chak",
+            "Yon bon kòmansман pou bay konfyans nan seksyon an",
+            "Make repons ou yo klèman sou entèfas dijital la"
+          ]
+        },
+        {
+          "heading": "Etap 2: Sote ale nan Kesyon 15-27 (8-10 minit)",
+          "points": [
+            "Sa yo gen ladan yo tranzisyon, sentèz retorik, ponktyasyon ak kesyon fòm/estrikti",
+            "Pifò mande sèlman 1-2 fraz pou li",
+            "Pi rapid poukonplete pase kesyon pasaj konplè yo",
+            "Sote nenpòt ki sanble pran twòp tan epi retounen apre",
+            "Jis kounyeya ou te reponn ~16 kesyon nan 10-13 minit"
+          ]
+        },
+        {
+          "heading": "Etap 3: Retounen nan Kesyon 5-14 (19-22 minit ki rete)",
+          "points": [
+            "Sa yo se kesyon ki baze sou pasaj yo (Lide Santral, Enferans, Kòmandman Prèv)",
+            "Kounye a ou gen anpil tan pou li avèk atansyon epi analize",
+            "Mwens presyon paske ou deja akimile anpil repons kòrèk",
+            "Li kesyon an anvan, apre sa li pasaj la ak yon objektif",
+            "Si yon pasaj patikilyèman long oswa konplèks, sote li epi retounen nan fen an"
+          ]
+        },
+        {
+          "heading": "Poukisa Sa Fonksyone",
+          "content": "Estrateji sa a eksplwate prensip sikolojik elan an. Kòmanse ak viktwa rapid bay konfyans epi diminye enkyetid tès la. Ou pwoteje tèt ou tou kont manke tan sou pwen fasil—lè w rive nan pasaj pi difisil yo, ou deja asire yon pwen debaz solid."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Modil 1, Kesyon 3: 'Ki mo ki konplete fraz la pi byen?' (kesyon vokabilè)",
+          "explanation": "Reponn imedyatman nan 20 segond. Pa pèdi tan panse twòp—premye enstinkt ou souvan kòrèk pou vokabilè."
+        },
+        {
+          "text": "Modil 1, Kesyon 18: 'Ki chwa ki konplete tèks la ak tranzisyon ki pi lojik?'",
+          "explanation": "Li sèlman fraz anvan ak apre. Sa pran 45 segond maksimòm. Anpil pi rapid pase yon pasaj konplè."
+        },
+        {
+          "text": "Modil 1, Kesyon 7: 'Lide prensipal pasaj la se...'",
+          "explanation": "Kenbe sa pou pita. Li mande pou li tout pasaj la, sa ki pran 3-4 minit. Fè sa apre w te asire pwen pi fasil yo."
+        }
+      ],
+      "practiceHint": "Pratike estrateji sa a sou Khan Academy oswa tès pratik ofisyèl College Board. Mezire tan w nan chak 'faz' pou konstwi revèy entèn ou. Apre kèk tès pratik, lòd sa a ap sanble natirèl, epi w ap ekonomize 5-8 minit pa modil."
+    }
+  }
+}

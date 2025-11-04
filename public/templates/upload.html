@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LearnPALM - Upload Questions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+  <link rel="stylesheet" href="/static/css/styles.css">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJE9RQF601"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VJE9RQF601');
+  </script>
+</head>
+<body class="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-200">
+  
+  <!-- HEADER/NAVBAR -->
+  <header class="sticky top-0 z-20 backdrop-blur bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-700 transition-colors duration-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <img src="/static/img/LearnPALM Logo.png" alt="Logo" class="h-14 w-auto">
+        <span class="font-semibold text-lg">LearnPALM</span>
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/" class="hover:underline dark:hover:text-blue-400 transition">Home</a>
+        <a href="/templates/lessons.html" class="hover:underline dark:hover:text-blue-400 transition">Lessons</a>
+        <a href="/templates/practice_home.html" class="hover:underline dark:hover:text-blue-400 transition">Practice</a>
+        <a href="/templates/scholarships.html" class="hover:underline dark:hover:text-blue-400 transition">Scholarships</a>
+        <a href="#resources" class="hover:underline dark:hover:text-blue-400 transition">Resources</a>
+        <a href="/templates/glossary.html" class="hover:underline dark:hover:text-blue-400 transition">Glossary</a>
+        
+        <!-- LANGUAGE SELECTOR -->
+        <div class="flex items-center gap-2 ml-2 pl-2 border-l border-gray-300 dark:border-gray-700">
+          <span class="text-gray-600 dark:text-gray-400">🌐</span>
+          <select id="select-language" class="rounded-md border border-gray-300 dark:border-gray-700 px-3 py-1.5 font-medium bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="ht">Kreyòl</option>
+            <option value="pt">Português</option>
+            <option value="fr">Français</option>
+          </select>
+        </div>
+
+        <!-- SETTINGS BUTTON -->
+        <div class="relative">
+          <button id="settings-btn" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition" aria-label="Settings">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </button>
+
+          <!-- SETTINGS DROPDOWN MENU -->
+          <div id="settings-menu" class="hidden absolute top-12 right-0 w-72 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-xl p-4 z-50">
+            <h3 class="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">Settings</h3>
+            
+            <!-- Dark Mode Toggle -->
+            <div class="flex items-center justify-between py-3 border-b border-gray-200 dark:border-gray-700">
+              <div class="flex items-center gap-3">
+                <div class="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg">
+                  <svg class="w-5 h-5 text-gray-700 dark:text-yellow-400 transition-colors" fill="currentColor" viewBox="0 0 20 20">
+                    <path class="hidden dark:block" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+                    <path class="block dark:hidden" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-medium text-sm text-gray-900 dark:text-gray-100">Dark Mode</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400" id="theme-status">Light theme active</div>
+                </div>
+              </div>
+              
+              <button id="dark-toggle" class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 bg-gray-300 dark:bg-blue-600" role="switch">
+                <span id="toggle-circle" class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform translate-x-1 dark:translate-x-6"></span>
+              </button>
+            </div>
+
+            <!-- Additional Settings -->
+            <div class="py-3">
+              <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">About</div>
+              <a href="#" class="block py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Help & Support</a>
+              <a href="#" class="block py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Mobile menu -->
+      <div class="md:hidden flex items-center gap-3">
+        <span class="text-sm text-gray-600 dark:text-gray-400">🌐</span>
+        <select id="select-language-mobile" class="rounded-md border border-gray-300 dark:border-gray-700 px-2 py-1 text-sm font-medium bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="ht">HT</option>
+          <option value="pt">PT</option>
+          <option value="fr">FR</option>
+        </select>
+        
+        <button id="settings-btn-mobile" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- UPLOAD CONTENT -->
+  <div class="max-w-4xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">Upload Questions</h1>
+    
+    <!-- Alert Messages -->
+    <div id="alert-container"></div>
+    
+    <!-- Upload form -->
+    <div class="rounded-2xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 p-6 mb-6">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Import Questions from JSON</h2>
+      <form id="upload-form" enctype="multipart/form-data">
+        <div class="mb-4">
+          <label class="block text-sm font-medium mb-2 text-gray-900 dark:text-gray-100">Select JSON File</label>
+          <input type="file" id="file-input" name="file" accept=".json" 
+                 class="block w-full text-sm border border-gray-300 dark:border-gray-700 rounded-lg p-2 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+        </div>
+        <button type="submit" 
+                class="rounded-2xl bg-gray-900 dark:bg-blue-600 text-white px-6 py-2 hover:bg-gray-800 dark:hover:bg-blue-700 transition">
+          Upload Questions
+        </button>
+      </form>
+    </div>
+    
+    <!-- Current question statistics -->
+    <div class="rounded-2xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 p-6 mb-6">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Current Question Bank</h2>
+      <div id="stats-container" class="grid md:grid-cols-2 gap-3">
+        <p class="text-gray-500 dark:text-gray-400">Loading statistics...</p>
+      </div>
+    </div>
+    
+    <!-- JSON format example -->
+    <div class="rounded-2xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 p-6">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">JSON Format Example</h2>
+      <pre class="bg-gray-50 dark:bg-gray-900 p-4 rounded-lg text-xs overflow-auto text-gray-800 dark:text-gray-200"><code>{
+  "questions": [
+    {
+      "id": "unique_id_001",
+      "section": "RW",
+      "type": "information-ideas",
+      "difficulty": "easy",
+      "prompt": {
+        "en": "Your question here",
+        "es": "Tu pregunta aquí"
+      },
+      "choices": [
+        {"key": "A", "en": "Choice A", "es": "Opción A"},
+        {"key": "B", "en": "Choice B", "es": "Opción B"},
+        {"key": "C", "en": "Choice C", "es": "Opción C"},
+        {"key": "D", "en": "Choice D", "es": "Opción D"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "Explanation here",
+        "es": "Explicación aquí"
+      }
+    }
+  ]
+}</code></pre>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-200 dark:border-gray-700 mt-16">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
+      © 2025 LearnPALM
+    </div>
+  </footer>
+
+  <!-- UPLOAD HANDLER SCRIPT -->
+  <script>
+    // Function to show alerts
+    function showAlert(message, type = 'info') {
+      const container = document.getElementById('alert-container');
+      const alertDiv = document.createElement('div');
+      alertDiv.className = `rounded-lg p-4 mb-2 ${
+        type === 'success' ? 'bg-green-50 dark:bg-green-900/20 text-green-800 dark:text-green-200 border border-green-200 dark:border-green-700' :
+        type === 'error' ? 'bg-red-50 dark:bg-red-900/20 text-red-800 dark:text-red-200 border border-red-200 dark:border-red-700' :
+        'bg-blue-50 dark:bg-blue-900/20 text-blue-800 dark:text-blue-200 border border-blue-200 dark:border-blue-700'
+      }`;
+      alertDiv.textContent = message;
+      container.appendChild(alertDiv);
+      
+      // Auto-remove after 5 seconds
+      setTimeout(() => alertDiv.remove(), 5000);
+    }
+
+    // Function to load question statistics
+    async function loadStatistics() {
+      try {
+        const response = await fetch('/.netlify/functions/getStats');
+        const data = await response.json();
+        
+        const statsContainer = document.getElementById('stats-container');
+        statsContainer.innerHTML = '';
+        
+        if (data.stats && Object.keys(data.stats).length > 0) {
+          Object.entries(data.stats).forEach(([category, count]) => {
+            const statDiv = document.createElement('div');
+            statDiv.className = 'rounded-lg border border-gray-300 dark:border-gray-700 p-3 flex justify-between items-center bg-gray-50 dark:bg-gray-900';
+            statDiv.innerHTML = `
+              <span class="text-sm text-gray-900 dark:text-gray-100">${category}</span>
+              <span class="font-semibold text-lg text-blue-600 dark:text-blue-400">${count}</span>
+            `;
+            statsContainer.appendChild(statDiv);
+          });
+        } else {
+          statsContainer.innerHTML = '<p class="text-gray-500 dark:text-gray-400">No questions uploaded yet.</p>';
+        }
+      } catch (error) {
+        console.error('Error loading statistics:', error);
+        document.getElementById('stats-container').innerHTML = '<p class="text-gray-500 dark:text-gray-400">Unable to load statistics.</p>';
+      }
+    }
+
+    // Form submission handler
+    document.getElementById('upload-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const fileInput = document.getElementById('file-input');
+      const file = fileInput.files[0];
+      
+      if (!file) {
+        showAlert('Please select a file', 'error');
+        return;
+      }
+      
+      if (!file.name.endsWith('.json')) {
+        showAlert('Please select a valid JSON file', 'error');
+        return;
+      }
+      
+      try {
+        // Read file
+        const fileContent = await file.text();
+        const jsonData = JSON.parse(fileContent);
+        
+        // Validate structure
+        if (!jsonData.questions || !Array.isArray(jsonData.questions)) {
+          showAlert('Invalid JSON format. Must contain "questions" array.', 'error');
+          return;
+        }
+        
+        // Send to Netlify Function
+        const response = await fetch('/.netlify/functions/uploadQuestions', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(jsonData)
+        });
+        
+        if (!response.ok) {
+          throw new Error('Upload failed');
+        }
+        
+        const result = await response.json();
+        showAlert(`Successfully uploaded ${result.count} questions!`, 'success');
+        
+        // Reset form
+        fileInput.value = '';
+        
+        // Reload statistics
+        loadStatistics();
+        
+      } catch (error) {
+        console.error('Upload error:', error);
+        showAlert(`Error: ${error.message}`, 'error');
+      }
+    });
+
+    // Load statistics on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      loadStatistics();
+    });
+  </script>
+
+  <!-- SETTINGS & DARK MODE SCRIPTS -->
+  <script src="/static/js/practice.js"></script>
+</body>
+</html>

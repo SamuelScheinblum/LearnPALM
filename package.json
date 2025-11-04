@@ -1,0 +1,16 @@
+{
+  "name": "learnpalm-website",
+  "version": "1.0.0",
+  "description": "LearnPALM SAT Prep Platform",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'No build required'",
+    "start": "echo 'Netlify will serve'"
+  },
+  "dependencies": {
+    "mongodb": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

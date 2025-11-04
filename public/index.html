@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LearnPALM - Multilingual SAT Practice</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJE9RQF601"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VJE9RQF601');
+  </script>
+
+  <style>
+    /* Dark mode variables */
+    :root {
+      --accent: #16b729;
+      --accent2: #f97316;
+      --text: #111827;
+      --muted: #6b7280;
+      --bg: #ffffff;
+    }
+
+    :root.dark {
+      --text: #f3f4f6;
+      --muted: #d1d5db;
+      --bg: #111827;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Hero styling */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(22,183,41,.08), rgba(249,115,22,.05));
+      padding: 40px 20px;
+    }
+
+    .hero-inner {
+      max-width: 600px;
+    }
+
+    .hero-logo {
+      width: clamp(120px, 20vw, 200px);
+      height: auto;
+      margin: 0 auto 20px;
+      filter: drop-shadow(0 4px 12px rgba(249,115,22,.5));
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .hero-logo:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 6px 16px rgba(249,115,22,.7));
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .brand .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--accent2);
+      border-radius: 50%;
+    }
+
+    .title {
+      font-size: clamp(48px, 8vw, 72px);
+      font-weight: 800;
+      margin: 16px 0;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .lede {
+      font-size: 18px;
+      color: var(--muted);
+      margin: 16px 0 24px;
+    }
+
+    .tagline {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .chip {
+      display: inline-block;
+      padding: 8px 16px;
+      background: rgba(22,183,41,.1);
+      border: 1px solid rgba(22,183,41,.3);
+      border-radius: 20px;
+      font-size: 14px;
+      color: var(--text);
+      transition: all 0.3s ease;
+    }
+
+    .chip:hover {
+      background: rgba(22,183,41,.2);
+      border-color: rgba(22,183,41,.5);
+    }
+
+    /* Section styling */
+    section {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      background: var(--bg);
+    }
+
+    .panel {
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .panel h2 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    .panel > p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 500px;
+      margin-bottom: 32px;
+    }
+
+    /* Features grid */
+    .features {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .card {
+      padding: 24px;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      background: var(--bg);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .card:hover {
+      border-color: var(--accent2);
+      box-shadow: 0 8px 24px rgba(249,115,22,.15);
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0 0 8px 0;
+      color: var(--text);
+    }
+
+    .card p {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .chipbar {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+
+    .mini {
+      display: inline-block;
+      padding: 4px 8px;
+      background: rgba(22,183,41,.1);
+      border-radius: 4px;
+      font-size: 12px;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* Bridge Mode Toggle Styling */
+    .bridge-toggle-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin: 32px 0;
+      padding: 20px;
+      background: linear-gradient(180deg, rgba(249,115,22,.08), rgba(16,185,129,.05));
+      border: 1px solid rgba(249,115,22,.3);
+      border-radius: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .bridge-toggle-container.active {
+      background: linear-gradient(180deg, rgba(16,185,129,.12), rgba(249,115,22,.08));
+      border-color: rgba(16,185,129,.4);
+    }
+
+    .bridge-toggle-info {
+      flex: 1;
+    }
+
+    .bridge-toggle-info h4 {
+      margin: 0 0 4px 0;
+      font-size: 16px;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .bridge-toggle-info p {
+      margin: 0;
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .bridge-switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 32px;
+      flex-shrink: 0;
+    }
+
+    .bridge-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .bridge-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #d1d5db;
+      transition: .4s;
+      border-radius: 32px;
+    }
+
+    .bridge-slider:before {
+      position: absolute;
+      content: "";
+      height: 24px;
+      width: 24px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+
+    input:checked + .bridge-slider {
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+    }
+
+    input:checked + .bridge-slider:before {
+      transform: translateX(28px);
+    }
+
+    /* Start Practice Button */
+    .start-practice-btn {
+      margin-top: 32px;
+      padding: 16px 32px;
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 6px 24px rgba(16,185,129,.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .start-practice-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(16,185,129,.4);
+    }
+
+    /* Back to top button */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 50;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(249,115,22,.4);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 30px rgba(249,115,22,.6);
+    }
+
+    .back-to-top svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+
+    /* Language card centering for 5th item */
+    #language .features {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    @media (max-width: 768px) {
+      #language .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white dark:bg-gray-900">
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <img src="/static/img/LearnPALM Logo.png" 
+           alt="LearnPALM Logo" 
+           class="hero-logo">
+      
+      <div class="brand"><span class="dot"></span><span>Curated by 1580-1600 scorers</span></div>
+      <h1 class="title">LearnPALM</h1>
+      <p class="lede">Platform for Assessments, across Languages, Matrix</p>
+      <p class="tagline">
+        <span class="chip">Accurate <strong>SAT Questions</strong></span>
+        <span class="chip">Practice in <strong>Your Language</strong></span>
+        <span class="chip"><strong>Original</strong> Questions</span>
+      </p>
+    </div>
+  </header>
+
+  <!-- LANGUAGE SELECTION -->
+  <section id="language">
+    <div class="panel">
+      <h2>Choose Your Language</h2>
+      <p>Select your preferred language to begin studying. All content will be available in your chosen language.</p>
+      <div class="features">
+        <a class="card language-card" href="#resources" data-lang="en">
+          <h3>🇺🇸 English</h3>
+          <p>Study SAT content in English</p>
+        </a>
+        <a class="card language-card" href="#resources" data-lang="es">
+          <h3>🇪🇸 Español</h3>
+          <p>Estudia contenido SAT en español</p>
+        </a>
+        <a class="card language-card" href="#resources" data-lang="pt">
+          <h3>🇧🇷 Português</h3>
+          <p>Estude conteúdo SAT em português</p>
+        </a>
+        <a class="card language-card" href="#resources" data-lang="fr">
+          <h3>🇫🇷 Français</h3>
+          <p>Étudiez le contenu SAT en français</p>
+        </a>
+        <a class="card language-card" href="#resources" data-lang="ht">
+          <h3>🇭🇹 Kreyòl Ayisyen</h3>
+          <p>Etidye kontni SAT nan kreyòl</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES / SELECT OPTIONS -->
+  <section id="resources">
+    <div class="panel">
+      <h2>Choose Your Study Mode</h2>
+      <p id="resources-subtitle">Select the resource that matches your learning style.</p>
+      <div class="features">
+        <a class="card resource-link" href="#bridge-mode" data-route="practice_home">
+          <h3>✏️ Practice Questions</h3>
+          <p>Drill SAT problems in your preferred language.</p>
+          <div class="chipbar"><span class="mini">Math</span><span class="mini">Reading</span><span class="mini">Writing</span></div>
+        </a>
+        <a class="card resource-link" href="#" data-route="lessons">
+          <h3>📚 Lessons</h3>
+          <p>Step-by-step SAT concept breakdowns with examples.</p>
+          <div class="chipbar"><span class="mini">Concepts</span><span class="mini">Examples</span><span class="mini">Tips</span></div>
+        </a>
+        <a class="card resource-link" href="#" data-route="glossary">
+          <h3>📖 Glossary</h3>
+          <p>Multilingual SAT vocabulary with definitions.</p>
+          <div class="chipbar"><span class="mini">Searchable</span><span class="mini">Examples</span><span class="mini">Context</span></div>
+        </a>
+        <a class="card resource-link" href="#" data-route="scholarships">
+          <h3>🎓 Scholarships</h3>
+          <p>Find merit scholarships for high SAT scorers.</p>
+          <div class="chipbar"><span class="mini">Deadlines</span><span class="mini">Requirements</span><span class="mini">Links</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRIDGE MODE SELECTION -->
+  <section id="bridge-mode" style="display: none;">
+    <div class="panel">
+      <h2>Configure Your Practice</h2>
+      <p>Choose how you want to experience SAT practice questions.</p>
+      
+      <div class="bridge-toggle-container" id="bridge-toggle-container">
+        <div class="bridge-toggle-info">
+          <h4 id="bridge-mode-title">🌍 Native Mode</h4>
+          <p id="bridge-mode-description">Questions and explanations in your selected language</p>
+        </div>
+        <label class="bridge-switch">
+          <input type="checkbox" id="bridge-mode-toggle">
+          <span class="bridge-slider"></span>
+        </label>
+      </div>
+
+      <a href="#" id="start-practice-link" class="start-practice-btn">Start Practicing</a>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24">
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+    </svg>
+  </button>
+
+  <!-- MAIN SCRIPTS -->
+  <script src="/static/js/practice.js"></script>
+  
+  <!-- Language & Navigation Handler -->
+  <script>
+    // Scroll to top on page load
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+      if (window.location.hash) {
+        history.replaceState(null, null, window.location.pathname);
+      }
+    });
+
+    let selectedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    let selectedMode = null;
+
+    // Update selected language display
+    function updateSelectedLanguage(lang) {
+      selectedLanguage = lang;
+      localStorage.setItem('selectedLanguage', lang);
+      
+      // Visual feedback
+      document.querySelectorAll('.language-card').forEach(card => {
+        if (card.getAttribute('data-lang') === lang) {
+          card.style.borderColor = '#f97316';
+          card.style.boxShadow = '0 0 0 2px #f97316';
+        } else {
+          card.style.borderColor = '';
+          card.style.boxShadow = '';
+        }
+      });
+      
+      console.log('🌐 Language selected:', lang);
+    }
+
+    updateSelectedLanguage(selectedLanguage);
+
+    // Language card click handlers
+    document.querySelectorAll('.language-card').forEach(card => {
+      card.addEventListener('click', function(e) {
+        e.preventDefault();
+        const lang = this.getAttribute('data-lang');
+        updateSelectedLanguage(lang);
+        
+        document.getElementById('resources').scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    });
+
+    // Resource link click handlers
+    document.querySelectorAll('.resource-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const route = this.getAttribute('data-route');
+        selectedMode = route;
+        
+        if (route === 'practice_home') {
+          e.preventDefault();
+          document.getElementById('bridge-mode').style.display = 'flex';
+          
+          setTimeout(() => {
+            document.getElementById('bridge-mode').scrollIntoView({ 
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }, 50);
+        } else {
+          let path;
+          if (route === 'glossary') {
+            path = `/templates/glossary.html`;
+          } else if (route === 'lessons') {
+            path = `/templates/lessons.html`;
+          } else if (route === 'scholarships') {
+            path = `/templates/scholarships.html`;
+          }
+          
+          if (path) {
+            window.location.href = path;
+          }
+        }
+      });
+    });
+
+    // Bridge Mode Toggle Handler
+    const bridgeModeToggle = document.getElementById('bridge-mode-toggle');
+    const bridgeModeTitle = document.getElementById('bridge-mode-title');
+    const bridgeModeDescription = document.getElementById('bridge-mode-description');
+    const bridgeToggleContainer = document.getElementById('bridge-toggle-container');
+    const startPracticeLink = document.getElementById('start-practice-link');
+
+    function updateBridgeModeUI(isActive) {
+      if (isActive) {
+        bridgeModeTitle.textContent = '🌉 Bridge Mode ON';
+        bridgeModeDescription.textContent = 'Questions in English, explanations in your selected language';
+        bridgeToggleContainer.classList.add('active');
+      } else {
+        bridgeModeTitle.textContent = '🌍 Native Mode';
+        bridgeModeDescription.textContent = 'Questions and explanations in your selected language';
+        bridgeToggleContainer.classList.remove('active');
+      }
+    }
+
+    const savedBridgeMode = localStorage.getItem('englishQuestions') === 'true';
+    bridgeModeToggle.checked = savedBridgeMode;
+    updateBridgeModeUI(savedBridgeMode);
+
+    bridgeModeToggle.addEventListener('change', function() {
+      if (this.checked) {
+        localStorage.setItem('englishQuestions', 'true');
+        updateBridgeModeUI(true);
+        console.log('🌉 Bridge Mode: ON');
+      } else {
+        localStorage.removeItem('englishQuestions');
+        updateBridgeModeUI(false);
+        console.log('🌉 Bridge Mode: OFF');
+      }
+    });
+
+    // Start Practice Button Handler
+    startPracticeLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.location.href = `/templates/practice_home.html`;
+    });
+
+    // Back to top button functionality
+    const backToTopBtn = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+</html>

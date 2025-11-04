@@ -1,0 +1,396 @@
+{
+  "section": "Math",
+  "type": "algebra",
+  "questions": [
+    {
+      "id": "math_alg_001",
+      "difficulty": "easy",
+      "skill": "Linear equations in one variable",
+      "prompt": {
+        "en": "If 7k - 21 = 0, what is the value of k?",
+        "es": "Si 7k - 21 = 0, ¿cuál es el valor de k?",
+        "fr": "Si 7k - 21 = 0, quelle est la valeur de k ?",
+        "pt": "Se 7k - 21 = 0, qual é o valor de k?",
+        "ht": "Si 7k - 21 = 0, ki valè k?"
+      },
+      "choices": [
+        {"key": "A", "en": "-3", "es": "-3", "fr": "-3", "pt": "-3", "ht": "-3"},
+        {"key": "B", "en": "3", "es": "3", "fr": "3", "pt": "3", "ht": "3"},
+        {"key": "C", "en": "21", "es": "21", "fr": "21", "pt": "21", "ht": "21"},
+        {"key": "D", "en": "7", "es": "7", "fr": "7", "pt": "7", "ht": "7"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "Solve 7k - 21 = 0 by adding 21 to both sides and dividing by 7: 7k = 21, so k = 21 / 7 = 3.",
+        "es": "Resuelve 7k - 21 = 0 sumando 21 a ambos lados y dividiendo por 7: 7k = 21, entonces k = 21 / 7 = 3.",
+        "fr": "Résolvez 7k - 21 = 0 en ajoutant 21 des deux côtés et en divisant par 7 : 7k = 21, donc k = 21 / 7 = 3.",
+        "pt": "Resolva 7k - 21 = 0 adicionando 21 a ambos os lados e dividindo por 7: 7k = 21, então k = 21 / 7 = 3.",
+        "ht": "Rezoud 7k - 21 = 0 lè ou ajoute 21 sou toude bò yo epi divize pa 7: 7k = 21, donk k = 21 / 7 = 3."
+      }
+    },
+    {
+      "id": "math_alg_002",
+      "difficulty": "easy",
+      "skill": "Linear equations in one variable",
+      "prompt": {
+        "en": "Which equation has the same solution as 6(x - 2) = 12?",
+        "es": "¿Qué ecuación tiene la misma solución que 6(x - 2) = 12?",
+        "fr": "Quelle équation a la même solution que 6(x - 2) = 12 ?",
+        "pt": "Qual equação tem a mesma solução que 6(x - 2) = 12?",
+        "ht": "Ki ekwasyon ki gen menm solisyon ak 6(x - 2) = 12?"
+      },
+      "choices": [
+        {"key": "A", "en": "x - 2 = 2", "es": "x - 2 = 2", "fr": "x - 2 = 2", "pt": "x - 2 = 2", "ht": "x - 2 = 2"},
+        {"key": "B", "en": "x + 2 = 12", "es": "x + 2 = 12", "fr": "x + 2 = 12", "pt": "x + 2 = 12", "ht": "x + 2 = 12"},
+        {"key": "C", "en": "6x - 2 = 12", "es": "6x - 2 = 12", "fr": "6x - 2 = 12", "pt": "6x - 2 = 12", "ht": "6x - 2 = 12"},
+        {"key": "D", "en": "6x + 2 = 12", "es": "6x + 2 = 12", "fr": "6x + 2 = 12", "pt": "6x + 2 = 12", "ht": "6x + 2 = 12"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "Divide both sides of the original equation 6(x - 2) = 12 by 6. This gives (6(x - 2))/6 = 12/6, which simplifies to x - 2 = 2.",
+        "es": "Divide ambos lados de la ecuación original 6(x - 2) = 12 por 6. Esto da (6(x - 2))/6 = 12/6, lo que se simplifica a x - 2 = 2.",
+        "fr": "Divisez les deux côtés de l'équation originale 6(x - 2) = 12 par 6. Cela donne (6(x - 2))/6 = 12/6, ce qui se simplifie en x - 2 = 2.",
+        "pt": "Divida ambos os lados da equação original 6(x - 2) = 12 por 6. Isso dá (6(x - 2))/6 = 12/6, o que simplifica para x - 2 = 2.",
+        "ht": "Divize toude bò ekwasyon orijinal la 6(x - 2) = 12 pa 6. Sa bay (6(x - 2))/6 = 12/6, ki senplifye an x - 2 = 2."
+      }
+    },
+    {
+      "id": "math_alg_003",
+      "difficulty": "easy",
+      "skill": "Linear equations in one variable",
+      "prompt": {
+        "en": "What value of t satisfies 4t + 9 = 25?",
+        "es": "¿Qué valor de t satisface 4t + 9 = 25?",
+        "fr": "Quelle valeur de t satisfait 4t + 9 = 25 ?",
+        "pt": "Qual valor de t satisfaz 4t + 9 = 25?",
+        "ht": "Ki valè t ki satisfè 4t + 9 = 25?"
+      },
+      "choices": [
+        {"key": "A", "en": "4", "es": "4", "fr": "4", "pt": "4", "ht": "4"},
+        {"key": "B", "en": "9", "es": "9", "fr": "9", "pt": "9", "ht": "9"},
+        {"key": "C", "en": "16", "es": "16", "fr": "16", "pt": "16", "ht": "16"},
+        {"key": "D", "en": "34", "es": "34", "fr": "34", "pt": "34", "ht": "34"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "Subtract 9 from both sides: 4t = 25 - 9, so 4t = 16. Divide both sides by 4: t = 16 / 4 = 4.",
+        "es": "Resta 9 de ambos lados: 4t = 25 - 9, entonces 4t = 16. Divide ambos lados por 4: t = 16 / 4 = 4.",
+        "fr": "Soustrayez 9 des deux côtés : 4t = 25 - 9, donc 4t = 16. Divisez les deux côtés par 4 : t = 16 / 4 = 4.",
+        "pt": "Subtraia 9 de ambos os lados: 4t = 25 - 9, então 4t = 16. Divida ambos os lados por 4: t = 16 / 4 = 4.",
+        "ht": "Retire 9 sou toude bò yo: 4t = 25 - 9, donk 4t = 16. Divize toude bò yo pa 4: t = 16 / 4 = 4."
+      }
+    },
+    {
+      "id": "math_alg_004",
+      "difficulty": "easy",
+      "skill": "Linear equations in one variable",
+      "prompt": {
+        "en": "If 3m + 8 = 2m + 14, what is the value of m?",
+        "es": "Si 3m + 8 = 2m + 14, ¿cuál es el valor de m?",
+        "fr": "Si 3m + 8 = 2m + 14, quelle est la valeur de m ?",
+        "pt": "Se 3m + 8 = 2m + 14, qual é o valor de m?",
+        "ht": "Si 3m + 8 = 2m + 14, ki valè m?"
+      },
+      "choices": [
+        {"key": "A", "en": "-6", "es": "-6", "fr": "-6", "pt": "-6", "ht": "-6"},
+        {"key": "B", "en": "6", "es": "6", "fr": "6", "pt": "6", "ht": "6"},
+        {"key": "C", "en": "14", "es": "14", "fr": "14", "pt": "14", "ht": "14"},
+        {"key": "D", "en": "22", "es": "22", "fr": "22", "pt": "22", "ht": "22"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "To solve 3m + 8 = 2m + 14, first subtract 2m from both sides: (3m - 2m) + 8 = 14, which simplifies to m + 8 = 14. Then subtract 8 from both sides: m = 14 - 8 = 6.",
+        "es": "Para resolver 3m + 8 = 2m + 14, primero resta 2m de ambos lados: (3m - 2m) + 8 = 14, lo que se simplifica a m + 8 = 14. Luego resta 8 de ambos lados: m = 14 - 8 = 6.",
+        "fr": "Pour résoudre 3m + 8 = 2m + 14, soustrayez d'abord 2m des deux côtés : (3m - 2m) + 8 = 14, ce qui se simplifie en m + 8 = 14. Ensuite, soustrayez 8 des deux côtés : m = 14 - 8 = 6.",
+        "pt": "Para resolver 3m + 8 = 2m + 14, primeiro subtraia 2m de ambos os lados: (3m - 2m) + 8 = 14, o que simplifica para m + 8 = 14. Em seguida, subtraia 8 de ambos os lados: m = 14 - 8 = 6.",
+        "ht": "Pou rezoud 3m + 8 = 2m + 14, premyèman retire 2m sou toude bò yo: (3m - 2m) + 8 = 14, ki senplifye an m + 8 = 14. Apre sa, retire 8 sou toude bò yo: m = 14 - 8 = 6."
+      }
+    },
+    {
+      "id": "math_alg_005",
+      "difficulty": "easy",
+      "skill": "Linear equations in one variable",
+      "prompt": {
+        "en": "If 5p = 3p + 18, what is the value of p?",
+        "es": "Si 5p = 3p + 18, ¿cuál es el valor de p?",
+        "fr": "Si 5p = 3p + 18, quelle est la valeur de p ?",
+        "pt": "Se 5p = 3p + 18, qual é o valor de p?",
+        "ht": "Si 5p = 3p + 18, ki valè p?"
+      },
+      "choices": [
+        {"key": "A", "en": "3", "es": "3", "fr": "3", "pt": "3", "ht": "3"},
+        {"key": "B", "en": "9", "es": "9", "fr": "9", "pt": "9", "ht": "9"},
+        {"key": "C", "en": "15", "es": "15", "fr": "15", "pt": "15", "ht": "15"},
+        {"key": "D", "en": "18", "es": "18", "fr": "18", "pt": "18", "ht": "18"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "Subtract 3p from both sides: 5p - 3p = 18, which simplifies to 2p = 18. Divide both sides by 2: p = 18 / 2 = 9.",
+        "es": "Resta 3p de ambos lados: 5p - 3p = 18, lo que se simplifica a 2p = 18. Divide ambos lados por 2: p = 18 / 2 = 9.",
+        "fr": "Soustrayez 3p des deux côtés : 5p - 3p = 18, ce qui se simplifie en 2p = 18. Divisez les deux côtés par 2 : p = 18 / 2 = 9.",
+        "pt": "Subtraia 3p de ambos os lados: 5p - 3p = 18, o que simplifica para 2p = 18. Divida ambos os lados por 2: p = 18 / 2 = 9.",
+        "ht": "Retire 3p sou toude bò yo: 5p - 3p = 18, ki senplifye an 2p = 18. Divize toude bò yo pa 2: p = 18 / 2 = 9."
+      }
+    },
+    {
+      "id": "math_alg_006",
+      "difficulty": "easy",
+      "skill": "Linear equations in one variable",
+      "prompt": {
+        "en": "What value of y solves 2(y - 70) + 10 = 0?",
+        "es": "¿Qué valor de y resuelve 2(y - 70) + 10 = 0?",
+        "fr": "Quelle valeur de y résout 2(y - 70) + 10 = 0 ?",
+        "pt": "Qual valor de y resolve 2(y - 70) + 10 = 0?",
+        "ht": "Ki valè y ki rezoud 2(y - 70) + 10 = 0?"
+      },
+      "choices": [
+        {"key": "A", "en": "10", "es": "10", "fr": "10", "pt": "10", "ht": "10"},
+        {"key": "B", "en": "20", "es": "20", "fr": "20", "pt": "20", "ht": "20"},
+        {"key": "C", "en": "65", "es": "65", "fr": "65", "pt": "65", "ht": "65"},
+        {"key": "D", "en": "-10", "es": "-10", "fr": "-10", "pt": "-10", "ht": "-10"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "Expand: 2y - 140 + 10 = 0, which simplifies to 2y - 130 = 0. Add 130 to both sides: 2y = 130. Divide by 2: y = 65.",
+        "es": "Expande: 2y - 140 + 10 = 0, lo que se simplifica a 2y - 130 = 0. Suma 130 a ambos lados: 2y = 130. Divide por 2: y = 65.",
+        "fr": "Développez : 2y - 140 + 10 = 0, ce qui se simplifie en 2y - 130 = 0. Ajoutez 130 des deux côtés : 2y = 130. Divisez par 2 : y = 65.",
+        "pt": "Expanda: 2y - 140 + 10 = 0, o que simplifica para 2y - 130 = 0. Adicione 130 a ambos os lados: 2y = 130. Divida por 2: y = 65.",
+        "ht": "Devlope: 2y - 140 + 10 = 0, ki senplifye an 2y - 130 = 0. Ajoute 130 sou toude bò yo: 2y = 130. Divize pa 2: y = 65."
+      }
+    },
+    {
+      "id": "math_alg_007",
+      "difficulty": "easy",
+      "skill": "Linear equations in one variable",
+      "prompt": {
+        "en": "Which value of x satisfies 9x - 4 = 5x + 12?",
+        "es": "¿Qué valor de x satisface 9x - 4 = 5x + 12?",
+        "fr": "Quelle valeur de x satisfait 9x - 4 = 5x + 12 ?",
+        "pt": "Qual valor de x satisfaz 9x - 4 = 5x + 12?",
+        "ht": "Ki valè x ki satisfè 9x - 4 = 5x + 12?"
+      },
+      "choices": [
+        {"key": "A", "en": "4", "es": "4", "fr": "4", "pt": "4", "ht": "4"},
+        {"key": "B", "en": "5", "es": "5", "fr": "5", "pt": "5", "ht": "5"},
+        {"key": "C", "en": "8", "es": "8", "fr": "8", "pt": "8", "ht": "8"},
+        {"key": "D", "en": "16", "es": "16", "fr": "16", "pt": "16", "ht": "16"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "Subtract 5x from both sides: 4x - 4 = 12. Add 4 to both sides: 4x = 16. Divide by 4: x = 4.",
+        "es": "Resta 5x de ambos lados: 4x - 4 = 12. Suma 4 a ambos lados: 4x = 16. Divide por 4: x = 4.",
+        "fr": "Soustrayez 5x des deux côtés : 4x - 4 = 12. Ajoutez 4 des deux côtés : 4x = 16. Divisez par 4 : x = 4.",
+        "pt": "Subtraia 5x de ambos os lados: 4x - 4 = 12. Adicione 4 a ambos os lados: 4x = 16. Divida por 4: x = 4.",
+        "ht": "Retire 5x sou toude bò yo: 4x - 4 = 12. Ajoute 4 sou toude bò yo: 4x = 16. Divize pa 4: x = 4."
+      }
+    },
+    {
+      "id": "math_alg_008",
+      "difficulty": "easy",
+      "skill": "Linear equations in one variable",
+      "prompt": {
+        "en": "What value of q solves 11 - 2q = -69?",
+        "es": "¿Qué valor de q resuelve 11 - 2q = -69?",
+        "fr": "Quelle valeur de q résout 11 - 2q = -69 ?",
+        "pt": "Qual valor de q resolve 11 - 2q = -69?",
+        "ht": "Ki valè q ki rezoud 11 - 2q = -69?"
+      },
+      "choices": [
+        {"key": "A", "en": "-40", "es": "-40", "fr": "-40", "pt": "-40", "ht": "-40"},
+        {"key": "B", "en": "-29", "es": "-29", "fr": "-29", "pt": "-29", "ht": "-29"},
+        {"key": "C", "en": "29", "es": "29", "fr": "29", "pt": "29", "ht": "29"},
+        {"key": "D", "en": "40", "es": "40", "fr": "40", "pt": "40", "ht": "40"}
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "Subtract 11 from both sides: -2q = -69 - 11, which gives -2q = -80. Divide by -2: q = -80 / -2 = 40.",
+        "es": "Resta 11 de ambos lados: -2q = -69 - 11, lo que da -2q = -80. Divide por -2: q = -80 / -2 = 40.",
+        "fr": "Soustrayez 11 des deux côtés : -2q = -69 - 11, ce qui donne -2q = -80. Divisez par -2 : q = -80 / -2 = 40.",
+        "pt": "Subtraia 11 de ambos os lados: -2q = -69 - 11, o que dá -2q = -80. Divida por -2: q = -80 / -2 = 40.",
+        "ht": "Retire 11 sou toude bò yo: -2q = -69 - 11, ki bay -2q = -80. Divize pa -2: q = -80 / -2 = 40."
+      }
+    },
+    {
+      "id": "math_alg_009",
+      "difficulty": "easy",
+      "skill": "Linear equations in one variable",
+      "prompt": {
+        "en": "Aisha paid a total of 1,060 dollars for a laptop by making a down payment of 100 dollars and 12 equal monthly payments of x dollars. Which equation represents this situation?",
+        "es": "Aisha pagó un total de 1,060 dólares por una laptop haciendo un pago inicial de 100 dólares y 12 pagos mensuales iguales de x dólares. ¿Qué ecuación representa esta situación?",
+        "fr": "Aisha a payé un total de 1 060 dollars pour un ordinateur portable en effectuant un acompte de 100 dollars et 12 mensualités égales de x dollars. Quelle équation représente cette situation ?",
+        "pt": "Aisha pagou um total de 1.060 dólares por um laptop, dando uma entrada de 100 dólares e 12 pagamentos mensais iguais de x dólares. Qual equação representa esta situação?",
+        "ht": "Aisha te peye yon total 1,060 dola pou yon laptop lè li te fè yon depo 100 dola ak 12 peman chak mwa egal a x dola. Ki ekwasyon ki reprezante sitiyasyon sa a?"
+      },
+      "choices": [
+        {"key": "A", "en": "100x + 12 = 1,060", "es": "100x + 12 = 1,060", "fr": "100x + 12 = 1 060", "pt": "100x + 12 = 1,060", "ht": "100x + 12 = 1,060"},
+        {"key": "B", "en": "100 + x = 1,060", "es": "100 + x = 1,060", "fr": "100 + x = 1 060", "pt": "100 + x = 1,060", "ht": "100 + x = 1,060"},
+        {"key": "C", "en": "100 + 12x = 1,060", "es": "100 + 12x = 1,060", "fr": "100 + 12x = 1 060", "pt": "100 + 12x = 1,060", "ht": "100 + 12x = 1,060"},
+        {"key": "D", "en": "12 + 100x = 1,060", "es": "12 + 100x = 1,060", "fr": "12 + 100x = 1 060", "pt": "12 + 100x = 1,060", "ht": "12 + 100x = 1,060"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "The total cost (1,060) is the sum of the fixed down payment (100) and the total of the monthly payments (12 payments * x dollars each). This gives the equation 1,060 = 100 + 12x.",
+        "es": "El costo total (1,060) es la suma del pago inicial fijo (100) y el total de los pagos mensuales (12 pagos * x dólares cada uno). Esto da la ecuación 1,060 = 100 + 12x.",
+        "fr": "Le coût total (1 060) est la somme de l'acompte fixe (100) et du total des mensualités (12 paiements * x dollars chacun). Cela donne l'équation 1 060 = 100 + 12x.",
+        "pt": "O custo total (1.060) é a soma da entrada fixa (100) e o total dos pagamentos mensais (12 pagamentos * x dólares cada). Isso resulta na equação 1.060 = 100 + 12x.",
+        "ht": "Pri total la (1,060) se sòm depo fiks la (100) ak total peman chak mwa yo (12 peman * x dola chak). Sa bay ekwasyon 1,060 = 100 + 12x."
+      }
+    },
+    {
+      "id": "math_alg_010",
+      "difficulty": "easy",
+      "skill": "Linear equations in one variable",
+      "prompt": {
+        "en": "Diego bought granola for 5.50 dollars and apples at 2.00 dollars per pound. If he paid 17.50 dollars total, which equation can be used to find a, the number of pounds of apples?",
+        "es": "Diego compró granola por 5.50 dólares y manzanas a 2.00 dólares por libra. Si pagó 17.50 dólares en total, ¿qué ecuación se puede usar para encontrar a, el número de libras de manzanas?",
+        "fr": "Diego a acheté du granola pour 5,50 dollars et des pommes à 2,00 dollars la livre. S'il a payé 17,50 dollars au total, quelle équation peut être utilisée pour trouver a, le nombre de livres de pommes ?",
+        "pt": "Diego comprou granola por 5,50 dólares e maçãs a 2,00 dólares por libra. Se ele pagou 17,50 dólares no total, qual equação pode ser usada para encontrar a, o número de libras de maçãs?",
+        "ht": "Diego te achte granola pou 5.50 dola ak pòm pou 2.00 dola pa liv. Si li te peye 17.50 dola an total, ki ekwasyon yo ka itilize pou jwenn a, kantite liv pòm?"
+      },
+      "choices": [
+        {"key": "A", "en": "5.50 + 2.00a = 17.50", "es": "5.50 + 2.00a = 17.50", "fr": "5.50 + 2.00a = 17.50", "pt": "5.50 + 2.00a = 17.50", "ht": "5.50 + 2.00a = 17.50"},
+        {"key": "B", "en": "5.50a + 2.00 = 17.50", "es": "5.50a + 2.00 = 17.50", "fr": "5.50a + 2.00 = 17.50", "pt": "5.50a + 2.00 = 17.50", "ht": "5.50a + 2.00 = 17.50"},
+        {"key": "C", "en": "2.00 + a = 17.50", "es": "2.00 + a = 17.50", "fr": "2.00 + a = 17.50", "pt": "2.00 + a = 17.50", "ht": "2.00 + a = 17.50"},
+        {"key": "D", "en": "5.50 + a = 17.50", "es": "5.50 + a = 17.50", "fr": "5.50 + a = 17.50", "pt": "5.50 + a = 17.50", "ht": "5.50 + a = 17.50"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "The total cost (17.50) is the sum of the fixed cost of the granola (5.50) and the variable cost of the apples (2.00 per pound * a pounds). This gives 17.50 = 5.50 + 2.00a.",
+        "es": "El costo total (17.50) es la suma del costo fijo de la granola (5.50) y el costo variable de las manzanas (2.00 por libra * a libras). Esto da 17.50 = 5.50 + 2.00a.",
+        "fr": "Le coût total (17.50) est la somme du coût fixe du granola (5.50) et du coût variable des pommes (2.00 par livre * a livres). Cela donne 17.50 = 5.50 + 2.00a.",
+        "pt": "O custo total (17.50) é a soma do custo fixo da granola (5.50) e o custo variável das maçãs (2.00 por libra * a libras). Isso resulta em 17.50 = 5.50 + 2.00a.",
+        "ht": "Pri total la (17.50) se sòm pri fiks granola a (5.50) ak pri varyab pòm yo (2.00 pa liv * a liv). Sa bay 17.50 = 5.50 + 2.00a."
+      }
+    },
+    {
+      "id": "math_alg_011",
+      "difficulty": "easy",
+      "skill": "Linear equations in one variable",
+      "prompt": {
+        "en": "In the equation 7x + k = 7x + 21, the equation has infinitely many solutions. What is the value of k?",
+        "es": "En la ecuación 7x + k = 7x + 21, la ecuación tiene infinitas soluciones. ¿Cuál es el valor de k?",
+        "fr": "Dans l'équation 7x + k = 7x + 21, l'équation a une infinité de solutions. Quelle est la valeur de k ?",
+        "pt": "Na equação 7x + k = 7x + 21, a equação tem infinitas soluções. Qual é o valor de k?",
+        "ht": "Nan ekwasyon 7x + k = 7x + 21, ekwasyon an gen yon kantite solisyon enfini. Ki valè k?"
+      },
+      "choices": [
+        {"key": "A", "en": "0", "es": "0", "fr": "0", "pt": "0", "ht": "0"},
+        {"key": "B", "en": "7", "es": "7", "fr": "7", "pt": "7", "ht": "7"},
+        {"key": "C", "en": "14", "es": "14", "fr": "14", "pt": "14", "ht": "14"},
+        {"key": "D", "en": "21", "es": "21", "fr": "21", "pt": "21", "ht": "21"}
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "For infinitely many solutions, both sides must match term-by-term. The variable terms (7x) already match. Therefore, the constants must be equal: k = 21.",
+        "es": "Para que haya infinitas soluciones, ambos lados deben coincidir término a término. Los términos variables (7x) ya coinciden. Por lo tanto, las constantes deben ser iguales: k = 21.",
+        "fr": "Pour qu'il y ait une infinité de solutions, les deux côtés doivent correspondre terme à terme. Les termes variables (7x) correspondent déjà. Par conséquent, les constantes doivent être égales : k = 21.",
+        "pt": "Para haver infinitas soluções, ambos os lados devem corresponder termo a termo. Os termos variáveis (7x) já correspondem. Portanto, as constantes devem ser iguais: k = 21.",
+        "ht": "Pou gen yon kantite solisyon enfini, toude bò yo dwe matche tèm pa tèm. Tèm varyab yo (7x) deja matche. Se poutèt sa, konstan yo dwe egal: k = 21."
+      }
+    },
+    {
+      "id": "math_alg_012",
+      "difficulty": "easy",
+      "skill": "Linear equations in one variable",
+      "prompt": {
+        "en": "If 0.4t = 0.08, what is the value of t?",
+        "es": "Si 0.4t = 0.08, ¿cuál es el valor de t?",
+        "fr": "Si 0.4t = 0.08, quelle est la valeur de t ?",
+        "pt": "Se 0.4t = 0.08, qual é o valor de t?",
+        "ht": "Si 0.4t = 0.08, ki valè t?"
+      },
+      "choices": [
+        {"key": "A", "en": "2", "es": "2", "fr": "2", "pt": "2", "ht": "2"},
+        {"key": "B", "en": "0.2", "es": "0.2", "fr": "0.2", "pt": "0.2", "ht": "0.2"},
+        {"key": "C", "en": "1/5", "es": "1/5", "fr": "1/5", "pt": "1/5", "ht": "1/5"},
+        {"key": "D", "en": "1/2", "es": "1/2", "fr": "1/2", "pt": "1/2", "ht": "1/2"}
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "t = 0.08 / 0.4. To divide, you can multiply the numerator and denominator by 10 to get 0.8 / 4, which is 0.2. Note 0.2 = 1/5.",
+        "es": "t = 0.08 / 0.4. Para dividir, puedes multiplicar el numerador y el denominador por 10 para obtener 0.8 / 4, que es 0.2. Nota 0.2 = 1/5.",
+        "fr": "t = 0.08 / 0.4. Pour diviser, vous pouvez multiplier le numérateur et le dénominateur par 10 pour obtenir 0.8 / 4, ce qui est 0.2. Notez 0.2 = 1/5.",
+        "pt": "t = 0.08 / 0.4. Para dividir, você pode multiplicar o numerador e o denominador por 10 para obter 0.8 / 4, o que é 0.2. Note 0.2 = 1/5.",
+        "ht": "t = 0.08 / 0.4. Pou divize, ou ka miltipliye nimewo anwo a ak nimewo anba a pa 10 pou jwenn 0.8 / 4, ki se 0.2. Nòt 0.2 = 1/5."
+      }
+    },
+    {
+      "id": "math_alg_013",
+      "difficulty": "easy",
+      "skill": "Linear equations in one variable",
+      "prompt": {
+        "en": "The perimeter of an isosceles triangle is 110 inches. Each of the two equal sides is 37.5 inches. What is the length, in inches, of the third side?",
+        "es": "El perímetro de un triángulo isósceles es 110 pulgadas. Cada uno de los dos lados iguales es 37.5 pulgadas. ¿Cuál es la longitud, en pulgadas, del tercer lado?",
+        "fr": "Le périmètre d'un triangle isocèle est de 110 pouces. Chacun des deux côtés égaux est de 37.5 pouces. Quelle est la longueur, en pouces, du troisième côté ?",
+        "pt": "O perímetro de um triângulo isósceles é 110 polegadas. Cada um dos dois lados iguais é 37.5 polegadas. Qual é o comprimento, em polegadas, do terceiro lado?",
+        "ht": "Perimèt yon triyang izosèl se 110 pous. Chak nan de bò egal yo se 37.5 pous. Ki longè, an pous, twazyèm bò a?"
+      },
+      "choices": [
+        {"key": "A", "en": "35", "es": "35", "fr": "35", "pt": "35", "ht": "35"},
+        {"key": "B", "en": "37.5", "es": "37.5", "fr": "37.5", "pt": "37.5", "ht": "37.5"},
+        {"key": "C", "en": "72.5", "es": "72.5", "fr": "72.5", "pt": "72.5", "ht": "72.5"},
+        {"key": "D", "en": "110", "es": "110", "fr": "110", "pt": "110", "ht": "110"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "The perimeter is the sum of all sides. An isosceles triangle has two equal sides. So, 110 = 37.5 + 37.5 + (third side). 110 = 75 + (third side). Third side = 110 - 75 = 35.",
+        "es": "El perímetro es la suma de todos los lados. Un triángulo isósceles tiene dos lados iguales. Entonces, 110 = 37.5 + 37.5 + (tercer lado). 110 = 75 + (tercer lado). Tercer lado = 110 - 75 = 35.",
+        "fr": "Le périmètre est la somme de tous les côtés. Un triangle isocèle a deux côtés égaux. Donc, 110 = 37.5 + 37.5 + (troisième côté). 110 = 75 + (troisième côté). Troisième côté = 110 - 75 = 35.",
+        "pt": "O perímetro é a soma de todos os lados. Um triângulo isósceles tem dois lados iguais. Então, 110 = 37.5 + 37.5 + (terceiro lado). 110 = 75 + (terceiro lado). Terceiro lado = 110 - 75 = 35.",
+        "ht": "Perimèt la se sòm tout bò yo. Yon triyang izosèl gen de bò egal. Donk, 110 = 37.5 + 37.5 + (twazyèm bò). 110 = 75 + (twazyèm bò). Twazyèm bò = 110 - 75 = 35."
+      }
+    },
+    {
+      "id": "math_alg_014",
+      "difficulty": "easy",
+      "skill": "Linear equations in one variable",
+      "prompt": {
+        "en": "If 4z - 10 = 10, what is the value of z?",
+        "es": "Si 4z - 10 = 10, ¿cuál es el valor de z?",
+        "fr": "Si 4z - 10 = 10, quelle est la valeur de z ?",
+        "pt": "Se 4z - 10 = 10, qual é o valor de z?",
+        "ht": "Si 4z - 10 = 10, ki valè z?"
+      },
+      "choices": [
+        {"key": "A", "en": "2", "es": "2", "fr": "2", "pt": "2", "ht": "2"},
+        {"key": "B", "en": "2.5", "es": "2.5", "fr": "2.5", "pt": "2.5", "ht": "2.5"},
+        {"key": "C", "en": "5", "es": "5", "fr": "5", "pt": "5", "ht": "5"},
+        {"key": "D", "en": "7.5", "es": "7.5", "fr": "7.5", "pt": "7.5", "ht": "7.5"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "Add 10 to both sides: 4z = 20. Divide by 4: z = 20 / 4 = 5.",
+        "es": "Suma 10 a ambos lados: 4z = 20. Divide por 4: z = 20 / 4 = 5.",
+        "fr": "Ajoutez 10 des deux côtés : 4z = 20. Divisez par 4 : z = 20 / 4 = 5.",
+        "pt": "Adicione 10 a ambos os lados: 4z = 20. Divida por 4: z = 20 / 4 = 5.",
+        "ht": "Ajoute 10 sou toude bò yo: 4z = 20. Divize pa 4: z = 20 / 4 = 5."
+      }
+    },
+    {
+      "id": "math_alg_015",
+      "difficulty": "easy",
+      "skill": "Linear equations in one variable",
+      "prompt": {
+        "en": "In the equation (4x)/5 = 20, what is the value of x?",
+        "es": "En la ecuación (4x)/5 = 20, ¿cuál es el valor de x?",
+        "fr": "Dans l'équation (4x)/5 = 20, quelle est la valeur de x ?",
+        "pt": "Na equação (4x)/5 = 20, qual é o valor de x?",
+        "ht": "Nan ekwasyon (4x)/5 = 20, ki valè x?"
+      },
+      "choices": [
+        {"key": "A", "en": "25", "es": "25", "fr": "25", "pt": "25", "ht": "25"},
+        {"key": "B", "en": "24", "es": "24", "fr": "24", "pt": "24", "ht": "24"},
+        {"key": "C", "en": "16", "es": "16", "fr": "16", "pt": "16", "ht": "16"},
+        {"key": "D", "en": "15", "es": "15", "fr": "15", "pt": "15", "ht": "15"}
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "Multiply both sides by 5: 4x = 20 * 5, which gives 4x = 100. Divide by 4: x = 100 / 4 = 25.",
+        "es": "Multiplica ambos lados por 5: 4x = 20 * 5, lo que da 4x = 100. Divide por 4: x = 100 / 4 = 25.",
+        "fr": "Multipliez les deux côtés par 5 : 4x = 20 * 5, ce qui donne 4x = 100. Divisez par 4 : x = 100 / 4 = 25.",
+        "pt": "Multiplique ambos os lados por 5: 4x = 20 * 5, o que dá 4x = 100. Divida por 4: x = 100 / 4 = 25.",
+        "ht": "Miltipliye toude bò yo pa 5: 4x = 20 * 5, ki bay 4x = 100. Divize pa 4: x = 100 / 4 = 25."
+      }
+    }
+  ]
+}

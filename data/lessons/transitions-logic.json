@@ -1,0 +1,282 @@
+{
+  "id": "transitions-logic",
+  "category": "reading-writing",
+  "skill": "Transitions",
+  "difficulty": "medium",
+  "title": {
+    "en": "Transitions & Logical Flow: Connecting Ideas Effectively",
+    "es": "Transiciones y Flujo Lógico: Conectando Ideas Efectivamente",
+    "fr": "Transitions et Flux Logique : Relier les idées efficacement",
+    "pt": "Transições e Fluxo Lógico: Conectando Ideias Eficazmente",
+    "ht": "Tranzisyon ak Flow Lojik: Konekte Lide Efikasman"
+  },
+  "summary": {
+    "en": "Master transition words that show cause, contrast, addition, and sequence. Learn to recognize logical relationships between sentences.",
+    "es": "Domina las palabras de transición que muestran causa, contraste, adición y secuencia. Aprende a reconocer relaciones lógicas entre oraciones.",
+    "fr": "Maîtrisez les mots de transition qui expriment la cause, le contraste, l'addition et la séquence. Apprenez à reconnaître les relations logiques entre les phrases.",
+    "pt": "Domine as palavras de transição que indicam causa, contraste, adição e sequência. Aprenda a reconhecer relações lógicas entre frases.",
+    "ht": "Metrize mo tranzisyon yo ki montre koz, kontrast, adisyon ak sekans. Aprann rekonèt relasyon lojik ant fraz yo."
+  },
+  "fullContent": {
+    "en": {
+      "introduction": "Transition words are the signposts that guide readers through your argument. Choosing the right transition depends on understanding the logical relationship between ideas.",
+      "sections": [
+        {
+          "heading": "Four Main Types of Transitions",
+          "content": "Understanding these categories will help you choose the correct transition word in any context."
+        },
+        {
+          "heading": "1. Cause and Effect",
+          "points": [
+            "Therefore, thus, consequently, as a result",
+            "Use when one idea causes or leads to another",
+            "Example: 'The experiment failed; therefore, we revised our hypothesis.'"
+          ]
+        },
+        {
+          "heading": "2. Contrast and Opposition",
+          "points": [
+            "However, nevertheless, although, despite",
+            "Use when presenting opposing or contrasting ideas",
+            "Example: 'The theory is popular; however, evidence contradicts it.'"
+          ]
+        },
+        {
+          "heading": "3. Addition and Agreement",
+          "points": [
+            "Moreover, furthermore, additionally, likewise",
+            "Use when adding supporting information",
+            "Example: 'Students need practice; moreover, they benefit from feedback.'"
+          ]
+        },
+        {
+          "heading": "4. Time and Sequence",
+          "points": [
+            "Meanwhile, subsequently, previously, finally",
+            "Use when showing chronological order",
+            "Example: 'First, gather data; subsequently, analyze the results.'"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "text": "Incorrect: 'We lacked funding. Similarly, we postponed the project.'",
+          "explanation": "'Similarly' suggests agreement, but the sentence shows cause-effect. Use 'Consequently' instead."
+        },
+        {
+          "text": "Correct: 'The study was thorough; nevertheless, critics found flaws.'",
+          "explanation": "'Nevertheless' correctly shows contrast between thorough work and criticism."
+        }
+      ],
+      "practiceHint": "Before choosing a transition, ask: What's the relationship? Does the second sentence oppose, support, result from, or follow the first? Match your answer to the transition type."
+    },
+    "es": {
+      "introduction": "Las palabras de transición son las señales que guían al lector en tu argumento. Elegir la transición correcta depende de entender la relación lógica entre ideas.",
+      "sections": [
+        {
+          "heading": "Cuatro Tipos Principales de Transiciones",
+          "content": "Comprender estas categorías te ayudará a elegir la palabra de transición correcta en cualquier contexto."
+        },
+        {
+          "heading": "1. Causa y Efecto",
+          "points": [
+            "Por lo tanto, así, en consecuencia, como resultado",
+            "Úsalo cuando una idea causa o lleva a otra",
+            "Ejemplo: 'El experimento falló; por lo tanto, revisamos la hipótesis.'"
+          ]
+        },
+        {
+          "heading": "2. Contraste y Oposición",
+          "points": [
+            "Sin embargo, no obstante, aunque, a pesar de",
+            "Úsalo al presentar ideas opuestas o contrastantes",
+            "Ejemplo: 'La teoría es popular; sin embargo, la evidencia la contradice.'"
+          ]
+        },
+        {
+          "heading": "3. Adición y Acuerdo",
+          "points": [
+            "Además, asimismo, adicionalmente, igualmente",
+            "Úsalo al agregar información adicional de apoyo",
+            "Ejemplo: 'Los estudiantes necesitan práctica; además, se benefician de la retroalimentación.'"
+          ]
+        },
+        {
+          "heading": "4. Tiempo y Secuencia",
+          "points": [
+            "Mientras tanto, posteriormente, previamente, finalmente",
+            "Úsalo al mostrar orden cronológico",
+            "Ejemplo: 'Primero, recolecta datos; posteriormente, analiza los resultados.'"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "text": "Incorrecto: 'Nos faltó financiación. Igualmente, pospusimos el proyecto.'",
+          "explanation": "'Igualmente' sugiere acuerdo, pero la oración muestra causa-efecto. Usa 'En consecuencia' en su lugar."
+        },
+        {
+          "text": "Correcto: 'El estudio fue exhaustivo; sin embargo, los críticos encontraron fallas.'",
+          "explanation": "'Sin embargo' muestra correctamente el contraste entre el trabajo exhaustivo y la crítica."
+        }
+      ],
+      "practiceHint": "Antes de elegir una transición, pregunta: ¿Cuál es la relación? ¿La segunda oración se opone, apoya, resulta de o sigue a la primera? Relaciona tu respuesta con el tipo de transición."
+    },
+    "fr": {
+      "introduction": "Les mots de transition servent de balises pour guider le lecteur dans votre argumentation. Le choix de la bonne transition dépend de la compréhension de la relation logique entre les idées.",
+      "sections": [
+        {
+          "heading": "Quatre types principaux de transitions",
+          "content": "Comprendre ces catégories vous aidera à choisir le mot de transition approprié dans tout contexte."
+        },
+        {
+          "heading": "1. Cause et Effet",
+          "points": [
+            "Donc, ainsi, par conséquent, en conséquence",
+            "À utiliser quand une idée cause ou mène à une autre",
+            "Exemple : 'L'expérience a échoué ; par conséquent, nous avons révisé notre hypothèse.'"
+          ]
+        },
+        {
+          "heading": "2. Opposition et Contraste",
+          "points": [
+            "Cependant, néanmoins, bien que, malgré",
+            "À utiliser pour présenter des idées opposées ou contrastantes",
+            "Exemple : 'La théorie est populaire ; cependant, les preuves la contredisent.'"
+          ]
+        },
+        {
+          "heading": "3. Addition et Accord",
+          "points": [
+            "De plus, en outre, également, pareillement",
+            "À utiliser pour ajouter des informations complémentaires",
+            "Exemple : 'Les étudiants ont besoin de pratique ; de plus, ils tirent profit des retours.'"
+          ]
+        },
+        {
+          "heading": "4. Temps et Séquence",
+          "points": [
+            "Pendant ce temps, ensuite, auparavant, enfin",
+            "À utiliser pour montrer l'ordre chronologique",
+            "Exemple : 'D'abord, recueillez les données ; ensuite, analysez les résultats.'"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "text": "Incorrect : 'Nous manquions de financements. De même, nous avons reporté le projet.'",
+          "explanation": "'De même' suggère l'accord, mais la phrase montre une relation de cause à effet. Utilisez 'En conséquence' à la place."
+        },
+        {
+          "text": "Correct : 'L'étude était approfondie ; cependant, les critiques ont trouvé des défauts.'",
+          "explanation": "'Cependant' montre correctement le contraste entre un travail approfondi et les critiques."
+        }
+      ],
+      "practiceHint": "Avant de choisir une transition, demandez : Quelle est la relation ? Est-ce que la deuxième phrase s'oppose, soutient, résulte de, ou suit la première ? Faites correspondre votre réponse au type de transition."
+    },
+    "pt": {
+      "introduction": "Palavras de transição são como placas que guiam o leitor pelo seu argumento. Escolher a transição adequada depende de entender a relação lógica entre as ideias.",
+      "sections": [
+        {
+          "heading": "Quatro Tipos Principais de Transição",
+          "content": "Compreender essas categorias ajudará você a escolher a palavra de transição certa em qualquer contexto."
+        },
+        {
+          "heading": "1. Causa e Efeito",
+          "points": [
+            "Portanto, assim, consequentemente, como resultado",
+            "Use quando uma ideia causa ou leva a outra",
+            "Exemplo: 'O experimento falhou; portanto, revisamos nossa hipótese.'"
+          ]
+        },
+        {
+          "heading": "2. Contraste e Oposição",
+          "points": [
+            "No entanto, apesar disso, embora, apesar de",
+            "Use ao apresentar ideias opostas ou contrastantes",
+            "Exemplo: 'A teoria é popular; no entanto, as evidências a contradizem.'"
+          ]
+        },
+        {
+          "heading": "3. Adição e Concordância",
+          "points": [
+            "Além disso, ainda, adicionalmente, do mesmo modo",
+            "Use ao adicionar informações de apoio",
+            "Exemplo: 'Os alunos precisam de prática; além disso, eles se beneficiam do feedback.'"
+          ]
+        },
+        {
+          "heading": "4. Tempo e Sequência",
+          "points": [
+            "Enquanto isso, subsequentemente, anteriormente, finalmente",
+            "Use ao mostrar ordem cronológica",
+            "Exemplo: 'Primeiro, recolha os dados; subsequentemente, analise os resultados.'"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "text": "Incorreto: 'Faltou-nos financiamento. Do mesmo modo, adiamos o projeto.'",
+          "explanation": "'Do mesmo modo' sugere concordância, mas a frase mostra causa e efeito. Use 'Consequentemente' no lugar."
+        },
+        {
+          "text": "Correto: 'O estudo foi minucioso; no entanto, os críticos encontraram falhas.'",
+          "explanation": "'No entanto' mostra corretamente o contraste entre o trabalho minucioso e as críticas."
+        }
+      ],
+      "practiceHint": "Antes de escolher uma transição, pergunte: Qual é a relação? A segunda frase se opõe, apoia, resulta de ou segue a primeira? Relacione sua resposta ao tipo de transição."
+    },
+    "ht": {
+      "introduction": "Mo tranzisyon yo se siyal ki gide lektè a nan agiman ou. Chwazi bon tranzisyon an depan de konpreyansyon sou relasyon lojik ant ide yo.",
+      "sections": [
+        {
+          "heading": "Kat Tip Tranzisyon Prensipal",
+          "content": "Konprann kategori sa yo ap ede w chwazi mo tranzisyon ki kòrèk la nan nenpòt kontèks."
+        },
+        {
+          "heading": "1. Kòz ak Efe",
+          "points": [
+            "Se poutèt sa, konsa, kòm rezilta, donk",
+            "Sèvi ak lè yon ide lakòz oswa mennen nan yon lòt",
+            "Egzanp: 'Eksperyans la echwe; se poutèt sa, nou revize ipotèz la.'"
+          ]
+        },
+        {
+          "heading": "2. Kontras ak Opozisyon",
+          "points": [
+            "Sepandan, malgre sa, byenke, malgre",
+            "Sèvi ak pou prezante ide opoze oswa kontrè yo",
+            "Egzanp: 'Teori a popilè; sepandan, prèv yo kontredi l.'"
+          ]
+        },
+        {
+          "heading": "3. Adisyon ak Akò",
+          "points": [
+            "Anplis, plis ankò, adisyonèlman, menm jan an",
+            "Sèvi ak lè w ap ajoute enfòmasyon sipò",
+            "Egzanp: 'Elèv yo bezwen pratike; anplis, yo benefisye de fidbak.'"
+          ]
+        },
+        {
+          "heading": "4. Tan ak Sekans",
+          "points": [
+            "Antretan, apre sa, anvan, finalman",
+            "Sèvi ak pou montre lòd kronolojik",
+            "Egzanp: 'Premyèman, rasanble done yo; apre sa, analize rezilta yo.'"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "text": "Inkorek: 'Nou te manke lajan. Menm jan an, nou ranvwaye pwojè a.'",
+          "explanation": "'Menm jan an' endike akò, men fraz la montre kòz-efe. Sèvi ak 'Kòm rezilta' olye."
+        },
+        {
+          "text": "Korek: 'Etid la te serye; sepandan, kritè yo te jwenn defo.'",
+          "explanation": "'Sepandan' byen montre kontradiksyon ant travay serye ak kritik la."
+        }
+      ],
+      "practiceHint": "Anvan ou chwazi yon tranzisyon, poze tèt ou: Ki relasyon ki genyen? Èske dezyèm fraz la opoze, sipòte, rezilta oswa swiv premye a? Fè desizyon ou dapre tip tranzisyon an."
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "id": "boundaries-punctuation",
+  "category": "reading-writing",
+  "skill": "Boundaries",
+  "difficulty": "easy",
+  "title": {
+    "en": "Punctuation Boundaries: When to Use Commas, Periods, and Semicolons",
+    "es": "Límites de Puntuación: Cuándo Usar Comas, Puntos y Punto y Coma",
+    "fr": "Limites de Ponctuation : Quand utiliser des virgules, des points et des points-virgules",
+    "pt": "Limites de Pontuação: Quando Usar Vírgulas, Pontos e Ponto e Vírgula",
+    "ht": "Limit Ponktyasyon: Kilè pou Itilize Vigil, Pwen ak Pwen-vigil"
+  },
+  "summary": {
+    "en": "Learn the essential rules for punctuation boundaries in SAT Writing. Master when to separate clauses and avoid common errors.",
+    "es": "Aprende las reglas esenciales para los límites de puntuación en el SAT Writing. Domina cuándo separar cláusulas y evita errores comunes.",
+    "fr": "Apprenez les règles essentielles des limites de ponctuation au SAT Writing. Maîtrisez quand séparer les propositions et évitez les erreurs fréquentes.",
+    "pt": "Aprenda as regras essenciais sobre limites de pontuação no SAT Writing. Aprenda quando separar orações e evite erros comuns.",
+    "ht": "Aprann règ enpòtan pou limit ponktyasyon nan SAT Writing. Metrize kilè pou separe fraz e evite erè komen."
+  },
+  "fullContent": {
+    "en": {
+      "introduction": "Punctuation boundaries are one of the most tested concepts on the SAT Writing section. Understanding when and how to properly separate clauses will help you avoid run-on sentences and comma splices.",
+      "sections": [
+        {
+          "heading": "The Golden Rule",
+          "content": "Never separate a subject from its verb with a single comma. This is identical in most languages and is the foundation of punctuation rules."
+        },
+        {
+          "heading": "Independent vs. Dependent Clauses",
+          "content": "An independent clause can stand alone as a complete sentence. A dependent clause cannot. Understanding this distinction is crucial for proper punctuation."
+        },
+        {
+          "heading": "Common Scenarios",
+          "points": [
+            "Two independent clauses: Use a comma + coordinating conjunction (and, but, or, so) OR use a semicolon",
+            "Independent + dependent clause: Usually needs a comma only if the dependent clause comes first",
+            "Lists or series: Use commas to separate three or more items",
+            "Introductory phrases: Often require a comma after them"
+          ]
+        },
+        {
+          "heading": "What NOT to Do",
+          "points": [
+            "Don't use a comma between subject and verb",
+            "Don't join two independent clauses with only a comma (comma splice)",
+            "Don't use a semicolon before a dependent clause"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "text": "The students who study regularly perform better.",
+          "explanation": "No comma needed - 'who study regularly' is essential to identify which students"
+        },
+        {
+          "text": "My sister loves reading; she finishes a book every week.",
+          "explanation": "Semicolon correctly joins two related independent clauses"
+        }
+      ],
+      "practiceHint": "When you see punctuation questions, identify the clauses first. Ask: Can this stand alone? If yes, it's independent and needs proper separation from other independent clauses."
+    },
+    "es": {
+      "introduction": "Los límites de puntuación son uno de los conceptos más evaluados en la sección de Escritura del SAT. Entender cuándo y cómo separar correctamente las cláusulas te ayudará a evitar oraciones extensas y errores de coma.",
+      "sections": [
+        {
+          "heading": "La Regla de Oro",
+          "content": "Nunca separes un sujeto de su verbo con una coma. Esto es igual en la mayoría de los idiomas y es la base de las reglas de puntuación."
+        },
+        {
+          "heading": "Cláusulas Independientes vs. Dependientes",
+          "content": "Una cláusula independiente puede estar sola como una oración completa. Una cláusula dependiente no puede. Entender esta distinción es crucial para usar la puntuación correcta."
+        },
+        {
+          "heading": "Escenarios Comunes",
+          "points": [
+            "Dos cláusulas independientes: Usa una coma + conjunción coordinada (y, pero, o, entonces) O usa un punto y coma",
+            "Cláusula independiente + dependiente: Por lo general, solo necesita una coma si la cláusula dependiente va primero",
+            "Listas o series: Usa comas para separar tres o más elementos",
+            "Frases introductorias: A menudo requieren una coma después de ellas"
+          ]
+        },
+        {
+          "heading": "Qué NO Hacer",
+          "points": [
+            "No uses una coma entre sujeto y verbo",
+            "No unas dos cláusulas independientes solamente con una coma (coma splice)",
+            "No uses un punto y coma antes de una cláusula dependiente"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "text": "Los estudiantes que estudian regularmente tienen mejores resultados.",
+          "explanation": "No se necesita coma: 'que estudian regularmente' es esencial para identificar qué estudiantes"
+        },
+        {
+          "text": "A mi hermana le encanta leer; termina un libro cada semana.",
+          "explanation": "El punto y coma une correctamente dos cláusulas independientes relacionadas"
+        }
+      ],
+      "practiceHint": "Cuando veas preguntas sobre puntuación, identifica primero las cláusulas. Pregunta: ¿Puede estar sola? Si es así, es independiente y debe separarse de otras cláusulas independientes."
+    },
+    "fr": {
+      "introduction": "Les limites de ponctuation sont l'un des concepts les plus testés dans la section Écriture du SAT. Comprendre quand et comment séparer correctement les propositions vous aidera à éviter les phrases courtes et les erreurs de virgule.",
+      "sections": [
+        {
+          "heading": "La règle d'or",
+          "content": "Ne séparez jamais un sujet de son verbe avec une virgule. Ceci est identique dans la plupart des langues et constitue la base des règles de ponctuation."
+        },
+        {
+          "heading": "Propositions indépendantes vs. dépendantes",
+          "content": "Une proposition indépendante peut constituer une phrase complète seule. Une proposition dépendante non. Comprendre cette distinction est crucial pour une ponctuation correcte."
+        },
+        {
+          "heading": "Scénarios courants",
+          "points": [
+            "Deux propositions indépendantes : Utilisez une virgule + conjonction de coordination (et, mais, ou, donc) OU utilisez un point-virgule",
+            "Proposition indépendante + dépendante : Nécessite généralement une virgule seulement si la proposition dépendante vient en premier",
+            "Listes ou séries : Utilisez des virgules pour séparer trois éléments ou plus",
+            "Phrases introductives : Nécessitent souvent une virgule après elles"
+          ]
+        },
+        {
+          "heading": "Ce qu'il NE FAUT PAS faire",
+          "points": [
+            "N'utilisez pas de virgule entre le sujet et le verbe",
+            "N'unissez pas deux propositions indépendantes uniquement avec une virgule (erreur de virgule)",
+            "N'utilisez pas de point-virgule avant une proposition dépendante"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "text": "Les étudiants qui étudient régulièrement réussissent mieux.",
+          "explanation": "Pas besoin de virgule – 'qui étudient régulièrement' est essentiel pour identifier les étudiants"
+        },
+        {
+          "text": "Ma sœur adore lire ; elle termine un livre chaque semaine.",
+          "explanation": "Le point-virgule relie correctement deux propositions indépendantes"
+        }
+      ],
+      "practiceHint": "Lorsque vous voyez des questions sur la ponctuation, identifiez d'abord les propositions. Demandez-vous : Cela peut-il exister seul ? Si oui, c'est indépendant et doit être séparé adéquatement des autres propositions indépendantes."
+    },
+    "pt": {
+      "introduction": "Limites de pontuação são um dos conceitos mais testados na seção de Escrita do SAT. Compreender quando e como separar corretamente as orações ajudará você a evitar frases longas e erros de vírgula.",
+      "sections": [
+        {
+          "heading": "A Regra de Ouro",
+          "content": "Nunca separe um sujeito do seu verbo com uma vírgula. Isso é igual na maioria dos idiomas e é a base das regras de pontuação."
+        },
+        {
+          "heading": "Orações Independentes vs. Dependentes",
+          "content": "Uma oração independente pode ficar sozinha como uma frase completa. Uma oração dependente não pode. Entender essa distinção é fundamental para usar a pontuação corretamente."
+        },
+        {
+          "heading": "Cenários Comuns",
+          "points": [
+            "Duas orações independentes: Use uma vírgula + conjunção coordenada (e, mas, ou, então) OU use ponto e vírgula",
+            "Oração independente + dependente: Normalmente precisa de vírgula só se a cláusula dependente vier primeiro",
+            "Listas ou séries: Use vírgulas para separar três ou mais itens",
+            "Frases introdutórias: Frequentemente requerem uma vírgula depois delas"
+          ]
+        },
+        {
+          "heading": "O que NÃO fazer",
+          "points": [
+            "Não use vírgula entre sujeito e verbo",
+            "Não junte duas orações independentes apenas com uma vírgula",
+            "Não use ponto e vírgula antes de uma oração dependente"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "text": "Os estudantes que estudam regularmente têm melhor desempenho.",
+          "explanation": "Não precisa de vírgula – 'que estudam regularmente' é essencial para identificar quais estudantes"
+        },
+        {
+          "text": "Minha irmã adora ler; ela termina um livro toda semana.",
+          "explanation": "O ponto e vírgula une corretamente duas orações independentes"
+        }
+      ],
+      "practiceHint": "Quando vir questões de pontuação, identifique primeiro as orações. Pergunte: Isso pode ficar sozinho? Se sim, é independente e precisa de separação adequada de outras orações independentes."
+    },
+    "ht": {
+      "introduction": "Limit ponktyasyon se youn nan konsèp ki pi souvan teste nan seksyon ekriti SAT la. Konprann ki lè ak kijan pou separe fraz ap ede w evite fraz ki twò long oswa mal ponktue.",
+      "sections": [
+        {
+          "heading": "Règ Lò a",
+          "content": "Pa janm separe sijè ak vèb ak yon sèl vigil. Sa a se menm nan pifò lang epi li se baz règ ponktyasyon yo."
+        },
+        {
+          "heading": "Fraz Endepandan vs. Depandan",
+          "content": "Yon fraz endepandan ka kanpe poukont li kòm yon fraz konplè. Yon fraz depandan pa kapab. Konprann diferans sa a esansyèl pou ponktyasyon apwopriye."
+        },
+        {
+          "heading": "Egzanp Komen",
+          "points": [
+            "De fraz endepandan: Sèvi ak vigil + konjonksyon kowòdone (e, men, oswa, konsa) OSWA sèvi ak pwen-vigil",
+            "Endepandan + depandan: Anjeneral sèlman bezwen vigil si fraz depandan an vini an premye",
+            "Lis oswa seri: Sèvi ak vigil pou separe twa oswa plis atik",
+            "Frase entwodiksyon: Souvan mande yon vigil apre yo"
+          ]
+        },
+        {
+          "heading": "Sa ou PA dwe fè",
+          "points": [
+            "Pa mete vigil ant sijè ak vèb",
+            "Pa mete de fraz endepandan ansanm ak sèlman yon vigil",
+            "Pa mete pwen-vigil devan yon fraz depandan"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "text": "Elèv ki etidye regilyèman gen pi bon rezilta.",
+          "explanation": "Pa bezwen vigil – 'ki etidye regilyèman' esansyèl pou idantifye ki elèv"
+        },
+        {
+          "text": "Sè mwen renmen li anpil; li fini yon liv chak semèn.",
+          "explanation": "Pwen-vigil la byen mete ansanm de fraz endepandan"
+        }
+      ],
+      "practiceHint": "Si w wè kesyon sou ponktyasyon, idantifye fraz yo anvan. Mande tèt ou: Èske sa a ka kanpe poukont li? Si wi, li endepandan e li bezwen separe ak lòt fraz endepandan yo."
+    }
+  }
+}

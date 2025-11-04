@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LearnPALM - Practice</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+  <link rel="stylesheet" href="/static/css/styles.css">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJE9RQF601"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VJE9RQF601');
+  </script>
+</head>
+<body class="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-200">
+  
+  <!-- HEADER/NAVBAR -->
+  <header class="sticky top-0 z-20 backdrop-blur bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-700 transition-colors duration-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <img src="/static/img/LearnPALM Logo.png" alt="Logo" class="h-14 w-auto">
+        <span class="font-semibold text-lg">LearnPALM</span>
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/" class="hover:underline dark:hover:text-blue-400 transition">Home</a>
+        <a href="/templates/lessons.html" class="hover:underline dark:hover:text-blue-400 transition">Lessons</a>
+        <a href="/templates/practice_home.html" class="hover:underline dark:hover:text-blue-400 transition">Practice</a>
+        <a href="/templates/scholarships.html" class="hover:underline dark:hover:text-blue-400 transition">Scholarships</a>
+        <a href="#resources" class="hover:underline dark:hover:text-blue-400 transition">Resources</a>
+        <a href="/templates/glossary.html" class="hover:underline dark:hover:text-blue-400 transition">Glossary</a>
+        
+        <!-- LANGUAGE SELECTOR -->
+        <div class="flex items-center gap-2 ml-2 pl-2 border-l border-gray-300 dark:border-gray-700">
+          <span class="text-gray-600 dark:text-gray-400">🌐</span>
+          <select id="select-language" class="rounded-md border border-gray-300 dark:border-gray-700 px-3 py-1.5 font-medium bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="ht">Kreyòl</option>
+            <option value="pt">Português</option>
+            <option value="fr">Français</option>
+          </select>
+        </div>
+
+        <!-- SETTINGS BUTTON -->
+        <div class="relative">
+          <button id="settings-btn" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition" aria-label="Settings">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </button>
+
+          <!-- SETTINGS DROPDOWN MENU -->
+          <div id="settings-menu" class="hidden absolute top-12 right-0 w-72 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-xl p-4 z-50">
+            <h3 class="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">Settings</h3>
+            
+            <!-- Dark Mode Toggle -->
+            <div class="flex items-center justify-between py-3 border-b border-gray-200 dark:border-gray-700">
+              <div class="flex items-center gap-3">
+                <div class="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg">
+                  <svg class="w-5 h-5 text-gray-700 dark:text-yellow-400 transition-colors" fill="currentColor" viewBox="0 0 20 20">
+                    <path class="hidden dark:block" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+                    <path class="block dark:hidden" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-medium text-sm text-gray-900 dark:text-gray-100">Dark Mode</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400" id="theme-status">Light theme active</div>
+                </div>
+              </div>
+              
+              <button id="dark-toggle" class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 bg-gray-300 dark:bg-blue-600" role="switch">
+                <span id="toggle-circle" class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform translate-x-1 dark:translate-x-6"></span>
+              </button>
+            </div>
+
+            <!-- English Questions Toggle -->
+            <div class="flex items-center justify-between py-3 border-b border-gray-200 dark:border-gray-700">
+              <div class="flex items-center gap-3">
+                <div class="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg">
+                  <svg class="w-5 h-5 text-gray-700 dark:text-gray-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-medium text-sm text-gray-900 dark:text-gray-100">English Questions</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400" id="english-questions-status">Questions in selected language</div>
+                </div>
+              </div>
+              
+              <button id="english-questions-toggle" class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 bg-gray-300" role="switch">
+                <span id="english-toggle-circle" class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform translate-x-1"></span>
+              </button>
+            </div>
+
+            <!-- Additional Settings -->
+            <div class="py-3">
+              <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">About</div>
+              <a href="#" class="block py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Help & Support</a>
+              <a href="#" class="block py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Mobile menu -->
+      <div class="md:hidden flex items-center gap-3">
+        <span class="text-sm text-gray-600 dark:text-gray-400">🌐</span>
+        <select id="select-language-mobile" class="rounded-md border border-gray-300 dark:border-gray-700 px-2 py-1 text-sm font-medium bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="ht">HT</option>
+          <option value="pt">PT</option>
+          <option value="fr">FR</option>
+        </select>
+        
+        <button id="settings-btn-mobile" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRACTICE HOME CONTENT -->
+  <section class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <div class="inline-flex items-center gap-2 rounded-full border border-gray-300 dark:border-gray-700 px-3 py-1 text-xs text-gray-700 dark:text-gray-300">
+        <span>Original, multilingual curriculum</span>
+      </div>
+      <h1 class="mt-3 text-3xl font-bold text-gray-900 dark:text-gray-100">Master the SAT with multilingual practice</h1>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">Free, comprehensive SAT prep</p>
+      <p class="text-gray-600 dark:text-gray-400">Created and published by 1580-1600 scorers</p>
+
+      <div class="mt-6 flex gap-3">
+        <a href="#lessons" class="inline-flex items-center rounded-2xl bg-gray-900 dark:bg-blue-600 text-white px-4 py-2 hover:bg-gray-800 dark:hover:bg-blue-700 transition">Start Learning</a>
+        <a href="#partner" class="inline-flex items-center rounded-2xl border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-800 transition">Partner With Us</a>
+      </div>
+    </div>
+    <div class="rounded-3xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 p-4">
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100">How It Works</h2>
+      <ul class="mt-2 space-y-2 text-sm text-gray-700 dark:text-gray-300">
+        <li>• Choose your section and topic</li>
+        <li>• Practice with real SAT-style questions</li>
+        <li>• Pick your language and learn!</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PRACTICE SECTION -->
+  <section id="lessons" class="max-w-6xl mx-auto px-4 py-8">
+    <!-- First row: Section, Type, Difficulty -->
+    <div class="mb-4 flex flex-wrap items-center gap-3 text-sm">
+      <!-- SECTION SELECTOR -->
+      <div class="flex items-center gap-2">
+        <span class="text-gray-600 dark:text-gray-400">Section</span>
+        <select id="select-section" class="rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-2 py-1 cursor-pointer">
+          <option value="">Section — select</option>
+          <option value="Math">Math</option>
+          <option value="RW">Reading & Writing</option>
+        </select>
+      </div>
+      
+      <!-- TYPE SELECTOR -->
+      <div class="flex items-center gap-2">
+        <span class="text-gray-600 dark:text-gray-400">Type</span>
+        <select id="select-type" class="rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-2 py-1 cursor-pointer">
+          <option value="">Type — select</option>
+        </select>
+      </div>
+      
+      <!-- DIFFICULTY SELECTOR -->
+      <div class="flex items-center gap-2">
+        <span class="text-gray-600 dark:text-gray-400">📊 Difficulty</span>
+        <select id="select-difficulty" class="rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-2 py-1 cursor-pointer">
+          <option value="">All Levels</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Second row: Skills (dynamically shown) -->
+    <div class="mb-4 flex flex-wrap items-center gap-3 text-sm" id="skills-container" style="display: none;">
+      <div class="flex items-center gap-2">
+        <span class="text-gray-600 dark:text-gray-400">🎯 Skill</span>
+        <select id="select-skill" class="rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-2 py-1 cursor-pointer">
+          <option value="">All skills</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Practice Card -->
+    <div id="practice-card" class="rounded-2xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 p-4">
+      <p id="practice-prompt" class="text-gray-700 dark:text-gray-300 whitespace-pre-line"></p>
+      <div id="practice-choices" class="mt-3 grid gap-2"></div>
+      
+      <!-- Submit button -->
+      <button id="btn-submit" class="mt-3 inline-flex items-center rounded-2xl bg-gray-900 dark:bg-blue-600 text-white px-4 py-2 disabled:opacity-50 hover:bg-gray-800 dark:hover:bg-blue-700 transition" disabled>Submit</button>
+      
+      <!-- Explanation box -->
+      <div id="practice-expl" class="mt-3 text-sm text-gray-600 dark:text-gray-400 hidden">
+        <span class="font-medium">Explanation:</span>
+        <span id="expl-text"></span>
+      </div>
+      
+      <!-- Navigation buttons -->
+      <div id="question-nav" class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700 flex flex-wrap gap-2 items-center hidden">
+        <button id="btn-prev" class="inline-flex items-center rounded-xl border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 px-4 py-2 text-sm hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
+          ← Previous
+        </button>
+        <button id="btn-next" class="inline-flex items-center rounded-xl bg-blue-600 dark:bg-blue-500 text-white px-4 py-2 text-sm hover:bg-blue-700 dark:hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
+          Next →
+        </button>
+        <button id="btn-random" class="inline-flex items-center rounded-xl border border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-400 px-4 py-2 text-sm hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors">
+          🎲 Random
+        </button>
+        <span id="question-counter" class="ml-auto text-sm text-gray-500 dark:text-gray-400 font-medium"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES SECTION -->
+  <section id="resources" class="max-w-6xl mx-auto px-4 py-8">
+    <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Resources</h2>
+    <div class="grid md:grid-cols-3 gap-4 mt-2">
+      <a href="https://www.khanacademy.org/test-prep" target="_blank" rel="noopener" class="rounded-2xl border border-gray-300 dark:border-gray-700 p-4 bg-white dark:bg-gray-800 block hover:shadow-lg dark:hover:shadow-gray-900/50 transition">
+        <h3 class="font-medium text-gray-900 dark:text-gray-100">Khan Academy</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Personalized, free practice aligned to the SAT.</p>
+      </a>
+      <a href="https://bluebook.collegeboard.org/students" target="_blank" rel="noopener" class="rounded-2xl border border-gray-300 dark:border-gray-700 p-4 bg-white dark:bg-gray-800 block hover:shadow-lg dark:hover:shadow-gray-900/50 transition">
+        <h3 class="font-medium text-gray-900 dark:text-gray-100">Bluebook Practice</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Full-length practice tests in the test-day app.</p>
+      </a>
+      <a href="https://satsuite.collegeboard.org/practice" target="_blank" rel="noopener" class="rounded-2xl border border-gray-300 dark:border-gray-700 p-4 bg-white dark:bg-gray-800 block hover:shadow-lg dark:hover:shadow-gray-900/50 transition">
+        <h3 class="font-medium text-gray-900 dark:text-gray-100">Official SAT Guide</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Understand format, timing, and scoring.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- PARTNER SECTION -->
+  <section id="partner" class="max-w-6xl mx-auto px-4 py-8">
+    <div class="rounded-3xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 p-6">
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Get Started</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">Sign up for free resources</p>
+      <form class="mt-3 grid sm:grid-cols-[1fr_auto] gap-2">
+        <input type="email" class="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="your@email.com" required>
+        <button class="rounded-md bg-gray-900 dark:bg-blue-600 text-white px-4 py-2 hover:bg-gray-800 dark:hover:bg-blue-700 transition">Send me the kit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-200 dark:border-gray-700">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
+      © 2025 LearnPALM
+    </div>
+  </footer>
+
+  <!-- SKILLS MAPPING SCRIPT -->
+  <script>
+    // Static skills mapping for section/type combinations
+    const skillsByType = {
+      "algebra": [
+        "Linear equations in one variable",
+        "Linear functions",
+        "Linear equations in two variables",
+        "Systems of two linear equations in two variables",
+        "Linear inequalities in one or two variables"
+      ],
+      "advanced-math": [
+        "Nonlinear functions",
+        "Nonlinear equations in one variable and systems of equations in two variables",
+        "Equivalent expressions"
+      ],
+      "psda": [
+        "Ratios, rates, proportional relationships, and units",
+        "Percentages",
+        "One-variable data: Distributions and measures of center and spread",
+        "Two-variable data: Models and scatterplots",
+        "Probability and conditional probability",
+        "Inference from sample statistics and margin of error",
+        "Evaluating statistical claims: Observational studies and experiments"
+      ],
+      "geometry-trigonometry": [
+        "Area and volume",
+        "Lines, angles, and triangles",
+        "Right triangles and trigonometry",
+        "Circles"
+      ],
+      "information-ideas": [
+        "Central Ideas and Details",
+        "Inferences",
+        "Command of Evidence"
+      ],
+      "craft-structure": [
+        "Words in Context",
+        "Text Structure and Purpose",
+        "Cross-Text Connections"
+      ],
+      "expression-ideas": [
+        "Rhetorical Synthesis",
+        "Transitions"
+      ],
+      "standard-english": [
+        "Boundaries",
+        "Form, Structure, and Sense"
+      ]
+    };
+
+    console.log('🎓 Skills by type loaded');
+    
+    // Show/hide and populate skills dropdown when type changes
+    document.getElementById('select-type').addEventListener('change', function() {
+      const type = this.value;
+      const skills = skillsByType[type] || [];
+      const skillsSelect = document.getElementById('select-skill');
+      const skillsContainer = document.getElementById('skills-container');
+      
+      console.log('📝 Type selected:', type);
+      console.log('🎯 Available skills:', skills);
+      
+      // Clear existing options
+      skillsSelect.innerHTML = '<option value="">All skills</option>';
+      
+      if (skills.length > 0) {
+        // Show the dropdown container and populate with skills
+        skillsContainer.style.display = 'flex';
+        skills.forEach(skill => {
+          const option = document.createElement('option');
+          option.value = skill;
+          option.textContent = skill;
+          skillsSelect.appendChild(option);
+        });
+      } else {
+        // Hide if no skills for this type
+        skillsContainer.style.display = 'none';
+      }
+    });
+  </script>
+
+  <!-- LOAD MAIN PRACTICE SCRIPT -->
+  <script src="/static/js/main.js"></script>
+  <script src="/static/js/practice.js"></script>
+</body>
+</html>

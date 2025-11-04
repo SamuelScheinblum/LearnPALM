@@ -1,0 +1,2408 @@
+{
+  "section": "RW",
+  "type": "standard-english",
+  "questions": [
+    {
+      "id": "rw_sec_boundaries_hard_001",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The Bauhaus movement, founded by architect Walter Gropius, is known for its fusion of art and ______ designers might explore, for example, the practical application of abstract theories in furniture making.",
+        "es": "El movimiento Bauhaus es conocido por su fusión de arte y ______ los diseñadores podrían explorar, por ejemplo, la aplicación práctica de teorías abstractas en la fabricación de muebles.",
+        "pt": "O movimento Bauhaus é conhecido por sua fusão de arte e ______ os designers podem explorar, por exemplo, a aplicação prática de teorias abstratas na fabricação de móveis.",
+        "fr": "Le mouvement Bauhaus est connu pour sa fusion de l'art et de l'______ les designers pouvaient explorer, par exemple, l'application pratique de théories abstraites dans la fabrication de meubles.",
+        "ht": "Mouvman Bauhaus la, se konnen pou fizyon li ant atizay ak ______ designer yo te ka eksplore, pa egzanp, aplikasyon pratik teyori abstrè nan fabrikasyon mèb."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "craft",
+          "es": "artesanía",
+          "pt": "artesanato",
+          "fr": "artisanat",
+          "ht": "atizana"
+        },
+        {
+          "key": "B",
+          "en": "craft which",
+          "es": "artesanía que",
+          "pt": "artesanato que",
+          "fr": "artisanat qui",
+          "ht": "atizana ki"
+        },
+        {
+          "key": "C",
+          "en": "craft,",
+          "es": "artesanía,",
+          "pt": "artesanato,",
+          "fr": "artisanat,",
+          "ht": "atizana,"
+        },
+        {
+          "key": "D",
+          "en": "craft;",
+          "es": "artesanía;",
+          "pt": "artesanato;",
+          "fr": "artisanat ;",
+          "ht": "atizana;"
+        }
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This option is correct because a semicolon is used to join two closely related independent clauses. The first clause makes a statement about the Bauhaus movement, and the second provides a specific example, making them two complete but connected sentences.",
+        "es": "La opción D es la correcta porque se necesita un punto y coma para unir correctamente dos cláusulas independientes que están estrechamente relacionadas. La gramática española utiliza el punto y coma de manera muy similar al inglés para conectar dos oraciones completas que guardan una fuerte relación lógica.",
+        "pt": "A opção D é a correta porque um ponto e vírgula é usado para unir duas orações independentes intimamente relacionadas. Em português, o ponto e vírgula também serve para conectar duas orações completas que mantêm uma estreita relação de sentido.",
+        "fr": "L'option D est la correcte car un point-virgule est requis pour joindre correctement deux propositions indépendantes étroitement liées. La grammaire française emploie également le point-virgule pour relier deux phrases complètes qui sont unies par une relation logique forte.",
+        "ht": "Opsyon D a kòrèk paske li itilize yon pwen-vigil pou konekte de fraz endepandan ki gen yon relasyon sere. An Kreyòl, yon pwen-vigil sèvi tou pou konekte de fraz konplè ki gen yon lyen lojik sere anpil."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_002",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The minimalist paintings of Agnes Martin, which use subtle grids and pale colors to create a sense of tranquility, have won acclaim from prominent contemporary ______ them art critic Lucy Lippard, who described Martin's work as a 'meditation on the sublime.'",
+        "es": "Las pinturas minimalistas de Agnes Martin han ganado el aplauso de destacados críticos ______ ellos la crítica de arte Lucy Lippard, quien describió la obra de Martin como una 'meditación sobre lo sublime'.",
+        "pt": "As pinturas minimalistas de Agnes Martin ganharam aclamação de proeminentes críticos ______ eles a crítica de arte Lucy Lippard, que descreveu a obra de Martin como uma 'meditação sobre o sublime'.",
+        "fr": "Les peintures minimalistes d'Agnes Martin ont été acclamées par d'éminents critiques ______ eux la critique d'art Lucy Lippard, qui a décrit l'œuvre de Martin comme une 'méditation sur le sublime'.",
+        "ht": "Penti minimalist Agnes Martin yo te jwenn anpil elòj nan men gwo kritik ______ yo gen kritik atizay Lucy Lippard, ki te dekri travay Martin kòm yon 'meditasyon sou sublim nan'."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "critics. Among",
+          "es": "contemporáneos. Entre",
+          "pt": "contemporâneos. Entre",
+          "fr": "contemporains. Parmi",
+          "ht": "kontanporen. Pami"
+        },
+        {
+          "key": "B",
+          "en": "critics among",
+          "es": "contemporáneos entre",
+          "pt": "contemporâneos entre",
+          "fr": "contemporains parmi",
+          "ht": "kontanporen pami"
+        },
+        {
+          "key": "C",
+          "en": "critics; among",
+          "es": "contemporáneos; entre",
+          "pt": "contemporâneos; entre",
+          "fr": "contemporains ; parmi",
+          "ht": "kontanporen; pami"
+        },
+        {
+          "key": "D",
+          "en": "critics, among",
+          "es": "contemporáneos, entre",
+          "pt": "contemporâneos, entre",
+          "fr": "contemporains, parmi",
+          "ht": "kontanporen, pami"
+        }
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This option is correct because it uses a comma to separate the main clause from the supplementary phrase ('among them...') that provides a specific example. This type of non-essential phrase must be set off from the main clause by a comma.",
+        "es": "La opción D es la correcta porque utiliza una coma para separar la cláusula principal de la frase suplementaria ('entre ellos...') que proporciona un ejemplo. La gramática española también requiere una coma para introducir una frase explicativa o un ejemplo que no es esencial para el significado básico de la oración.",
+        "pt": "A opção D é a correta porque usa uma vírgula para separar a oração principal da frase suplementar ('entre eles...') que fornece um exemplo específico. Em português, esta estrutura é paralela, onde uma vírgula é usada para introduzir um aposto explicativo ou uma frase de exemplo.",
+        "fr": "L'option D est la correcte car elle utilise une virgule pour séparer la proposition principale de la phrase supplémentaire ('parmi eux...') qui donne un exemple. La grammaire française suit une règle similaire, utilisant une virgule pour détacher une apposition ou un complément non essentiel.",
+        "ht": "Opsyon D a kòrèk paske li itilize yon vigil pou separe fraz prensipal la ak fraz siplemantè a ('pami yo...') ki bay yon egzanp. An Kreyòl, règ sa a aplike tou; ou dwe sèvi ak yon vigil pou ajoute yon moso enfòmasyon anplis ki pa esansyèl."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_003",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "In 2020, biochemist Jennifer Doudna won the Nobel Prize for her work on the gene-editing tool CRISPR-Cas9 (i.e., a system that can alter DNA ______ using this technology to correct genetic defects, scientists hope to cure inherited diseases.",
+        "es": "En 2020, Jennifer Doudna ganó el Premio Nobel por su trabajo en la herramienta de edición genética CRISPR-Cas9 (un sistema que puede alterar secuencias de ADN ______ usar esta tecnología, los científicos esperan curar enfermedades hereditarias.",
+        "pt": "Em 2020, a bioquímica Jennifer Doudna ganhou o Prêmio Nobel por seu trabalho na ferramenta de edição de genes CRISPR-Cas9 (um sistema que pode alterar sequências de ADN ______ usar esta tecnologia, os cientistas esperam curar doenças hereditárias.",
+        "fr": "En 2020, la biochimiste Jennifer Doudna a remporté le prix Nobel pour son travail sur l'outil d'édition génétique CRISPR-Cas9 (un système capable de modifier les séquences d'ADN ______ utilisant cette technologie, les scientifiques espèrent guérir des maladies héréditaires.",
+        "ht": "An 2020, byochimis Jennifer Doudna te genyen Pri Nobèl pou travay li sou zouti koreksyon jèn CRISPR-Cas9 (yon sistèm ki ka chanje sekans ADN ______ itilize teknoloji sa a, syantis yo espere geri maladi éréditè."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "sequences). By",
+          "es": "). Al",
+          "pt": "). Ao",
+          "fr": "). En",
+          "ht": "). Lè yo"
+        },
+        {
+          "key": "B",
+          "en": "sequences), by",
+          "es": "), al",
+          "pt": "), ao",
+          "fr": "), en",
+          "ht": "), lè yo"
+        },
+        {
+          "key": "C",
+          "en": "sequences) and by",
+          "es": ") y al",
+          "pt": ") e ao",
+          "fr": ") et en",
+          "ht": ") epi lè yo"
+        },
+        {
+          "key": "D",
+          "en": "sequences) by",
+          "es": ") al",
+          "pt": ") ao",
+          "fr": ") en",
+          "ht": ") lè yo"
+        }
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This option is correct because a period is required after the closing parenthesis to properly end the first sentence. The phrase starting with 'By' begins a new, complete sentence.",
+        "es": "La opción A es la correcta porque se requiere un punto después del paréntesis de cierre para terminar correctamente la primera oración. Esta regla es idéntica en español, donde se usa un punto para separar dos oraciones completas, incluso si la primera termina con un paréntesis.",
+        "pt": "A opção A é a correta porque é necessário um ponto final após o parêntese de fecho para terminar adequadamente a primeira frase. A gramática portuguesa também exige um ponto final para separar duas sentenças independentes, mesmo quando a primeira termina com um parêntese.",
+        "fr": "L'option A est la correcte car un point est requis après la parenthèse fermante pour terminer correctement la première phrase. En français, il est également obligatoire de séparer deux phrases complètes par un point, même après une parenthèse.",
+        "ht": "Opsyon A a kòrèk paske yon pwen nesesè apre parantèz la pou fini premye fraz la kòrèkteman. Règleman sa a se menm bagay la an Kreyòl; ou dwe mete yon pwen pou separe de fraz konplè, menm si gen yon parantèz nan fen premye a."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_004",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The Great Fire of London in 1666 was a devastating event, its flames so intense, so widespread, and so ______ that it reshaped the entire city, leading to new building codes and architectural styles.",
+        "es": "El Gran Incendio de Londres en 1666 fue un evento devastador, con llamas tan intensas, tan extendidas y tan ______ que remodeló toda la ciudad.",
+        "pt": "O Grande Incêndio de Londres em 1666 foi um evento devastador, com suas chamas tão intensas, tão generalizadas e tão ______ que remodelou a cidade inteira.",
+        "fr": "Le Grand Incendie de Londres en 1666 fut un événement dévastateur, ses flammes si intenses, si étendues et si ______ qu'il a remodelé la ville entière.",
+        "ht": "Gwo Dife Lond la an 1666 se te yon evènman devaste, flanm dife li yo te tèlman entans, tèlman laj, epi tèlman ______ ke li te refòme tout vil la."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "destructive:",
+          "es": "destructivas:",
+          "pt": "destrutivas:",
+          "fr": "destructrices :",
+          "ht": "destriktif:"
+        },
+        {
+          "key": "B",
+          "en": "destructive;",
+          "es": "destructivas;",
+          "pt": "destrutivas;",
+          "fr": "destructrices ;",
+          "ht": "destriktif;"
+        },
+        {
+          "key": "C",
+          "en": "destructive",
+          "es": "destructivas",
+          "pt": "destrutivas",
+          "fr": "destructrices",
+          "ht": "destriktif"
+        },
+        {
+          "key": "D",
+          "en": "destructive,",
+          "es": "destructivas,",
+          "pt": "destrutivas,",
+          "fr": "destructrices,",
+          "ht": "destriktif,"
+        }
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This option is correct because no punctuation is needed before the essential 'that' clause. The clause 'that it reshaped the entire city' is necessary to complete the meaning of the construction 'so... that', and therefore should not be separated by punctuation.",
+        "es": "La opción C es la correcta porque no se necesita puntuación antes de la cláusula 'que'. En la construcción española 'tan... que...', la cláusula introducida por 'que' es esencial para el significado y, al igual que en inglés, no se separa con puntuación.",
+        "pt": "A opção C é a correta porque nenhuma pontuação é necessária antes da oração 'que'. Na estrutura portuguesa 'tão... que...', a oração introduzida por 'que' é essencial para o sentido e, de forma semelhante ao inglês, não é separada por pontuação.",
+        "fr": "L'option C est la correcte car aucune ponctuation n'est nécessaire avant la proposition 'que'. Dans la construction française 'si... que...', la proposition introduite par 'que' est essentielle à la phrase et ne doit pas en être séparée par une ponctuation, tout comme en anglais.",
+        "ht": "Opsyon C a kòrèk paske pa bezwen okenn ponktiyasyon anvan fraz 'ke' a. An Kreyòl, nan estrikti 'tèlman... ke...', fraz ki kòmanse ak 'ke' a esansyèl pou siyifikasyon an, epi menm jan an Anglè, li pa dwe separe pa ponktiyasyon."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_005",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The forests of Japan are home to several species of bioluminescent ______ glowing mushrooms that emit an eerie light, these fungi create a magical, otherworldly spectacle for nighttime hikers.",
+        "es": "Los bosques de Japón albergan varias especies de ______ bioluminiscentes, organismos que emiten una luz espeluznante, estos hongos crean un espectáculo mágico para los excursionistas.",
+        "pt": "As florestas do Japão abrigam várias espécies de ______ bioluminescentes, organismos que emitem uma luz misteriosa, esses fungos criam um espetáculo mágico para os caminhantes.",
+        "fr": "Les forêts du Japon abritent plusieurs espèces de ______ bioluminescents, organismes qui émettent une lumière étrange, ces champignons créent un spectacle magique pour les randonneurs.",
+        "ht": "Forè Japon yo gen plizyè espès ______ biyoluminesan, òganis ki emèt yon limyè etranj, chanpiyon sa yo kreye yon espektak majik pou randone."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "fungi organisms",
+          "es": "hongos",
+          "pt": "fungos",
+          "fr": "champignons",
+          "ht": "chanpiyon"
+        },
+        {
+          "key": "B",
+          "en": "fungi, organisms",
+          "es": "hongos,",
+          "pt": "fungos,",
+          "fr": "champignons,",
+          "ht": "chanpiyon,"
+        },
+        {
+          "key": "C",
+          "en": "fungi. Organisms",
+          "es": "hongos.",
+          "pt": "fungos.",
+          "fr": "champignons.",
+          "ht": "chanpiyon."
+        },
+        {
+          "key": "D",
+          "en": "fungi and organisms",
+          "es": "hongos y",
+          "pt": "fungos e",
+          "fr": "champignons et",
+          "ht": "chanpiyon ak"
+        }
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This option is correct because it uses a period to create two distinct sentences. The first sentence introduces the fungi, and the second sentence, beginning with the appositive 'Organisms glowing mushrooms...', renames and provides more detail about them.",
+        "es": "La opción C es la correcta porque utiliza un punto para crear dos oraciones distintas. Esta estructura también es correcta en español, donde una nueva oración puede comenzar con una aposición ('Organismos...') para aclarar o dar más detalles sobre el sujeto de la oración anterior.",
+        "pt": "A opção C é a correta porque usa um ponto final para criar duas sentenças distintas. A gramática portuguesa também permite que uma nova frase comece com um aposto ('Organismos...') para renomear e detalhar o sujeito da frase anterior, criando uma conexão estilística.",
+        "fr": "L'option C est la correcte car elle utilise un point pour créer deux phrases distinctes. Tout comme en anglais, le français peut utiliser une apposition ('Organismes...') en début de la deuxième phrase pour reprendre et développer le sujet de la première phrase.",
+        "ht": "Opsyon C a kòrèk paske li itilize yon pwen pou kreye de fraz diferan. An Kreyòl, menm jan ak nan lang Anglè, ou ka kòmanse yon dezyèm fraz ak yon gwoup mo ('Òganis...') ki ap bay plis detay sou sijè fraz anvan an."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_006",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "To win the culinary competition, chef André followed a unique strategy: he grilled the fish with a blowtorch, a daring ______ infused the sauce with smoked tea leaves, a subtle flavor choice; and arranged the final dish to look like a minimalist painting.",
+        "es": "Para ganar la competencia, el chef André siguió una estrategia única: asó el pescado con un soplete, una ______ atrevida para la época; infundió la salsa con hojas de té ahumado; y arregló el plato final.",
+        "pt": "Para vencer a competição, o chef André seguiu uma estratégia única: grelhou o peixe com um maçarico, uma ______ ousada para a época; infundiu o molho com folhas de chá defumado; e arranjou o prato final.",
+        "fr": "Pour gagner le concours, le chef André a suivi une stratégie unique : il a grillé le poisson au chalumeau, une ______ audacieuse pour l'époque ; a infusé la sauce avec des feuilles de thé fumé ; et a dressé le plat final.",
+        "ht": "Pou genyen konpetisyon an, chèf André te swiv yon estrateji inik: li te griye pwason an ak yon tòch, yon ______ odasye pou epòk la; li te enfuze sòs la ak fèy te fimen; epi li te ranje plat final la."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "technique, for the time",
+          "es": "técnica,",
+          "pt": "técnica,",
+          "fr": "technique,",
+          "ht": "teknik,"
+        },
+        {
+          "key": "B",
+          "en": "technique for the time;",
+          "es": "técnica;",
+          "pt": "técnica;",
+          "fr": "technique ;",
+          "ht": "teknik;"
+        },
+        {
+          "key": "C",
+          "en": "technique, for the time,",
+          "es": "técnica",
+          "pt": "técnica",
+          "fr": "technique",
+          "ht": "teknik"
+        },
+        {
+          "key": "D",
+          "en": "technique for the time,",
+          "es": "técnica:",
+          "pt": "técnica:",
+          "fr": "technique :",
+          "ht": "teknik:"
+        }
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This option is correct because it uses a semicolon to separate items in a complex list. Since the items in the list of strategies are long clauses that contain their own commas, semicolons are the appropriate punctuation to separate one main item from the next.",
+        "es": "La opción B es la correcta porque utiliza un punto y coma para separar los elementos en una lista compleja. La gramática española tiene la misma regla: se requiere el punto y coma para separar los elementos de una lista cuando esos elementos ya contienen comas o son frases largas.",
+        "pt": "A opção B é a correta porque usa um ponto e vírgula para separar itens em uma lista complexa. A regra é idêntica em português: o ponto e vírgula é usado para separar itens em uma enumeração quando os próprios itens são longos ou já contêm vírgulas.",
+        "fr": "L'option B est la correcte car elle utilise un point-virgule pour séparer les éléments dans une énumération complexe. La grammaire française suit également cette convention; le point-virgule est utilisé pour séparer les parties principales d'une énumération lorsque ces parties sont longues ou contiennent déjà des virgules.",
+        "ht": "Opsyon B a kòrèk paske li itilize yon pwen-vigil pou separe eleman yo nan yon lis konplèks. Kreyòl la tou itilize pwen-vigil la pou objektif sa a; lè ou gen yon lis kote atik yo se fraz long, ou dwe itilize yon pwen-vigil pou separe atik prensipal yo."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_007",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "This research could reveal properties that standard particle physics ______ posits the existence of known particles like quarks and leptons—cannot account for.",
+        "es": "Esta investigación podría revelar propiedades que los modelos de la física de partículas ______ postulan la existencia de partículas conocidas como quarks y leptones— no pueden explicar.",
+        "pt": "Esta pesquisa poderia revelar propriedades que os modelos da física de partículas ______ postulam a existência de partículas conhecidas como quarks e léptons—não conseguem explicar.",
+        "fr": "Cette recherche pourrait révéler des propriétés que les modèles de la physique des particules ______ postulent l'existence de particules connues comme les quarks et les leptons — ne peuvent expliquer.",
+        "ht": "Rechèch sa a te kapab revele pwopriyete ke modèl estanda fizik patikil ______ postile egzistans patikil li te ye tankou kwak ak lepton—pa ka eksplike."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "models—which",
+          "es": "estándar—que",
+          "pt": "padrão—que",
+          "fr": "standard — qui",
+          "ht": "yo—ki"
+        },
+        {
+          "key": "B",
+          "en": "models, which",
+          "es": "estándar, que",
+          "pt": "padrão, que",
+          "fr": "standard, qui",
+          "ht": "yo, ki"
+        },
+        {
+          "key": "C",
+          "en": "models which",
+          "es": "estándar que",
+          "pt": "padrão que",
+          "fr": "standard qui",
+          "ht": "yo ki"
+        },
+        {
+          "key": "D",
+          "en": "models which—",
+          "es": "estándar que—",
+          "pt": "padrão que—",
+          "fr": "standard qui —",
+          "ht": "yo ki—"
+        }
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This option is correct because it uses a pair of dashes to set off the non-essential clause ('which posits...'). The first dash correctly opens the interruption, and the existing dash after 'leptons' closes it, making the punctuation symmetrical.",
+        "es": "La opción A es la correcta porque utiliza un par de guiones largos para encerrar la cláusula no esencial ('que postulan...'). La gramática española sigue la misma regla: un inciso explicativo que interrumpe la oración debe estar delimitado por signos de puntuación iguales, como dos guiones largos.",
+        "pt": "A opção A é a correta porque usa um par de travessões para isolar a oração não essencial ('que postulam...'). Esta regra também existe em português, onde um aposto ou oração explicativa intercalada é separada por um par de travessões.",
+        "fr": "L'option A est la correcte car elle utilise une paire de tirets cadratins pour encadrer la proposition non essentielle ('qui postulent...'). C'est aussi le cas en français, où une proposition incise peut être encadrée par deux tirets pour la séparer du reste de la phrase.",
+        "ht": "Opsyon A a kòrèk paske li itilize yon pè tirè pou mete sou kote fraz ki pa esansyèl la ('ki postile...'). Règleman sa a se menm jan an Kreyòl; yon fraz ki koupe yon lòt fraz dwe gen menm siy ponktiyasyon an (tankou de tirè) anvan ak apre li."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_008",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "Such theories remain ______ the manuscript's elaborate script may be an elaborate hoax with no actual content.",
+        "es": "Tales teorías siguen sin ______ el elaborado guion del manuscrito podría ser un engaño sin contenido real.",
+        "pt": "Tais teorias permanecem sem ______ o elaborado roteiro do manuscrito pode ser uma farsa sem conteúdo real.",
+        "fr": "De telles théories restent non ______ le script élaboré du manuscrit pourrait être un canular sans contenu réel.",
+        "ht": "Teyori sa yo rete san ______ ekriti elabore maniskri a kapab yon blòf san okenn kontni reyèl."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "unproven, however",
+          "es": "probarse, sin embargo",
+          "pt": "comprovação, no entanto",
+          "fr": "prouvées, cependant",
+          "ht": "prèv, sepandan"
+        },
+        {
+          "key": "B",
+          "en": "unproven, however;",
+          "es": "probarse, sin embargo;",
+          "pt": "comprovação, no entanto;",
+          "fr": "prouvées, cependant ;",
+          "ht": "prèv, sepandan;"
+        },
+        {
+          "key": "C",
+          "en": "unproven; however,",
+          "es": "probarse; sin embargo,",
+          "pt": "comprovação; no entanto,",
+          "fr": "prouvées ; cependant,",
+          "ht": "prèv; sepandan,"
+        },
+        {
+          "key": "D",
+          "en": "unproven, however,",
+          "es": "probarse, sin embargo,",
+          "pt": "comprovação, no entanto,",
+          "fr": "prouvées, cependant,",
+          "ht": "prèv, sepandan,"
+        }
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This option is correct because it uses a semicolon to join two independent clauses linked by a transitional adverb ('however'). In Standard English, a semicolon is placed before the adverb, and a comma is placed after it.",
+        "es": "La opción C es la correcta porque utiliza un punto y coma para unir dos cláusulas independientes conectadas por un adverbio de transición ('sin embargo'). La gramática española sigue la misma regla: se usa un punto y coma antes de conectores como 'sin embargo', y una coma después.",
+        "pt": "A opção C é a correta porque usa um ponto e vírgula para ligar duas orações independentes conectadas por um advérbio de transição ('no entanto'). A regra é idêntica em português, onde se coloca um ponto e vírgula antes de 'no entanto' e uma vírgula depois.",
+        "fr": "L'option C est la correcte car elle utilise un point-virgule pour joindre deux propositions indépendantes liées par un adverbe de liaison ('cependant'). La grammaire française suit la même convention : un point-virgule avant l'adverbe et une virgule après.",
+        "ht": "Opsyon C a kòrèk paske li itilize yon pwen-vigil pou konekte de fraz endepandan ki lye pa yon advèb tranzisyon ('sepandan'). Règleman sa a se menm jan an Kreyòl, kote ou mete yon pwen-vigil anvan 'sepandan' ak yon vigil apre li."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_009",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "Shigeru Miyamoto is a legendary figure in video game ______ inspired by his childhood explorations of the Kyoto countryside, his game designs often feature themes of discovery and adventure, Miyamoto's work on The Legend of Zelda is a prime example of this philosophy.",
+        "es": "Shigeru Miyamoto es una figura legendaria en el ______ de los videojuegos; inspirado por sus exploraciones de la infancia, sus diseños de juegos a menudo presentan temas de descubrimiento, y su trabajo en The Legend of Zelda es un excelente ejemplo.",
+        "pt": "Shigeru Miyamoto é uma figura lendária no ______ de videojogos; inspirado pelas suas explorações de infância, os seus designs de jogos apresentam frequentemente temas de descoberta, e o seu trabalho em The Legend of Zelda é um excelente exemplo.",
+        "fr": "Shigeru Miyamoto est une figure légendaire du ______ de jeu vidéo ; inspiré par ses explorations d'enfance, ses conceptions de jeux présentent souvent des thèmes de découverte, et son travail sur The Legend of Zelda en est un parfait exemple.",
+        "ht": "Shigeru Miyamoto se yon figi lejandè nan ______ jwèt videyo; enspire pa eksplorasyon anfans li, desen jwèt li yo souvan prezante tèm dekouvèt, e travay li sou The Legend of Zelda se yon egzanp pafè."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "design as",
+          "es": "diseño como",
+          "pt": "design como",
+          "fr": "design car",
+          "ht": "konsepsyon kòm"
+        },
+        {
+          "key": "B",
+          "en": "design and as",
+          "es": "diseño y como",
+          "pt": "design e como",
+          "fr": "design et car",
+          "ht": "konsepsyon epi kòm"
+        },
+        {
+          "key": "C",
+          "en": "design, as",
+          "es": "diseño, como",
+          "pt": "design, como",
+          "fr": "design, car",
+          "ht": "konsepsyon, kòm"
+        },
+        {
+          "key": "D",
+          "en": "design. As",
+          "es": "diseño. Como",
+          "pt": "design. Como",
+          "fr": "design. Car",
+          "ht": "konsepsyon. Kòm"
+        }
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This option is correct because it uses a period to separate two complete sentences. The first sentence makes a general statement about Miyamoto, and the second sentence, beginning with the introductory phrase 'As inspired...', provides specific details and examples.",
+        "es": "La opción D es la correcta porque utiliza un punto para separar dos oraciones completas. Esta es una regla fundamental en español también; se requiere un punto para separar dos oraciones distintas cuando la segunda comienza con una frase introductoria.",
+        "pt": "A opção D é a correta porque usa um ponto final para separar duas sentenças completas. A regra é idêntica em português; um ponto final marca o fim de uma sentença antes do início de outra, especialmente quando a segunda começa com uma frase introdutória.",
+        "fr": "L'option D est la correcte car elle utilise un point pour séparer deux propositions indépendantes. La grammaire française exige également l'utilisation d'un point pour séparer deux phrases complètes, surtout lorsque la deuxième phrase commence par un long complément circonstanciel.",
+        "ht": "Opsyon D a kòrèk paske li itilize yon pwen pou separe de fraz konplè epi endepandan. Règleman sa a se menm jan an Kreyòl; ou dwe itilize yon pwen pou fini yon lide konplè anvan ou kòmanse yon nouvo fraz ak yon fraz entwodiksyon."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_010",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "Using found objects, such as discarded ______ such as old newspapers; and natural elements, like dried flowers, multimedia artist Elena Vargas constructs her elaborate collages.",
+        "es": "Usando objetos encontrados, como ______ como periódicos viejos; y elementos naturales, como flores secas, la artista Elena Vargas construye sus elaborados collages.",
+        "pt": "Usando objetos encontrados, como ______ como jornais velhos; e elementos naturais, como flores secas, a artista Elena Vargas constrói suas elaboradas colagens.",
+        "fr": "En utilisant des objets trouvés, tels que des ______ comme de vieux journaux ; et des éléments naturels, comme des fleurs séchées, l'artiste Elena Vargas construit ses collages élaborés.",
+        "ht": "Sèvi ak objè yo jwenn, tankou ______ tankou vye jounal; ak eleman natirèl, tankou flè sèch, atis Elena Vargas konstwi kolaj elabore li yo."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "electronics, industrial plastics:",
+          "es": "electrónicos, plásticos industriales:",
+          "pt": "eletrônicos, plásticos industriais:",
+          "fr": "appareils électroniques, des plastiques industriels :",
+          "ht": "elektwonik, plastik endistriyèl:"
+        },
+        {
+          "key": "B",
+          "en": "electronics; industrial plastics,",
+          "es": "electrónicos; plásticos industriales,",
+          "pt": "eletrônicos; plásticos industriais,",
+          "fr": "appareils électroniques ; des plastiques industriels,",
+          "ht": "elektwonik; plastik endistriyèl,"
+        },
+        {
+          "key": "C",
+          "en": "electronics, industrial plastics,",
+          "es": "electrónicos, plásticos industriales,",
+          "pt": "eletrônicos, plásticos industriais,",
+          "fr": "appareils électroniques, des plastiques industriels,",
+          "ht": "elektwonik, plastik endistriyèl,"
+        },
+        {
+          "key": "D",
+          "en": "electronics; industrial plastics;",
+          "es": "electrónicos; plásticos industriales;",
+          "pt": "eletrônicos; plásticos industriais;",
+          "fr": "appareils électroniques ; des plastiques industriels ;",
+          "ht": "elektwonik; plastik endistriyèl;"
+        }
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This option is correct because it uses a semicolon to separate the major items in a complex list. The first item ('discarded electronics') is separated from the second item ('industrial plastics, such as old newspapers'), which contains its own comma, making a semicolon the appropriate separator between them.",
+        "es": "La opción B es la correcta porque utiliza un punto y coma para separar los elementos principales de una lista compleja. La gramática española sigue la misma regla: se usa un punto y coma para separar elementos en una lista cuando uno o más de esos elementos ya contienen comas.",
+        "pt": "A opção B é a correta porque usa um ponto e vírgula para separar os itens principais em uma lista complexa. A regra é idêntica em português: o ponto e vírgula é usado para separar itens em uma enumeração quando os próprios itens contêm vírgulas.",
+        "fr": "L'option B est la correcte car elle utilise un point-virgule pour séparer les éléments principaux d'une énumération complexe. La grammaire française suit également cette convention; le point-virgule est utilisé pour séparer les parties d'une énumération lorsque ces parties contiennent déjà des virgules.",
+        "ht": "Opsyon B a kòrèk paske li itilize yon pwen-vigil pou separe atik prensipal yo nan yon lis konplèks. Kreyòl la tou itilize pwen-vigil la pou objektif sa a; lè yon atik nan yon lis deja gen vigil, ou dwe itilize yon pwen-vigil pou separe atik prensipal yo."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_011",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "In the 2030s, engineers perfected a new source of clean energy ______ a relatively simple device, its solar-to-hydrogen conversion process was efficient enough to power entire cities, marking a turning point in the fight against climate change.",
+        "es": "En la década de 2030, los ingenieros perfeccionaron una nueva fuente de energía limpia ______ la hidrocélula. Un dispositivo relativamente simple, su proceso de conversión era lo suficientemente eficiente como para abastecer ciudades enteras.",
+        "pt": "Na década de 2030, os engenheiros aperfeiçoaram uma nova fonte de energia limpa ______ a hidrocélula. Um dispositivo relativamente simples, seu processo de conversão era eficiente o suficiente para abastecer cidades inteiras.",
+        "fr": "Dans les années 2030, les ingénieurs ont perfectionné une nouvelle source d'énergie propre ______ l'hydro-cellule. Dispositif simple, son processus de conversion était assez efficace pour alimenter des villes entières.",
+        "ht": "Nan ane 2030 yo, enjenyè yo te pèfeksyone yon nouvo sous enèji pwòp ______ idwo-selil la. Yon aparèy senp, pwosesis konvèsyon li a te ase efikas pou alimante vil antye."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "technology, the hydro-cell, a",
+          "es": ",",
+          "pt": ",",
+          "fr": ",",
+          "ht": ","
+        },
+        {
+          "key": "B",
+          "en": "technology. The hydro-cell, a",
+          "es": ".",
+          "pt": ".",
+          "fr": ".",
+          "ht": "."
+        },
+        {
+          "key": "C",
+          "en": "technology; the hydro-cell, a",
+          "es": ";",
+          "pt": ";",
+          "fr": ";",
+          "ht": ";"
+        },
+        {
+          "key": "D",
+          "en": "technology: the hydro-cell. A",
+          "es": ":",
+          "pt": ":",
+          "fr": ":",
+          "ht": ":"
+        }
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This option is correct because it uses a colon to introduce the specific name of the technology ('the hydro-cell'), which elaborates on the first clause. It then correctly uses a period to separate this complete thought from the next independent sentence.",
+        "es": "La opción D es la correcta porque utiliza dos puntos para introducir el nombre específico de la tecnología ('la hidrocélula'), lo cual es una regla gramatical compartida con el español. Después, el punto separa correctamente esta idea de la siguiente oración independiente.",
+        "pt": "A opção D é a correta porque usa dois-pontos para introduzir o nome específico da tecnologia ('a hidrocélula'). Esta é uma regra paralela em português, onde os dois-pontos introduzem um esclarecimento. O ponto, em seguida, separa corretamente as duas frases.",
+        "fr": "L'option D est la correcte car elle utilise les deux-points pour introduire le nom spécifique de la technologie ('l'hydro-cellule'). En français, les deux-points servent également à introduire une explication ou une illustration. Le point sépare ensuite correctement les deux phrases distinctes.",
+        "ht": "Opsyon D a kòrèk paske li itilize de pwen pou entwodui non espesifik teknoloji a ('idwo-selil la'). Règleman sa a se menm jan an Kreyòl pou prezante yon eksplikasyon. Apre sa, pwen an separe kòrèkteman de fraz yo."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_012",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "In 2025, a critical communications satellite failed to reach orbit. The mission was scrubbed just minutes after ______ its guidance system malfunctioned due to a software glitch.",
+        "es": "En 2025, un satélite de comunicaciones no logró alcanzar la órbita. La misión fue cancelada minutos después del ______ en parte debido a un error del sensor: su sistema de guía falló.",
+        "pt": "Em 2025, um satélite de comunicações não conseguiu atingir a órbita. A missão foi cancelada minutos após o ______ em parte devido a um erro de sensor: o seu sistema de orientação avariou.",
+        "fr": "En 2025, un satellite de communication n'a pas réussi à atteindre son orbite. La mission a été annulée quelques minutes après le ______ en partie à cause d'une erreur de capteur : son système de guidage a mal fonctionné.",
+        "ht": "An 2025, yon satelit kominikasyon pa t rive nan òbit. Misyon an te anile kèk minit apre ______ an pati akoz yon erè detektè: sistèm gidans li a te fonksyone mal."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "launch, in part because of a sensor error,",
+          "es": "lanzamiento,",
+          "pt": "lançamento,",
+          "fr": "lancement,",
+          "ht": "lansman,"
+        },
+        {
+          "key": "B",
+          "en": "launch, in part because of a sensor error:",
+          "es": "lanzamiento,",
+          "pt": "lançamento,",
+          "fr": "lancement,",
+          "ht": "lansman,"
+        },
+        {
+          "key": "C",
+          "en": "launch, in part, because of a sensor error",
+          "es": "lanzamiento",
+          "pt": "lançamento",
+          "fr": "lancement",
+          "ht": "lansman"
+        },
+        {
+          "key": "D",
+          "en": "launch in part because of a sensor error:",
+          "es": "lanzamiento:",
+          "pt": "lançamento:",
+          "fr": "lancement :",
+          "ht": "lansman:"
+        }
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This option is correct because the comma separates the main clause from the supplementary phrase ('in part because...'), and the colon correctly introduces the specific explanation for the sensor error ('its guidance system malfunctioned...').",
+        "es": "La opción B es la correcta porque la coma separa la cláusula principal de la frase suplementaria, y los dos puntos introducen la explicación específica del error. En español, esta combinación de coma y dos puntos es también una forma válida de estructurar una explicación detallada.",
+        "pt": "A opção B é a correta porque a vírgula separa a oração principal da frase suplementar, e os dois-pontos introduzem a explicação específica do erro. Esta estrutura de pontuação é igualmente utilizada em português para introduzir um esclarecimento.",
+        "fr": "L'option B est la correcte car la virgule sépare la proposition principale de la phrase supplémentaire, et les deux-points introduisent l'explication spécifique de l'erreur. En français, cette combinaison de ponctuation est également utilisée pour introduire une explication précise.",
+        "ht": "Opsyon B a kòrèk paske vigil la separe fraz prensipal la ak fraz siplemantè a, epi de pwen yo entwodui eksplikasyon espesifik pou erè a. Règleman sa a se menm jan an Kreyòl, kote ou ka sèvi ak yon vigil ak de pwen pou bay yon detay klè."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_013",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The restaurant's signature dish combines several distinct flavors—sweetness from honey, acidity from citrus, and a savory element from aged ______ to create a perfectly balanced meal.",
+        "es": "El plato estrella del restaurante combina varios sabores—dulzura de la miel, acidez de los cítricos y un elemento salado del ______ añejo—para crear una comida equilibrada.",
+        "pt": "O prato principal do restaurante combina vários sabores—doçura do mel, acidez dos citrinos e um elemento salgado do ______ envelhecido—para criar uma refeição equilibrada.",
+        "fr": "Le plat signature du restaurant combine plusieurs saveurs—la douceur du miel, l'acidité des agrumes et un élément savoureux du ______ affiné—pour créer un repas équilibré.",
+        "ht": "Pla espesyal restoran an konbine plizyè gou—dousè siwo myèl, asidite fwi, ak yon eleman sale ki soti nan ______ vye—pou kreye yon repa ekilibre."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "cheese,",
+          "es": "queso,",
+          "pt": "queijo,",
+          "fr": "fromage,",
+          "ht": "fwomaj,"
+        },
+        {
+          "key": "B",
+          "en": "cheese",
+          "es": "queso",
+          "pt": "queijo",
+          "fr": "fromage",
+          "ht": "fwomaj"
+        },
+        {
+          "key": "C",
+          "en": "cheese,",
+          "es": "queso,",
+          "pt": "queijo,",
+          "fr": "fromage,",
+          "ht": "fwomaj,"
+        },
+        {
+          "key": "D",
+          "en": "cheese—",
+          "es": "queso—",
+          "pt": "queijo—",
+          "fr": "fromage—",
+          "ht": "fwomaj—"
+        }
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This option is correct because the closing dash pairs with the opening dash to properly enclose the supplementary list of flavors. An interrupting phrase or list must be set off by matching punctuation.",
+        "es": "La opción D es la correcta porque el guion largo de cierre se empareja con el guion de apertura para encerrar la lista de sabores. La gramática española sigue la misma regla: un inciso debe estar delimitado por signos de puntuación iguales, como dos guiones largos.",
+        "pt": "A opção D é a correta porque o travessão de fecho faz par com o travessão de abertura para delimitar a lista de sabores. Esta regla también se aplica em português: um aposto ou lista intercalada é separada por um par de travessões.",
+        "fr": "L'option D est la correcte car le tiret cadratin de fermeture s'associe au tiret d'ouverture pour encadrer la liste de saveurs. C'est également le cas en français, où une énumération insérée doit être encadrée par une ponctuation double et identique.",
+        "ht": "Opsyon D a kòrèk paske tirè a apre 'vye' mache ak tirè ki anvan an pou byen fèmen lis gou yo. Règleman an se menm bagay la an Kreyòl; yon fraz ki koupe yon lòt fraz dwe gen menm siy ponktiyasyon an anvan ak apre li."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_014",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "A 2020 study on memory consolidation found that, among participants who were tested on information retention, there was one factor that correlated most strongly with success ______ quality of sleep.",
+        "es": "Un estudio de 2020 sobre la consolidación de la memoria encontró que había un factor que se correlacionaba más fuertemente con el éxito ______ la calidad del sueño.",
+        "pt": "Um estudo de 2020 sobre a consolidação da memória descobriu que havia um fator que se correlacionava mais fortemente com o sucesso ______ a qualidade do sono.",
+        "fr": "Une étude de 2020 sur la consolidation de la mémoire a révélé qu'il existait un facteur fortement corrélé au succès ______ la qualité du sommeil.",
+        "ht": "Yon etid an 2020 sou memwa te jwenn ke te gen yon faktè ki te pi korele ak siksè ______ kalite somèy."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "high. On",
+          "es": ". En",
+          "pt": ". Em",
+          "fr": ". Sur",
+          "ht": ". Sou"
+        },
+        {
+          "key": "B",
+          "en": "high on;",
+          "es": "en;",
+          "pt": "em;",
+          "fr": "sur ;",
+          "ht": "sou;"
+        },
+        {
+          "key": "C",
+          "en": "high on",
+          "es": "en",
+          "pt": "em",
+          "fr": "sur",
+          "ht": "sou"
+        },
+        {
+          "key": "D",
+          "en": "high on:",
+          "es": ":",
+          "pt": ":",
+          "fr": ":",
+          "ht": ":"
+        }
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This option is correct because a colon is used to introduce an explanation or elaboration that specifies the 'one factor' mentioned in the main clause. The phrase 'quality of sleep' directly explains what the factor is.",
+        "es": "La opción D es la correcta porque se utilizan dos puntos para introducir una explicación que especifica el 'un factor' mencionado. La gramática española utiliza los dos puntos de manera idéntica para introducir una consecuencia, causa o resumen de la oración anterior.",
+        "pt": "A opção D é a correta porque os dois-pontos são usados para introduzir uma explicação que especifica o 'um fator' mencionado. Esta é uma regra paralela em português, onde os dois-pontos introduzem um esclarecimento ou uma consequência.",
+        "fr": "L'option D est la correcte car les deux-points sont utilisés pour introduire une explication qui précise le 'un facteur' mentionné. En français, les deux-points servent également à introduire une explication, une cause ou une conséquence de ce qui précède.",
+        "ht": "Opsyon D a kòrèk paske de pwen yo itilize pou entwodui yon eksplikasyon ki presize 'yon faktè' yo mansyone a. Règleman sa a se menm jan an Kreyòl pou prezante yon eksplikasyon dirèk apre yon lide jeneral."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_015",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "In 1990, the Hubble Space Telescope was launched into orbit around ______ deployed from the Space Shuttle Discovery, the telescope soon began sending back unprecedented images of distant galaxies.",
+        "es": "En 1990, el Telescopio Espacial Hubble fue lanzado en órbita alrededor de la ______ desplegado desde el Transbordador Espacial Discovery, el telescopio pronto comenzó a enviar imágenes sin precedentes.",
+        "pt": "Em 1990, o Telescópio Espacial Hubble foi lançado em órbita ao redor da ______ implantado a partir do Ônibus Espacial Discovery, o telescópio logo começou a enviar imagens sem precedentes.",
+        "fr": "En 1990, le télescope spatial Hubble a été lancé en orbite autour de la ______ déployé depuis la navette spatiale Discovery, le télescope a bientôt commencé à renvoyer des images sans précédent.",
+        "ht": "An 1990, Teleskòp Espasyal Hubble la te lanse nan òbit otou ______ deplwaye soti nan Navèt Espasyal Discovery a, teleskòp la te kòmanse voye imaj san parèy."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "Earth and having",
+          "es": "Tierra y habiendo sido",
+          "pt": "Terra e tendo sido",
+          "fr": "Terre et ayant été",
+          "ht": "Latè epi li te"
+        },
+        {
+          "key": "B",
+          "en": "Earth. Having",
+          "es": "Tierra. Habiendo sido",
+          "pt": "Terra. Tendo sido",
+          "fr": "Terre. Ayant été",
+          "ht": "Latè. Lè yo te"
+        },
+        {
+          "key": "C",
+          "en": "Earth, having",
+          "es": "Tierra, habiendo sido",
+          "pt": "Terra, tendo sido",
+          "fr": "Terre, ayant été",
+          "ht": "Latè, li te"
+        },
+        {
+          "key": "D",
+          "en": "Earth having",
+          "es": "Tierra habiendo sido",
+          "pt": "Terra tendo sido",
+          "fr": "Terre ayant été",
+          "ht": "Latè li te"
+        }
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This option is correct because it uses a period to separate two complete sentences. The first sentence ends after 'Earth', and the second sentence begins with a participial phrase ('Having deployed...') that describes the telescope, the subject of the second sentence.",
+        "es": "La opción B es la correcta porque utiliza un punto para separar dos oraciones completas. Esta es una regla fundamental en español también; la segunda oración, que comienza con una frase de participio ('Habiendo sido desplegado...'), debe estar separada de la primera por un punto.",
+        "pt": "A opção B é a correta porque usa um ponto final para separar duas sentenças completas. A regra é idêntica em português; a segunda frase, começando com uma oração de particípio ('Tendo sido implantado...'), deve ser separada da primeira por um ponto final.",
+        "fr": "L'option B est la correcte car elle utilise un point pour séparer deux propositions indépendantes. La grammaire française exige également l'utilisation d'un point pour séparer deux phrases complètes, surtout lorsque la deuxième phrase commence par un groupe participial.",
+        "ht": "Opsyon B a kòrèk paske li itilize yon pwen pou separe de fraz konplè epi endepandan. Règleman sa a se menm jan an Kreyòl; ou dwe itilize yon pwen pou fini yon lide konplè anvan ou kòmanse yon nouvo, menm si li kòmanse ak yon fraz patisip."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_016",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The Dutch artist Piet Mondrian is famous for his abstract paintings. He restricted his palette to the three primary colors (red, blue, and yellow), the three primary values (black, white, and gray), and the two primary ______ he believed that this distilled visual language could express a universal, spiritual order.",
+        "es": "El artista holandés Piet Mondrian restringió su paleta a los tres colores primarios, los tres valores primarios y las dos ______ primarias, ya que creía que este lenguaje visual podía expresar un orden universal.",
+        "pt": "O artista holandês Piet Mondrian restringiu sua paleta às três cores primárias, aos três valores primários e às duas ______ primárias, pois acreditava que essa linguagem visual poderia expressar uma ordem universal.",
+        "fr": "L'artiste néerlandais Piet Mondrian a limité sa palette aux trois couleurs primaires, aux trois valeurs primaires et aux deux ______ primaires, car il pensait que ce langage visuel pouvait exprimer un ordre universel.",
+        "ht": "Atis olandè Piet Mondrian te limite palèt li a twa koulè primè yo, twa valè primè yo, ak de ______ primè yo, paske li te kwè langaj vizyèl sa a te ka eksprime yon lòd inivèsèl."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "directions (horizontal and vertical), because",
+          "es": "direcciones (horizontal y vertical),",
+          "pt": "direções (horizontal e vertical),",
+          "fr": "directions (horizontale et verticale),",
+          "ht": "direksyon (orizontal ak vètikal),"
+        },
+        {
+          "key": "B",
+          "en": "directions (horizontal and vertical) because",
+          "es": "direcciones (horizontal y vertical)",
+          "pt": "direções (horizontal e vertical)",
+          "fr": "directions (horizontale et verticale)",
+          "ht": "direksyon (orizontal ak vètikal)"
+        },
+        {
+          "key": "C",
+          "en": "directions (horizontal and vertical). Because",
+          "es": "direcciones (horizontal y vertical). Ya que",
+          "pt": "direções (horizontal e vertical). Pois",
+          "fr": "directions (horizontale et verticale). Car",
+          "ht": "direksyon (orizontal ak vètikal). Paske"
+        },
+        {
+          "key": "D",
+          "en": "directions (horizontal and vertical); because",
+          "es": "direcciones (horizontal y vertical);",
+          "pt": "direções (horizontal e vertical);",
+          "fr": "directions (horizontale et verticale) ;",
+          "ht": "direksyon (orizontal ak vètikal);"
+        }
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This option is correct because no punctuation is needed before the subordinating conjunction 'because'. The clause that follows is essential to the meaning of the main clause, as it explains why he used a restricted palette, so it should not be separated by punctuation.",
+        "es": "La opción B es la correcta porque no se necesita puntuación antes de la conjunción subordinante 'ya que'. La gramática española sigue una regla similar: cuando una cláusula que explica la razón es esencial para el significado de la cláusula principal, no se separa con una coma.",
+        "pt": "A opção B é a correta porque nenhuma pontuação é necessária antes da conjunção subordinativa 'pois'. A regra em português é análoga à do inglês; uma oração que fornece uma razão essencial não é separada da oração principal por pontuação.",
+        "fr": "L'option B est la correcte car aucune ponctuation n'est nécessaire avant la conjonction de subordination 'car'. En français, lorsque la proposition subordonnée est essentielle et directement liée à la principale pour en donner la cause, on ne la sépare pas par une virgule.",
+        "ht": "Opsyon B a kòrèk paske pa bezwen okenn ponktiyasyon anvan mo koneksyon 'paske' a. Règleman an se menm jan an Kreyòl; ou pa mete yon vigil lè dezyèm pati fraz la esansyèl pou bay rezon pou premye pati a."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_017",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "In her 1929 essay A Room of One's Own, Virginia Woolf explores the challenges faced by women in a patriarchal society. She famously argues that for a woman to write fiction, she must have money and a room of her ______ this assertion has become a cornerstone of feminist literary criticism.",
+        "es": "Virginia Woolf argumenta que para que una mujer escriba ficción, debe tener dinero y una habitación ______ esta afirmación se ha convertido en una piedra angular de la crítica literaria feminista.",
+        "pt": "Virginia Woolf argumenta que, para uma mulher escrever ficção, ela precisa ter dinheiro e um quarto ______ esta afirmação tornou-se um pilar da crítica literária feminista.",
+        "fr": "Virginia Woolf soutient que pour qu'une femme écrive de la fiction, elle doit avoir de l'argent et une chambre à ______ cette affirmation est devenue une pierre angulaire de la critique littéraire féministe.",
+        "ht": "Virginia Woolf diskite ke pou yon fanm ekri fiksyon, li dwe gen lajan ak yon chanm pa ______ deklarasyon sa a vin tounen yon poto mitan nan kritik literè feminis."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "own, and",
+          "es": "propia, y",
+          "pt": "próprio, e",
+          "fr": "soi, et",
+          "ht": "li, epi"
+        },
+        {
+          "key": "B",
+          "en": "own and",
+          "es": "propia y",
+          "pt": "próprio e",
+          "fr": "soi et",
+          "ht": "li epi"
+        },
+        {
+          "key": "C",
+          "en": "own. And",
+          "es": "propia. Y",
+          "pt": "próprio. E",
+          "fr": "soi. Et",
+          "ht": "li. Epi"
+        },
+        {
+          "key": "D",
+          "en": "own; and",
+          "es": "propia; y",
+          "pt": "próprio; e",
+          "fr": "soi ; et",
+          "ht": "li; epi"
+        }
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This option is correct because it uses a comma followed by the coordinating conjunction 'and' to connect two independent clauses. The comma is required before 'and' when joining two complete sentences.",
+        "es": "La opción A es la correcta porque utiliza una coma seguida de la conjunción 'y' para unir dos cláusulas independientes. La gramática española utiliza una estructura idéntica ('coma + y') para conectar dos oraciones completas, de forma paralela a la regla FANBOYS en inglés.",
+        "pt": "A opção A é a correta porque usa uma vírgula seguida da conjunção 'e' para conectar duas orações independentes. O português também segue esta regra, usando 'vírgula + e' para unir duas orações com sujeitos diferentes, o que é análogo à regra do inglês.",
+        "fr": "L'option A est la correcte car elle utilise une virgule suivie de la conjonction 'et' pour joindre deux propositions indépendantes. En français, on place une virgule avant 'et' lorsqu'il joint deux propositions indépendantes, surtout quand elles ont des sujets différents, ce qui reflète la convention anglaise.",
+        "ht": "Opsyon A a kòrèk paske li itilize yon vigil ki swiv pa konjonksyon an 'epi' pou konekte de fraz endepandan. Règleman sa a se menm jan an Kreyòl; ou dwe itilize yon vigil anvan 'epi' pou konekte de fraz konplè."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_018",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "In her book Silent Spring, biologist Rachel Carson exposed the environmental dangers of pesticides. While the chemical industry fiercely attacked her findings, Carson, undeterred by the criticism, ______ to advocate for stricter regulations.",
+        "es": "Aunque la industria química atacó sus hallazgos, Carson, sin inmutarse por las críticas, ______ abogando por regulaciones más estrictas.",
+        "pt": "Embora a indústria química tenha atacado ferozmente suas descobertas, Carson, sem se abalar com as críticas, ______ a defender regulamentações mais rigorosas.",
+        "fr": "Bien que l'industrie chimique ait attaqué ses découvertes, Carson, imperturbable face aux critiques, ______ de plaider pour des réglementations plus strictes.",
+        "ht": "Pandan endistri chimik la te atake dekouvèt li yo, Carson, san dekouraje pa kritik yo, ______ defann règleman ki pi sevè."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "she continued",
+          "es": "ella continuó",
+          "pt": "ela continuou",
+          "fr": "elle a continué",
+          "ht": "li te kontinye"
+        },
+        {
+          "key": "B",
+          "en": "continuing",
+          "es": "continuando",
+          "pt": "continuando",
+          "fr": "continuant",
+          "ht": "kontinye"
+        },
+        {
+          "key": "C",
+          "en": "continued",
+          "es": "continuó",
+          "pt": "continuou",
+          "fr": "a continué",
+          "ht": "te kontinye"
+        },
+        {
+          "key": "D",
+          "en": "which continued",
+          "es": "lo que continuó",
+          "pt": "o que continuou",
+          "fr": "ce qui a continué",
+          "ht": "ki te kontinye"
+        }
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This option is correct because it provides the main verb 'continued,' which is necessary to complete the predicate for the subject 'Carson'. This creates a grammatically complete and coherent sentence.",
+        "es": "La opción C es la correcta porque proporciona el verbo principal 'continuó', que es necesario para completar la oración. La gramática española, al igual que la inglesa, exige que una cláusula principal tenga un verbo conjugado para ser gramaticalmente correcta.",
+        "pt": "A opção C é a correta porque fornece o verbo principal 'continuou', necessário para formar uma frase gramaticalmente completa. Assim como em inglês, a gramática portuguesa exige um verbo conjugado para que uma oração principal seja válida.",
+        "fr": "L'option C est la correcte car elle fournit le verbe principal 'a continué', qui est nécessaire pour compléter la phrase. Tout comme en anglais, une proposition principale en français doit avoir un verbe conjugé pour être grammaticalement complète.",
+        "ht": "Opsyon C a kòrèk paske li bay vèb prensipal la 'te kontinye', ki nesesè pou konplete fraz la. Règleman an se menm jan an Kreyòl; yon fraz prensipal dwe genyen yon vèb pou li ka gramatikalman kòrèk."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_019",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The Sydney Opera House is an architectural masterpiece known for its unique shell-like roof. The Danish architect Jørn Utzon, who designed the building, was inspired by natural ______ the sails of a ship, the segments of an orange, and the wings of a bird.",
+        "es": "El arquitecto danés Jørn Utzon se inspiró en formas ______ las velas de un barco, los gajos de una naranja y las alas de un pájaro.",
+        "pt": "O arquiteto dinamarquês Jørn Utzon foi inspirado por formas ______ as velas de um navio, os segmentos de uma laranja e as asas de um pássaro.",
+        "fr": "L'architecte danois Jørn Utzon s'est inspiré de formes ______ les voiles d'un navire, les quartiers d'une orange et les ailes d'un oiseau.",
+        "ht": "Achitèk Danwa Jørn Utzon te enspire pa fòm ______ vwal yon bato, tranch yon zoranj, ak zèl yon zwazo."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "forms such as:",
+          "es": "naturales tales como:",
+          "pt": "naturais tais como:",
+          "fr": "naturelles telles que :",
+          "ht": "natirèl tankou:"
+        },
+        {
+          "key": "B",
+          "en": "forms, such as",
+          "es": "naturales, tales como",
+          "pt": "naturais, tais como",
+          "fr": "naturelles, telles que",
+          "ht": "natirèl, tankou"
+        },
+        {
+          "key": "C",
+          "en": "forms such as",
+          "es": "naturales tales como",
+          "pt": "naturais tais como",
+          "fr": "naturelles telles que",
+          "ht": "natirèl tankou"
+        },
+        {
+          "key": "D",
+          "en": "forms such as,",
+          "es": "naturales tales como,",
+          "pt": "naturais tais como,",
+          "fr": "naturelles telles que,",
+          "ht": "natirèl tankou,"
+        }
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This option is correct because it uses a comma before 'such as' to introduce a list of examples. In Standard English, the phrase 'such as' is typically preceded by a comma when it introduces a non-essential list.",
+        "es": "La opción B es la correcta porque utiliza una coma antes de 'tales como' para introducir una lista de ejemplos. La gramática española también emplea una coma antes de locuciones como 'tales como' o 'por ejemplo' para presentar una enumeración explicativa.",
+        "pt": "A opção B é a correta porque usa uma vírgula antes de 'tais como' para introduzir uma lista de exemplos. Em português, a regra é a mesma: usa-se uma vírgula antes de expressões como 'tais como' para introduzir uma lista exemplificativa.",
+        "fr": "L'option B est la correcte car elle utilise une virgule avant 'telles que' pour introduire une liste d'exemples. En français, on utilise également une virgule avant des locutions comme 'telles que' pour introduire une énumération non restrictive.",
+        "ht": "Opsyon B a kòrèk paske li itilize yon vigil anvan 'tankou' pou entwodui yon lis egzanp. Règleman sa a se menm jan an Kreyòl, kote ou dwe mete yon vigil anvan 'tankou' lè l ap prezante yon lis egzanp."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_020",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The Rosetta space probe, launched by the European Space Agency, was the first mission to orbit and land on a comet. The data it collected provided unprecedented insights into the composition of these celestial ______ scientists believe comets may have delivered water and organic molecules to early Earth.",
+        "es": "Los datos que recopiló proporcionaron conocimientos sobre la composición de estos cuerpos ______ los científicos creen que los cometas pudieron haber traído agua a la Tierra primitiva.",
+        "pt": "Os dados coletados forneceram percepções sobre a composição desses corpos ______ os cientistas acreditam que os cometas podem ter trazido água para a Terra primitiva.",
+        "fr": "Les données recueillies ont fourni des aperçus sur la composition de ces corps ______ les scientifiques pensent que les comètes pourraient avoir apporté de l'eau à la Terre primitive.",
+        "ht": "Done li te kolekte yo te bay apèsi sou konpozisyon kò ______ sa yo; anplis, syantis yo kwè komèt yo gendwa te pote dlo sou Latè."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "bodies, furthermore,",
+          "es": "celestes, además,",
+          "pt": "celestes, além disso,",
+          "fr": "célestes, de plus,",
+          "ht": "selès, anplis,"
+        },
+        {
+          "key": "B",
+          "en": "bodies furthermore",
+          "es": "celestes además",
+          "pt": "celestes além disso",
+          "fr": "célestes de plus",
+          "ht": "selès anplis"
+        },
+        {
+          "key": "C",
+          "en": "bodies; furthermore,",
+          "es": "celestes; además,",
+          "pt": "celestes; além disso,",
+          "fr": "célestes ; de plus,",
+          "ht": "selès; anplis,"
+        },
+        {
+          "key": "D",
+          "en": "bodies. Furthermore",
+          "es": "celestes. Además",
+          "pt": "celestes. Além disso",
+          "fr": "célestes. De plus",
+          "ht": "selès. Anplis"
+        }
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This option is correct because it uses a semicolon to join two independent clauses linked by a transitional adverb ('furthermore'). In Standard English, a semicolon is placed before the adverb, and a comma is placed after it.",
+        "es": "La opción C es la correcta porque utiliza un punto y coma para unir dos cláusulas independientes conectadas por un adverbio de transición ('además'). La gramática española sigue la misma regla: se usa un punto y coma antes de conectores como 'además', y una coma después.",
+        "pt": "A opção C é a correta porque usa um ponto e vírgula para ligar duas orações independentes conectadas por um advérbio de transição ('além disso'). A regra é idêntica em português, onde se coloca um ponto e vírgula antes de 'além disso' e uma vírgula depois.",
+        "fr": "L'option C est la correcte car elle utilise un point-virgule pour joindre deux propositions indépendantes liées par un adverbe de liaison ('de plus'). La grammaire française suit la même convention : un point-virgule avant l'adverbe et une virgule après.",
+        "ht": "Opsyon C a kòrèk paske li itilize yon pwen-vigil pou konekte de fraz endepandan ki lye pa yon advèb tranzisyon ('anplis'). Règleman sa a se menm jan an Kreyòl, kote ou mete yon pwen-vigil anvan 'anplis' ak yon vigil apre li."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_021",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The art of origami, the Japanese tradition of paper folding, transforms a single sheet of paper into a complex sculpture without the use of cuts or ______ this ancient practice is celebrated for its elegance and precision.",
+        "es": "El arte del origami transforma una sola hoja de papel en una escultura compleja sin el uso de cortes o ______ esta práctica milenaria es celebrada por su elegancia y precisión.",
+        "pt": "A arte do origami transforma uma única folha de papel em uma escultura complexa sem o uso de cortes ou ______ esta prática antiga é celebrada por sua elegância e precisão.",
+        "fr": "L'art de l'origami transforme une simple feuille de papier en une sculpture complexe sans utiliser de coupures ni de ______ cette pratique ancienne est célébrée pour son élégance et sa précision.",
+        "ht": "Atizay origami a transfòme yon sèl fèy papye an yon eskilti konplèks san yo pa itilize koupe oswa ______ pratik ansyen sa a selebre pou distenksyon li ak presizyon li."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "glue, and",
+          "es": "pegamento, y",
+          "pt": "cola, e",
+          "fr": "colle, et",
+          "ht": "lakòl, epi"
+        },
+        {
+          "key": "B",
+          "en": "glue. And",
+          "es": "pegamento. Y",
+          "pt": "cola. E",
+          "fr": "colle. Et",
+          "ht": "lakòl. Epi"
+        },
+        {
+          "key": "C",
+          "en": "glue; and",
+          "es": "pegamento; y",
+          "pt": "cola; e",
+          "fr": "colle ; et",
+          "ht": "lakòl; epi"
+        },
+        {
+          "key": "D",
+          "en": "glue and",
+          "es": "pegamento y",
+          "pt": "cola e",
+          "fr": "colle et",
+          "ht": "lakòl epi"
+        }
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This option is correct because it uses a comma followed by the coordinating conjunction 'and' to connect two independent clauses. The comma is required before 'and' when joining two complete sentences.",
+        "es": "La opción A es la correcta porque utiliza una coma seguida de la conjunción 'y' para unir dos cláusulas independientes. La gramática española utiliza una estructura idéntica ('coma + y') para conectar dos oraciones completas.",
+        "pt": "A opção A é a correta porque usa uma vírgula seguida da conjunção 'e' para conectar duas orações independentes. O português também usa 'vírgula + e' para unir duas orações.",
+        "fr": "L'option A est la correcte car elle utilise une virgule suivie de la conjonction 'et' pour joindre deux propositions indépendantes. En français, on place une virgule avant 'et' lorsqu'il joint deux propositions indépendantes.",
+        "ht": "Opsyon A a kòrèk paske li itilize yon vigil ki swiv pa konjonksyon an 'epi' pou konekte de fraz endepandan. Règleman an sanble tou an Kreyòl, kote ou itilize yon vigil anvan 'epi' pou konekte de fraz konplè ansanm."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_022",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The Great Barrier Reef, a massive coral system off the coast of Australia, is one of the world's most biodiverse ecosystems. It is home to thousands of species, from microscopic plankton to large marine ______ it faces significant threats from climate change and pollution.",
+        "es": "Alberga miles de especies, desde plancton microscópico hasta grandes mamíferos ______ se enfrenta a amenazas significativas por el cambio climático.",
+        "pt": "Abriga milhares de espécies, desde plâncton microscópico até grandes mamíferos ______ enfrenta ameaças significativas das alterações climáticas.",
+        "fr": "Il abrite des milliers d'espèces, du plancton microscopique aux grands mammifères ______ il fait face à des menaces importantes dues au changement climatique.",
+        "ht": "Li gen plizyè milye espès, soti nan plankton mikwoskopik rive nan gwo mamifè ______ li fè fas a gwo menas ki soti nan chanjman klimatik."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "mammals; however,",
+          "es": "marinos; sin embargo,",
+          "pt": "marinhos; no entanto,",
+          "fr": "marins ; cependant,",
+          "ht": "maren; sepandan,"
+        },
+        {
+          "key": "B",
+          "en": "mammals, however",
+          "es": "marinos, sin embargo",
+          "pt": "marinhos, no entanto",
+          "fr": "marins, cependant",
+          "ht": "maren, sepandan"
+        },
+        {
+          "key": "C",
+          "en": "mammals however,",
+          "es": "marinos sin embargo,",
+          "pt": "marinhos no entanto,",
+          "fr": "marins cependant,",
+          "ht": "maren sepandan,"
+        },
+        {
+          "key": "D",
+          "en": "mammals, however,",
+          "es": "marinos, sin embargo,",
+          "pt": "marinhos, no entanto,",
+          "fr": "marins, cependant,",
+          "ht": "maren, sepandan,"
+        }
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This option is correct because it uses a semicolon to join two independent clauses linked by a transitional adverb ('however'). A semicolon is placed before the adverb, and a comma is placed after it, to properly show contrast between two complete sentences.",
+        "es": "La opción A es la correcta porque utiliza un punto y coma para unir dos cláusulas independientes conectadas por un adverbio de transición ('sin embargo'). La gramática española sigue la misma regla: se usa un punto y coma antes de conectores como 'sin embargo', y una coma después.",
+        "pt": "A opção A é a correta porque usa um ponto e vírgula para ligar duas orações independentes conectadas por um advérbio de transição ('no entanto'). A regra é idêntica em português, onde se coloca um ponto e vírgula antes de 'no entanto' e uma vírgula depois.",
+        "fr": "L'option A est la correcte car elle utilise un point-virgule pour joindre deux propositions indépendantes liées par un adverbe de liaison ('cependant'). La grammaire française suit la même convention : un point-virgule avant l'adverbe et une virgule après.",
+        "ht": "Opsyon A a kòrèk paske li itilize yon pwen-vigil pou konekte de fraz endepandan ki lye pa yon advèb tranzisyon ('sepandan'). Règleman sa a se menm jan an Kreyòl, kote ou mete yon pwen-vigil anvan 'sepandan' ak yon vigil apre li."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_023",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The work of photojournalist Dorothea Lange, especially her images from the Great Depression, had a profound impact on documentary photography. Her most famous photograph, Migrant Mother, ______ become an icon of resilience in the face of hardship.",
+        "es": "Su fotografía más famosa, Madre Migrante, se ______ convertido en un ícono de resiliencia ante la adversidad.",
+        "pt": "A sua fotografia mais famosa, Mãe Migrante, ______ se tornado um ícone de resiliência em face da adversidade.",
+        "fr": "Sa photographie la plus célèbre, Mère migrante, ______ devenue une icône de la résilience face à l'adversité.",
+        "ht": "Foto ki pi selèb li a, Manman Migran, ______ tounen yon ikòn rezistans devan difikilte."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "it has",
+          "es": "ella ha",
+          "pt": "ela tem",
+          "fr": "elle est",
+          "ht": "li te"
+        },
+        {
+          "key": "B",
+          "en": "having",
+          "es": "habiendo",
+          "pt": "tendo",
+          "fr": "étant",
+          "ht": "ki te"
+        },
+        {
+          "key": "C",
+          "en": "has",
+          "es": "ha",
+          "pt": "tem",
+          "fr": "est",
+          "ht": "te"
+        },
+        {
+          "key": "D",
+          "en": "which has",
+          "es": "la cual ha",
+          "pt": "a qual tem",
+          "fr": "qui est",
+          "ht": "vin"
+        }
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This option is correct because it provides the necessary main verb 'has' for the subject 'Her most famous photograph, Migrant Mother'. This completes the sentence in a grammatically correct way.",
+        "es": "La opción C es la correcta porque proporciona el verbo auxiliar necesario 'ha' para formar el tiempo verbal perfecto. La gramática española, al igual que la inglesa, requiere un verbo principal o auxiliar conjugado para que una oración sea completa.",
+        "pt": "A opção C é a correta porque fornece o verbo auxiliar 'tem', necessário para formar o tempo verbal composto. Assim como em inglês, a gramática portuguesa exige um verbo principal ou auxiliar conjugado para a validade da oração.",
+        "fr": "L'option C est la correcte car elle fournit l'auxiliaire nécessaire 'est' pour former le passé composé. Tout comme en anglais, une proposition principale en français doit avoir un verbe conjugué pour être grammaticalement complète.",
+        "ht": "Opsyon C a kòrèk paske li bay patikil tan ki nesesè 'te' pou vèb la. An Kreyòl, menm jan ak nesesite pou yon vèb nan lang Anglè, yon fraz bezwen eleman vèbal li yo pou li ka konplè."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_024",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The ancient Incan city of Machu Picchu, perched high in the Andes Mountains of ______ remained hidden from the outside world until its rediscovery in 1911 by the explorer Hiram Bingham.",
+        "es": "La antigua ciudad inca de Machu Picchu, enclavada en lo alto de los Andes de ______ permaneció oculta al mundo exterior hasta su redescubrimiento en 1911.",
+        "pt": "A antiga cidade inca de Machu Picchu, situada no alto das montanhas dos Andes do ______ permaneceu escondida do mundo exterior até sua redescoberta em 1911.",
+        "fr": "L'ancienne cité inca du Machu Picchu, perchée dans les Andes du ______ est restée cachée du monde extérieur jusqu'à sa redécouverte en 1911.",
+        "ht": "Ansyen vil Enka Machu Picchu a, ki chita anwo nan mòn Lèzann nan peyi ______ te rete kache pou mond lan jiskaske yo te redekouvri l an 1911."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "Peru",
+          "es": "Perú",
+          "pt": "Peru",
+          "fr": "Pérou",
+          "ht": "Perou"
+        },
+        {
+          "key": "B",
+          "en": "Peru:",
+          "es": "Perú:",
+          "pt": "Peru:",
+          "fr": "Pérou :",
+          "ht": "Perou:"
+        },
+        {
+          "key": "C",
+          "en": "Peru;",
+          "es": "Perú;",
+          "pt": "Peru;",
+          "fr": "Pérou ;",
+          "ht": "Perou;"
+        },
+        {
+          "key": "D",
+          "en": "Peru,",
+          "es": "Perú,",
+          "pt": "Peru,",
+          "fr": "Pérou,",
+          "ht": "Perou,"
+        }
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This option is correct because the comma after 'Peru' pairs with the comma after 'Picchu' to properly enclose the non-essential descriptive phrase ('perched high in the Andes Mountains of Peru'). An interrupting phrase must be set off by matching punctuation.",
+        "es": "La opción D es la correcta porque la coma después de 'Perú' se empareja con la coma después de 'Picchu' para encerrar la frase descriptiva no esencial. La gramática española sigue la misma regla: un inciso explicativo que interrumpe la oración debe estar delimitado por un par de comas.",
+        "pt": "A opção D é a correta porque a vírgula após 'Peru' faz par com a vírgula após 'Picchu' para delimitar corretamente a frase descritiva não essencial. Esta regra também existe em português, onde um aposto explicativo intercalado é isolado por vírgulas.",
+        "fr": "L'option D est la correcte car la virgule après 'Pérou' s'associe à la virgule après 'Picchu' pour encadrer correctement l'apposition non essentielle. C'est aussi le cas en français, où une apposition insérée dans une phrase doit être encadrée par deux virgules.",
+        "ht": "Opsyon D a kòrèk paske vigil la apre 'Perou' mache ak vigil la apre 'Picchu' pou byen fèmen fraz deskriptif anplis la. Règleman sa a se menm an Kreyòl; yon fraz deskriptif nan mitan yon lòt fraz bezwen vigil anvan ak apre li."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_025",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The Dead Sea Scrolls, a collection of ancient Jewish manuscripts discovered in the Qumran ______ include some of the oldest known copies of biblical texts.",
+        "es": "Los Manuscritos del Mar Muerto, una colección de antiguos manuscritos judíos descubiertos en las cuevas de Qumrán ______ incluyen algunas de las copias más antiguas conocidas de textos bíblicos.",
+        "pt": "Os Manuscritos do Mar Morto, uma coleção de antigos manuscritos judaicos descobertos nas cavernas de Qumran ______ incluem algumas das cópias mais antigas conhecidas de textos bíblicos.",
+        "fr": "Les manuscrits de la mer Morte, une collection d'anciens manuscrits juifs découverts dans les grottes de Qumran ______ comprennent certaines des plus anciennes copies connues de textes bibliques.",
+        "ht": "Maniskri Lanmè Mòt yo, yon koleksyon ansyen maniskri Juif yo te dekouvri nan gwòt Qumran ______ gen ladan kèk nan kopi ki pi ansyen nan tèks biblik yo."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "Caves,",
+          "es": ",",
+          "pt": ",",
+          "fr": ",",
+          "ht": "yo,"
+        },
+        {
+          "key": "B",
+          "en": "Caves;",
+          "es": ";",
+          "pt": ";",
+          "fr": ";",
+          "ht": "yo;"
+        },
+        {
+          "key": "C",
+          "en": "Caves",
+          "es": "",
+          "pt": "",
+          "fr": "",
+          "ht": "yo"
+        },
+        {
+          "key": "D",
+          "en": "Caves:",
+          "es": ":",
+          "pt": ":",
+          "fr": ":",
+          "ht": "yo:"
+        }
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This option is correct because the comma after 'Caves' pairs with the comma after 'Scrolls' to properly enclose the non-essential appositive phrase ('a collection...Caves'). An interrupting phrase that renames the subject must be set off by matching punctuation.",
+        "es": "La opción A es la correcta porque la coma después de 'Qumrán' se empareja con la coma después de 'Muerto' para encerrar la frase apositiva no esencial. La gramática española sigue la misma regla: un inciso explicativo que interrumpe la oración debe estar delimitado por un par de comas.",
+        "pt": "A opção A é a correta porque a vírgula após 'Qumran' faz par com a vírgula após 'Morto' para delimitar corretamente a frase apositiva não essencial. Esta regra também existe em português, onde um aposto explicativo intercalado é isolado por vírgulas.",
+        "fr": "L'option A est la correcte car la virgule après 'Qumran' s'associe à la virgule après 'Morte' pour encadrer correctement l'apposition non essentielle. C'est aussi le cas en français, où une apposition insérée dans une phrase doit être encadrée par deux virgules.",
+        "ht": "Opsyon A a kòrèk paske vigil la apre 'yo' mache ak vigil la apre 'Mòt' pou byen fèmen fraz deskriptif anplis la. Règleman sa a se menm an Kreyòl; yon fraz deskriptif nan mitan yon lòt fraz bezwen vigil anvan ak apre li."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_026",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "In her novel Beloved, Toni Morrison uses a nonlinear narrative structure to explore the psychological trauma of slavery. The story shifts between past and present, weaving together memories and experiences to create a powerful, haunting ______ this approach challenges readers to piece together the fragmented history of the characters.",
+        "es": "La historia se mueve entre el pasado y el presente, tejiendo recuerdos para crear una ______ narrativa poderosa y evocadora, y este enfoque desafía a los lectores a reconstruir la historia.",
+        "pt": "A história alterna entre o passado e o presente, tecendo memórias para criar uma ______ narrativa poderosa e assombrosa, e essa abordagem desafia os leitores a juntar a história.",
+        "fr": "L'histoire oscille entre le passé et le présent, tissant des souvenirs pour créer un ______ récit puissant et obsédant, et cette approche met les lecteurs au défi de reconstituer l'histoire.",
+        "ht": "Istwa a chanje ant pase ak prezan, li trese souvni pou kreye yon ______ naratif pwisan ak toumantan, epi apwòch sa a mete lektè yo an defi pou yo rasanble istwa a."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "narrative, and",
+          "es": ", y",
+          "pt": ", e",
+          "fr": ", et",
+          "ht": ", epi"
+        },
+        {
+          "key": "B",
+          "en": "narrative. And",
+          "es": ". Y",
+          "pt": ". E",
+          "fr": ". Et",
+          "ht": ". Epi"
+        },
+        {
+          "key": "C",
+          "en": "narrative; and",
+          "es": "; y",
+          "pt": "; e",
+          "fr": "; et",
+          "ht": "; epi"
+        },
+        {
+          "key": "D",
+          "en": "narrative and",
+          "es": "y",
+          "pt": "e",
+          "fr": "et",
+          "ht": "epi"
+        }
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This option is correct because it uses a comma followed by the coordinating conjunction 'and' to connect two independent clauses. The comma is required before 'and' when joining two complete sentences.",
+        "es": "La opción A es la correcta porque utiliza una coma seguida de la conjunción 'y' para unir dos cláusulas independientes. La gramática española utiliza una estructura idéntica ('coma + y') para conectar dos oraciones completas.",
+        "pt": "A opção A é a correta porque usa uma vírgula seguida da conjunção 'e' para conectar duas orações independentes. O português também usa 'vírgula + e' para unir duas orações.",
+        "fr": "L'option A est la correcte car elle utilise une virgule suivie de la conjonction 'et' pour joindre deux propositions indépendantes. En français, on place une virgule avant 'et' lorsqu'il joint deux propositions indépendantes.",
+        "ht": "Opsyon A a kòrèk paske li itilize yon vigil ki swiv pa konjonksyon an 'epi' pou konekte de fraz endepandan. Règleman an sanble tou an Kreyòl, kote ou itilize yon vigil anvan 'epi' pou konekte de fraz konplè ansanm."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_027",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "In the field of robotics, researchers are developing machines that can mimic the movements of animals. These bio-inspired robots can navigate difficult terrain more effectively than wheeled ______ some are even designed to swim or fly.",
+        "es": "Estos robots bioinspirados pueden navegar por terrenos difíciles con mayor eficacia que los robots con ______ algunos incluso están diseñados para nadar o volar.",
+        "pt": "Estes robôs bioinspirados podem navegar em terrenos difíceis de forma mais eficaz do que os robôs com ______ alguns são até concebidos para nadar ou voar.",
+        "fr": "Ces robots bio-inspirés peuvent naviguer sur des terrains difficiles plus efficacement que les robots à ______ certains sont même conçus pour nager ou voler.",
+        "ht": "Robo sa yo ki enspire pa lanati ka navige sou teren difisil pi efikasman pase robo ak ______ an reyalite, gen kèk ki menm fèt pou naje oswa vole."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "robots, in fact,",
+          "es": "ruedas, de hecho,",
+          "pt": "rodas, na verdade,",
+          "fr": "roues, en fait,",
+          "ht": "wou, an reyalite,"
+        },
+        {
+          "key": "B",
+          "en": "robots in fact",
+          "es": "ruedas de hecho",
+          "pt": "rodas na verdade",
+          "fr": "roues en fait",
+          "ht": "wou an reyalite"
+        },
+        {
+          "key": "C",
+          "en": "robots; in fact,",
+          "es": "ruedas; de hecho,",
+          "pt": "rodas; na verdade,",
+          "fr": "roues ; en fait,",
+          "ht": "wou; an reyalite,"
+        },
+        {
+          "key": "D",
+          "en": "robots in fact,",
+          "es": "ruedas de hecho,",
+          "pt": "rodas na verdade,",
+          "fr": "roues en fait,",
+          "ht": "wou an reyalite,"
+        }
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This option is correct because it uses a semicolon to join two closely related independent clauses, with the second clause introduced by the transitional phrase 'in fact'. A semicolon is appropriate before the transition, and a comma is needed after it.",
+        "es": "La opción C es la correcta porque utiliza un punto y coma para unir dos cláusulas independientes conectadas por la locución 'de hecho'. La gramática española sigue la misma regla: se usa un punto y coma antes de conectores transicionales y una coma después.",
+        "pt": "A opção C é a correta porque usa um ponto e vírgula para ligar duas orações independentes conectadas pela expressão de transição 'na verdade'. A regra é idêntica em português, onde se coloca um ponto e vírgula antes de 'na verdade' e uma vírgula depois.",
+        "fr": "L'option C est la correcte car elle utilise un point-virgule pour joindre deux propositions indépendantes liées par la locution 'en fait'. La grammaire française suit la même convention : un point-virgule avant la locution de transition et une virgule après.",
+        "ht": "Opsyon C a kòrèk paske li itilize yon pwen-vigil pou konekte de fraz endepandan ki lye pa ekspresyon tranzisyon an ('an reyalite'). Règleman sa a se menm jan an Kreyòl, kote ou mete yon pwen-vigil anvan 'an reyalite' ak yon vigil apre li."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_028",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The artist Yayoi Kusama is known for her immersive 'Infinity Mirror Rooms.' These installations, filled with lights and reflective surfaces, create the illusion of endless ______ visitors feel as though they are floating in an infinite expanse of stars.",
+        "es": "Estas instalaciones crean la ilusión de un espacio infinito, ______ los visitantes sienten como si estuvieran flotando en una expansión infinita de estrellas.",
+        "pt": "Estas instalações criam a ilusão de um espaço infinito, ______ os visitantes se sintam como se estivessem a flutuar numa extensão infinita de estrelas.",
+        "fr": "Ces installations créent l'illusion d'un espace infini, ______ les visiteurs ont l'impression de flotter dans une étendue infinie d'étoiles.",
+        "ht": "Enstalasyon sa yo kreye ilizyon yon espas enfini, ______ vizitè yo santi yo tankou y ap flote nan yon gwo espas zetwal."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "space so that",
+          "es": "de modo que",
+          "pt": "de modo que",
+          "fr": "si bien que",
+          "ht": "yon fason pou"
+        },
+        {
+          "key": "B",
+          "en": "space, so that",
+          "es": ", de modo que",
+          "pt": ", de modo que",
+          "fr": ", si bien que",
+          "ht": ", yon fason pou"
+        },
+        {
+          "key": "C",
+          "en": "space. So that",
+          "es": ". De modo que",
+          "pt": ". De modo que",
+          "fr": ". Si bien que",
+          "ht": ". Yon fason pou"
+        },
+        {
+          "key": "D",
+          "en": "space; so that",
+          "es": "; de modo que",
+          "pt": "; de modo que",
+          "fr": "; si bien que",
+          "ht": "; yon fason pou"
+        }
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This option is correct because it uses a comma to separate the main clause from the subordinate clause of purpose/result that begins with 'so that'. This punctuation correctly indicates the effect of the illusion.",
+        "es": "La opción B es la correcta porque utiliza una coma para separar la cláusula principal de la cláusula subordinada de consecuencia que comienza con 'de modo que'. La gramática española también usa una coma para introducir una cláusula que expresa el resultado o propósito de la acción principal.",
+        "pt": "A opção B é a correta porque usa uma vírgula para separar a oração principal da oração subordinada de consequência que começa com 'de modo que'. Esta pontuação é paralela em português, indicando corretamente o efeito ou o propósito da ilusão.",
+        "fr": "L'option B est la correcte car elle utilise une virgule pour séparer la proposition principale de la proposition subordonnée de conséquence qui commence par 'si bien que'. En français, c'est la ponctuation standard pour exprimer un rapport de cause à effet.",
+        "ht": "Opsyon B a kòrèk paske li itilize yon vigil pou separe fraz prensipal la ak fraz sibòdone a ki kòmanse ak 'yon fason pou'. Règleman sa a se menm jan an Kreyòl pou montre yon relasyon koz-ak-efè oswa objektif."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_029",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The design firm IDEO is famous for its human-centered approach to problem-solving. This methodology, known as design ______ emphasizes empathy, rapid prototyping, and collaborative iteration.",
+        "es": "Esta metodología, conocida como pensamiento de ______ enfatiza la empatía, la creación rápida de prototipos y la iteración colaborativa.",
+        "pt": "Esta metodologia, conhecida como design ______ enfatiza a empatia, a prototipagem rápida e a iteração colaborativa.",
+        "fr": "Cette méthodologie, connue sous le nom de design ______ met l'accent sur l'empathie, le prototypage rapide et l'itération collaborative.",
+        "ht": "Metodoloji sa a, ke yo rekonèt kòm panse ______ mete aksan sou anpati, pwototip rapid, ak iterasyon kolaboratif."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "thinking,",
+          "es": "diseño,",
+          "pt": "thinking,",
+          "fr": "thinking,",
+          "ht": "konsepsyon,"
+        },
+        {
+          "key": "B",
+          "en": "thinking;",
+          "es": "diseño;",
+          "pt": "thinking;",
+          "fr": "thinking ;",
+          "ht": "konsepsyon;"
+        },
+        {
+          "key": "C",
+          "en": "thinking",
+          "es": "diseño",
+          "pt": "thinking",
+          "fr": "thinking",
+          "ht": "konsepsyon"
+        },
+        {
+          "key": "D",
+          "en": "thinking:",
+          "es": "diseño:",
+          "pt": "thinking:",
+          "fr": "thinking :",
+          "ht": "konsepsyon:"
+        }
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This option is correct because the comma after 'thinking' pairs with the comma after 'methodology' to properly enclose the non-essential appositive phrase ('known as design thinking'). An interrupting phrase that renames the subject must be set off by matching punctuation.",
+        "es": "La opción A es la correcta porque la coma después de 'diseño' se empareja con la coma después de 'metodología' para encerrar la aposición no esencial. La gramática española sigue la misma regla: un inciso explicativo que interrumpe la oración debe estar delimitado por un par de comas.",
+        "pt": "A opção A é a correta porque a vírgula após 'thinking' faz par com a vírgula após 'metodologia' para delimitar corretamente a frase apositiva não essencial. Esta regra também existe em português, onde um aposto explicativo intercalado é isolado por vírgulas.",
+        "fr": "L'option A est la correcte car la virgule après 'thinking' s'associe à la virgule après 'méthodologie' pour encadrer correctement l'apposition non essentielle. C'est aussi le cas en français, où une apposition insérée dans une phrase doit être encadrée par deux virgules.",
+        "ht": "Opsyon A a kòrèk paske vigil la apre 'konsepsyon' mache ak vigil la apre 'metodoloji' pou byen fèmen fraz deskriptif anplis la. Règleman sa a se menm an Kreyòl; yon fraz deskriptif nan mitan yon lòt fraz bezwen vigil anvan ak apre li."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_030",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The Voyager 1 space probe, launched in 1977, is currently the most distant human-made object from Earth. Traveling at over 38,000 miles per ______ it has entered interstellar space, the region between stars.",
+        "es": "Viajando a más de 38,000 millas por ______ ha entrado en el espacio interestelar, la región entre las estrellas.",
+        "pt": "Viajando a mais de 38.000 milhas por ______ entrou no espaço interestelar, a região entre as estrelas.",
+        "fr": "Se déplaçant à plus de 38 000 miles par ______ elle est entrée dans l'espace interstellaire, la région entre les étoiles.",
+        "ht": "K ap vwayaje a plis pase 38,000 mil pa ______ li te antre nan espas entèstelè, rejyon ki ant zetwal yo."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "hour,",
+          "es": "hora,",
+          "pt": "hora,",
+          "fr": "heure,",
+          "ht": "èdtan,"
+        },
+        {
+          "key": "B",
+          "en": "hour;",
+          "es": "hora;",
+          "pt": "hora;",
+          "fr": "heure ;",
+          "ht": "èdtan;"
+        },
+        {
+          "key": "C",
+          "en": "hour",
+          "es": "hora",
+          "pt": "hora",
+          "fr": "heure",
+          "ht": "èdtan"
+        },
+        {
+          "key": "D",
+          "en": "hour:",
+          "es": "hora:",
+          "pt": "hora:",
+          "fr": "heure :",
+          "ht": "èdtan:"
+        }
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This option is correct because it uses a comma to separate the introductory participial phrase ('Traveling...hour') from the main clause. In Standard English, an introductory phrase like this must be separated from the main clause by a comma.",
+        "es": "La opción A es la correcta porque utiliza una coma para separar la frase introductoria de gerundio ('Viajando...hora') de la cláusula principal. La gramática española sigue la misma regla: una frase introductoria que describe una circunstancia debe ir seguida de una coma.",
+        "pt": "A opção A é a correta porque usa uma vírgula para separar a oração introdutória de gerúndio ('Viajando...hora') da oração principal. Esta regra também se aplica em português, onde uma oração introdutória longa é separada da oração principal por uma vírgula.",
+        "fr": "L'option A est la correcte car elle utilise une virgule pour séparer le groupe participial introductif ('Se déplaçant...heure') de la proposition principale. En français, il est également standard de séparer un complément de phrase placé en tête par une virgule.",
+        "ht": "Opsyon A a kòrèk paske li itilize yon vigil pou separe fraz entwodiksyon an ('K ap vwayaje...èdtan') ak fraz prensipal la. Règleman sa a se menm bagay la an Kreyòl; yon fraz entwodiksyon dwe separe de rès fraz la pa yon vigil."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_031",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The minimalist sculptures of Dara Khouri have drawn praise from contemporary ______ among them museum curator Leena Ortiz, who calls the work 'precisely weightless.'",
+        "es": "Las esculturas minimalistas de Dara Khouri han recibido elogios de críticos ______ ellos la curadora de museo Leena Ortiz, quien califica la obra como 'precisamente ingrávida'.",
+        "pt": "As esculturas minimalistas de Dara Khouri têm recebido elogios de críticos ______ eles a curadora de museu Leena Ortiz, que descreve a obra como 'precisamente leve.'",
+        "fr": "Les sculptures minimalistes de Dara Khouri ont été saluées par les critiques ______ eux la conservatrice de musée Leena Ortiz, qui qualifie l'œuvre de 'précisément sans poids'.",
+        "ht": "Eskilti minimalist Dara Khouri yo te resevwa felisitasyon nan men gwo kritik ______ yo genyen konsèvatè mize Leena Ortiz, ki te dekri travay la kòm 'presizeman san pwa.'"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "critics. Among",
+          "es": "contemporáneos. Entre",
+          "pt": "contemporâneos. Entre",
+          "fr": "contemporains. Parmi",
+          "ht": "kontanporen. Pami"
+        },
+        {
+          "key": "B",
+          "en": "critics among",
+          "es": "contemporáneos entre",
+          "pt": "contemporâneos entre",
+          "fr": "contemporains parmi",
+          "ht": "kontanporen pami"
+        },
+        {
+          "key": "C",
+          "en": "critics; among",
+          "es": "contemporáneos; entre",
+          "pt": "contemporâneos; entre",
+          "fr": "contemporains ; parmi",
+          "ht": "kontanporen; pami"
+        },
+        {
+          "key": "D",
+          "en": "critics, among",
+          "es": "contemporáneos, entre",
+          "pt": "contemporâneos, entre",
+          "fr": "contemporains, parmi",
+          "ht": "kontanporen, pami"
+        }
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This option is correct because it uses a comma to separate the main clause from the supplementary phrase ('among them...') that provides a specific example. This type of non-essential phrase must be set off from the main clause by a comma.",
+        "es": "La opción D es la correcta porque utiliza una coma para separar la cláusula principal de la frase suplementaria ('entre ellos...') que proporciona un ejemplo. La gramática española también requiere una coma para introducir una frase explicativa o un ejemplo que no es esencial para el significado básico de la oración.",
+        "pt": "A opção D é a correta porque usa uma vírgula para separar a oração principal da frase suplementar ('entre eles...') que fornece um exemplo específico. Em português, esta estrutura é paralela, onde uma vírgula é usada para introduzir um aposto explicativo ou uma frase de exemplo.",
+        "fr": "L'option D est la correcte car elle utilise une virgule pour séparer la proposition principale de la phrase supplémentaire ('parmi eux...') qui donne un exemple. La grammaire française suit une règle similaire, utilisant une virgule pour détacher une apposition ou un complément non essentiel du reste de la phrase.",
+        "ht": "Opsyon D a kòrèk paske li itilize yon vigil pou separe fraz prensipal la ak fraz siplemantè a ('pami yo...') ki bay yon egzanp. An Kreyòl, règ sa a aplike tou; ou dwe sèvi ak yon vigil pou ajoute yon moso enfòmasyon anplis ki pa esansyèl."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_032",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The marine lab compiled a five‑year record of coral bleaching events (i.e., episodes of stress‑induced whitening that can precede mortality). ______ comparing spectra from 1,400 reef images, analysts mapped hotspots of thermal stress.",
+        "es": "El laboratorio marino compiló un registro de eventos de blanqueamiento de corales (es decir, episodios de blanqueamiento inducido por estrés). ______ comparar espectros de 1,400 imágenes de arrecifes, los analistas mapearon puntos críticos de estrés térmico.",
+        "pt": "O laboratório marinho compilou um registro de eventos de branqueamento de corais (ou seja, episódios de branqueamento induzido por estresse). ______ comparar espectros de 1.400 imagens de recifes, os analistas mapearam os pontos de estresse térmico.",
+        "fr": "Le laboratoire marin a compilé un registre des événements de blanchissement des coraux (c'est-à-dire des épisodes de blanchissement induit par le stress). ______ comparant les spectres de 1 400 images de récifs, les analystes ont cartographié les points chauds du stress thermique.",
+        "ht": "Laboratwa maren an te konpile yon rejis sou evènman blanchiman koray (sa vle di, epizòd blanchiman ki koze pa estrès). ______ konpare spèk ki soti nan 1,400 imaj resif, analis yo te katografye pwen cho estrès tèmik yo."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "By",
+          "es": "Al",
+          "pt": "Ao",
+          "fr": "En",
+          "ht": "Lè yo"
+        },
+        {
+          "key": "B",
+          "en": "by,",
+          "es": ", al",
+          "pt": ", ao",
+          "fr": ", en",
+          "ht": ", lè yo"
+        },
+        {
+          "key": "C",
+          "en": "and by",
+          "es": "y al",
+          "pt": "e ao",
+          "fr": "et en",
+          "ht": "epi lè yo"
+        },
+        {
+          "key": "D",
+          "en": "by",
+          "es": "al",
+          "pt": "ao",
+          "fr": "en",
+          "ht": "lè yo"
+        }
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This option is correct because a period is required after the parenthesis to properly end the first sentence. The new sentence then correctly begins with the introductory phrase 'By comparing...'.",
+        "es": "La opción A es la correcta porque se requiere un punto después del paréntesis para terminar la primera oración. La gramática española sigue esta misma regla fundamental de separar dos oraciones completas e independientes con un punto.",
+        "pt": "A opção A é a correta porque é necessário um ponto final após o parêntese para terminar adequadamente a primeira frase. A gramática portuguesa também exige um ponto final para separar duas sentenças independentes.",
+        "fr": "L'option A est la correcte car un point est requis après la parenthèse pour terminer correctement la première phrase. En français, il est également obligatoire de séparer deux phrases complètes par un point, même si la première se termine par une parenthèse.",
+        "ht": "Opsyon A a kòrèk paske yon pwen nesesè apre parantèz la pou fini premye fraz la kòrèkteman. Règleman sa a se menm bagay la an Kreyòl; ou dwe mete yon pwen pou separe de fraz konplè."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_033",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The avalanche warning system is calibrated so precisely that rescuers can forecast small changes in slab stability across a single ridgeline ______ the resulting alerts can be targeted to specific trailheads.",
+        "es": "El sistema de alerta de avalanchas está calibrado con tal precisión que los rescatistas pueden pronosticar pequeños cambios en la estabilidad ______ las alertas resultantes pueden dirigirse a puntos específicos.",
+        "pt": "O sistema de aviso de avalanches é calibrado com tanta precisão que as equipes de resgate podem prever pequenas mudanças na estabilidade ______ os alertas resultantes podem ser direcionados a trilhas específicas.",
+        "fr": "Le système d'alerte d'avalanche est calibré si précisément que les sauveteurs peuvent prévoir de petits changements dans la stabilité ______ les alertes peuvent être ciblées sur des départs de sentiers spécifiques.",
+        "ht": "Sistèm alèt lavalas la kalibre tèlman presi ke sekouris yo ka prevwa ti chanjman nan estabilite ______ alèt ki vin apre yo ka vize sou tèt santye espesifik."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": ", so that",
+          "es": ", de modo que",
+          "pt": ", de modo que",
+          "fr": ", si bien que",
+          "ht": ", tèlman"
+        },
+        {
+          "key": "B",
+          "en": "; so that",
+          "es": "; de modo que",
+          "pt": "; de modo que",
+          "fr": "; si bien que",
+          "ht": "; tèlman"
+        },
+        {
+          "key": "C",
+          "en": "so that",
+          "es": "de modo que",
+          "pt": "de modo que",
+          "fr": "si bien que",
+          "ht": "tèlman"
+        },
+        {
+          "key": "D",
+          "en": "so that,",
+          "es": "de modo que,",
+          "pt": "de modo que,",
+          "fr": "si bien que,",
+          "ht": "tèlman,"
+        }
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This option is correct because no punctuation is needed before the essential 'so that' clause. The clause 'so that the resulting alerts...' is necessary to complete the meaning of the construction 'so precisely that...', and therefore should not be separated by punctuation.",
+        "es": "La opción C es la correcta porque no se necesita puntuación antes de la cláusula 'de modo que'. En la construcción española 'con tal... que/de modo que...', la cláusula introducida por 'que' es esencial para el significado y, al igual que en inglés, no se separa con puntuación.",
+        "pt": "A opção C é a correta porque nenhuma pontuação é necessária antes da oração 'de modo que'. Na estrutura portuguesa 'tão... que/de modo que...', a oração introduzida por 'que' é essencial para o sentido e, de forma semelhante ao inglês, não é separada por pontuação.",
+        "fr": "L'option C est la correcte car aucune ponctuation n'est nécessaire avant la proposition 'si bien que'. Dans la construction française 'si... que/si bien que...', la proposition introduite par 'que' est essentielle à la phrase et ne doit pas en être séparée par une ponctuation, tout comme en anglais.",
+        "ht": "Opsyon C a kòrèk paske pa bezwen okenn ponktiyasyon anvan fraz 'tèlman' an. An Kreyòl, nan estrikti 'tèlman... ke...', fraz ki kòmanse ak 'ke' a esansyèl pou siyifikasyon an, epi menm jan an Anglè, li pa dwe separe pa ponktiyasyon."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_034",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "Architects praised the library's microslat ceiling for its acoustic ______ Designed to diffuse echoes, the treated panels allow quiet conversation even during peak hours.",
+        "es": "Los arquitectos elogiaron el techo de microláminas de la biblioteca por sus cualidades ______ Diseñados para difundir los ecos, los paneles tratados permiten una conversación tranquila.",
+        "pt": "Os arquitetos elogiaram o teto de microlâminas da biblioteca por suas qualidades ______ Projetados para difundir ecos, os painéis tratados permitem conversas silenciosas.",
+        "fr": "Les architectes ont loué le plafond en micro-lamelles de la bibliothèque pour ses qualités ______ Conçus pour diffuser les échos, les panneaux traités permettent une conversation silencieuse.",
+        "ht": "Achitèk yo te felisite plafon an mikwosla bibliyotèk la pou kalite ______ li yo. Fèt pou gaye eko, panno trete yo pèmèt konvèsasyon an silans."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "solutions",
+          "es": "acústicas",
+          "pt": "acústicas",
+          "fr": "acoustiques",
+          "ht": "akoustik"
+        },
+        {
+          "key": "B",
+          "en": "solutions,",
+          "es": "acústicas,",
+          "pt": "acústicas,",
+          "fr": "acoustiques,",
+          "ht": "akoustik,"
+        },
+        {
+          "key": "C",
+          "en": "solutions.",
+          "es": "acústicas.",
+          "pt": "acústicas.",
+          "fr": "acoustiques.",
+          "ht": "akoustik."
+        },
+        {
+          "key": "D",
+          "en": "solutions and",
+          "es": "acústicas y",
+          "pt": "acústicas e",
+          "fr": "acoustiques et",
+          "ht": "akoustik ak"
+        }
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This option is correct because a period is needed to separate two distinct sentences. The second sentence begins with a participial phrase ('Designed to diffuse echoes') that modifies 'the treated panels', the subject of the new sentence.",
+        "es": "La opción C es la correcta porque se necesita un punto para separar dos oraciones distintas. La gramática española también requiere un punto para separar oraciones, y la segunda oración puede comenzar correctamente con una frase de participio ('Diseñados...') que modifica al nuevo sujeto.",
+        "pt": "A opção C é a correta porque é necessário um ponto final para separar duas sentenças distintas. Em português, a segunda frase também pode começar com uma oração de particípio ('Projetados...') que descreve o novo sujeito, uma estrutura paralela à do inglês.",
+        "fr": "L'option C est la correcte car un point est nécessaire pour séparer deux phrases distinctes. Le français suit la même règle, où une nouvelle phrase peut commencer par un groupe participial ('Conçus...') qui se rapporte au sujet de cette nouvelle phrase.",
+        "ht": "Opsyon C a kòrèk paske yon pwen nesesè pou separe de fraz diferan. Règleman sa a se menm jan an Kreyòl; dezyèm fraz la kòmanse ak yon deskripsyon ('Fèt pou...') ki konekte ak nouvo sijè a."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_035",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "To keep a community microgrid running during storms, engineers used an uncommon approach at the ______ battery trailers staged around town; prioritized feeder circuits at clinics; and islanding controls tuned to drop noncritical loads.",
+        "es": "Para mantener una microrred comunitaria en funcionamiento, los ingenieros utilizaron un enfoque poco común ______ remolques de baterías situados en la ciudad; circuitos de alimentación prioritarios en las clínicas; y controles de aislamiento.",
+        "pt": "Para manter uma microrrede comunitária a funcionar, os engenheiros usaram uma abordagem invulgar ______ reboques de baterias espalhados pela cidade; circuitos de alimentação prioritários nas clínicas; e controlos de isolamento.",
+        "fr": "Pour maintenir un micro-réseau communautaire en état de marche, les ingénieurs ont utilisé une approche inhabituelle ______ des remorques de batteries disposées en ville ; des circuits d'alimentation prioritaires dans les cliniques ; et des commandes d'îlotage.",
+        "ht": "Pou kenbe yon mikwo-rezo kominotè an fonksyon, enjenyè yo te itilize yon apwòch estraòdinè ______ trelè batri plase nan vil la; sikui priyorite nan klinik yo; ak kontwòl izole."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "time, battery trailers",
+          "es": "; remolques",
+          "pt": "; reboques",
+          "fr": "; des remorques",
+          "ht": "; trelè"
+        },
+        {
+          "key": "B",
+          "en": "time; battery trailers",
+          "es": "; remolques",
+          "pt": "; reboques",
+          "fr": "; des remorques",
+          "ht": "; trelè"
+        },
+        {
+          "key": "C",
+          "en": "time, battery trailers,",
+          "es": ", remolques,",
+          "pt": ", reboques,",
+          "fr": ", des remorques,",
+          "ht": ", trelè,"
+        },
+        {
+          "key": "D",
+          "en": "time; battery trailers,",
+          "es": "; remolques,",
+          "pt": "; reboques,",
+          "fr": "; des remorques,",
+          "ht": "; trelè,"
+        }
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This option is correct because it uses a semicolon to separate the first two items in a complex list. Since the list is introduced by a colon and the items themselves are phrases, semicolons are the appropriate separators to maintain clarity.",
+        "es": "La opción B es la correcta porque utiliza un punto y coma para separar los elementos de una lista compleja introducida por dos puntos. La gramática española sigue la misma regla: se usa un punto y coma para separar elementos de una lista cuando esos elementos son frases largas o complejas.",
+        "pt": "A opção B é a correta porque usa um ponto e vírgula para separar os itens de uma lista complexa introduzida por dois-pontos. A regra é idêntica em português: o ponto e vírgula é usado para separar itens numa enumeração quando os itens são frases ou já contêm vírgulas.",
+        "fr": "L'option B est la correcte car elle utilise un point-virgule pour séparer les éléments d'une énumération complexe introduite par deux-points. La grammaire française suit également cette convention pour séparer les parties d'une énumération lorsque ces parties sont des phrases.",
+        "ht": "Opsyon B a kòrèk paske li itilize yon pwen-vigil pou separe eleman yo nan yon lis konplèks. Kreyòl la tou itilize pwen-vigil la lè ou gen yon lis kote atik yo se fraz long, pou separe atik prensipal yo klèman."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_036",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The robotics lab published a summary of ______ which were limited by supply‑chain delays—showing that the crawler could traverse rebar mats without snagging.",
+        "es": "El laboratorio de robótica publicó un resumen de los ______ los cuales estuvieron limitados por retrasos en la cadena de suministro—demostrando que el robot podía atravesar las mallas de refuerzo.",
+        "pt": "O laboratório de robótica publicou um resumo dos ______ os quais foram limitados por atrasos na cadeia de suprimentos—mostrando que o robô conseguia atravessar as malhas de vergalhão.",
+        "fr": "Le laboratoire de robotique a publié un résumé des ______ qui ont été limités par des retards de la chaîne d'approvisionnement — montrant que le robot pouvait traverser les treillis d'armature.",
+        "ht": "Laboratwa robotik la te pibliye yon rezime ______ yo te limite pa reta nan chèn apwovizyonman an—ki montre ke robo a te kapab travèse tapi ba an asye."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "trials which—",
+          "es": "ensayos los cuales—",
+          "pt": "testes os quais—",
+          "fr": "essais qui—",
+          "ht": "esè yo ki—"
+        },
+        {
+          "key": "B",
+          "en": "trials, which—",
+          "es": "ensayos, los cuales—",
+          "pt": "testes, os quais—",
+          "fr": "essais, qui—",
+          "ht": "esè yo, ki—"
+        },
+        {
+          "key": "C",
+          "en": "trials—which",
+          "es": "ensayos—los cuales",
+          "pt": "testes—os quais",
+          "fr": "essais—qui",
+          "ht": "esè yo—ki"
+        },
+        {
+          "key": "D",
+          "en": "trials which",
+          "es": "ensayos los cuales",
+          "pt": "testes os quais",
+          "fr": "essais qui",
+          "ht": "esè yo ki"
+        }
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This option is correct because it uses a dash to open the non-essential clause ('which were limited...'). This dash properly pairs with the existing closing dash to set off the interruption symmetrically.",
+        "es": "La opción C es la correcta porque utiliza un guion largo para iniciar la cláusula no esencial ('los cuales estuvieron limitados...'). La gramática española sigue la misma regla: un inciso explicativo que interrumpe la oración debe estar delimitado por signos de puntuación iguales, como dos guiones largos.",
+        "pt": "A opção C é a correta porque usa um travessão para abrir a oração não essencial ('os quais foram limitados...'). Esta regra também existe em português, onde um aposto ou oração explicativa intercalada é separada por um par de travessões.",
+        "fr": "L'option C est la correcte car elle utilise un tiret cadratin pour ouvrir la proposition non essentielle ('qui ont été limités...'). C'est aussi le cas en français, où une proposition incise peut être encadrée par deux tirets pour la séparer du reste de la phrase.",
+        "ht": "Opsyon C a kòrèk paske li itilize yon tirè pou kòmanse fraz ki pa esansyèl la ('yo te limite...'). Règleman sa a se menm jan an Kreyòl; yon fraz ki koupe yon lòt fraz dwe gen menm siy ponktiyasyon an (tankou de tirè) anvan ak apre li."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_037",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The initial signal alignment was promising, though, ______ the follow‑up tests revealed drift once the device warmed under continuous load.",
+        "es": "La alineación inicial de la señal era prometedora, sin embargo, ______ las pruebas de seguimiento revelaron una deriva.",
+        "pt": "O alinhamento inicial do sinal foi promissor, no entanto, ______ os testes de acompanhamento revelaram um desvio.",
+        "fr": "L'alignement initial du signal était prometteur, cependant, ______ les tests de suivi ont révélé une dérive.",
+        "ht": "Aliyman siyal inisyal la te pwomèt, men, ______ tès swivi yo te revele yon derive."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "the team noted;",
+          "es": "señaló el equipo;",
+          "pt": "a equipe notou;",
+          "fr": "a noté l'équipe ;",
+          "ht": "ekip la te note;"
+        },
+        {
+          "key": "B",
+          "en": "the team noted:",
+          "es": "señaló el equipo:",
+          "pt": "a equipe notou:",
+          "fr": "a noté l'équipe :",
+          "ht": "ekip la te note:"
+        },
+        {
+          "key": "C",
+          "en": "the team noted",
+          "es": "señaló el equipo",
+          "pt": "a equipe notou",
+          "fr": "a noté l'équipe",
+          "ht": "ekip la te note"
+        },
+        {
+          "key": "D",
+          "en": "the team noted,",
+          "es": "señaló el equipo,",
+          "pt": "a equipe notou,",
+          "fr": "a noté l'équipe,",
+          "ht": "ekip la te note,"
+        }
+      ],
+      "answer": "A",
+      "explanation": {
+        "en": "This option is correct because the semicolon properly joins the two independent clauses. The phrase 'the team noted' acts as a parenthetical interruption at the start of the second clause, but the core structure is two complete sentences linked by a semicolon.",
+        "es": "La opción A es la correcta porque el punto y coma une adecuadamente las dos cláusulas independientes. La gramática española también utiliza el punto y coma para conectar dos oraciones completas que están lógicamente conectadas, una estructura paralela al uso en inglés.",
+        "pt": "A opção A é a correta porque o ponto e vírgula une adequadamente as duas orações independentes. O português segue uma regra semelhante, usando o ponto e vírgula para conectar duas orações completas que mantêm uma forte relação lógica.",
+        "fr": "L'option A est la correcte car le point-virgule joint correctement les deux propositions indépendantes. La grammaire française utilise également le point-virgule pour relier deux propositions complètes et étroitement liées par le sens.",
+        "ht": "Opsyon A a kòrèk paske pwen-vigil la konekte de fraz endepandan yo kòrèkteman. An Kreyòl, règ sa a aplike tou, kote yon pwen-vigil ka konekte de fraz konplè ki gen yon gwo rapò lojik."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_038",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "Professor Lin reframed the studio critique as a collaborative ______ As demonstrated by the revision logs that followed, students iterated more often and with clearer intent.",
+        "es": "El profesor Lin reformuló la crítica de estudio como un taller ______ Como lo demuestran los registros de revisión que siguieron, los estudiantes iteraron más a menudo.",
+        "pt": "O Professor Lin reformulou a crítica de estúdio como um workshop ______ Conforme demonstrado pelos registos de revisão que se seguiram, os alunos iteraram com mais frequência.",
+        "fr": "Le professeur Lin a recadré la critique d'atelier comme un atelier ______ Comme l'ont démontré les journaux de révision qui ont suivi, les étudiants ont itéré plus souvent.",
+        "ht": "Pwofesè Lin te refòmile kritik estidyo a kòm yon atelye ______ Jan rejis revizyon yo te demontre sa, elèv yo te repete pi souvan."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "workshop; As",
+          "es": "colaborativo; Como",
+          "pt": "colaborativo; Conforme",
+          "fr": "collaboratif ; Comme",
+          "ht": "kolaboratif; Jan"
+        },
+        {
+          "key": "B",
+          "en": "workshop, as",
+          "es": "colaborativo, como",
+          "pt": "colaborativo, conforme",
+          "fr": "collaboratif, comme",
+          "ht": "kolaboratif, jan"
+        },
+        {
+          "key": "C",
+          "en": "workshop. As",
+          "es": "colaborativo. Como",
+          "pt": "colaborativo. Conforme",
+          "fr": "collaboratif. Comme",
+          "ht": "kolaboratif. Jan"
+        },
+        {
+          "key": "D",
+          "en": "workshop and as",
+          "es": "colaborativo y como",
+          "pt": "colaborativo e conforme",
+          "fr": "collaboratif et comme",
+          "ht": "kolaboratif epi jan"
+        }
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This option is correct because it uses a period to separate two complete sentences. The second sentence begins with a long introductory phrase ('As demonstrated...') which modifies the main clause that follows.",
+        "es": "La opción C es la correcta porque utiliza un punto para separar dos oraciones completas. Esta es una regla fundamental en español también; se requiere un punto para separar dos oraciones distintas cuando la segunda comienza con una frase introductoria.",
+        "pt": "A opção C é a correta porque usa um ponto final para separar duas sentenças completas. A regra é idêntica em português; um ponto final marca o fim de uma sentença antes do início de outra, especialmente quando a segunda começa com uma frase introdutória.",
+        "fr": "L'option C est la correcte car elle utilise un point pour séparer deux propositions indépendantes. La grammaire française exige également l'utilisation d'un point pour séparer deux phrases complètes, surtout lorsque la deuxième phrase commence par un long complément circonstanciel.",
+        "ht": "Opsyon C a kòrèk paske li itilize yon pwen pou separe de fraz konplè epi endepandan. Règleman sa a se menm jan an Kreyòl; ou dwe itilize yon pwen pou fini yon lide konplè anvan ou kòmanse yon nouvo fraz ak yon fraz entwodiksyon."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_039",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "Using salvaged materials—such as reclaimed ______ metals, like weathered copper; and offcuts from millwork—the team fabricated a pavilion that stayed within budget.",
+        "es": "Utilizando materiales recuperados—como ladrillo recuperado ______ metales, como cobre envejecido; y recortes de carpintería—el equipo fabricó un pabellón.",
+        "pt": "Usando materiais recuperados—como tijolo recuperado ______ metais, como cobre envelhecido; e aparas de marcenaria—a equipe fabricou um pavilhão.",
+        "fr": "En utilisant des matériaux de récupération—tels que des briques de récupération ______ des métaux, comme du cuivre patiné ; et des chutes de menuiserie—l'équipe a fabriqué un pavillon.",
+        "ht": "Sèvi ak materyèl rekipere—tankou brik reklame ______ metal, tankou kwiv degrade; ak rès bwa—ekip la te fabrike yon paviyon."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "brick, metals: like weathered copper,",
+          "es": ", metales: como",
+          "pt": ", metais: como",
+          "fr": ", des métaux : comme",
+          "ht": ", metal: tankou"
+        },
+        {
+          "key": "B",
+          "en": "brick; metals, like weathered copper,",
+          "es": "; metales, como",
+          "pt": "; metais, como",
+          "fr": "; des métaux, comme",
+          "ht": "; metal, tankou"
+        },
+        {
+          "key": "C",
+          "en": "brick, metals, like weathered copper,",
+          "es": ", metales, como",
+          "pt": ", metais, como",
+          "fr": ", des métaux, comme",
+          "ht": ", metal, tankou"
+        },
+        {
+          "key": "D",
+          "en": "brick; metals like weathered copper;",
+          "es": "; metales como;",
+          "pt": "; metais como;",
+          "fr": "; des métaux comme ;",
+          "ht": "; metal tankou;"
+        }
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This option is correct because it uses a semicolon to separate the first major item in a complex list ('reclaimed brick') from the second ('metals, like weathered copper'). The comma after 'metals' correctly introduces a non-essential example.",
+        "es": "La opción B es la correcta porque utiliza un punto y coma para separar los elementos principales de una lista compleja. La gramática española tiene la misma regla: se usa un punto y coma para separar elementos en una lista cuando esos elementos ya contienen comas.",
+        "pt": "A opção B é a correta porque usa um ponto e vírgula para separar os itens principais em uma lista complexa. A regra é idêntica em português: o ponto e vírgula é usado para separar itens em uma enumeração quando os próprios itens contêm vírgulas.",
+        "fr": "L'option B est la correcte car elle utilise un point-virgule pour séparer les éléments principaux d'une énumération complexe. La grammaire française suit également cette convention; le point-virgule est utilisé pour séparer les parties d'une énumération lorsque ces parties contiennent déjà des virgules.",
+        "ht": "Opsyon B a kòrèk paske li itilize yon pwen-vigil pou separe atik prensipal yo nan yon lis konplèks. Kreyòl la tou itilize pwen-vigil la pou objektif sa a; lè yon atik nan yon lis deja gen vigil, ou dwe itilize yon pwen-vigil pou separe atik prensipal yo."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_040",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "In the 1970s, engineers added a new voice to orchestral film ______ the synthesizer. A relatively fragile studio instrument at the time, its full palette suddenly cut through crowded mixes, shaping the era's sound.",
+        "es": "En la década de 1970, los ingenieros añadieron una nueva voz a las partituras de cine ______ el sintetizador. Un instrumento de estudio relativamente frágil en la época, su paleta completa de repente atravesó las mezclas, dando forma al sonido de la era.",
+        "pt": "Na década de 1970, os engenheiros adicionaram uma nova voz às trilhas sonoras orquestrais ______ o sintetizador. Um instrumento de estúdio relativamente frágil na época, sua paleta completa de repente cortou as mixagens, moldando o som da era.",
+        "fr": "Dans les années 1970, les ingénieurs ont ajouté une nouvelle voix aux partitions de films ______ le synthétiseur. Instrument de studio fragile à l'époque, sa palette complète a soudainement percé les mixages, façonnant le son de l'époque.",
+        "ht": "Nan ane 1970 yo, enjenyè yo te ajoute yon nouvo vwa nan band son fim yo ______ sentetizè a. Yon enstriman estidyo frajil nan epòk la, palèt konplè li a te toudenkou koupe nan mitan melanj yo, fòme son epòk la."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "scores, the synthesizer, A",
+          "es": ", el sintetizador, Un",
+          "pt": ", o sintetizador, Um",
+          "fr": ", le synthétiseur, Un",
+          "ht": ", sentetizè a, Yon"
+        },
+        {
+          "key": "B",
+          "en": "scores. The synthesizer, A",
+          "es": ". El sintetizador, Un",
+          "pt": ". O sintetizador, Um",
+          "fr": ". Le synthétiseur, Un",
+          "ht": ". Sentetizè a, Yon"
+        },
+        {
+          "key": "C",
+          "en": "scores; the synthesizer, A",
+          "es": "; el sintetizador, Un",
+          "pt": "; o sintetizador, Um",
+          "fr": "; le synthétiseur, Un",
+          "ht": "; sentetizè a, Yon"
+        },
+        {
+          "key": "D",
+          "en": "scores: the synthesizer. A",
+          "es": ": el sintetizador. Un",
+          "pt": ": o sintetizador. Um",
+          "fr": ": le synthétiseur. Un",
+          "ht": ": sentetizè a. Yon"
+        }
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This option is correct because it uses a colon to introduce the specific name of the technology ('the synthesizer'), which elaborates on the first clause. It then correctly uses a period to separate this complete thought from the next independent sentence.",
+        "es": "La opción D es la correcta porque utiliza dos puntos para introducir el nombre específico del instrumento ('el sintetizador'), lo cual es una regla gramatical compartida con el español. Después, el punto separa correctamente esta idea de la siguiente oración independiente.",
+        "pt": "A opção D é a correta porque usa dois-pontos para introduzir o nome específico do instrumento ('o sintetizador'). Esta é uma regra paralela em português, onde os dois-pontos introduzem um esclarecimento. O ponto, em seguida, separa corretamente as duas frases.",
+        "fr": "L'option D est la correcte car elle utilise les deux-points pour introduire le nom spécifique de l'instrument ('le synthétiseur'). En français, les deux-points servent également à introduire une explication. Le point sépare ensuite correctement les deux phrases distinctes.",
+        "ht": "Opsyon D a kòrèk paske li itilize de pwen pou entwodui non espesifik enstriman an ('sentetizè a'). Règleman sa a se menm jan an Kreyòl pou prezante yon eksplikasyon. Apre sa, pwen an separe kòrèkteman de fraz yo."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_041",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "Beyond drafting petitions, the neighborhood coalition secured grants for three corridors—Maple Avenue, Fulton Street, and Altamont Way (now part of the city's 'slow ______ to pilot traffic‑calming designs.'",
+        "es": "La coalición aseguró subvenciones para tres corredores—Maple Avenue, Fulton Street y Altamont Way (ahora parte de las \"calles lentas\" de la ______ para probar diseños de pacificación del tráfico.",
+        "pt": "A coligação garantiu subvenções para três corredores—Avenida Maple, Rua Fulton e Via Altamont (agora parte das \"ruas lentas\" da ______ para testar projetos de acalmia de tráfego.",
+        "fr": "La coalition a obtenu des subventions pour trois corridors — Maple Avenue, Fulton Street et Altamont Way (faisant partie des « rues lentes ______ pour tester des aménagements de modération de la circulation.",
+        "ht": "Kowalisyon an te jwenn sibvansyon pou twa koridò—Maple Avenue, Fulton Street, ak Altamont Way (kounye a yon pati nan \"lari dousman\" vil ______ pou teste desen pou kalme trafik."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "streets),—",
+          "es": "ciudad)—",
+          "pt": "cidade)—",
+          "fr": "\") —",
+          "ht": "la)—"
+        },
+        {
+          "key": "B",
+          "en": "streets)—",
+          "es": "ciudad)—",
+          "pt": "cidade)—",
+          "fr": "\")—",
+          "ht": "la)—"
+        },
+        {
+          "key": "C",
+          "en": "streets),",
+          "es": "ciudad),",
+          "pt": "cidade),",
+          "fr": "\"),",
+          "ht": "la),"
+        },
+        {
+          "key": "D",
+          "en": "streets),—",
+          "es": "ciudad),—",
+          "pt": "cidade),—",
+          "fr": "\"), —",
+          "ht": "la),—"
+        }
+      ],
+      "answer": "B",
+      "explanation": {
+        "en": "This option is correct because the closing dash pairs with the opening dash to properly enclose the supplementary list of corridors. The parenthesis is a separate, nested piece of punctuation that closes before the final dash.",
+        "es": "La opción B es la correcta porque el guion largo de cierre se empareja con el guion de apertura para encerrar la lista. La gramática española sigue la misma regla: un inciso largo, delimitado por guiones, debe cerrarse con un guion aunque contenga un paréntesis.",
+        "pt": "A opção B é a correta porque o travessão de fecho faz par com o travessão de abertura para delimitar a lista. Esta regra também se aplica em português: um aposto intercalado por travessões deve ser fechado com um travessão, mesmo que contenha parênteses.",
+        "fr": "L'option B est la correcte car le tiret cadratin de fermeture s'associe au tiret d'ouverture pour encadrer la liste. C'est également le cas en français, où une incise ouverte par un tiret doit être fermée par un tiret, même si elle contient des parenthèses.",
+        "ht": "Opsyon B a kòrèk paske tirè a apre parantèz la mache ak tirè ki anvan an pou byen fèmen lis la. Règleman an se menm bagay la an Kreyòl; yon fraz ki koupe yon lòt fraz dwe gen menm siy ponktiyasyon an (tankou de tirè) anvan ak apre li."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_042",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "By 1906, what started as a loose circle of letterpress hobbyists had become something far more ______ a federation of local print societies that, sharing type and tips, popularized affordable chapbooks.",
+        "es": "Para 1906, lo que comenzó como un círculo de aficionados se había convertido en algo mucho más ______ una federación de sociedades locales que popularizó los pliegos de cordel asequibles.",
+        "pt": "Em 1906, o que começou como um círculo de amadores tornou-se algo muito mais ______ uma federação de sociedades locais que popularizou os folhetos de cordel acessíveis.",
+        "fr": "En 1906, ce qui n'était qu'un cercle d'amateurs était devenu quelque chose de bien plus ______ une fédération de sociétés locales qui a popularisé les livrets bon marché.",
+        "ht": "Rive 1906, sa ki te kòmanse kòm yon gwoup amatè te vin tounen yon bagay ki pi ______ yon federasyon sosyete lokal ki te popilarize ti liv abòdab."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "cohesive; a",
+          "es": "cohesivo; una",
+          "pt": "coeso; uma",
+          "fr": "cohérent ; une",
+          "ht": "limenm; yon"
+        },
+        {
+          "key": "B",
+          "en": "cohesive, it was a",
+          "es": "cohesivo, era una",
+          "pt": "coeso, era uma",
+          "fr": "cohérent, c'était une",
+          "ht": "limenm, se te yon"
+        },
+        {
+          "key": "C",
+          "en": "cohesive. A",
+          "es": "cohesivo. Una",
+          "pt": "coeso. Uma",
+          "fr": "cohérent. Une",
+          "ht": "limenm. Yon"
+        },
+        {
+          "key": "D",
+          "en": "cohesive: a",
+          "es": "cohesivo: una",
+          "pt": "coeso: uma",
+          "fr": "cohérent : une",
+          "ht": "limenm: yon"
+        }
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This option is correct because a colon is used to introduce an explanation or elaboration that specifies what the 'something far more cohesive' is. The phrase 'a federation...' directly explains the preceding clause.",
+        "es": "La opción D es la correcta porque se utilizan dos puntos para introducir una explicación que especifica lo que era 'algo mucho más cohesivo'. La gramática española utiliza los dos puntos de manera idéntica para introducir una consecuencia o resumen de la oración anterior.",
+        "pt": "A opção D é a correta porque os dois-pontos são usados para introduzir uma explicação que especifica o que era 'algo muito mais coeso'. Esta é uma regra paralela em português, onde os dois-pontos introduzem um esclarecimento.",
+        "fr": "L'option D est la correcte car les deux-points sont utilisés pour introduire une explication qui précise ce qu'était 'quelque chose de bien plus cohérent'. En français, les deux-points servent également à introduire une explication ou une illustration.",
+        "ht": "Opsyon D a kòrèk paske de pwen yo itilize pou entwodui yon eksplikasyon ki presize kisa 'bagay ki pi limenm' nan te ye. Règleman sa a se menm jan an Kreyòl pou prezante yon eksplikasyon dirèk apre yon lide jeneral."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_043",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "As open‑source toolkits spread across labs, divergent calibration strategies ______ whereas some teams standardized on room‑temperature baselines, others tuned to operating conditions inside enclosures.",
+        "es": "A medida que los kits de herramientas de código abierto se extendieron, surgieron estrategias de calibración divergentes ______ mientras que algunos equipos estandarizaron las líneas de base, otros se ajustaron a las condiciones operativas.",
+        "pt": "À medida que os kits de ferramentas de código aberto se espalharam, surgiram estratégias de calibração divergentes ______ enquanto algumas equipas padronizaram as linhas de base, outras sintonizaram-se com as condições de operação.",
+        "fr": "À mesure que les boîtes à outils open-source se sont répandues, des stratégies d'étalonnage divergentes ont émergé ______ tandis que certaines équipes ont normalisé les lignes de base, d'autres se sont adaptées aux conditions de fonctionnement.",
+        "ht": "Pandan zouti sous-louvri yo te gaye, estrateji kalibrasyon divèjan te parèt ______ tandiske gen ekip ki te estandadize baz yo, gen lòt ki te ajiste yo a kondisyon fonksyònman."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "emerged;",
+          "es": ";",
+          "pt": ";",
+          "fr": ";",
+          "ht": ";"
+        },
+        {
+          "key": "B",
+          "en": "emerged,",
+          "es": ",",
+          "pt": ",",
+          "fr": ",",
+          "ht": ","
+        },
+        {
+          "key": "C",
+          "en": "emerged:",
+          "es": ":",
+          "pt": ":",
+          "fr": ":",
+          "ht": ":"
+        },
+        {
+          "key": "D",
+          "en": "emerged and",
+          "es": "y",
+          "pt": "e",
+          "fr": "et",
+          "ht": "epi"
+        }
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This option is correct because a colon is used to signal that what follows elaborates on or explains the preceding clause. The clause starting with 'whereas' provides the specific details of the 'divergent calibration strategies' mentioned.",
+        "es": "La opción C es la correcta porque se utilizan dos puntos para señalar que lo que sigue elabora la cláusula anterior. La gramática española utiliza los dos puntos de manera similar para introducir una ejemplificación o una explicación de lo que se acaba de mencionar.",
+        "pt": "A opção C é a correta porque os dois-pontos são usados para sinalizar que o que se segue elabora a oração anterior. Esta regra é paralela em português, onde os dois-pontos podem introduzir uma explicação ou um detalhamento do que foi dito.",
+        "fr": "L'option C est la correcte car les deux-points sont utilisés pour annoncer que ce qui suit développe la proposition précédente. En français, les deux-points servent aussi à introduire une explication, une illustration ou un exemple.",
+        "ht": "Opsyon C a kòrèk paske de pwen yo itilize pou endike ke sa k ap vini an ap elabore sou fraz anvan an. Règleman sa a se menm jan an Kreyòl, kote ou ka sèvi ak de pwen pou entwodui yon eksplikasyon detaye."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_044",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "The superconductivity team's preprint on niobium‑tin wire ______ describes a heat‑treatment protocol that improved the critical current at 16 tesla.",
+        "es": "El borrador del equipo de superconductividad sobre el alambre de niobio-estaño ______ describe un protocolo de tratamiento térmico que mejoró la corriente crítica a 16 tesla.",
+        "pt": "O rascunho da equipe de supercondutividade sobre o fio de nióbio-estanho ______ descreve um protocolo de tratamento térmico que melhorou a corrente crítica a 16 tesla.",
+        "fr": "Le pré-tirage de l'équipe de supraconductivité sur le fil de niobium-étain ______ décrit un protocole de traitement thermique qui a amélioré le courant critique à 16 tesla.",
+        "ht": "Premye vèsyon ekip sipèkondiktivite a sou fil niobyòm-eten ______ dekri yon pwotokòl tretman chalè ki te amelyore kouran kritik la a 16 tesla."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "en": "draft,",
+          "es": ",",
+          "pt": ",",
+          "fr": ",",
+          "ht": ","
+        },
+        {
+          "key": "B",
+          "en": "draft—",
+          "es": "—",
+          "pt": "—",
+          "fr": "—",
+          "ht": "—"
+        },
+        {
+          "key": "C",
+          "en": "draft:",
+          "es": ":",
+          "pt": ":",
+          "fr": ":",
+          "ht": ":"
+        },
+        {
+          "key": "D",
+          "en": "draft",
+          "es": "",
+          "pt": "",
+          "fr": "",
+          "ht": ""
+        }
+      ],
+      "answer": "D",
+      "explanation": {
+        "en": "This option is correct because no punctuation is needed between the subject ('The...draft') and its main verb ('describes'). Inserting punctuation would incorrectly separate these essential elements of the sentence.",
+        "es": "La opción D es la correcta porque no se necesita puntuación entre el sujeto y su verbo principal. En español, es una regla fundamental que el sujeto y su verbo no deben ser separados por puntuación, una conexión gramatical directa con la regla del inglés.",
+        "pt": "A opção D é a correta porque nenhuma pontuação é necessária entre o sujeito e o seu verbo principal. Em português, o sujeito e o verbo formam uma unidade sintática que não deve ser separada por pontuação, o que é paralelo à regra do inglês.",
+        "fr": "L'option D est la correcte car aucune ponctuation ne doit séparer le sujet de son verbe principal. C'est aussi comme ça en français ; il est incorrect de placer une ponctuation entre le groupe sujet et le verbe.",
+        "ht": "Opsyon D a kòrèk paske pa dwe gen ponktiyasyon ant sijè a ak vèb prensipal li a. Nan gramè Kreyòl Ayisyen an, sijè a vini dirèkteman anvan vèb la, epi menm jan an Anglè, yo pa dwe separe pa okenn ponktiyasyon."
+      }
+    },
+    {
+      "id": "rw_sec_boundaries_hard_045",
+      "difficulty": "hard",
+      "skill": "Boundaries",
+      "prompt": {
+        "en": "A recent survey examined the reading habits of students in thirty high schools across California. _______ discovered that when school libraries extended their hours, the number of books checked out by students increased.",
+        "es": "Una encuesta reciente examinó los hábitos de lectura de los estudiantes en treinta escuelas secundarias de California. _______ descubrió que cuando las bibliotecas escolares extendieron su horario, el número de libros prestados por los estudiantes aumentó.",
+        "pt": "Uma pesquisa recente examinou os hábitos de leitura de estudantes em trinta escolas de ensino médio na Califórnia. _______ descobriu que, quando as bibliotecas escolares estenderam seu horário de funcionamento, o número de livros retirados pelos alunos aumentou.",
+        "fr": "Une enquête récente a examiné les habitudes de lecture des élèves de trente lycées de Californie. _______ a découvert que lorsque les bibliothèques scolaires prolongeaient leurs heures d'ouverture, le nombre de livres empruntés par les élèves augmentait.",
+        "ht": "Yon sondaj resan te egzamine abitid lekti elèv nan trant lekòl segondè atravè Kalifòni. _______ te dekouvri ke lè bibliyotèk lekòl yo te pwolonje lè yo, kantite liv elèv yo te prete te ogmante."
+      },
+      "choices": [
+        {"key": "A", "en": "Librarian Maria Chen:", "es": "La bibliotecaria Maria Chen:", "pt": "A bibliotecária Maria Chen:", "fr": "La bibliothécaire Maria Chen :", "ht": "Bibliyotekè Maria Chen:"},
+        {"key": "B", "en": "Librarian, Maria Chen,", "es": "La bibliotecaria, Maria Chen,", "pt": "A bibliotecária, Maria Chen,", "fr": "La bibliothécaire, Maria Chen,", "ht": "Bibliyotekè, Maria Chen,"},
+        {"key": "C", "en": "Librarian Maria Chen", "es": "La bibliotecaria Maria Chen", "pt": "A bibliotecária Maria Chen", "fr": "La bibliothécaire Maria Chen", "ht": "Bibliyotekè Maria Chen"},
+        {"key": "D", "en": "Librarian Maria Chen,", "es": "La bibliotecaria Maria Chen,", "pt": "A bibliotecária Maria Chen,", "fr": "La bibliothécaire Maria Chen,", "ht": "Bibliyotekè Maria Chen,"}
+      ],
+      "answer": "C",
+      "explanation": {
+        "en": "This option is correct because no punctuation should be used between the subject (Librarian Maria Chen) and the verb (discovered). In Standard English, a subject is not separated from its verb by punctuation.",
+        "es": "La opción C es la correcta porque no se necesita puntuación entre el sujeto (La bibliotecaria Maria Chen) y el verbo (descubrió). En español, es una regla fundamental que el sujeto y su verbo no deben ser separados por una coma u otro signo de puntuación.",
+        "pt": "A opção C é a correta porque nenhuma pontuação é necessária entre o sujeito (A bibliotecária Maria Chen) e o verbo (descobriu). Em português, o sujeito e o verbo formam uma unidade sintática que não deve ser separada por pontuação.",
+        "fr": "L'option C est la correcte car aucune ponctuation ne doit séparer le sujet (La bibliothécaire Maria Chen) du verbe (a découvert). En grammaire française, il est incorrect de placer une virgule ou tout autre signe de ponctuation entre le groupe sujet et le verbe.",
+        "ht": "Opsyon C a kòrèk paske pa dwe gen ponktiyasyon ant sijè a (Bibliyotekè Maria Chen) ak vèb la (te dekouvri). Nan gramè Kreyòl Ayisyen an, sijè a vini dirèkteman anvan vèb la nan yon fraz, epi yo pa dwe separe pa okenn ponktiyasyon."
+      }
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "id": "systems-equations",
+  "category": "math",
+  "skill": "Algebra",
+  "difficulty": "medium",
+  "title": {
+    "en": "Systems of Linear Equations: Two Variables, Two Solutions",
+    "es": "Sistemas de Ecuaciones Lineales: Dos Variables, Dos Soluciones",
+    "fr": "Systèmes d'équations linéaires : Deux variables, deux solutions",
+    "pt": "Sistemas de Equações Lineares: Duas Variáveis, Duas Soluções",
+    "ht": "Sistèm Ekwasyon Lineyè: De Varyab, De Solisyon"
+  },
+  "summary": {
+    "en": "Learn to solve systems of equations using substitution and elimination methods. Find where two lines intersect.",
+    "es": "Aprende a resolver sistemas de ecuaciones usando métodos de sustitución y eliminación. Encuentra dónde se cruzan dos líneas.",
+    "fr": "Apprenez à résoudre des systèmes d'équations par substitution et élimination. Trouvez où deux droites se croisent.",
+    "pt": "Aprenda a resolver sistemas de equações usando métodos de substituição e eliminação. Encontre onde duas linhas se cruzam.",
+    "ht": "Aprann rezoud sistèm ekwasyon yo lè w itilize metòd sibstitisyon ak eliminasyon. Jwenn kote de liy kwaze."
+  },
+  "fullContent": {
+    "en": {
+      "introduction": "A system of linear equations consists of two or more equations with the same variables. The solution is the point where all equations are true simultaneously. On the SAT, you'll typically see systems with two equations and two variables.",
+      "sections": [
+        {
+          "heading": "Two Main Methods",
+          "content": "There are two primary strategies for solving systems: substitution and elimination. Choose the method that makes the problem easiest."
+        },
+        {
+          "heading": "Substitution Method",
+          "points": [
+            "Solve one equation for one variable (e.g., solve for y)",
+            "Substitute that expression into the other equation",
+            "Solve for the remaining variable",
+            "Plug back in to find the other variable",
+            "Best when one equation is already solved for a variable"
+          ]
+        },
+        {
+          "heading": "Elimination Method",
+          "points": [
+            "Align equations vertically by variables",
+            "Multiply one or both equations to create opposite coefficients",
+            "Add or subtract equations to eliminate one variable",
+            "Solve for the remaining variable",
+            "Best when coefficients are easy to manipulate"
+          ]
+        },
+        {
+          "heading": "Special Cases",
+          "content": "If equations represent the same line (infinite solutions) or parallel lines (no solution), the system has special properties. Watch for these on the SAT."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Solve: x + y = 7 and 2x - y = 5",
+          "explanation": "Using elimination: Add the equations to eliminate y. 3x = 12, so x = 4. Substitute: 4 + y = 7, so y = 3. Solution: (4, 3)"
+        },
+        {
+          "text": "Solve: y = 2x + 1 and 3x + y = 11",
+          "explanation": "Using substitution: Replace y in the second equation. 3x + (2x + 1) = 11. Simplify: 5x = 10, so x = 2. Then y = 5. Solution: (2, 5)"
+        }
+      ],
+      "practiceHint": "Before choosing a method, look at both equations. If one is already solved for a variable, use substitution. If coefficients are manageable, use elimination. Always check your solution by plugging it into both original equations."
+    },
+    "es": {
+      "introduction": "Un sistema de ecuaciones lineales consiste en dos o más ecuaciones con las mismas variables. La solución es el punto donde todas las ecuaciones son verdaderas simultáneamente. En el SAT, típicamente verás sistemas con dos ecuaciones y dos variables.",
+      "sections": [
+        {
+          "heading": "Dos Métodos Principales",
+          "content": "Hay dos estrategias principales para resolver sistemas: sustitución y eliminación. Elige el método que haga el problema más fácil."
+        },
+        {
+          "heading": "Método de Sustitución",
+          "points": [
+            "Resuelve una ecuación para una variable (ej., resuelve para y)",
+            "Sustituye esa expresión en la otra ecuación",
+            "Resuelve para la variable restante",
+            "Vuelve a sustituir para encontrar la otra variable",
+            "Mejor cuando una ecuación ya está resuelta para una variable"
+          ]
+        },
+        {
+          "heading": "Método de Eliminación",
+          "points": [
+            "Alinea las ecuaciones verticalmente por variables",
+            "Multiplica una o ambas ecuaciones para crear coeficientes opuestos",
+            "Suma o resta ecuaciones para eliminar una variable",
+            "Resuelve para la variable restante",
+            "Mejor cuando los coeficientes son fáciles de manipular"
+          ]
+        },
+        {
+          "heading": "Casos Especiales",
+          "content": "Si las ecuaciones representan la misma línea (soluciones infinitas) o líneas paralelas (sin solución), el sistema tiene propiedades especiales. Observa estos en el SAT."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Resuelve: x + y = 7 y 2x - y = 5",
+          "explanation": "Usando eliminación: Suma las ecuaciones para eliminar y. 3x = 12, así que x = 4. Sustituye: 4 + y = 7, así que y = 3. Solución: (4, 3)"
+        },
+        {
+          "text": "Resuelve: y = 2x + 1 y 3x + y = 11",
+          "explanation": "Usando sustitución: Reemplaza y en la segunda ecuación. 3x + (2x + 1) = 11. Simplifica: 5x = 10, así que x = 2. Luego y = 5. Solución: (2, 5)"
+        }
+      ],
+      "practiceHint": "Antes de elegir un método, mira ambas ecuaciones. Si una ya está resuelta para una variable, usa sustitución. Si los coeficientes son manejables, usa eliminación. Siempre verifica tu solución sustituyéndola en ambas ecuaciones originales."
+    },
+    "fr": {
+      "introduction": "Un système d'équations linéaires consiste en deux équations ou plus avec les mêmes variables. La solution est le point où toutes les équations sont vraies simultanément. Au SAT, vous verrez généralement des systèmes avec deux équations et deux variables.",
+      "sections": [
+        {
+          "heading": "Deux méthodes principales",
+          "content": "Il existe deux stratégies principales pour résoudre les systèmes : la substitution et l'élimination. Choisissez la méthode qui rend le problème le plus facile."
+        },
+        {
+          "heading": "Méthode de substitution",
+          "points": [
+            "Résolvez une équation pour une variable (ex. : résolvez pour y)",
+            "Substituez cette expression dans l'autre équation",
+            "Résolvez pour la variable restante",
+            "Remplacez pour trouver l'autre variable",
+            "Meilleur quand une équation est déjà résolue pour une variable"
+          ]
+        },
+        {
+          "heading": "Méthode d'élimination",
+          "points": [
+            "Alignez les équations verticalement par variables",
+            "Multipliez une ou les deux équations pour créer des coefficients opposés",
+            "Additionnez ou soustrayez les équations pour éliminer une variable",
+            "Résolvez pour la variable restante",
+            "Meilleur quand les coefficients sont faciles à manipuler"
+          ]
+        },
+        {
+          "heading": "Cas particuliers",
+          "content": "Si les équations représentent la même droite (solutions infinies) ou des droites parallèles (aucune solution), le système a des propriétés spéciales. Surveillez-les au SAT."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Résolvez : x + y = 7 et 2x - y = 5",
+          "explanation": "En utilisant l'élimination : Additionnez les équations pour éliminer y. 3x = 12, donc x = 4. Substituez : 4 + y = 7, donc y = 3. Solution : (4, 3)"
+        },
+        {
+          "text": "Résolvez : y = 2x + 1 et 3x + y = 11",
+          "explanation": "En utilisant la substitution : Remplacez y dans la deuxième équation. 3x + (2x + 1) = 11. Simplifiez : 5x = 10, donc x = 2. Puis y = 5. Solution : (2, 5)"
+        }
+      ],
+      "practiceHint": "Avant de choisir une méthode, regardez les deux équations. Si l'une est déjà résolue pour une variable, utilisez la substitution. Si les coefficients sont gérables, utilisez l'élimination. Vérifiez toujours votre solution en la remplaçant dans les deux équations originales."
+    },
+    "pt": {
+      "introduction": "Um sistema de equações lineares consiste em duas ou mais equações com as mesmas variáveis. A solução é o ponto onde todas as equações são verdadeiras simultaneamente. No SAT, você normalmente verá sistemas com duas equações e duas variáveis.",
+      "sections": [
+        {
+          "heading": "Dois Métodos Principais",
+          "content": "Existem duas estratégias principais para resolver sistemas: substituição e eliminação. Escolha o método que torna o problema mais fácil."
+        },
+        {
+          "heading": "Método de Substituição",
+          "points": [
+            "Resolva uma equação para uma variável (ex.: resolva para y)",
+            "Substitua essa expressão na outra equação",
+            "Resolva para a variável restante",
+            "Substitua de volta para encontrar a outra variável",
+            "Melhor quando uma equação já está resolvida para uma variável"
+          ]
+        },
+        {
+          "heading": "Método de Eliminação",
+          "points": [
+            "Alinhe as equações verticalmente por variáveis",
+            "Multiplique uma ou ambas as equações para criar coeficientes opostos",
+            "Some ou subtraia equações para eliminar uma variável",
+            "Resolva para a variável restante",
+            "Melhor quando os coeficientes são fáceis de manipular"
+          ]
+        },
+        {
+          "heading": "Casos Especiais",
+          "content": "Se as equações representam a mesma linha (soluções infinitas) ou linhas paralelas (sem solução), o sistema tem propriedades especiais. Fique atento a isso no SAT."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Resolva: x + y = 7 e 2x - y = 5",
+          "explanation": "Usando eliminação: Some as equações para eliminar y. 3x = 12, então x = 4. Substitua: 4 + y = 7, então y = 3. Solução: (4, 3)"
+        },
+        {
+          "text": "Resolva: y = 2x + 1 e 3x + y = 11",
+          "explanation": "Usando substituição: Substitua y na segunda equação. 3x + (2x + 1) = 11. Simplifique: 5x = 10, então x = 2. Depois y = 5. Solução: (2, 5)"
+        }
+      ],
+      "practiceHint": "Antes de escolher um método, olhe ambas as equações. Se uma já está resolvida para uma variável, use substituição. Se os coeficientes são gerenciáveis, use eliminação. Sempre verifique sua solução substituindo-a em ambas as equações originais."
+    },
+    "ht": {
+      "introduction": "Yon sistèm ekwasyon lineyè gen de oswa plis ekwasyon ak menm varyab yo. Solisyon an se pwen kote tout ekwasyon yo vre an menm tan. Nan SAT la, ou pral tipikman wè sistèm ak de ekwasyon ak de varyab.",
+      "sections": [
+        {
+          "heading": "De Metòd Prensipal",
+          "content": "Gen de estrateji prensipal pou rezoud sistèm yo: sibstitisyon ak eliminasyon. Chwazi metòd ki fè pwoblèm nan pi fasil."
+        },
+        {
+          "heading": "Metòd Sibstitisyon",
+          "points": [
+            "Rezoud yon ekwasyon pou yon varyab (eks., rezoud pou y)",
+            "Ranplase espresyon sa a nan lòt ekwasyon an",
+            "Rezoud pou varyab ki rete a",
+            "Mete ankò pou jwenn lòt varyab la",
+            "Pi bon lè yon ekwasyon deja rezoud pou yon varyab"
+          ]
+        },
+        {
+          "heading": "Metòd Eliminasyon",
+          "points": [
+            "Aliyen ekwasyon yo vètikal pa varyab",
+            "Miltipliye youn oswa tou de ekwasyon yo pou kreye kowefisyan opoze",
+            "Ajoute oswa soustrè ekwasyon yo pou elimine yon varyab",
+            "Rezoud pou varyab ki rete a",
+            "Pi bon lè kowefisyan yo fasil pou manipile"
+          ]
+        },
+        {
+          "heading": "Ka Espesyal",
+          "content": "Si ekwasyon yo reprezante menm liy la (solisyon enfini) oswa liy paralèl (pa gen solisyon), sistèm nan gen pwopriyete espesyal. Gade pou sa yo nan SAT la."
+        }
+      ],
+      "examples": [
+        {
+          "text": "Rezoud: x + y = 7 epi 2x - y = 5",
+          "explanation": "Lè w sèvi ak eliminasyon: Ajoute ekwasyon yo pou elimine y. 3x = 12, kidonk x = 4. Ranplase: 4 + y = 7, kidonk y = 3. Solisyon: (4, 3)"
+        },
+        {
+          "text": "Rezoud: y = 2x + 1 epi 3x + y = 11",
+          "explanation": "Lè w sèvi ak sibstitisyon: Ranplase y nan dezyèm ekwasyon an. 3x + (2x + 1) = 11. Senplifye: 5x = 10, kidonk x = 2. Lè sa a y = 5. Solisyon: (2, 5)"
+        }
+      ],
+      "practiceHint": "Anvan ou chwazi yon metòd, gade tou de ekwasyon yo. Si youn deja rezoud pou yon varyab, sèvi ak sibstitisyon. Si kowefisyan yo jeyab, sèvi ak eliminasyon. Toujou verifye solisyon ou lè w ranplase li nan tou de ekwasyon orijinal yo."
+    }
+  }
+}
