@@ -1,41 +1,42 @@
-# Node modules
+# Dependencies
 node_modules/
+package-lock.json
+yarn.lock
 
-# Environment variables
+# Environment
 .env
 .env.local
 .env.*.local
 
-# Netlify
-.netlify/
-.netlify-*
-functions/*/node_modules/
+# Sensitive Data
+public/data/
+public/data/**
+*.json
 
-# OS files
+# Netlify
+.netlify
+.netlify-*
+
+# OS Files
 .DS_Store
 Thumbs.db
 
-# Python
-*.pyc
-__pycache__/
-venv/
-*.egg-info/
-
-# Editor files
+# Editor
 .vscode/
 .idea/
 *.swp
 *.swo
 
+# Python (if used)
+*.pyc
+__pycache__/
+venv/
+
 # Logs
 npm-debug.log
-npm-debug.log.*
 *.log
 
-# Build files
+# Build
 dist/
 build/
-
-# Local development files
 .cache/
-.history
