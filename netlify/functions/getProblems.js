@@ -4,30 +4,36 @@ const { MongoClient } = require('mongodb');
 let client;
 let db;
 
-// Map optional skill slugs to specific Algebra collections in Atlas
+// Optional: set COLLECTION in Netlify if you consolidate to one collection (e.g., "questions")
+// Otherwise, use a whitelist mapping for Algebra skills to exact Atlas collection names.
 const SKILL_TO_COLLECTION = {
   'linear-functions': 'Algebra - Linear Functions',
   'linear-equations-1var': 'Algebra - Linear Equations in One Variable',
   'linear-equations-2var': 'Algebra - Linear Equations in Two Variables',
 };
 
-// Resolve the collection name with safe defaults:
-// 1) If COLLECTION env var is set, use it (single shared collection scenario).
-// 2) Else if a known skill is provided, map it to the exact Algebra collection.
-// 3) Else default to Algebra - Linear Functions so Algebra always shows questions.
 function resolveCollectionName(skill) {
   if (process.env.COLLECTION && process.env.COLLECTION.trim()) {
     return process.env.COLLECTION.trim();
   }
   const key = (skill || '').toLowerCase();
+  // Default to Algebra - Linear Functions so Algebra always returns something
   return SKILL_TO_COLLECTION[key] || 'Algebra - Linear Functions';
 }
 
 async function getDb() {
+  // Validate and normalize URI from Netlify env vars
+  const rawUri = (process.env.MONGODB_URI || '').trim();
+  if (!rawUri || (!rawUri.startsWith('mongodb://') && !rawUri.startsWith('mongodb+srv://'))) {
+    // Do not log secrets; just note that scheme is bad so logs reveal the misconfig
+    console.error('Bad MONGODB_URI value: missing mongodb scheme');
+    throw new Error('Server DB config invalid');
+  }
+
   if (!client) {
-    client = new MongoClient(process.env.MONGODB_URI, { maxIdleTimeMS: 60000 });
+    client = new MongoClient(rawUri, { maxIdleTimeMS: 60000 });
     await client.connect();
-    db = client.db(process.env.DB_NAME || 'Questions');
+    db = client.db(process.env.DB_NAME || 'Questions'); // set DB_NAME in Netlify (e.g., "Questions")
   }
   return db;
 }
@@ -40,24 +46,24 @@ exports.handler = async (event) => {
   const questionLang = qp.questionLang || 'en';
   const explanationLang = qp.explanationLang || 'en';
 
-  // Log minimal, non‑secret context for debugging in Netlify Function logs
   console.log(`getProblems: skill=${skill} type=${type} difficulty=${difficulty} qLang=${questionLang} eLang=${explanationLang}`);
 
   try {
     const database = await getDb();
+
     const collectionName = resolveCollectionName(skill);
     const collection = database.collection(collectionName);
 
-    // Keep filter minimal so Algebra returns results even if some fields aren’t present
+    // Keep filter minimal so Algebra returns results even without optional fields
     const filter = {};
     if (type) filter.type = type;
     if (difficulty) filter.difficulty = difficulty;
-    // If your docs include a 'skill' field and you want to narrow within the collection, uncomment:
+    // If your docs include a 'skill' field and you want to narrow within the collection, you can enable:
     // if (skill) filter.skill = skill;
 
-    // Empty filter finds all docs; toArray() materializes the cursor into memory for the response
     const docs = await collection.find(filter).limit(50).toArray();
 
+    // Language transformation for prompt/choices/explanation
     const problems = docs.map((q) => {
       const t = { ...q };
 
@@ -81,7 +87,6 @@ exports.handler = async (event) => {
       return t;
     });
 
-    // Surface which DB/collection were used to help you verify selection
     return {
       statusCode: 200,
       headers: { 'Content-Type': 'application/json' },
@@ -95,12 +100,9 @@ exports.handler = async (event) => {
       }),
     };
   } catch (err) {
+    // Check Site → Logs → Functions after calling the endpoint to see this message
     console.error('getProblems error:', err?.message || err);
-    return {
-      statusCode: 500,
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ error: err?.message || 'Unknown error' }),
-    };
+    return { statusCode: 500, body: JSON.stringify({ error: err?.message || 'Unknown error' }) };
   }
-  // Do not close the client; reusing across invocations improves serverless performance
+  // Intentionally not closing client to allow connection reuse in serverless
 };
