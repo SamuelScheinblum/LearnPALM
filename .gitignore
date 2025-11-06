@@ -9,9 +9,11 @@ yarn.lock
 .env.*.local
 
 # Sensitive Data
+data/
+data/**
+*.json
 public/data/
 public/data/**
-*.json
 
 # Netlify
 .netlify
@@ -39,4 +41,4 @@ npm-debug.log
 # Build
 dist/
 build/
-.cache/
+.cache/node_modules/
