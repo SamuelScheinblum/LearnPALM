@@ -1,3 +1,4 @@
+// public/static/js/main.js
 (async function () {
   const state = window.__LearnPALM__ || {};
   const $lang = document.getElementById("select-language");
@@ -7,18 +8,15 @@
   const $diff = document.getElementById("select-difficulty");
   const $skill = document.getElementById("select-skill");
 
-  // Navigation button references
   const $btnPrev = document.getElementById("btn-prev");
   const $btnNext = document.getElementById("btn-next");
   const $btnRandom = document.getElementById("btn-random");
   const $questionNav = document.getElementById("question-nav");
   const $questionCounter = document.getElementById("question-counter");
 
-  // Store all available questions and current index
   let availableQuestions = [];
   let currentQuestionIndex = 0;
 
-  // 4 subsections per category - UPDATED to match file naming
   const TYPE_OPTIONS = {
     "RW": [
       { id: "information-ideas",     label: "Information and Ideas" },
@@ -34,17 +32,13 @@
     ]
   };
 
-  // NEW: Helper functions to get appropriate languages
   function getQuestionLanguage() {
     const isEnglishQuestions = localStorage.getItem('englishQuestions') === 'true';
     const currentLang = state.lang || 'en';
-    
-    // If English Questions mode is ON, always use English for questions
     return isEnglishQuestions ? 'en' : currentLang;
   }
 
   function getExplanationLanguage() {
-    // Always use the current interface language for explanations
     return state.lang || 'en';
   }
 
@@ -65,21 +59,12 @@
     ensureBlank($type, "Type");
 
     const sectionVal = ($sec.value || "").trim();
-    console.log("📝 Section selected:", sectionVal);
-    
     if (!sectionVal) { 
       state.lesson_type = ""; 
       return; 
     }
 
     const list = TYPE_OPTIONS[sectionVal] || [];
-    console.log("📋 Available types:", list);
-    
-    if (list.length === 0) {
-      console.warn("⚠️ No options found for section:", sectionVal);
-      console.log("🔑 Available keys:", Object.keys(TYPE_OPTIONS));
-    }
-
     for (const opt of list) {
       const o = document.createElement("option");
       o.value = opt.id;
@@ -95,7 +80,6 @@
     }
   }
 
-  // Display a specific question by index
   function displayQuestion(index) {
     if (!availableQuestions.length) return;
     
@@ -108,27 +92,24 @@
     const explWrap = document.getElementById("practice-expl");
     const explText = document.getElementById("expl-text");
 
-    // Reset UI
     choices.innerHTML = "";
     explWrap.classList.add("hidden");
     submit.disabled = true;
 
-    // Get appropriate language for questions
     const questionLang = getQuestionLanguage();
     const explanationLang = getExplanationLanguage();
 
-    console.log('📝 Displaying question in:', questionLang);
-    console.log('💡 Explanation will be in:', explanationLang);
-
-    // Update prompt with appropriate language
     if (prompt) {
       prompt.textContent = (problem.prompt && problem.prompt[questionLang]) || "";
     }
 
-    // Update counter
-    $questionCounter.textContent = `Question ${currentQuestionIndex + 1} of ${availableQuestions.length}`;
-
-    // Update navigation buttons
+    // Update the input box and counter text separately
+    const questionInput = document.getElementById("question-number-input");
+    if (questionInput) {
+      questionInput.value = currentQuestionIndex + 1;
+    }
+    $questionCounter.textContent = `of ${availableQuestions.length}`;
+    
     $btnPrev.disabled = (currentQuestionIndex === 0);
     $btnNext.disabled = (currentQuestionIndex === availableQuestions.length - 1);
 
@@ -152,47 +133,46 @@
       return row;
     };
 
-    // Display choices in appropriate language
     for (const c of problem.choices) {
       if (typeof c === "string") {
         choices.appendChild(makeRow(c, c));
       } else {
-        // Use questionLang for choices
         choices.appendChild(makeRow(c[questionLang] || c.en, c.key));
       }
     }
 
     submit.onclick = async () => {
-      // UPDATED: Changed from /api/grade to /.netlify/functions/gradeAnswer
-      const r = await (await fetch("/.netlify/functions/gradeAnswer", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id: problem.id, answer: selected })
-      })).json();
+      try {
+        const resp = await fetch("/.netlify/functions/gradeAnswer", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ id: problem.id, answer: selected })
+        });
+        const r = await resp.json();
 
-      // Use explanationLang for explanation
-      explText.textContent = (problem.explanation && problem.explanation[explanationLang]) || "";
-      explWrap.classList.remove("hidden");
+        explText.textContent = (problem.explanation && problem.explanation[explanationLang]) || "";
+        explWrap.classList.remove("hidden");
 
-      choices.querySelectorAll("label").forEach(l => {
-        l.classList.remove("ring-2", "ring-red-400", "ring-green-500");
-      });
-      
-      choices.querySelectorAll("label").forEach(l => {
-        const input = l.querySelector("input");
-        if (!input) return;
+        choices.querySelectorAll("label").forEach(l => {
+          l.classList.remove("ring-2", "ring-red-400", "ring-green-500");
+        });
         
-        if (input.value == problem.answer) {
-          l.classList.add("ring-2", "ring-green-500");
-        }
-        else if (input.value == selected && !r.correct) {
-          l.classList.add("ring-2", "ring-red-400");
-        }
-      });
+        choices.querySelectorAll("label").forEach(l => {
+          const input = l.querySelector("input");
+          if (!input) return;
+          
+          if (input.value == problem.answer) {
+            l.classList.add("ring-2", "ring-green-500");
+          } else if (input.value == selected && !r.correct) {
+            l.classList.add("ring-2", "ring-red-400");
+          }
+        });
+      } catch(err) {
+        console.error('Error grading:', err);
+      }
     };
   }
 
-  // Expose loadProblems globally so settings toggle can call it
   window.loadProblems = async function refreshProblems() {
     const prompt = document.getElementById("practice-prompt");
     const choices = document.getElementById("practice-choices");
@@ -208,7 +188,6 @@
       return;
     }
 
-    // Get appropriate languages based on settings
     const questionLang = getQuestionLanguage();
     const explanationLang = getExplanationLanguage();
 
@@ -220,19 +199,14 @@
       explanationLang: explanationLang
     });
 
-    // Add optional filters
     if ($diff.value) params.append('difficulty', $diff.value);
     if ($skill && $skill.value) params.append('skill', $skill.value);
 
-    console.log('🔄 Fetching questions with params:', Object.fromEntries(params));
-
     try {
-      // UPDATED: Changed from /api/problems to /.netlify/functions/getProblems
       const res = await fetch(`/.netlify/functions/getProblems?${params.toString()}`);
       
       if (!res.ok) {
-        console.warn('⚠️ API not available yet:', res.status);
-        if (prompt) prompt.textContent = "Practice problems coming soon...";
+        if (prompt) prompt.textContent = "Error loading questions.";
         if (choices) choices.innerHTML = "";
         if (explWrap) explWrap.classList.add("hidden");
         if (submit) submit.disabled = true;
@@ -243,10 +217,6 @@
       const data = await res.json();
       availableQuestions = data.problems || [];
 
-      console.log(`✅ Loaded ${availableQuestions.length} questions`);
-      console.log(`📝 Questions in: ${data.questionLanguage || questionLang}`);
-      console.log(`💡 Explanations in: ${data.explanationLanguage || explanationLang}`);
-
       if (!availableQuestions.length) { 
         if (prompt) prompt.textContent = "No questions available for this selection.";
         if (choices) choices.innerHTML = "";
@@ -256,19 +226,17 @@
         return; 
       }
 
-      // Show navigation if more than one question
       if (availableQuestions.length > 1) {
         $questionNav.classList.remove("hidden");
       } else {
         $questionNav.classList.add("hidden");
       }
 
-      // Display first question
       currentQuestionIndex = 0;
       displayQuestion(0);
       
     } catch (error) {
-      console.error('❌ Error fetching problems:', error);
+      console.error('Error fetching problems:', error);
       if (prompt) prompt.textContent = "Error loading question. Please try again.";
       if (choices) choices.innerHTML = "";
       if (explWrap) explWrap.classList.add("hidden");
@@ -277,17 +245,12 @@
     }
   };
 
-  // Navigation button handlers
   $btnPrev.addEventListener("click", () => {
-    if (currentQuestionIndex > 0) {
-      displayQuestion(currentQuestionIndex - 1);
-    }
+    if (currentQuestionIndex > 0) displayQuestion(currentQuestionIndex - 1);
   });
 
   $btnNext.addEventListener("click", () => {
-    if (currentQuestionIndex < availableQuestions.length - 1) {
-      displayQuestion(currentQuestionIndex + 1);
-    }
+    if (currentQuestionIndex < availableQuestions.length - 1) displayQuestion(currentQuestionIndex + 1);
   });
 
   $btnRandom.addEventListener("click", () => {
@@ -297,22 +260,11 @@
     }
   });
 
-  // REMOVED: generateJSON function - this was Flask-specific
-  // If you need JSON export later, create a new Netlify Function for it
-
-  // EVENTS
   const onLanguageChange = async () => {
     state.lang = $lang?.value || $langMobile?.value || "en";
-    
     if ($lang && $lang.value !== state.lang) $lang.value = state.lang;
     if ($langMobile && $langMobile.value !== state.lang) $langMobile.value = state.lang;
-    
-    console.log("🌐 Language changed to:", state.lang);
-    
-    // Reload questions with new language
-    if (availableQuestions.length > 0) {
-      await window.loadProblems();
-    }
+    if (availableQuestions.length > 0) await window.loadProblems();
   };
   
   if ($lang) $lang.addEventListener("change", onLanguageChange);
@@ -320,7 +272,6 @@
 
   const onSectionChange = async () => {
     state.section = $sec.value;
-    console.log("📝 Section value:", $sec.value);
     state.lesson_type = "";
     await loadTypes();
     await window.loadProblems();
@@ -329,26 +280,22 @@
 
   const onTypeChange = async () => {
     state.lesson_type = $type.value;
-    console.log("📋 Type value:", $type.value);
     await window.loadProblems();
   };
   $type.addEventListener("change", onTypeChange);
 
   const onDifficultyChange = async () => {
     state.difficulty = $diff.value;
-    console.log("🎯 Difficulty value:", $diff.value);
     await window.loadProblems();
   };
   $diff.addEventListener("change", onDifficultyChange);
 
   const onSkillChange = async () => {
     state.skill = $skill.value;
-    console.log("🎓 Skill value:", $skill.value);
     await window.loadProblems();
   };
   if ($skill) $skill.addEventListener("change", onSkillChange);
 
-  // INIT
   state.lang = $lang?.value || $langMobile?.value || "en";
   
   (function ensureBlankInit() {
@@ -368,4 +315,9 @@
 
   await loadTypes();
   await window.loadProblems();
+
+  // Expose functions globally for the question input handler
+  window.displayQuestion = displayQuestion;
+  window.getAvailableQuestionsCount = () => availableQuestions.length;
+  window.getCurrentQuestionIndex = () => currentQuestionIndex;
 })();

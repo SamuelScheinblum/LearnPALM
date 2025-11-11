@@ -19,7 +19,6 @@
   </script>
   <link rel="stylesheet" href="/static/css/styles.css">
   
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJE9RQF601"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -30,7 +29,6 @@
 </head>
 <body class="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-200">
   
-  <!-- HEADER/NAVBAR -->
   <header class="sticky top-0 z-20 backdrop-blur bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-700 transition-colors duration-200">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="/" class="flex items-center gap-2">
@@ -39,14 +37,11 @@
       </a>
       
       <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="/" class="hover:underline dark:hover:text-blue-400 transition">Home</a>
-        <a href="/templates/lessons.html" class="hover:underline dark:hover:text-blue-400 transition">Lessons</a>
-        <a href="/templates/practice_home.html" class="hover:underline dark:hover:text-blue-400 transition">Practice</a>
-        <a href="/templates/scholarships.html" class="hover:underline dark:hover:text-blue-400 transition">Scholarships</a>
-        <a href="#resources" class="hover:underline dark:hover:text-blue-400 transition">Resources</a>
-        <a href="/templates/glossary.html" class="hover:underline dark:hover:text-blue-400 transition">Glossary</a>
+        <a href="/templates/lessons.html" class="hover:underline dark:hover:text-blue-400 transition" data-i18n="nav.lessons">Lessons</a>
+        <a href="/templates/practice_home.html" class="hover:underline dark:hover:text-blue-400 transition" data-i18n="nav.practice">Practice</a>
+        <a href="/templates/scholarships.html" class="hover:underline dark:hover:text-blue-400 transition" data-i18n="nav.scholarships">Scholarships</a>
+        <a href="/templates/glossary.html" class="hover:underline dark:hover:text-blue-400 transition" data-i18n="nav.glossary">Glossary</a>
         
-        <!-- LANGUAGE SELECTOR -->
         <div class="flex items-center gap-2 ml-2 pl-2 border-l border-gray-300 dark:border-gray-700">
           <span class="text-gray-600 dark:text-gray-400">🌐</span>
           <select id="select-language" class="rounded-md border border-gray-300 dark:border-gray-700 px-3 py-1.5 font-medium bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
@@ -58,20 +53,17 @@
           </select>
         </div>
 
-        <!-- SETTINGS BUTTON -->
         <div class="relative">
-          <button id="settings-btn" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition" aria-label="Settings">
+          <button id="settings-btn" type="button" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition" aria-label="Settings">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
             </svg>
           </button>
 
-          <!-- SETTINGS DROPDOWN MENU -->
           <div id="settings-menu" class="hidden absolute top-12 right-0 w-72 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-xl p-4 z-50">
-            <h3 class="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">Settings</h3>
+            <h3 class="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100" data-i18n="settings.title">Settings</h3>
             
-            <!-- Dark Mode Toggle -->
             <div class="flex items-center justify-between py-3 border-b border-gray-200 dark:border-gray-700">
               <div class="flex items-center gap-3">
                 <div class="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg">
@@ -81,17 +73,16 @@
                   </svg>
                 </div>
                 <div>
-                  <div class="font-medium text-sm text-gray-900 dark:text-gray-100">Dark Mode</div>
+                  <div class="font-medium text-sm text-gray-900 dark:text-gray-100" data-i18n="settings.darkMode">Dark Mode</div>
                   <div class="text-xs text-gray-500 dark:text-gray-400" id="theme-status">Light theme active</div>
                 </div>
               </div>
               
-              <button id="dark-toggle" class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 bg-gray-300 dark:bg-blue-600" role="switch">
+              <button id="dark-toggle" type="button" class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 bg-gray-300 dark:bg-blue-600" role="switch">
                 <span id="toggle-circle" class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform translate-x-1 dark:translate-x-6"></span>
               </button>
             </div>
 
-            <!-- English Questions Toggle -->
             <div class="flex items-center justify-between py-3 border-b border-gray-200 dark:border-gray-700">
               <div class="flex items-center gap-3">
                 <div class="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg">
@@ -100,30 +91,28 @@
                   </svg>
                 </div>
                 <div>
-                  <div class="font-medium text-sm text-gray-900 dark:text-gray-100">English Questions</div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400" id="english-questions-status">Questions in selected language</div>
+                  <div class="font-medium text-sm text-gray-900 dark:text-gray-100" data-i18n="settings.bridgeMode">Bridge Mode</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400" id="english-questions-status" data-i18n="settings.bridgeModeOff">Questions in selected language</div>
                 </div>
               </div>
               
-              <button id="english-questions-toggle" class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 bg-gray-300" role="switch">
+              <button id="english-questions-toggle" type="button" class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 bg-gray-300" role="switch">
                 <span id="english-toggle-circle" class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform translate-x-1"></span>
               </button>
             </div>
 
-            <!-- Additional Settings -->
             <div class="py-3">
-              <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">About</div>
-              <a href="#" class="block py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Help & Support</a>
-              <a href="#" class="block py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Privacy Policy</a>
+              <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2" data-i18n="settings.about">About</div>
+              <a href="#" class="block py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition" data-i18n="settings.help">Help & Support</a>
+              <a href="#" class="block py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition" data-i18n="settings.privacy">Privacy Policy</a>
             </div>
           </div>
         </div>
       </nav>
       
-      <!-- Mobile menu -->
       <div class="md:hidden flex items-center gap-3">
         <span class="text-sm text-gray-600 dark:text-gray-400">🌐</span>
-        <select id="select-language-mobile" class="rounded-md border border-gray-300 dark:border-gray-700 px-2 py-1 text-sm font-medium bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+        <select id="select-language-moe" class="rounded-md border border-gray-300 dark:border-gray-700 px-2 py-1 text-sm font-medium bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
           <option value="en">EN</option>
           <option value="es">ES</option>
           <option value="ht">HT</option>
@@ -131,7 +120,7 @@
           <option value="fr">FR</option>
         </select>
         
-        <button id="settings-btn-mobile" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+        <button id="settings-btn-mobile" type="button" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
@@ -141,212 +130,421 @@
     </div>
   </header>
 
-  <!-- PRACTICE HOME CONTENT -->
-  <section class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-2 gap-8 items-center">
-    <div>
-      <div class="inline-flex items-center gap-2 rounded-full border border-gray-300 dark:border-gray-700 px-3 py-1 text-xs text-gray-700 dark:text-gray-300">
-        <span>Original, multilingual curriculum</span>
-      </div>
-      <h1 class="mt-3 text-3xl font-bold text-gray-900 dark:text-gray-100">Master the SAT with multilingual practice</h1>
-      <p class="mt-2 text-gray-600 dark:text-gray-400">Free, comprehensive SAT prep</p>
-      <p class="text-gray-600 dark:text-gray-400">Created and published by 1580-1600 scorers</p>
-
-      <div class="mt-6 flex gap-3">
-        <a href="#lessons" class="inline-flex items-center rounded-2xl bg-gray-900 dark:bg-blue-600 text-white px-4 py-2 hover:bg-gray-800 dark:hover:bg-blue-700 transition">Start Learning</a>
-        <a href="#partner" class="inline-flex items-center rounded-2xl border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-800 transition">Partner With Us</a>
-      </div>
-    </div>
-    <div class="rounded-3xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 p-4">
-      <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100">How It Works</h2>
-      <ul class="mt-2 space-y-2 text-sm text-gray-700 dark:text-gray-300">
-        <li>• Choose your section and topic</li>
-        <li>• Practice with real SAT-style questions</li>
-        <li>• Pick your language and learn!</li>
-      </ul>
+  <!-- Hero Section - Simplified -->
+  <section class="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 border-b border-gray-200 dark:border-gray-700">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-center">
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-3" data-i18n="practice.title">SAT Practice Questions</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto" data-i18n="practice.subtitle">Practice with real SAT-style questions in your language</p>
     </div>
   </section>
 
-  <!-- PRACTICE SECTION -->
-  <section id="lessons" class="max-w-6xl mx-auto px-4 py-8">
-    <!-- First row: Section, Type, Difficulty -->
-    <div class="mb-4 flex flex-wrap items-center gap-3 text-sm">
-      <!-- SECTION SELECTOR -->
-      <div class="flex items-center gap-2">
-        <span class="text-gray-600 dark:text-gray-400">Section</span>
-        <select id="select-section" class="rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-2 py-1 cursor-pointer">
-          <option value="">Section — select</option>
-          <option value="Math">Math</option>
-          <option value="RW">Reading & Writing</option>
-        </select>
-      </div>
+  <!-- Practice Section - Now at Top -->
+  <section class="max-w-6xl mx-auto px-4 py-8">
+    <!-- Question Bank Selectors -->
+    <div class="mb-6 p-6 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100" data-i18n="practice.selectQuestions">Select Your Questions</h2>
       
-      <!-- TYPE SELECTOR -->
-      <div class="flex items-center gap-2">
-        <span class="text-gray-600 dark:text-gray-400">Type</span>
-        <select id="select-type" class="rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-2 py-1 cursor-pointer">
-          <option value="">Type — select</option>
-        </select>
+      <div class="grid md:grid-cols-3 gap-4 mb-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-i18n="practice.section">Section</label>
+          <select id="select-section" class="w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 cursor-pointer focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            <option value="" data-i18n="practice.sectionSelect">Section — select</option>
+            <option value="Math" data-i18n="practice.math">Math</option>
+            <option value="RW" data-i18n="practice.readingWriting">Reading & Writing</option>
+          </select>
+        </div>
+        
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-i18n="practice.type">Type</label>
+          <select id="select-type" class="w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 cursor-pointer focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            <option value="" data-i18n="practice.typeSelect">Type — select</option>
+          </select>
+        </div>
+        
+        <div>
+          <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-i18n="practice.difficulty">Difficulty</label>
+          <select id="select-difficulty" class="w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 cursor-pointer focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            <option value="" data-i18n="practice.allLevels">All Levels</option>
+            <option value="easy" data-i18n="practice.easy">Easy</option>
+            <option value="medium" data-i18n="practice.medium">Medium</option>
+            <option value="hard" data-i18n="practice.hard">Hard</option>
+          </select>
+        </div>
       </div>
-      
-      <!-- DIFFICULTY SELECTOR -->
-      <div class="flex items-center gap-2">
-        <span class="text-gray-600 dark:text-gray-400">📊 Difficulty</span>
-        <select id="select-difficulty" class="rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-2 py-1 cursor-pointer">
-          <option value="">All Levels</option>
-          <option value="easy">Easy</option>
-          <option value="medium">Medium</option>
-          <option value="hard">Hard</option>
-        </select>
-      </div>
-    </div>
 
-    <!-- Second row: Skills (dynamically shown) -->
-    <div class="mb-4 flex flex-wrap items-center gap-3 text-sm" id="skills-container" style="display: none;">
-      <div class="flex items-center gap-2">
-        <span class="text-gray-600 dark:text-gray-400">🎯 Skill</span>
-        <select id="select-skill" class="rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-2 py-1 cursor-pointer">
-          <option value="">All skills</option>
+      <!-- Calculator Notice (appears when Math is selected) -->
+      <div id="calculator-notice" class="hidden mb-4 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+        <p class="text-sm text-gray-700 dark:text-gray-300">
+          <span class="font-medium">📐</span> 
+          <span data-i18n="practice.calculatorNotice">Some questions may require a</span>
+          <a href="https://www.desmos.com/testing/cb-sat-ap/graphing" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline font-medium mx-1" data-i18n="practice.calculator">calculator</a>
+        </p>
+      </div>
+
+      <div id="skills-container" style="display: none;">
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" data-i18n="practice.skill">Skill</label>
+        <select id="select-skill" class="w-full md:w-1/2 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-2 cursor-pointer focus:ring-2 focus:ring-blue-500 focus:outline-none">
+          <option value="" data-i18n="practice.allSkills">All skills</option>
         </select>
       </div>
     </div>
 
     <!-- Practice Card -->
-    <div id="practice-card" class="rounded-2xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 p-4">
-      <p id="practice-prompt" class="text-gray-700 dark:text-gray-300 whitespace-pre-line"></p>
-      <div id="practice-choices" class="mt-3 grid gap-2"></div>
+    <div id="practice-card" class="rounded-2xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 p-6 shadow-sm">
+      <p id="practice-prompt" class="text-gray-700 dark:text-gray-300 whitespace-pre-line text-lg leading-relaxed"></p>
+      <div id="practice-choices" class="mt-4 grid gap-3"></div>
       
-      <!-- Submit button -->
-      <button id="btn-submit" class="mt-3 inline-flex items-center rounded-2xl bg-gray-900 dark:bg-blue-600 text-white px-4 py-2 disabled:opacity-50 hover:bg-gray-800 dark:hover:bg-blue-700 transition" disabled>Submit</button>
+      <button id="btn-submit" class="mt-6 inline-flex items-center rounded-xl bg-blue-600 dark:bg-blue-500 text-white px-6 py-3 font-medium disabled:opacity-50 hover:bg-blue-700 dark:hover:bg-blue-600 transition shadow-sm" disabled data-i18n="practice.submit">Submit</button>
       
-      <!-- Explanation box -->
-      <div id="practice-expl" class="mt-3 text-sm text-gray-600 dark:text-gray-400 hidden">
-        <span class="font-medium">Explanation:</span>
-        <span id="expl-text"></span>
+      <div id="practice-expl" class="mt-4 p-4 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-sm text-gray-700 dark:text-gray-300 hidden border border-blue-200 dark:border-blue-800">
+        <span class="font-semibold text-blue-900 dark:text-blue-200" data-i18n="practice.explanation">Explanation:</span>
+        <span id="expl-text" class="ml-2"></span>
       </div>
       
-      <!-- Navigation buttons -->
-      <div id="question-nav" class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700 flex flex-wrap gap-2 items-center hidden">
-        <button id="btn-prev" class="inline-flex items-center rounded-xl border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 px-4 py-2 text-sm hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
-          ← Previous
+      <div id="question-nav" class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700 flex flex-wrap gap-3 items-center hidden">
+        <button id="btn-prev" class="inline-flex items-center rounded-xl border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 px-4 py-2 text-sm hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-medium">
+          ← <span class="ml-2" data-i18n="practice.previous">Previous</span>
         </button>
-        <button id="btn-next" class="inline-flex items-center rounded-xl bg-blue-600 dark:bg-blue-500 text-white px-4 py-2 text-sm hover:bg-blue-700 dark:hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
-          Next →
+        <button id="btn-next" class="inline-flex items-center rounded-xl bg-blue-600 dark:bg-blue-500 text-white px-4 py-2 text-sm hover:bg-blue-700 dark:hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-medium">
+          <span class="mr-2" data-i18n="practice.next">Next</span> →
         </button>
-        <button id="btn-random" class="inline-flex items-center rounded-xl border border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-400 px-4 py-2 text-sm hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors">
-          🎲 Random
+        <button id="btn-random" class="inline-flex items-center rounded-xl border border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-400 px-4 py-2 text-sm hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors font-medium">
+          🎲 <span class="ml-2" data-i18n="practice.random">Random</span>
         </button>
-        <span id="question-counter" class="ml-auto text-sm text-gray-500 dark:text-gray-400 font-medium"></span>
+        <div class="ml-auto flex items-center gap-2 text-sm font-medium">
+          <span class="text-gray-500 dark:text-gray-400" data-i18n="practice.question">Question</span>
+          <input 
+            type="number" 
+            id="question-number-input" 
+            min="1" 
+            class="w-16 px-2 py-1 text-center border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            value="1"
+          />
+          <span id="question-counter" class="text-gray-500 dark:text-gray-400"></span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- RESOURCES SECTION -->
+  <!-- Resources Section -->
   <section id="resources" class="max-w-6xl mx-auto px-4 py-8">
-    <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Resources</h2>
-    <div class="grid md:grid-cols-3 gap-4 mt-2">
-      <a href="https://www.khanacademy.org/test-prep" target="_blank" rel="noopener" class="rounded-2xl border border-gray-300 dark:border-gray-700 p-4 bg-white dark:bg-gray-800 block hover:shadow-lg dark:hover:shadow-gray-900/50 transition">
-        <h3 class="font-medium text-gray-900 dark:text-gray-100">Khan Academy</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Personalized, free practice aligned to the SAT.</p>
+    <h2 class="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4" data-i18n="practice.resourcesTitle">Additional Resources</h2>
+    <div class="grid md:grid-cols-3 gap-4">
+      <a href="https://www.khanacademy.org/test-prep" target="_blank" rel="noopener" class="rounded-2xl border border-gray-300 dark:border-gray-700 p-5 bg-white dark:bg-gray-800 block hover:shadow-lg dark:hover:shadow-gray-900/50 transition">
+        <h3 class="font-semibold text-lg text-gray-900 dark:text-gray-100 mb-2">Khan Academy</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400" data-i18n="practice.khanDesc">Personalized, free practice aligned to the SAT.</p>
       </a>
-      <a href="https://bluebook.collegeboard.org/students" target="_blank" rel="noopener" class="rounded-2xl border border-gray-300 dark:border-gray-700 p-4 bg-white dark:bg-gray-800 block hover:shadow-lg dark:hover:shadow-gray-900/50 transition">
-        <h3 class="font-medium text-gray-900 dark:text-gray-100">Bluebook Practice</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Full-length practice tests in the test-day app.</p>
+      <a href="https://bluebook.collegeboard.org/students" target="_blank" rel="noopener" class="rounded-2xl border border-gray-300 dark:border-gray-700 p-5 bg-white dark:bg-gray-800 block hover:shadow-lg dark:hover:shadow-gray-900/50 transition">
+        <h3 class="font-semibold text-lg text-gray-900 dark:text-gray-100 mb-2">Bluebook Practice</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400" data-i18n="practice.bluebookDesc">Full-length practice tests in the test-day app.</p>
       </a>
-      <a href="https://satsuite.collegeboard.org/practice" target="_blank" rel="noopener" class="rounded-2xl border border-gray-300 dark:border-gray-700 p-4 bg-white dark:bg-gray-800 block hover:shadow-lg dark:hover:shadow-gray-900/50 transition">
-        <h3 class="font-medium text-gray-900 dark:text-gray-100">Official SAT Guide</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Understand format, timing, and scoring.</p>
+      <a href="https://satsuite.collegeboard.org/practice" target="_blank" rel="noopener" class="rounded-2xl border border-gray-300 dark:border-gray-700 p-5 bg-white dark:bg-gray-800 block hover:shadow-lg dark:hover:shadow-gray-900/50 transition">
+        <h3 class="font-semibold text-lg text-gray-900 dark:text-gray-100 mb-2">Official SAT Guide</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400" data-i18n="practice.officialDesc">Understand format, timing, and scoring.</p>
       </a>
     </div>
   </section>
 
-  <!-- PARTNER SECTION -->
-  <section id="partner" class="max-w-6xl mx-auto px-4 py-8">
-    <div class="rounded-3xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 p-6">
-      <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Get Started</h3>
-      <p class="text-sm text-gray-600 dark:text-gray-400">Sign up for free resources</p>
-      <form class="mt-3 grid sm:grid-cols-[1fr_auto] gap-2">
-        <input type="email" class="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="your@email.com" required>
-        <button class="rounded-md bg-gray-900 dark:bg-blue-600 text-white px-4 py-2 hover:bg-gray-800 dark:hover:bg-blue-700 transition">Send me the kit</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="border-t border-gray-200 dark:border-gray-700">
+  <footer class="border-t border-gray-200 dark:border-gray-700 mt-16">
     <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
       © 2025 LearnPALM
     </div>
   </footer>
 
-  <!-- SKILLS MAPPING SCRIPT -->
   <script>
-    // Static skills mapping for section/type combinations
-    const skillsByType = {
-      "algebra": [
-        "Linear equations in one variable",
-        "Linear functions",
-        "Linear equations in two variables",
-        "Systems of two linear equations in two variables",
-        "Linear inequalities in one or two variables"
-      ],
-      "advanced-math": [
-        "Nonlinear functions",
-        "Nonlinear equations in one variable and systems of equations in two variables",
-        "Equivalent expressions"
-      ],
-      "psda": [
-        "Ratios, rates, proportional relationships, and units",
-        "Percentages",
-        "One-variable data: Distributions and measures of center and spread",
-        "Two-variable data: Models and scatterplots",
-        "Probability and conditional probability",
-        "Inference from sample statistics and margin of error",
-        "Evaluating statistical claims: Observational studies and experiments"
-      ],
-      "geometry-trigonometry": [
-        "Area and volume",
-        "Lines, angles, and triangles",
-        "Right triangles and trigonometry",
-        "Circles"
-      ],
-      "information-ideas": [
-        "Central Ideas and Details",
-        "Inferences",
-        "Command of Evidence"
-      ],
-      "craft-structure": [
-        "Words in Context",
-        "Text Structure and Purpose",
-        "Cross-Text Connections"
-      ],
-      "expression-ideas": [
-        "Rhetorical Synthesis",
-        "Transitions"
-      ],
-      "standard-english": [
-        "Boundaries",
-        "Form, Structure, and Sense"
-      ]
+    // Translation dictionary
+    const translations = {
+      en: {
+        'nav.lessons': 'Lessons',
+        'nav.practice': 'Practice',
+        'nav.scholarships': 'Scholarships',
+        'nav.glossary': 'Glossary',
+        'settings.title': 'Settings',
+        'settings.darkMode': 'Dark Mode',
+        'settings.bridgeMode': 'Bridge Mode',
+        'settings.bridgeModeOn': 'Questions in English, explanations translated',
+        'settings.bridgeModeOff': 'Questions in selected language',
+        'settings.about': 'About',
+        'settings.help': 'Help & Support',
+        'settings.privacy': 'Privacy Policy',
+        'practice.title': 'SAT Practice Questions',
+        'practice.subtitle': 'Practice with real SAT-style questions in your language',
+        'practice.selectQuestions': 'Select Your Questions',
+        'practice.section': 'Section',
+        'practice.sectionSelect': 'Section — select',
+        'practice.math': 'Math',
+        'practice.readingWriting': 'Reading & Writing',
+        'practice.type': 'Type',
+        'practice.typeSelect': 'Type — select',
+        'practice.difficulty': 'Difficulty',
+        'practice.allLevels': 'All Levels',
+        'practice.easy': 'Easy',
+        'practice.medium': 'Medium',
+        'practice.hard': 'Hard',
+        'practice.skill': 'Skill',
+        'practice.allSkills': 'All skills',
+        'practice.submit': 'Submit',
+        'practice.explanation': 'Explanation:',
+        'practice.previous': 'Previous',
+        'practice.next': 'Next',
+        'practice.random': 'Random',
+        'practice.question': 'Question',
+        'practice.resourcesTitle': 'Additional Resources',
+        'practice.khanDesc': 'Personalized, free practice aligned to the SAT.',
+        'practice.bluebookDesc': 'Full-length practice tests in the test-day app.',
+        'practice.officialDesc': 'Understand format, timing, and scoring.',
+        'practice.calculatorNotice': 'Some questions may require a',
+        'practice.calculator': 'calculator'
+      },
+      es: {
+        'nav.lessons': 'Lecciones',
+        'nav.practice': 'Práctica',
+        'nav.scholarships': 'Becas',
+        'nav.glossary': 'Glosario',
+        'settings.title': 'Configuración',
+        'settings.darkMode': 'Modo Oscuro',
+        'settings.bridgeMode': 'Modo Puente',
+        'settings.bridgeModeOn': 'Preguntas en inglés, explicaciones traducidas',
+        'settings.bridgeModeOff': 'Preguntas en idioma seleccionado',
+        'settings.about': 'Acerca de',
+        'settings.help': 'Ayuda y Soporte',
+        'settings.privacy': 'Política de Privacidad',
+        'practice.title': 'Preguntas de Práctica del SAT',
+        'practice.subtitle': 'Practica con preguntas estilo SAT reales en tu idioma',
+        'practice.selectQuestions': 'Selecciona tus Preguntas',
+        'practice.section': 'Sección',
+        'practice.sectionSelect': 'Sección — seleccionar',
+        'practice.math': 'Matemáticas',
+        'practice.readingWriting': 'Lectura y Escritura',
+        'practice.type': 'Tipo',
+        'practice.typeSelect': 'Tipo — seleccionar',
+        'practice.difficulty': 'Dificultad',
+        'practice.allLevels': 'Todos los Niveles',
+        'practice.easy': 'Fácil',
+        'practice.medium': 'Medio',
+        'practice.hard': 'Difícil',
+        'practice.skill': 'Habilidad',
+        'practice.allSkills': 'Todas las habilidades',
+        'practice.submit': 'Enviar',
+        'practice.explanation': 'Explicación:',
+        'practice.previous': 'Anterior',
+        'practice.next': 'Siguiente',
+        'practice.random': 'Aleatorio',
+        'practice.question': 'Pregunta',
+        'practice.resourcesTitle': 'Recursos Adicionales',
+        'practice.khanDesc': 'Práctica personalizada y gratuita alineada con el SAT.',
+        'practice.bluebookDesc': 'Pruebas de práctica completas en la aplicación del día del examen.',
+        'practice.officialDesc': 'Comprende el formato, el tiempo y la puntuación.',
+        'practice.calculatorNotice': 'Algunas preguntas pueden requerir una',
+        'practice.calculator': 'calculadora'
+      },
+      ht: {
+        'nav.lessons': 'Leson',
+        'nav.practice': 'Pratik',
+        'nav.scholarships': 'Bous',
+        'nav.glossary': 'Glosè',
+        'settings.title': 'Paramèt',
+        'settings.darkMode': 'Mòd Nwa',
+        'settings.bridgeMode': 'Mòd Pon',
+        'settings.bridgeModeOn': 'Kesyon an angle, eksplikasyon tradwi',
+        'settings.bridgeModeOff': 'Kesyon nan lang chwazi a',
+        'settings.about': 'Konsènan',
+        'settings.help': 'Èd ak Sipò',
+        'settings.privacy': 'Politik sou Vi Prive',
+        'practice.title': 'Kesyon Pratik SAT',
+        'practice.subtitle': 'Pratike ak kesyon estil SAT reyèl nan lang ou',
+        'practice.selectQuestions': 'Chwazi Kesyon Ou',
+        'practice.section': 'Seksyon',
+        'practice.sectionSelect': 'Seksyon — chwazi',
+        'practice.math': 'Matematik',
+        'practice.readingWriting': 'Lekti ak Ekriti',
+        'practice.type': 'Kalite',
+        'practice.typeSelect': 'Kalite — chwazi',
+        'practice.difficulty': 'Difikilte',
+        'practice.allLevels': 'Tout Nivo',
+        'practice.easy': 'Fasil',
+        'practice.medium': 'Mwayen',
+        'practice.hard': 'Difisil',
+        'practice.skill': 'Konpetans',
+        'practice.allSkills': 'Tout konpetans',
+        'practice.submit': 'Soumèt',
+        'practice.explanation': 'Eksplikasyon:',
+        'practice.previous': 'Anvan',
+        'practice.next': 'Swivan',
+        'practice.random': 'Ozaza',
+        'practice.question': 'Kesyon',
+        'practice.resourcesTitle': 'Resous Siplemantè',
+        'practice.khanDesc': 'Pratik pèsonalize ak gratis aliyen ak SAT.',
+        'practice.bluebookDesc': 'Tès pratik konplè nan aplikasyon jou egzamen an.',
+        'practice.officialDesc': 'Konprann fòma, tan ak evaluasyon.',
+        'practice.calculatorNotice': 'Kèk kesyon ka bezwen yon',
+        'practice.calculator': 'kalkilatris'
+      },
+      pt: {
+        'nav.lessons': 'Lições',
+        'nav.practice': 'Prática',
+        'nav.scholarships': 'Bolsas',
+        'nav.glossary': 'Glossário',
+        'settings.title': 'Configurações',
+        'settings.darkMode': 'Modo Escuro',
+        'settings.bridgeMode': 'Modo Ponte',
+        'settings.bridgeModeOn': 'Perguntas em inglês, explicações traduzidas',
+        'settings.bridgeModeOff': 'Perguntas no idioma selecionado',
+        'settings.about': 'Sobre',
+        'settings.help': 'Ajuda e Suporte',
+        'settings.privacy': 'Política de Privacidade',
+        'practice.title': 'Questões de Prática do SAT',
+        'practice.subtitle': 'Pratique com questões no estilo SAT reais em seu idioma',
+        'practice.selectQuestions': 'Selecione suas Questões',
+        'practice.section': 'Seção',
+        'practice.sectionSelect': 'Seção — selecionar',
+        'practice.math': 'Matemática',
+        'practice.readingWriting': 'Leitura e Escrita',
+        'practice.type': 'Tipo',
+        'practice.typeSelect': 'Tipo — selecionar',
+        'practice.difficulty': 'Dificuldade',
+        'practice.allLevels': 'Todos os Níveis',
+        'practice.easy': 'Fácil',
+        'practice.medium': 'Médio',
+        'practice.hard': 'Difícil',
+        'practice.skill': 'Habilidade',
+        'practice.allSkills': 'Todas as habilidades',
+        'practice.submit': 'Enviar',
+        'practice.explanation': 'Explicação:',
+        'practice.previous': 'Anterior',
+        'practice.next': 'Próximo',
+        'practice.random': 'Aleatório',
+        'practice.question': 'Questão',
+        'practice.resourcesTitle': 'Recursos Adicionais',
+        'practice.khanDesc': 'Prática personalizada e gratuita alinhada ao SAT.',
+        'practice.bluebookDesc': 'Testes práticos completos no aplicativo do dia do teste.',
+        'practice.officialDesc': 'Entenda formato, tempo e pontuação.',
+        'practice.calculatorNotice': 'Algumas perguntas podem exigir uma',
+        'practice.calculator': 'calculadora'
+      },
+      fr: {
+        'nav.lessons': 'Leçons',
+        'nav.practice': 'Pratique',
+        'nav.scholarships': 'Bourses',
+        'nav.glossary': 'Glossaire',
+        'settings.title': 'Paramètres',
+        'settings.darkMode': 'Mode Sombre',
+        'settings.bridgeMode': 'Mode Pont',
+        'settings.bridgeModeOn': 'Questions en anglais, explications traduites',
+        'settings.bridgeModeOff': 'Questions dans la langue sélectionnée',
+        'settings.about': 'À propos',
+        'settings.help': 'Aide et Support',
+        'settings.privacy': 'Politique de Confidentialité',
+        'practice.title': 'Questions de Pratique du SAT',
+        'practice.subtitle': 'Pratiquez avec de vraies questions de style SAT dans votre langue',
+        'practice.selectQuestions': 'Sélectionnez vos Questions',
+        'practice.section': 'Section',
+        'practice.sectionSelect': 'Section — sélectionner',
+        'practice.math': 'Mathématiques',
+        'practice.readingWriting': 'Lecture et Écriture',
+        'practice.type': 'Type',
+        'practice.typeSelect': 'Type — sélectionner',
+        'practice.difficulty': 'Difficulté',
+        'practice.allLevels': 'Tous les Niveaux',
+        'practice.easy': 'Facile',
+        'practice.medium': 'Moyen',
+        'practice.hard': 'Difficile',
+        'practice.skill': 'Compétence',
+        'practice.allSkills': 'Toutes les compétences',
+        'practice.submit': 'Soumettre',
+        'practice.explanation': 'Explication:',
+        'practice.previous': 'Précédent',
+        'practice.next': 'Suivant',
+        'practice.random': 'Aléatoire',
+        'practice.question': 'Question',
+        'practice.resourcesTitle': 'Ressources Supplémentaires',
+        'practice.khanDesc': 'Pratique personnalisée et gratuite alignée sur le SAT.',
+        'practice.bluebookDesc': 'Tests pratiques complets dans l\'application du jour de test.',
+        'practice.officialDesc': 'Comprendre le format, le timing et la notation.',
+        'practice.calculatorNotice': 'Certaines questions peuvent nécessiter une',
+        'practice.calculator': 'calculatrice'
+      }
     };
 
-    console.log('🎓 Skills by type loaded');
+    function translatePage(lang) {
+      const dict = translations[lang] || translations.en;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) {
+          el.textContent = dict[key];
+        }
+      });
+      
+      const bridgeModeOn = localStorage.getItem('englishQuestions') === 'true';
+      const statusEl = document.getElementById('english-questions-status');
+      if (statusEl) {
+        statusEl.textContent = bridgeModeOn ? dict['settings.bridgeModeOn'] : dict['settings.bridgeModeOff'];
+      }
+    }
+
+    const currentLang = localStorage.getItem('selectedLanguage') || 'en';
     
-    // Show/hide and populate skills dropdown when type changes
+    const langSelect = document.getElementById('select-language');
+    const langSelectMobile = document.getElementById('select-language-moe');
+    if (langSelect) langSelect.value = currentLang;
+    if (langSelectMobile) langSelectMobile.value = currentLang;
+    
+    translatePage(currentLang);
+    
+    if (langSelect) {
+      langSelect.addEventListener('change', function() {
+        const newLang = this.value;
+        localStorage.setItem('selectedLanguage', newLang);
+        translatePage(newLang);
+        if (typeof window.loadProblems === 'function') window.loadProblems();
+      });
+    }
+    
+    if (langSelectMobile) {
+      langSelectMobile.addEventListener('change', function() {
+        const newLang = this.value;
+        localStorage.setItem('selectedLanguage', newLang);
+        translatePage(newLang);
+        if (typeof window.loadProblems === 'function') window.loadProblems();
+      });
+    }
+
+    const skillsByType = {
+      "algebra": ["Linear equations in one variable","Linear functions","Linear equations in two variables","Systems of two linear equations in two variables","Linear inequalities in one or two variables"],
+      "advanced-math": ["Nonlinear functions","Nonlinear equations in one variable and systems of equations in two variables","Equivalent expressions"],
+      "psda": ["Ratios, rates, proportional relationships, and units","Percentages","One-variable data: Distributions and measures of center and spread","Two-variable data: Models and scatterplots","Probability and conditional probability","Inference from sample statistics and margin of error","Evaluating statistical claims: Observational studies and experiments"],
+      "geometry-trigonometry": ["Area and volume","Lines, angles, and triangles","Right triangles and trigonometry","Circles"],
+      "information-ideas": ["Central Ideas and Details","Inferences","Command of Evidence"],
+      "craft-structure": ["Words in Context","Text Structure and Purpose","Cross-Text Connections"],
+      "expression-ideas": ["Rhetorical Synthesis","Transitions"],
+      "standard-english": ["Boundaries","Form, Structure, and Sense"]
+    };
+    
+    // Show/hide calculator notice and skills based on section
+    const sectionSelect = document.getElementById('select-section');
+    const calculatorNotice = document.getElementById('calculator-notice');
+    
+    sectionSelect.addEventListener('change', function() {
+      const section = this.value;
+      
+      // Show calculator notice for Math section
+      if (section === 'Math') {
+        calculatorNotice.classList.remove('hidden');
+      } else {
+        calculatorNotice.classList.add('hidden');
+      }
+    });
+    
     document.getElementById('select-type').addEventListener('change', function() {
       const type = this.value;
       const skills = skillsByType[type] || [];
       const skillsSelect = document.getElementById('select-skill');
       const skillsContainer = document.getElementById('skills-container');
+      const dict = translations[currentLang] || translations.en;
       
-      console.log('📝 Type selected:', type);
-      console.log('🎯 Available skills:', skills);
-      
-      // Clear existing options
-      skillsSelect.innerHTML = '<option value="">All skills</option>';
-      
+      skillsSelect.innerHTML = `<option value="">${dict['practice.allSkills']}</option>`;
       if (skills.length > 0) {
-        // Show the dropdown container and populate with skills
-        skillsContainer.style.display = 'flex';
+        skillsContainer.style.display = 'block';
         skills.forEach(skill => {
           const option = document.createElement('option');
           option.value = skill;
@@ -354,14 +552,160 @@
           skillsSelect.appendChild(option);
         });
       } else {
-        // Hide if no skills for this type
         skillsContainer.style.display = 'none';
+      }
+    });
+
+    // Question number input handler
+    document.addEventListener('DOMContentLoaded', function() {
+      const questionInput = document.getElementById('question-number-input');
+      
+      if (questionInput) {
+        questionInput.addEventListener('keypress', function(e) {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            const targetQuestion = parseInt(this.value);
+            const counterText = document.getElementById('question-counter').textContent;
+            const match = counterText.match(/of\s+(\d+)/i);
+            const totalQuestions = match ? parseInt(match[1]) : 999;
+            
+            if (targetQuestion >= 1 && targetQuestion <= totalQuestions) {
+              // Call the displayQuestion function from main.js
+              if (typeof window.displayQuestion === 'function') {
+                window.displayQuestion(targetQuestion - 1);
+              }
+              this.blur();
+            } else {
+              alert(`Please enter a number between 1 and ${totalQuestions}`);
+              // Reset to current question
+              if (typeof window.getCurrentQuestionIndex === 'function') {
+                this.value = window.getCurrentQuestionIndex() + 1;
+              }
+            }
+          }
+        });
+        
+        questionInput.addEventListener('blur', function() {
+          // Reset to current question on blur
+          if (typeof window.getCurrentQuestionIndex === 'function') {
+            this.value = window.getCurrentQuestionIndex() + 1;
+          }
+        });
       }
     });
   </script>
 
-  <!-- LOAD MAIN PRACTICE SCRIPT -->
   <script src="/static/js/main.js"></script>
   <script src="/static/js/practice.js"></script>
+  
+  <script>
+    (function(){
+      const init = () => {
+        const settingsBtn = document.getElementById('settings-btn');
+        const settingsBtnMobile = document.getElementById('settings-btn-mobile');
+        const settingsMenu = document.getElementById('settings-menu');
+        const darkToggle = document.getElementById('dark-toggle');
+        const themeStatus = document.getElementById('theme-status');
+        const englishQuestionsToggle = document.getElementById('english-questions-toggle');
+        const englishToggleCircle = document.getElementById('english-toggle-circle');
+        const englishQuestionsStatus = document.getElementById('english-questions-status');
+        const html = document.documentElement;
+
+        function toggleSettings(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          if(settingsMenu) settingsMenu.classList.toggle('hidden');
+        }
+
+        if(settingsBtn) settingsBtn.addEventListener('click', toggleSettings);
+        if(settingsBtnMobile) settingsBtnMobile.addEventListener('click', toggleSettings);
+
+        document.addEventListener('click', (e) => {
+          if (settingsMenu && !settingsMenu.contains(e.target) && 
+              !settingsBtn?.contains(e.target) && 
+              !settingsBtnMobile?.contains(e.target)) {
+            settingsMenu.classList.add('hidden');
+          }
+        });
+
+        function updateThemeStatus() {
+          const isDark = html.classList.contains('dark');
+          if (themeStatus) themeStatus.textContent = isDark ? 'Dark theme active' : 'Light theme active';
+          if (darkToggle) darkToggle.setAttribute('aria-checked', String(isDark));
+        }
+        updateThemeStatus();
+
+        if(darkToggle) {
+          darkToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const wasDark = html.classList.contains('dark');
+            if (wasDark) {
+              html.classList.remove('dark');
+              localStorage.theme = 'light';
+            } else {
+              html.classList.add('dark');
+              localStorage.theme = 'dark';
+            }
+            updateThemeStatus();
+          });
+        }
+
+        function getEnglishQuestionsMode() {
+          return localStorage.getItem('englishQuestions') === 'true';
+        }
+        
+        function updateEnglishQuestionsUI() {
+          const lang = localStorage.getItem('selectedLanguage') || 'en';
+          const dict = translations[lang] || translations.en;
+          const isEnglish = getEnglishQuestionsMode();
+          
+          if (englishQuestionsToggle) {
+            if (isEnglish) {
+              englishQuestionsToggle.classList.add('bg-blue-600');
+              englishQuestionsToggle.classList.remove('bg-gray-300');
+              if(englishToggleCircle) {
+                englishToggleCircle.classList.add('translate-x-6');
+                englishToggleCircle.classList.remove('translate-x-1');
+              }
+            } else {
+              englishQuestionsToggle.classList.remove('bg-blue-600');
+              englishQuestionsToggle.classList.add('bg-gray-300');
+              if(englishToggleCircle) {
+                englishToggleCircle.classList.remove('translate-x-6');
+                englishToggleCircle.classList.add('translate-x-1');
+              }
+            }
+          }
+          
+          if (englishQuestionsStatus) {
+            englishQuestionsStatus.textContent = isEnglish ? dict['settings.bridgeModeOn'] : dict['settings.bridgeModeOff'];
+          }
+          if(englishQuestionsToggle) englishQuestionsToggle.setAttribute('aria-checked', String(isEnglish));
+        }
+        
+        updateEnglishQuestionsUI();
+        
+        if(englishQuestionsToggle) {
+          englishQuestionsToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const wasEnglish = getEnglishQuestionsMode();
+            if (wasEnglish) {
+              localStorage.removeItem('englishQuestions');
+            } else {
+              localStorage.setItem('englishQuestions', 'true');
+            }
+            updateEnglishQuestionsUI();
+            if (typeof window.loadProblems === 'function') window.loadProblems();
+          });
+        }
+      };
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init, { once: true });
+      } else {
+        init();
+      }
+    })();
+  </script>
 </body>
 </html>

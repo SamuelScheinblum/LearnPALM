@@ -11,6 +11,24 @@
   --radius:18px;
 }
 
+
+
+/* Dark mode variables - MUTED TEAL + GENTLE OAT */
+:root.dark {
+  --bg:#000000;
+  --bg-top:#1e1b4b;
+  --panel:#1f2937;
+  --text:#f9fafb;
+  --muted:#d1d5db;
+  --glow:#67e8f9;
+  --accent:#6FB6A9;
+  --accent2:#F2E6C9;
+  --grid:rgba(111,182,169,.08);
+}
+
+
+
+
 /* Base reset */
 *{box-sizing:border-box}
 html,body{
@@ -20,21 +38,37 @@ html,body{
   overflow-x:hidden;
 }
 
-/* Gradient background that scrolls naturally - blue concentrated at top */
+
+
+
+/* Light mode: smooth blue to white gradient - EXTENDED */
 body{
   margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
   background: 
-    radial-gradient(ellipse 1200px 600px at 80% -15%, rgba(16,185,129,.18), transparent 70%),
-    radial-gradient(ellipse 800px 500px at 20% 150%, rgba(249,115,22,.12), transparent 70%),
+    radial-gradient(ellipse 1200px 600px at 80% -15%, rgba(16,185,129,.12), transparent 70%),
+    radial-gradient(ellipse 800px 500px at 20% 150%, rgba(249,115,22,.08), transparent 70%),
     linear-gradient(180deg, 
       #7dd3fc 0%,
-      #bae6fd 5%,
-      #dbeafe 12%, 
-      #e0f2fe 20%,
-      #f0f9ff 30%,
-      #f8fafc 45%,
-      #fafafa 60%,
+      #92ddff 2%,
+      #a5e4ff 4%,
+      #b5eaff 6%,
+      #c3efff 8%,
+      #d0f3ff 10%,
+      #dbeafe 13%,
+      #e0f2fe 16%,
+      #e5f5ff 20%,
+      #eaf8ff 24%,
+      #eff9ff 28%,
+      #f2fbff 32%,
+      #f5fcff 36%,
+      #f7fdff 40%,
+      #f9feff 45%,
+      #fbfeff 50%,
+      #fcfeff 55%,
+      #fdffff 60%,
+      #feffff 65%,
+      #feffff 70%,
       #ffffff 75%,
       #ffffff 100%
     );
@@ -43,7 +77,52 @@ body{
   scroll-behavior:smooth;
   overflow-x:hidden;
   background-attachment: scroll;
+  background-size: 100% 300vh;
+  background-position: top center;
+  transition: background 0.3s ease, color 0.3s ease;
 }
+
+
+
+/* Dark mode: MIDNIGHT PURPLE gradient - deeper, richer blues */
+:root.dark body{
+  background: 
+    radial-gradient(ellipse 1200px 600px at 80% -15%, rgba(111,182,169,.12), transparent 70%),
+    radial-gradient(ellipse 800px 500px at 20% 150%, rgba(242,230,201,.08), transparent 70%),
+    linear-gradient(180deg, 
+      #1e1b4b 0%,
+      #1c1a45 2%,
+      #1a183f 4%,
+      #18173a 6%,
+      #161535 8%,
+      #141430 10%,
+      #12122b 13%,
+      #101027 16%,
+      #0e0f23 20%,
+      #0d0d1f 24%,
+      #0b0c1b 28%,
+      #0a0a18 32%,
+      #080914 36%,
+      #070710 40%,
+      #06060d 45%,
+      #05050a 50%,
+      #040408 55%,
+      #030306 60%,
+      #020204 65%,
+      #020202 70%,
+      #010101 75%,
+      #000000 80%,
+      #000000 85%,
+      #000000 90%,
+      #000000 95%,
+      #000000 100%
+    );
+  background-size: 100% 300vh;
+  background-position: top center;
+}
+
+
+
 
 /* Subtle animated grid background */
 .grid-bg::before{
@@ -61,7 +140,10 @@ body{
   100%{transform:translate3d(40px,40px,0)}
 }
 
-/* Global floating glow that parallax-shifts for seamless blending */
+
+
+
+/* Global floating glow */
 .global-glow{
   position:fixed; top:50%; left:50%; width:200vmax; height:200vmax; z-index:0; pointer-events:none; border-radius:50%;
   background:
@@ -73,10 +155,25 @@ body{
   transform: translate(-50%, -50%) translate3d(var(--gx, 0px), var(--gy, 0px), 0);
   will-change: transform, opacity;
 }
+
+
+
+/* Dark mode: cyan + gentle oat glow */
+:root.dark .global-glow{
+  background:
+    radial-gradient(closest-side, rgba(103,232,249,.2), transparent 65%),
+    radial-gradient(closest-side, rgba(242,230,201,.15), transparent 70%);
+}
+
+
+
 @media (prefers-reduced-motion: reduce){
   .global-glow{filter: blur(20px)}
   .grid-bg::before{animation:none}
 }
+
+
+
 
 /* Sticky hero with progressive detail */
 header.hero{
@@ -99,9 +196,46 @@ header.hero{
   border:1px solid rgba(16,185,129,.3);
   backdrop-filter: blur(6px);
 }
-.brand .dot{width:10px; height:10px; border-radius:50%; background:var(--glow); box-shadow:0 0 18px var(--glow)}
-h1.title{font-size: clamp(42px, 8vw, 96px); line-height:1.02; margin:0; letter-spacing:.5px}
+/* Dark mode brand - cyan + gentle oat */
+:root.dark .brand{
+  background:linear-gradient(90deg, rgba(103,232,249,.2), rgba(242,230,201,.2));
+  border:1px solid rgba(103,232,249,.4);
+}
+
+
+
+/* Logo dot - uses var(--glow) which changes per mode */
+.brand .dot{
+  width:10px; 
+  height:10px; 
+  border-radius:50%; 
+  background:var(--glow); 
+  box-shadow:0 0 18px var(--glow);
+}
+
+
+h1.title{
+  font-size: clamp(42px, 8vw, 96px); 
+  line-height:1.02; 
+  margin:0; 
+  letter-spacing:.5px; 
+  color:var(--text);
+}
+
+
+/* Add gradient text effect to title in dark mode */
+:root.dark h1.title{
+  background: linear-gradient(135deg, #6FB6A9 0%, #67e8f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
 p.lede{margin:0; font-size: clamp(16px,2.2vw,22px); color:var(--muted)}
+
+
+
 
 .tagline{
   margin-top:8px; font-size: clamp(14px,1.6vw,18px); opacity:.9;
@@ -111,19 +245,34 @@ p.lede{margin:0; font-size: clamp(16px,2.2vw,22px); color:var(--muted)}
   background:linear-gradient(180deg, rgba(16,185,129,.15), rgba(0,0,0,.0));
   border:1px solid rgba(16,185,129,.4);
   text-shadow:0 0 12px rgba(16,185,129,.15);
+  color:var(--text);
 }
+/* Dark mode chips - muted teal */
+:root.dark .tagline .chip{
+  background:linear-gradient(180deg, rgba(111,182,169,.2), rgba(0,0,0,.0));
+  border:1px solid rgba(111,182,169,.5);
+  text-shadow:0 0 12px rgba(111,182,169,.3);
+}
+
+
+
 
 /* Scroll indicator */
 .scroll-indicator{position:fixed; right:18px; top:50%; translate:0 -50%; z-index:3; display:flex; flex-direction:column; gap:10px}
 .scroll-indicator .node{width:8px; height:8px; border-radius:50%; background:#d1d5db; box-shadow:inset 0 0 0 1px rgba(0,0,0,.1)}
+:root.dark .scroll-indicator .node{background:#4b5563; box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)}
+/* Active scroll indicator - uses var(--glow) */
 .scroll-indicator .node.active{background:var(--glow); box-shadow:0 0 14px var(--glow)}
+
+
+
 
 /* Sections */
 section{position:relative; z-index:1; padding: clamp(56px, 12vw, 140px) clamp(20px, 5vw, 72px)}
-/* Section glow disabled; using global parallax glow for seamless blending */
 section::before{content:""; opacity:0;}
 .panel{
-  max-width:1100px; margin:0 auto; background:linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.7));
+  max-width:1100px; margin:0 auto; 
+  background:linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.7));
   border:1px solid rgba(16,185,129,.2); border-radius:var(--radius);
   padding: clamp(28px, 5vw, 56px);
   box-shadow: 0 10px 40px rgba(0,0,0,.08), inset 0 0 0 1px rgba(16,185,129,.08);
@@ -132,26 +281,69 @@ section::before{content:""; opacity:0;}
   backdrop-filter: blur(10px);
 }
 
+
+
+/* Dark mode panels - muted teal borders */
+:root.dark .panel{
+  background:linear-gradient(180deg, rgba(31,41,55,.95), rgba(17,24,39,.85));
+  border:1px solid rgba(111,182,169,.3);
+  box-shadow: 0 10px 40px rgba(0,0,0,.4), inset 0 0 0 1px rgba(111,182,169,.1);
+}
+
+
+
+
 .panel h2{
   margin:0 0 10px; 
   font-size: clamp(24px,3.2vw,36px); 
   text-align:center;
+  color:var(--text);
 }
 
-.panel > p{
+
+
+
+/* Center ALL paragraphs inside panels */
+.panel p{
   margin:0; 
   color:var(--muted); 
   font-size: clamp(14px,1.6vw,18px); 
   text-align:center;
 }
 
+
+
+
 /* Reveal animations */
 .reveal{opacity:0; transform:translateY(24px) scale(.98); transition: opacity .8s ease, transform .8s ease}
 .reveal.visible{opacity:1; transform:translateY(0) scale(1)}
 
-/* Feature grid */
+
+
+
+/* Feature grid - default 2 columns */
 .features{display:grid; gap:16px; grid-template-columns: repeat(2, minmax(0,1fr)); margin-top:22px}
-@media (max-width: 800px){ .features{grid-template-columns:1fr} }
+
+
+
+/* Resources section - centered 2x2 grid */
+#resources .features{
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* Mobile: stack to 1 column */
+@media (max-width: 800px){ 
+  .features{grid-template-columns:1fr}
+  #resources .features{grid-template-columns:1fr}
+}
+
+
+
 
 .card{
   background:linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.85));
@@ -161,11 +353,22 @@ section::before{content:""; opacity:0;}
   transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
   will-change: transform;
   text-decoration: none;
-  color: inherit;
+  color: var(--text);
   display: block;
   backdrop-filter: blur(10px);
 }
-.card::before{ /* Seamless scanning accent - slower */
+
+
+
+/* Dark mode cards - muted teal borders */
+:root.dark .card{
+  background:linear-gradient(180deg, rgba(31,41,55,.95), rgba(17,24,39,.85));
+  border:1px solid rgba(111,182,169,.3);
+}
+
+
+
+.card::before{
   content:""; 
   position:absolute; 
   inset:0; 
@@ -186,21 +389,58 @@ section::before{content:""; opacity:0;}
   pointer-events:none;
   opacity: 0.8;
 }
+
+
+
+/* Dark mode card scan - gentle oat/cream */
+:root.dark .card::before{
+  background: linear-gradient(180deg, 
+    transparent 0%, 
+    transparent 35%,
+    rgba(242,230,201,.25) 45%, 
+    rgba(242,230,201,.35) 50%, 
+    rgba(242,230,201,.25) 55%,
+    transparent 65%,
+    transparent 100%
+  );
+}
+
+
+
 @keyframes scan{ 
   0%{transform:translateY(-100%)} 
   100%{transform:translateY(100%)} 
 }
+
+
+
 .card:hover{transform: translateY(-6px); box-shadow:0 18px 40px rgba(16,185,129,.25); border-color: rgba(16,185,129,.6)}
-.card h3{margin:0 0 6px; font-size: clamp(18px,1.8vw,22px)}
+/* Dark mode card hover - muted teal */
+:root.dark .card:hover{box-shadow:0 18px 40px rgba(111,182,169,.3); border-color: rgba(111,182,169,.6)}
+
+
+
+.card h3{margin:0 0 6px; font-size: clamp(18px,1.8vw,22px); color:var(--text)}
 .card p{margin:0; color:var(--muted); font-size: clamp(14px,1.4vw,16px)}
+
+
+
 
 .chipbar{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
 .chipbar .mini{
   font-size:12px; padding:.35rem .6rem; border-radius:999px;
   border:1px solid rgba(16,185,129,.3);
   background:linear-gradient(180deg, rgba(16,185,129,.12), rgba(16,185,129,.05));
-  color:#1a1a1a;
+  color:var(--text);
 }
+/* Dark mode mini chips - muted teal */
+:root.dark .chipbar .mini{
+  border:1px solid rgba(111,182,169,.4);
+  background:linear-gradient(180deg, rgba(111,182,169,.2), rgba(111,182,169,.1));
+}
+
+
+
 
 /* Footer / CTA */
 .cta{display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:16px}
@@ -217,6 +457,13 @@ section::before{content:""; opacity:0;}
   transform: translateY(-2px);
   box-shadow:0 8px 28px rgba(16,185,129,.4);
 }
+/* Dark mode button shadows - muted teal */
+:root.dark .btn{
+  box-shadow:0 6px 24px rgba(111,182,169,.3);
+}
+:root.dark .btn:hover{
+  box-shadow:0 8px 28px rgba(111,182,169,.4);
+}
 .btn.secondary{
   background:rgba(255,255,255,.9); 
   border:1px solid rgba(16,185,129,.4);
@@ -224,10 +471,22 @@ section::before{content:""; opacity:0;}
   color:var(--text);
   backdrop-filter: blur(10px);
 }
+/* Dark mode secondary button - muted teal */
+:root.dark .btn.secondary{
+  background:rgba(31,41,55,.9); 
+  border:1px solid rgba(111,182,169,.5);
+}
 .btn.secondary:hover{
   border-color: rgba(16,185,129,.6);
   box-shadow:0 4px 16px rgba(16,185,129,.2);
 }
+:root.dark .btn.secondary:hover{
+  border-color: rgba(111,182,169,.7);
+  box-shadow:0 4px 16px rgba(111,182,169,.3);
+}
+
+
+
 
 /* Reduced motion accessibility */
 @media (prefers-reduced-motion: reduce){

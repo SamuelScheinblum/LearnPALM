@@ -6,9 +6,7 @@
   <title>LearnPALM</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
-      darkMode: 'class'
-    }
+    tailwind.config = { darkMode: 'class' }
   </script>
   <script>
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -39,11 +37,9 @@
       </a>
       
       <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="/" class="hover:underline dark:hover:text-blue-400 transition">Home</a>
         <a href="/templates/lessons.html" class="hover:underline dark:hover:text-blue-400 transition">Lessons</a>
         <a href="/templates/practice_home.html" class="hover:underline dark:hover:text-blue-400 transition">Practice</a>
         <a href="/templates/scholarships.html" class="hover:underline dark:hover:text-blue-400 transition">Scholarships</a>
-        <a href="#resources" class="hover:underline dark:hover:text-blue-400 transition">Resources</a>
         <a href="/templates/glossary.html" class="hover:underline dark:hover:text-blue-400 transition">Glossary</a>
         
         <!-- LANGUAGE SELECTOR -->
@@ -125,7 +121,7 @@
       <!-- Mobile menu -->
       <div class="md:hidden flex items-center gap-3">
         <span class="text-sm text-gray-600 dark:text-gray-400">🌐</span>
-        <select id="select-language-mobile" class="rounded-md border border-gray-300 dark:border-gray-700 px-2 py-1 text-sm font-medium bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+        <select id="select-language-moe" class="rounded-md border border-gray-300 dark:border-gray-700 px-2 py-1 text-sm font-medium bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
           <option value="en">EN</option>
           <option value="es">ES</option>
           <option value="ht">HT</option>
@@ -156,169 +152,167 @@
     };
   </script>
 
-  <!-- Language Selector Script -->
   <script>
-    (function() {
-      function setLanguageSelectors() {
-        const selectors = [
-          document.getElementById('select-language'),
-          document.getElementById('select-language-mobile')
-        ];
-        
-        selectors.forEach(selector => {
-          if (selector) {
-            selector.value = localStorage.getItem('learnpalm-lang') || 'en';
-          }
-        });
-      }
-      
-      setLanguageSelectors();
-      document.addEventListener('DOMContentLoaded', setLanguageSelectors);
-      
-      function handleLanguageChange(newLang) {
-        const currentPath = window.location.pathname;
-        let newPath;
-        
-        if (currentPath.match(/^\/(en|es|ht|pt|fr)\//)) {
-          newPath = currentPath.replace(/^\/(en|es|ht|pt|fr)\//, '/' + newLang + '/');
-        } else if (currentPath === '/' || currentPath === '') {
-          newPath = '/' + newLang + '/';
-        } else {
-          newPath = '/' + newLang + currentPath;
-        }
-        
-        localStorage.setItem('learnpalm-lang', newLang);
-        window.location.href = newPath;
-      }
-      
-      const languageSelectors = [
-        document.getElementById('select-language'),
-        document.getElementById('select-language-mobile')
-      ];
-      
-      languageSelectors.forEach(selector => {
-        if (selector) {
-          selector.addEventListener('change', function(e) {
-            handleLanguageChange(e.target.value);
+    (function(){
+      const init = () => {
+        // Language Selector Handler
+        function setLanguageSelectors() {
+          const selectors = [
+            document.getElementById('select-language'),
+            document.getElementById('select-language-moe')
+          ];
+          selectors.forEach(selector => {
+            if (selector) {
+              selector.value = localStorage.getItem('selectedLanguage') || 'en';
+            }
           });
         }
-      });
-    })();
-  </script>
-
-  <!-- Dark Mode & Settings Menu Script -->
-  <script>
-    const darkToggle = document.getElementById('dark-toggle');
-    const settingsBtn = document.getElementById('settings-btn');
-    const settingsBtnMobile = document.getElementById('settings-btn-mobile');
-    const settingsMenu = document.getElementById('settings-menu');
-    const themeStatus = document.getElementById('theme-status');
-    const html = document.documentElement;
-
-    function updateThemeStatus() {
-      const isDark = html.classList.contains('dark');
-      if (themeStatus) {
-        themeStatus.textContent = isDark ? 'Dark theme active' : 'Light theme active';
-      }
-      darkToggle?.setAttribute('aria-checked', isDark);
-    }
-
-    updateThemeStatus();
-
-    function toggleSettings(e) {
-      e.stopPropagation();
-      settingsMenu.classList.toggle('hidden');
-    }
-
-    settingsBtn?.addEventListener('click', toggleSettings);
-    settingsBtnMobile?.addEventListener('click', toggleSettings);
-
-    document.addEventListener('click', (e) => {
-      if (!settingsMenu.contains(e.target) && 
-          !settingsBtn?.contains(e.target) && 
-          !settingsBtnMobile?.contains(e.target)) {
-        settingsMenu.classList.add('hidden');
-      }
-    });
-
-    darkToggle?.addEventListener('click', function(e) {
-      e.stopPropagation();
-      const wasDark = html.classList.contains('dark');
-      
-      if (wasDark) {
-        html.classList.remove('dark');
-        localStorage.theme = 'light';
-      } else {
-        html.classList.add('dark');
-        localStorage.theme = 'dark';
-      }
-      
-      updateThemeStatus();
-    });
-  </script>
-
-  <!-- English Questions Toggle Script -->
-  <script>
-    const englishQuestionsToggle = document.getElementById('english-questions-toggle');
-    const englishToggleCircle = document.getElementById('english-toggle-circle');
-    const englishQuestionsStatus = document.getElementById('english-questions-status');
-    
-    function getEnglishQuestionsMode() {
-      return localStorage.getItem('englishQuestions') === 'true';
-    }
-    
-    function updateEnglishQuestionsUI() {
-      const isEnglish = getEnglishQuestionsMode();
-      
-      if (englishQuestionsToggle) {
-        if (isEnglish) {
-          englishQuestionsToggle.classList.add('bg-blue-600');
-          englishQuestionsToggle.classList.remove('bg-gray-300');
-          englishToggleCircle.classList.add('translate-x-6');
-          englishToggleCircle.classList.remove('translate-x-1');
-        } else {
-          englishQuestionsToggle.classList.remove('bg-blue-600');
-          englishQuestionsToggle.classList.add('bg-gray-300');
-          englishToggleCircle.classList.remove('translate-x-6');
-          englishToggleCircle.classList.add('translate-x-1');
+        
+        setLanguageSelectors();
+        
+        function handleLanguageChange(newLang) {
+          localStorage.setItem('selectedLanguage', newLang);
+          const currentPath = window.location.pathname;
+          let newPath;
+          
+          if (currentPath.match(/^\/(en|es|ht|pt|fr)\//)) {
+            newPath = currentPath.replace(/^\/(en|es|ht|pt|fr)\//, '/' + newLang + '/');
+          } else if (currentPath === '/' || currentPath === '') {
+            newPath = '/' + newLang + '/';
+          } else {
+            newPath = '/' + newLang + currentPath;
+          }
+          
+          window.location.href = newPath;
         }
-      }
-      
-      if (englishQuestionsStatus) {
-        englishQuestionsStatus.textContent = isEnglish 
-          ? 'Questions in English, explanations translated' 
-          : 'Questions in selected language';
-      }
-      
-      englishQuestionsToggle?.setAttribute('aria-checked', isEnglish);
-      
-      window.englishQuestionsMode = isEnglish;
-      
-      console.log('📝 English Questions mode:', isEnglish ? 'ON' : 'OFF');
-    }
-    
-    updateEnglishQuestionsUI();
-    
-    englishQuestionsToggle?.addEventListener('click', function(e) {
-      e.stopPropagation();
-      
-      const wasEnglish = getEnglishQuestionsMode();
-      
-      if (wasEnglish) {
-        localStorage.removeItem('englishQuestions');
-        console.log('📝 English Questions mode: OFF');
+        
+        const languageSelectors = [
+          document.getElementById('select-language'),
+          document.getElementById('select-language-moe')
+        ];
+        
+        languageSelectors.forEach(selector => {
+          if (selector) {
+            selector.addEventListener('change', function(e) {
+              handleLanguageChange(e.target.value);
+            });
+          }
+        });
+
+        // Settings Menu Toggle
+        const settingsBtn = document.getElementById('settings-btn');
+        const settingsBtnMobile = document.getElementById('settings-btn-mobile');
+        const settingsMenu = document.getElementById('settings-menu');
+
+        function toggleSettings(e) {
+          e.stopPropagation();
+          settingsMenu?.classList.toggle('hidden');
+        }
+
+        settingsBtn?.addEventListener('click', toggleSettings);
+        settingsBtnMobile?.addEventListener('click', toggleSettings);
+
+        document.addEventListener('click', (e) => {
+          if (settingsMenu && !settingsMenu.contains(e.target) && 
+              !settingsBtn?.contains(e.target) && 
+              !settingsBtnMobile?.contains(e.target)) {
+            settingsMenu.classList.add('hidden');
+          }
+        });
+
+        // Dark Mode Toggle
+        const darkToggle = document.getElementById('dark-toggle');
+        const themeStatus = document.getElementById('theme-status');
+        const html = document.documentElement;
+
+        function updateThemeStatus() {
+          const isDark = html.classList.contains('dark');
+          if (themeStatus) {
+            themeStatus.textContent = isDark ? 'Dark theme active' : 'Light theme active';
+          }
+          darkToggle?.setAttribute('aria-checked', String(isDark));
+        }
+
+        updateThemeStatus();
+
+        darkToggle?.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const wasDark = html.classList.contains('dark');
+          
+          if (wasDark) {
+            html.classList.remove('dark');
+            localStorage.theme = 'light';
+          } else {
+            html.classList.add('dark');
+            localStorage.theme = 'dark';
+          }
+          
+          updateThemeStatus();
+        });
+
+        // English Questions Toggle
+        const englishQuestionsToggle = document.getElementById('english-questions-toggle');
+        const englishToggleCircle = document.getElementById('english-toggle-circle');
+        const englishQuestionsStatus = document.getElementById('english-questions-status');
+        
+        function getEnglishQuestionsMode() {
+          return localStorage.getItem('englishQuestions') === 'true';
+        }
+        
+        function updateEnglishQuestionsUI() {
+          const isEnglish = getEnglishQuestionsMode();
+          
+          if (englishQuestionsToggle) {
+            if (isEnglish) {
+              englishQuestionsToggle.classList.add('bg-blue-600');
+              englishQuestionsToggle.classList.remove('bg-gray-300');
+              englishToggleCircle?.classList.add('translate-x-6');
+              englishToggleCircle?.classList.remove('translate-x-1');
+            } else {
+              englishQuestionsToggle.classList.remove('bg-blue-600');
+              englishQuestionsToggle.classList.add('bg-gray-300');
+              englishToggleCircle?.classList.remove('translate-x-6');
+              englishToggleCircle?.classList.add('translate-x-1');
+            }
+          }
+          
+          if (englishQuestionsStatus) {
+            englishQuestionsStatus.textContent = isEnglish 
+              ? 'Questions in English, explanations translated' 
+              : 'Questions in selected language';
+          }
+          
+          englishQuestionsToggle?.setAttribute('aria-checked', String(isEnglish));
+          window.englishQuestionsMode = isEnglish;
+        }
+        
+        updateEnglishQuestionsUI();
+        
+        englishQuestionsToggle?.addEventListener('click', function(e) {
+          e.stopPropagation();
+          
+          const wasEnglish = getEnglishQuestionsMode();
+          
+          if (wasEnglish) {
+            localStorage.removeItem('englishQuestions');
+          } else {
+            localStorage.setItem('englishQuestions', 'true');
+          }
+          
+          updateEnglishQuestionsUI();
+          
+          if (typeof window.loadProblems === 'function') {
+            window.loadProblems();
+          }
+        });
+      };
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init, { once: true });
       } else {
-        localStorage.setItem('englishQuestions', 'true');
-        console.log('📝 English Questions mode: ON');
+        init();
       }
-      
-      updateEnglishQuestionsUI();
-      
-      if (typeof loadProblems === 'function') {
-        console.log('🔄 Reloading questions with new language setting...');
-        loadProblems();
-      }
-    });
+    })();
   </script>
 
   <script src="/static/js/main.js"></script>

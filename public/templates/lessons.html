@@ -19,7 +19,6 @@
   </script>
   <link rel="stylesheet" href="/static/css/styles.css">
   
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJE9RQF601"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -27,10 +26,23 @@
     gtag('js', new Date());
     gtag('config', 'G-VJE9RQF601');
   </script>
+  
+  <style>
+    /* Active filter button styles */
+    .filter-btn.active {
+      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
+      color: white !important;
+      border-color: #2563eb !important;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    }
+
+    .filter-btn.active svg {
+      color: white !important;
+    }
+  </style>
 </head>
 <body class="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-200">
   
-  <!-- HEADER/NAVBAR (from base.html) -->
   <header class="sticky top-0 z-20 backdrop-blur bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-700 transition-colors duration-200">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="/" class="flex items-center gap-2">
@@ -39,14 +51,11 @@
       </a>
       
       <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="/" class="hover:underline dark:hover:text-blue-400 transition">Home</a>
-        <a href="/templates/lessons.html" class="hover:underline dark:hover:text-blue-400 transition">Lessons</a>
-        <a href="/templates/practice_home.html" class="hover:underline dark:hover:text-blue-400 transition">Practice</a>
-        <a href="/templates/scholarships.html" class="hover:underline dark:hover:text-blue-400 transition">Scholarships</a>
-        <a href="#resources" class="hover:underline dark:hover:text-blue-400 transition">Resources</a>
-        <a href="/templates/glossary.html" class="hover:underline dark:hover:text-blue-400 transition">Glossary</a>
+        <a href="/templates/lessons.html" class="hover:underline dark:hover:text-blue-400 transition" data-i18n="nav.lessons">Lessons</a>
+        <a href="/templates/practice_home.html" class="hover:underline dark:hover:text-blue-400 transition" data-i18n="nav.practice">Practice</a>
+        <a href="/templates/scholarships.html" class="hover:underline dark:hover:text-blue-400 transition" data-i18n="nav.scholarships">Scholarships</a>
+        <a href="/templates/glossary.html" class="hover:underline dark:hover:text-blue-400 transition" data-i18n="nav.glossary">Glossary</a>
         
-        <!-- LANGUAGE SELECTOR -->
         <div class="flex items-center gap-2 ml-2 pl-2 border-l border-gray-300 dark:border-gray-700">
           <span class="text-gray-600 dark:text-gray-400">🌐</span>
           <select id="select-language" class="rounded-md border border-gray-300 dark:border-gray-700 px-3 py-1.5 font-medium bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
@@ -58,20 +67,17 @@
           </select>
         </div>
 
-        <!-- SETTINGS BUTTON -->
         <div class="relative">
-          <button id="settings-btn" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition" aria-label="Settings">
+          <button id="settings-btn" type="button" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition" aria-label="Settings">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
             </svg>
           </button>
 
-          <!-- SETTINGS DROPDOWN MENU -->
           <div id="settings-menu" class="hidden absolute top-12 right-0 w-72 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-xl p-4 z-50">
-            <h3 class="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">Settings</h3>
+            <h3 class="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100" data-i18n="settings.title">Settings</h3>
             
-            <!-- Dark Mode Toggle -->
             <div class="flex items-center justify-between py-3 border-b border-gray-200 dark:border-gray-700">
               <div class="flex items-center gap-3">
                 <div class="p-2 bg-gray-100 dark:bg-gray-700 rounded-lg">
@@ -81,30 +87,28 @@
                   </svg>
                 </div>
                 <div>
-                  <div class="font-medium text-sm text-gray-900 dark:text-gray-100">Dark Mode</div>
+                  <div class="font-medium text-sm text-gray-900 dark:text-gray-100" data-i18n="settings.darkMode">Dark Mode</div>
                   <div class="text-xs text-gray-500 dark:text-gray-400" id="theme-status">Light theme active</div>
                 </div>
               </div>
               
-              <button id="dark-toggle" class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 bg-gray-300 dark:bg-blue-600" role="switch">
+              <button id="dark-toggle" type="button" class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 bg-gray-300 dark:bg-blue-600" role="switch">
                 <span id="toggle-circle" class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform translate-x-1 dark:translate-x-6"></span>
               </button>
             </div>
 
-            <!-- Additional Settings -->
             <div class="py-3">
-              <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">About</div>
-              <a href="#" class="block py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Help & Support</a>
-              <a href="#" class="block py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">Privacy Policy</a>
+              <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2" data-i18n="settings.about">About</div>
+              <a href="#" class="block py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition" data-i18n="settings.help">Help & Support</a>
+              <a href="#" class="block py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition" data-i18n="settings.privacy">Privacy Policy</a>
             </div>
           </div>
         </div>
       </nav>
       
-      <!-- Mobile menu -->
       <div class="md:hidden flex items-center gap-3">
         <span class="text-sm text-gray-600 dark:text-gray-400">🌐</span>
-        <select id="select-language-mobile" class="rounded-md border border-gray-300 dark:border-gray-700 px-2 py-1 text-sm font-medium bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+        <select id="select-language-moe" class="rounded-md border border-gray-300 dark:border-gray-700 px-2 py-1 text-sm font-medium bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
           <option value="en">EN</option>
           <option value="es">ES</option>
           <option value="ht">HT</option>
@@ -112,7 +116,7 @@
           <option value="fr">FR</option>
         </select>
         
-        <button id="settings-btn-mobile" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+        <button id="settings-btn-mobile" type="button" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
@@ -122,222 +126,466 @@
     </div>
   </header>
 
-  <!-- LESSONS CONTENT -->
   <section class="max-w-6xl mx-auto px-4 py-10">
-    <!-- Header -->
-    <h1 class="text-3xl font-bold mb-2 text-gray-900 dark:text-gray-100">
+    <h1 class="text-3xl font-bold mb-2 text-gray-900 dark:text-gray-100" data-i18n="lessons.title">
       Featured Micro-Lessons
     </h1>
-    <p class="text-gray-600 dark:text-gray-400 mb-8">
+    <p class="text-gray-600 dark:text-gray-400 mb-8" data-i18n="lessons.subtitle">
       Learn key SAT skills explained clearly in your language.
     </p>
 
-    <!-- Category Filter (using static categories) -->
-    <div class="mb-6 flex flex-wrap gap-3">
-      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200">
-        <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+    <!-- Filter buttons and search bar -->
+    <div class="mb-6 flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between">
+      <div class="flex flex-wrap gap-3">
+        <button data-filter="all" class="filter-btn active inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium border-2 bg-white dark:bg-gray-800 cursor-pointer hover:shadow-md transition-all">
+          <span data-i18n="categories.all">All</span>
+        </button>
+        <button data-filter="math" class="filter-btn inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium border-2 border-green-300 dark:border-green-700 text-green-700 dark:text-green-200 bg-white dark:bg-gray-800 cursor-pointer hover:bg-green-50 dark:hover:bg-green-900/20 hover:shadow-md transition-all">
+          <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+          </svg>
+          <span data-i18n="categories.math">Math</span>
+        </button>
+        <button data-filter="reading-writing" class="filter-btn inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium border-2 border-blue-300 dark:border-blue-700 text-blue-700 dark:text-blue-200 bg-white dark:bg-gray-800 cursor-pointer hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:shadow-md transition-all">
+          <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+          <span data-i18n="categories.readingWriting">Reading & Writing</span>
+        </button>
+        <button data-filter="test-skills" class="filter-btn inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium border-2 border-orange-300 dark:border-orange-700 text-orange-700 dark:text-orange-200 bg-white dark:bg-gray-800 cursor-pointer hover:bg-orange-50 dark:hover:bg-orange-900/20 hover:shadow-md transition-all">
+          <svg class="w-4 h-4 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+          </svg>
+          <span data-i18n="categories.testSkills">Test Skills</span>
+        </button>
+      </div>
+      
+      <!-- Search bar -->
+      <div class="relative w-full sm:w-64">
+        <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
         </svg>
-        Math
-      </span>
-      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200">
-        <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-        </svg>
-        Reading & Writing
-      </span>
-      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200">
-        <svg class="w-4 h-4 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-        </svg>
-        Test Skills
-      </span>
+        <input 
+          type="text" 
+          id="lesson-search" 
+          class="w-full pl-10 pr-4 py-2 text-sm border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 focus:outline-none" 
+          placeholder="Search lessons..."
+        >
+      </div>
     </div>
 
-    <!-- Lessons Grid -->
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3" id="lessons-grid">
       <!-- Lessons will be loaded dynamically -->
     </div>
+    
+    <!-- No results message -->
+    <div id="no-results" class="hidden text-center py-10">
+      <div class="w-16 h-16 mx-auto mb-4 text-gray-400">
+        <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2" data-i18n="lessons.noResults">No lessons found</h3>
+      <p class="text-gray-500 dark:text-gray-400" data-i18n="lessons.tryDifferent">Try a different search or filter</p>
+    </div>
   </section>
 
-  <!-- Footer -->
   <footer class="border-t border-gray-200 dark:border-gray-700 mt-16">
     <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
       © 2025 LearnPALM
     </div>
   </footer>
 
-  <!-- LESSONS LOADING SCRIPT -->
   <script>
-    // Function to get URL parameters
+    // Translation dictionary
+    const translations = {
+      en: {
+        'nav.lessons': 'Lessons',
+        'nav.practice': 'Practice',
+        'nav.scholarships': 'Scholarships',
+        'nav.glossary': 'Glossary',
+        'settings.title': 'Settings',
+        'settings.darkMode': 'Dark Mode',
+        'settings.about': 'About',
+        'settings.help': 'Help & Support',
+        'settings.privacy': 'Privacy Policy',
+        'lessons.title': 'Featured Micro-Lessons',
+        'lessons.subtitle': 'Learn key SAT skills explained clearly in your language.',
+        'categories.all': 'All',
+        'categories.math': 'Math',
+        'categories.readingWriting': 'Reading & Writing',
+        'categories.testSkills': 'Test Skills',
+        'lessons.readFull': 'Read full lesson',
+        'lessons.learnMore': 'Learn More →',
+        'lessons.noLessons': 'No Lessons Available',
+        'lessons.checkBack': 'Check back later for new lessons!',
+        'lessons.notAvailable': 'Lessons Not Available',
+        'lessons.errorMessage': 'Sorry, we couldn\'t load the lessons at this time. Please try again later.',
+        'lessons.searchPlaceholder': 'Search lessons...',
+        'lessons.noResults': 'No lessons found',
+        'lessons.tryDifferent': 'Try a different search or filter'
+      },
+      es: {
+        'nav.lessons': 'Lecciones',
+        'nav.practice': 'Práctica',
+        'nav.scholarships': 'Becas',
+        'nav.glossary': 'Glosario',
+        'settings.title': 'Configuración',
+        'settings.darkMode': 'Modo Oscuro',
+        'settings.about': 'Acerca de',
+        'settings.help': 'Ayuda y Soporte',
+        'settings.privacy': 'Política de Privacidad',
+        'lessons.title': 'Micro-Lecciones Destacadas',
+        'lessons.subtitle': 'Aprende habilidades clave del SAT explicadas claramente en tu idioma.',
+        'categories.all': 'Todos',
+        'categories.math': 'Matemáticas',
+        'categories.readingWriting': 'Lectura y Escritura',
+        'categories.testSkills': 'Habilidades de Examen',
+        'lessons.readFull': 'Leer lección completa',
+        'lessons.learnMore': 'Aprende Más →',
+        'lessons.noLessons': 'No Hay Lecciones Disponibles',
+        'lessons.checkBack': '¡Vuelve más tarde para nuevas lecciones!',
+        'lessons.notAvailable': 'Lecciones No Disponibles',
+        'lessons.errorMessage': 'Lo sentimos, no pudimos cargar las lecciones en este momento. Por favor, inténtalo de nuevo más tarde.',
+        'lessons.searchPlaceholder': 'Buscar lecciones...',
+        'lessons.noResults': 'No se encontraron lecciones',
+        'lessons.tryDifferent': 'Prueba una búsqueda o filtro diferente'
+      },
+      ht: {
+        'nav.lessons': 'Leson',
+        'nav.practice': 'Pratik',
+        'nav.scholarships': 'Bous',
+        'nav.glossary': 'Glosè',
+        'settings.title': 'Paramèt',
+        'settings.darkMode': 'Mòd Nwa',
+        'settings.about': 'Konsènan',
+        'settings.help': 'Èd ak Sipò',
+        'settings.privacy': 'Politik sou Vi Prive',
+        'lessons.title': 'Mikwo-Leson Enpòtan',
+        'lessons.subtitle': 'Aprann konpetans SAT kle yo eksplike klèman nan lang ou.',
+        'categories.all': 'Tout',
+        'categories.math': 'Matematik',
+        'categories.readingWriting': 'Lekti ak Ekriti',
+        'categories.testSkills': 'Konpetans Tès',
+        'lessons.readFull': 'Li leson konplè',
+        'lessons.learnMore': 'Aprann Plis →',
+        'lessons.noLessons': 'Pa Gen Leson Disponib',
+        'lessons.checkBack': 'Tounen pi ta pou nouvo leson!',
+        'lessons.notAvailable': 'Leson Pa Disponib',
+        'lessons.errorMessage': 'Dezole, nou pa t kapab chaje leson yo kounye a. Tanpri eseye ankò pi ta.',
+        'lessons.searchPlaceholder': 'Chèche leson...',
+        'lessons.noResults': 'Pa gen leson jwenn',
+        'lessons.tryDifferent': 'Eseye yon lòt rechèch oswa filtè'
+      },
+      pt: {
+        'nav.lessons': 'Lições',
+        'nav.practice': 'Prática',
+        'nav.scholarships': 'Bolsas',
+        'nav.glossary': 'Glossário',
+        'settings.title': 'Configurações',
+        'settings.darkMode': 'Modo Escuro',
+        'settings.about': 'Sobre',
+        'settings.help': 'Ajuda e Suporte',
+        'settings.privacy': 'Política de Privacidade',
+        'lessons.title': 'Micro-Lições em Destaque',
+        'lessons.subtitle': 'Aprenda habilidades-chave do SAT explicadas claramente em seu idioma.',
+        'categories.all': 'Todos',
+        'categories.math': 'Matemática',
+        'categories.readingWriting': 'Leitura e Escrita',
+        'categories.testSkills': 'Habilidades de Teste',
+        'lessons.readFull': 'Ler lição completa',
+        'lessons.learnMore': 'Saiba Mais →',
+        'lessons.noLessons': 'Nenhuma Lição Disponível',
+        'lessons.checkBack': 'Volte mais tarde para novas lições!',
+        'lessons.notAvailable': 'Lições Não Disponíveis',
+        'lessons.errorMessage': 'Desculpe, não conseguimos carregar as lições no momento. Por favor, tente novamente mais tarde.',
+        'lessons.searchPlaceholder': 'Pesquisar lições...',
+        'lessons.noResults': 'Nenhuma lição encontrada',
+        'lessons.tryDifferent': 'Tente uma pesquisa ou filtro diferente'
+      },
+      fr: {
+        'nav.lessons': 'Leçons',
+        'nav.practice': 'Pratique',
+        'nav.scholarships': 'Bourses',
+        'nav.glossary': 'Glossaire',
+        'settings.title': 'Paramètres',
+        'settings.darkMode': 'Mode Sombre',
+        'settings.about': 'À propos',
+        'settings.help': 'Aide et Support',
+        'settings.privacy': 'Politique de Confidentialité',
+        'lessons.title': 'Micro-Leçons en Vedette',
+        'lessons.subtitle': 'Apprenez les compétences clés du SAT expliquées clairement dans votre langue.',
+        'categories.all': 'Tous',
+        'categories.math': 'Mathématiques',
+        'categories.readingWriting': 'Lecture et Écriture',
+        'categories.testSkills': 'Compétences de Test',
+        'lessons.readFull': 'Lire la leçon complète',
+        'lessons.learnMore': 'En Savoir Plus →',
+        'lessons.noLessons': 'Aucune Leçon Disponible',
+        'lessons.checkBack': 'Revenez plus tard pour de nouvelles leçons!',
+        'lessons.notAvailable': 'Leçons Non Disponibles',
+        'lessons.errorMessage': 'Désolé, nous n\'avons pas pu charger les leçons pour le moment. Veuillez réessayer plus tard.',
+        'lessons.searchPlaceholder': 'Rechercher des leçons...',
+        'lessons.noResults': 'Aucune leçon trouvée',
+        'lessons.tryDifferent': 'Essayez une recherche ou un filtre différent'
+      }
+    };
+
+    // Global state
+    let allLessons = [];
+    let currentFilter = 'all';
+    let currentSearchQuery = '';
+
+    function translatePage(lang) {
+      const dict = translations[lang] || translations.en;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) {
+          el.textContent = dict[key];
+        }
+      });
+      
+      // Update search placeholder
+      const searchInput = document.getElementById('lesson-search');
+      if (searchInput && dict['lessons.searchPlaceholder']) {
+        searchInput.placeholder = dict['lessons.searchPlaceholder'];
+      }
+    }
+
     function getQueryParam(param) {
       const urlParams = new URLSearchParams(window.location.search);
       return urlParams.get(param);
     }
 
-    // Function to fetch lessons data from Netlify Functions
     async function fetchLessonsData(lang = 'en') {
       try {
         const response = await fetch(`/.netlify/functions/getLessons?lang=${lang}`);
-        
-        if (!response.ok) {
-          throw new Error('Failed to fetch lessons');
-        }
-        
+        if (!response.ok) throw new Error('Failed to fetch lessons');
         const data = await response.json();
-        
-        // Update the page content
-        updateLessonsContent(data, lang);
-        
+        allLessons = data.lessons || [];
+        applyFilters(lang);
       } catch (error) {
         console.error('Error fetching lessons:', error);
         const grid = document.getElementById('lessons-grid');
+        const dict = translations[lang] || translations.en;
         if (grid) {
           grid.innerHTML = `
             <div class="col-span-full bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 p-6 rounded-2xl border border-red-200 dark:border-red-700">
-              <h2 class="text-xl font-semibold mb-2">Lessons Not Available</h2>
-              <p>Sorry, we couldn't load the lessons at this time. Please try again later.</p>
+              <h2 class="text-xl font-semibold mb-2">${dict['lessons.notAvailable']}</h2>
+              <p>${dict['lessons.errorMessage']}</p>
             </div>
           `;
         }
       }
     }
 
-    // Function to update page content with lessons data
-    function updateLessonsContent(data, lang) {
-      // Update header
-      const title = document.querySelector('h1');
-      const subtitle = document.querySelector('h1 + p');
+    function applyFilters(lang) {
+      const dict = translations[lang] || translations.en;
       
-      if (title) {
-        const copyData = data.copy || {};
-        title.textContent = copyData.featuredHeader || 'Featured Micro-Lessons';
-      }
+      // Filter by category
+      let filtered = currentFilter === 'all' 
+        ? allLessons 
+        : allLessons.filter(lesson => lesson.category === currentFilter);
       
-      if (subtitle) {
-        const copyData = data.copy || {};
-        subtitle.textContent = copyData.featuredSubHeader || 'Learn key SAT skills explained clearly in your language.';
-      }
-      
-      // Update category filters
-      const categoriesData = data.categories || {};
-      const categoryFilter = document.querySelector('.flex.flex-wrap.gap-3');
-      
-      if (categoryFilter) {
-        categoryFilter.innerHTML = `
-          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium border border-green-300 dark:border-green-700 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-200">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-            </svg>
-            Math
-          </span>
-          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium border border-blue-300 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-200">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-            </svg>
-            Reading & Writing
-          </span>
-          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium border border-orange-300 dark:border-orange-700 bg-orange-50 dark:bg-orange-900/20 text-orange-700 dark:text-orange-200">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-            </svg>
-            Test Skills
-          </span>
-        `;
-      }
-      
-      // Update lessons grid
-      const grid = document.getElementById('lessons-grid');
-      
-      if (grid) {
-        const lessons = data.lessons || [];
-        
-        // Clear existing content
-        grid.innerHTML = '';
-        
-        // If no lessons, show message
-        if (lessons.length === 0) {
-          grid.innerHTML = `
-            <div class="col-span-full text-center py-10">
-              <div class="w-16 h-16 mx-auto mb-4 text-gray-400">
-                <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">No Lessons Available</h3>
-              <p class="text-gray-500 dark:text-gray-400">Check back later for new lessons!</p>
-            </div>
-          `;
-          return;
-        }
-        
-        // Create lesson cards
-        lessons.forEach(lesson => {
-          const card = document.createElement('a');
-          card.href = `/templates/lesson_detail.html?id=${lesson.id}&lang=${lang}`;
-          card.className = "block rounded-2xl border border-gray-300 dark:border-gray-700 p-5 bg-white dark:bg-gray-800 hover:shadow-xl hover:border-blue-400 transition-all group";
+      // Filter by search query
+      if (currentSearchQuery) {
+        filtered = filtered.filter(lesson => {
+          const title = (lesson.title[lang] || lesson.title.en || '').toLowerCase();
+          const summary = (lesson.summary[lang] || lesson.summary.en || '').toLowerCase();
+          const skill = (lesson.skill || '').toLowerCase();
+          const query = currentSearchQuery.toLowerCase();
           
-          // Category tag
-          let categoryClass = 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200';
-          let categoryIcon = '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>';
-          
-          if (lesson.category === 'math') {
-            categoryClass = 'bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-200';
-            categoryIcon = '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>';
-          } else if (lesson.category === 'reading-writing') {
-            categoryClass = 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200';
-            categoryIcon = '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>';
-          } else if (lesson.category === 'test-skills') {
-            categoryClass = 'bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-200';
-            categoryIcon = '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>';
-          }
-          
-          // Get translated content
-          const title = lesson.title[lang] || lesson.title.en;
-          const summary = lesson.summary[lang] || lesson.summary.en;
-          
-          card.innerHTML = `
-            <!-- Category Tag -->
-            <div class="flex items-center gap-2 mb-3">
-              <div class="text-xs font-medium px-2 py-1 rounded-full ${categoryClass}">
-                ${categoryIcon}
-                ${lesson.category.replace('-', ' ')}
-              </div>
-              <div class="text-xs text-gray-500 dark:text-gray-400">${lesson.skill}</div>
-            </div>
-            
-            <!-- Title -->
-            <h3 class="text-xl font-semibold mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-300 transition">
-              ${title}
-            </h3>
-            
-            <!-- Summary -->
-            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-3">
-              ${summary}
-            </p>
-            
-            <!-- Read More Link -->
-            <div class="pt-3 border-t border-gray-200 dark:border-gray-700 flex items-center justify-between text-sm">
-              <span class="text-gray-500 dark:text-gray-400">Read full lesson</span>
-              <span class="text-blue-600 dark:text-blue-400 font-medium group-hover:translate-x-1 transition-transform">
-                Learn More →
-              </span>
-            </div>
-          `;
-          
-          grid.appendChild(card);
+          return title.includes(query) || summary.includes(query) || skill.includes(query);
         });
       }
+      
+      updateLessonsDisplay(filtered, lang, dict);
     }
 
-    // Get language from URL parameters or default to English
-    const lang = getQueryParam('lang') || 'en';
+    function updateLessonsDisplay(lessons, lang, dict) {
+      const grid = document.getElementById('lessons-grid');
+      const noResults = document.getElementById('no-results');
+      
+      if (!grid) return;
+      
+      grid.innerHTML = '';
+      
+      if (lessons.length === 0) {
+        grid.classList.add('hidden');
+        if (noResults) noResults.classList.remove('hidden');
+        return;
+      }
+      
+      grid.classList.remove('hidden');
+      if (noResults) noResults.classList.add('hidden');
+      
+      lessons.forEach(lesson => {
+        const card = document.createElement('a');
+        card.href = `/templates/lesson_detail.html?id=${lesson.id}&lang=${lang}`;
+        card.className = "block rounded-2xl border border-gray-300 dark:border-gray-700 p-5 bg-white dark:bg-gray-800 hover:shadow-xl hover:border-blue-400 transition-all group";
+        
+        let categoryClass = 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200';
+        let categoryIcon = '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>';
+        let categoryLabel = lesson.category.replace('-', ' ');
+        
+        if (lesson.category === 'math') {
+          categoryClass = 'bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-200';
+          categoryIcon = '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>';
+          categoryLabel = dict['categories.math'];
+        } else if (lesson.category === 'reading-writing') {
+          categoryClass = 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200';
+          categoryIcon = '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>';
+          categoryLabel = dict['categories.readingWriting'];
+        } else if (lesson.category === 'test-skills') {
+          categoryClass = 'bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-200';
+          categoryIcon = '<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>';
+          categoryLabel = dict['categories.testSkills'];
+        }
+        
+        const title = lesson.title[lang] || lesson.title.en;
+        const summary = lesson.summary[lang] || lesson.summary.en;
+        
+        card.innerHTML = `
+          <div class="flex items-center gap-2 mb-3">
+            <div class="text-xs font-medium px-2 py-1 rounded-full ${categoryClass} inline-flex items-center gap-1">
+              ${categoryIcon}
+              <span>${categoryLabel}</span>
+            </div>
+            <div class="text-xs text-gray-500 dark:text-gray-400">${lesson.skill}</div>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-300 transition">
+            ${title}
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-3">
+            ${summary}
+          </p>
+          <div class="pt-3 border-t border-gray-200 dark:border-gray-700 flex items-center justify-between text-sm">
+            <span class="text-gray-500 dark:text-gray-400">${dict['lessons.readFull']}</span>
+            <span class="text-blue-600 dark:text-blue-400 font-medium group-hover:translate-x-1 transition-transform">
+              ${dict['lessons.learnMore']}
+            </span>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // Get language from URL or localStorage
+    const lang = getQueryParam('lang') || localStorage.getItem('selectedLanguage') || 'en';
     
-    // Fetch lessons data
+    // Translate all page elements
+    translatePage(lang);
+    
+    // Load lessons
     fetchLessonsData(lang);
+
+    // Filter button handlers
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        currentFilter = this.getAttribute('data-filter');
+        
+        // Update active state
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        applyFilters(lang);
+      });
+    });
+
+    // Search handler
+    const searchInput = document.getElementById('lesson-search');
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        currentSearchQuery = e.target.value;
+        applyFilters(lang);
+      });
+    }
+
+    // Language selector functionality
+    const langSelect = document.getElementById('select-language');
+    const langSelectMobile = document.getElementById('select-language-moe');
+
+    // Set the current language in the dropdowns
+    if (langSelect) langSelect.value = lang;
+    if (langSelectMobile) langSelectMobile.value = lang;
+
+    // Add event listeners to both language selectors
+    if (langSelect) {
+      langSelect.addEventListener('change', function() {
+        const newLang = this.value;
+        localStorage.setItem('selectedLanguage', newLang);
+        window.location.href = `/templates/lessons.html?lang=${newLang}`;
+      });
+    }
+
+    if (langSelectMobile) {
+      langSelectMobile.addEventListener('change', function() {
+        const newLang = this.value;
+        localStorage.setItem('selectedLanguage', newLang);
+        window.location.href = `/templates/lessons.html?lang=${newLang}`;
+      });
+    }
   </script>
 
-  <!-- SETTINGS & DARK MODE SCRIPTS -->
   <script src="/static/js/practice.js"></script>
+  
+  <!-- Settings menu script -->
+  <script>
+    (function(){
+      const init = () => {
+        const settingsBtn = document.getElementById('settings-btn');
+        const settingsBtnMobile = document.getElementById('settings-btn-mobile');
+        const settingsMenu = document.getElementById('settings-menu');
+        const darkToggle = document.getElementById('dark-toggle');
+        const themeStatus = document.getElementById('theme-status');
+        const html = document.documentElement;
+
+        function toggleSettings(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          if(settingsMenu) settingsMenu.classList.toggle('hidden');
+        }
+
+        if(settingsBtn) settingsBtn.addEventListener('click', toggleSettings);
+        if(settingsBtnMobile) settingsBtnMobile.addEventListener('click', toggleSettings);
+
+        document.addEventListener('click', (e) => {
+          if (settingsMenu && !settingsMenu.contains(e.target) && 
+              !settingsBtn?.contains(e.target) && 
+              !settingsBtnMobile?.contains(e.target)) {
+            settingsMenu.classList.add('hidden');
+          }
+        });
+
+        function updateThemeStatus() {
+          const isDark = html.classList.contains('dark');
+          if (themeStatus) themeStatus.textContent = isDark ? 'Dark theme active' : 'Light theme active';
+          if (darkToggle) darkToggle.setAttribute('aria-checked', String(isDark));
+        }
+        updateThemeStatus();
+
+        if(darkToggle) {
+          darkToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const wasDark = html.classList.contains('dark');
+            if (wasDark) {
+              html.classList.remove('dark');
+              localStorage.theme = 'light';
+            } else {
+              html.classList.add('dark');
+              localStorage.theme = 'dark';
+            }
+            updateThemeStatus();
+          });
+        }
+      };
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init, { once: true });
+      } else {
+        init();
+      }
+    })();
+  </script>
 </body>
 </html>

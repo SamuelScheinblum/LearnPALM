@@ -2,11 +2,13 @@
   functions = "netlify/functions"
   publish = "public"
 
+# Route clean API paths to your serverless functions
 [[redirects]]
-  from = "/.netlify/functions/*"
+  from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
 
+# SPA fallback must be last
 [[redirects]]
   from = "/*"
   to = "/index.html"

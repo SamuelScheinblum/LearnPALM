@@ -1,32 +1,27 @@
-// Intersection Observer to reveal panels & cards
+// public/static/js/practice.js
+// Intersection Observer + parallax + settings toggle
+
+// Reveal animations
 const observer = new IntersectionObserver((entries)=>{
   entries.forEach(entry=>{
-    if(entry.isIntersecting){ 
-      entry.target.classList.add('visible'); 
-    }
+    if(entry.isIntersecting) entry.target.classList.add('visible');
   });
 }, {threshold:.18});
-
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 
-// Scroll indicator logic - UPDATED section IDs including bridge-mode
+// Scroll indicator
 const sections = ['top','language','resources','bridge-mode'].map(id=>document.getElementById(id));
 const nodes = [...document.querySelectorAll('.scroll-indicator .node')];
 
 const setActiveNode = ()=>{
   let idx = 0; let best = 0;
   sections.forEach((sec,i)=>{
-    if(!sec) return;
-    
-    // Skip hidden sections
-    if(sec.style.display === 'none') return;
-    
+    if(!sec || sec.style.display === 'none') return;
     const rect = sec.getBoundingClientRect();
     const visible = Math.max(0, Math.min(window.innerHeight, rect.bottom) - Math.max(0, rect.top));
     if(visible > best){ best = visible; idx = i; }
   });
   
-  // Only activate nodes for visible sections
   nodes.forEach((n,i)=>{
     const section = sections[i];
     const shouldBeActive = i === idx && section && section.style.display !== 'none';
@@ -37,13 +32,14 @@ setActiveNode();
 addEventListener('scroll', setActiveNode, {passive:true});
 addEventListener('resize', setActiveNode);
 
-// Parallax the global glow for seamless continuity
+// Parallax glow
 const glow = document.querySelector('.global-glow');
 const parallax = ()=>{
-  const y = window.scrollY * 0.10; // slower than scroll
-  const x = Math.sin(window.scrollY/900) * 50; // gentle lateral drift
-  glow?.style.setProperty('--gx', x.toFixed(2) + 'px');
-  glow?.style.setProperty('--gy', y.toFixed(2) + 'px');
+  if(!glow) return;
+  const y = window.scrollY * 0.10;
+  const x = Math.sin(window.scrollY/900) * 50;
+  glow.style.setProperty('--gx', x.toFixed(2) + 'px');
+  glow.style.setProperty('--gy', y.toFixed(2) + 'px');
   const h = document.documentElement.scrollHeight - innerHeight;
   const t = h>0 ? window.scrollY/h : 0;
   glow.style.opacity = (0.62 + 0.22*Math.sin(t*Math.PI)).toFixed(3);
@@ -54,57 +50,36 @@ if(glow){
   addEventListener('resize', parallax);
 }
 
-// Click feedback on option cards - UPDATED with Netlify Function support
+// Card click feedback
 document.querySelectorAll('[data-action]').forEach(card=>{
-  card.addEventListener('click', async (e)=>{
-    const label = card.getAttribute('data-action');
+  card.addEventListener('click', ()=>{
     card.style.boxShadow = '0 0 0 2px var(--accent2)';
-    
-    // Log action for analytics (future Netlify Function)
-    console.log('Selected:', label);
-    
-    // Route based on action type
-    switch(label) {
-      case 'lessons':
-        window.location.href = '/templates/lessons.html';
-        break;
-      case 'practice':
-        window.location.href = '/templates/practice_home.html';
-        break;
-      case 'glossary':
-        window.location.href = '/templates/glossary.html';
-        break;
-      case 'scholarships':
-        window.location.href = '/templates/scholarships.html';
-        break;
-      default:
-        console.log('Navigation for', label, 'not implemented yet');
-    }
-    
     setTimeout(()=> card.style.boxShadow = '', 300);
   });
 });
 
-// Motion toggle for demo
-const toggle = document.getElementById('toggle-motion');
-toggle?.addEventListener('click', ()=>{
-  const reduced = document.documentElement.classList.toggle('reduce-motion');
-  document.documentElement.style.setProperty('--grid', reduced ? 'transparent' : 'rgba(16,185,129,.07)');
-});
+// SETTINGS TOGGLE (client-side panel)
+(function(){
+  const btn = document.getElementById('settings-toggle') || document.querySelector('[data-settings-toggle]');
+  const panel = document.getElementById('settings-panel') || document.querySelector('[data-settings-panel]');
 
-// FUTURE: Add Netlify Function calls here for:
-// - Analytics tracking (/.netlify/functions/trackEvent)
-// - User preferences (/.netlify/functions/savePreferences)
-// - Lesson progress (/.netlify/functions/updateProgress)
-// Example:
-// async function trackEvent(eventName, eventData) {
-//   try {
-//     await fetch('/.netlify/functions/trackEvent', {
-//       method: 'POST',
-//       headers: { 'Content-Type': 'application/json' },
-//       body: JSON.stringify({ event: eventName, data: eventData })
-//     });
-//   } catch(error) {
-//     console.error('Error tracking event:', error);
-//   }
-// }
+  if(!btn || !panel) return;
+
+  panel.classList.add('hidden');
+  const isOpen = () => !panel.classList.contains('hidden');
+  const setOpen = (open) => panel.classList.toggle('hidden', !open);
+
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setOpen(!isOpen());
+  });
+
+  document.addEventListener('click', (e) => {
+    if(!panel.contains(e.target) && !btn.contains(e.target) && isOpen()) setOpen(false);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape' && isOpen()) setOpen(false);
+  });
+})();
